@@ -5,6 +5,14 @@
  */
 
 module.exports = {
+  polyfill: false,
   /* Your site config here */
-  plugins: [],
-}
+  siteMetadata: {
+    title: "CodeDead | Solving problems using code",
+    description: "Download open-source applications, free of charge",
+    siteUrl: "https://codedead.com"
+  },
+  plugins: [
+    `gatsby-theme-material-ui`
+  ]
+};
