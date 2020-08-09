@@ -8,8 +8,8 @@ module.exports = {
   polyfill: false,
   /* Your site config here */
   siteMetadata: {
-    title: "CodeDead | Solving problems using code",
-    description: "Download open-source applications, free of charge",
+    title: "CodeDead",
+    description: "Solving problems using code",
     siteUrl: "https://codedead.com"
   },
   plugins: [
