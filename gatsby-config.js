@@ -10,7 +10,11 @@ module.exports = {
   siteMetadata: {
     title: "CodeDead",
     description: "Solving problems using code",
-    siteUrl: "https://codedead.com"
+    siteUrl: "https://codedead.com",
+    github: "https://github.com/CodeDead",
+    twitter: "https://twitter.com/C0DEDEAD",
+    reddit: "https://reddit.com/r/CodeDead/",
+    facebook: "https://facebook.com/deadlinecodedead"
   },
   plugins: [
     `gatsby-theme-material-ui`

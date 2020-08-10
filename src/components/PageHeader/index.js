@@ -20,7 +20,7 @@ const PageHeader = ({ title, subTitle }) => {
         <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
           {title}
         </Typography>
-        <Typography variant="h6" align="center" color="textSecondary" paragraph>
+        <Typography variant="h5" align="center" color="textSecondary" paragraph>
           {subTitle}
         </Typography>
       </Container>
