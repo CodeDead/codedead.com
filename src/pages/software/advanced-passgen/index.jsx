@@ -123,6 +123,7 @@ const AdvancedPassGenPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={6} lg={6}>
             <Button
+              size="large"
               color="primary"
               variant="outlined"
               style={{ width: '100%' }}
@@ -133,6 +134,7 @@ const AdvancedPassGenPage = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Button
+              size="large"
               color="primary"
               variant="outlined"
               style={{ width: '100%' }}
@@ -224,6 +226,8 @@ const AdvancedPassGenPage = () => {
             <Button
               color="primary"
               variant="outlined"
+              href="https://codedead.com/Software/Advanced%20PassGen/help.pdf"
+              target="_blank"
               style={{ width: '100%' }}
             >
               Help documentation
@@ -234,6 +238,8 @@ const AdvancedPassGenPage = () => {
             <Button
               color="primary"
               variant="outlined"
+              href="https://codedead.com/Software/Advanced%20PassGen/gpl.pdf"
+              target="_blank"
               style={{ width: '100%' }}
             >
               License
