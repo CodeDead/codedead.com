@@ -6,6 +6,9 @@ import Divider from '@material-ui/core/Divider';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import SecurityIcon from '@material-ui/icons/Security';
+import ComputerIcon from '@material-ui/icons/Computer';
+import AppsIcon from '@material-ui/icons/Apps';
 import { navigate } from 'gatsby';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
@@ -13,10 +16,12 @@ import Layout from '../../components/Layout';
 const Software = () => (
   <Layout>
     <PageHeader title="Software" subTitle="Our work" />
-    <Container maxWidth="md">
+    <Container maxWidth="md" style={{ marginTop: 10 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <SecurityIcon color="inherit" />
+            {' '}
             Security
           </Typography>
         </Grid>
@@ -66,6 +71,8 @@ const Software = () => (
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <ComputerIcon color="inherit" />
+            {' '}
             System
           </Typography>
         </Grid>
@@ -117,6 +124,8 @@ const Software = () => (
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <AppsIcon color="inherit" />
+            {' '}
             Utilities
           </Typography>
         </Grid>
