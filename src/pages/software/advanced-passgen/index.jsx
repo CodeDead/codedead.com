@@ -8,7 +8,6 @@ import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
@@ -159,34 +158,32 @@ const AdvancedPassGenPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Card>
-              <CardActionArea>
-                <CardContent>
-                  <Typography variant="h6" color="textPrimary" gutterBottom>
-                    Generates various passwords based on the specified parameters
-                  </Typography>
-                  <Typography gutterBottom>
-                    <i>
-                      &quot;This application allows you to generate multiple passwords with ease, by
-                      defining a series of parameters. It is possible to toggle the inclusion of
-                      several elements within your passkeys, such as uppercase or lowercase
-                      characters, symbols and numbers.
-                      <br />
-                      <br />
-                      Additionally, you can define the minimum and maximum string lengths for your
-                      entries, specify a custom character set or generate a random seed. It is also
-                      possible to specify a fixed string length size and the amount of passwords
-                      that
-                      the application can generate during a session.&quot;
-                    </i>
-                  </Typography>
-                  <Typography>
-                    <b>Vlad Constantinescu</b>
-                  </Typography>
-                  <Typography>
-                    Softpedia editor
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <CardContent>
+                <Typography variant="h6" color="textPrimary" gutterBottom>
+                  Generates various passwords based on the specified parameters
+                </Typography>
+                <Typography gutterBottom>
+                  <i>
+                    &quot;This application allows you to generate multiple passwords with ease, by
+                    defining a series of parameters. It is possible to toggle the inclusion of
+                    several elements within your passkeys, such as uppercase or lowercase
+                    characters, symbols and numbers.
+                    <br />
+                    <br />
+                    Additionally, you can define the minimum and maximum string lengths for your
+                    entries, specify a custom character set or generate a random seed. It is also
+                    possible to specify a fixed string length size and the amount of passwords
+                    that
+                    the application can generate during a session.&quot;
+                  </i>
+                </Typography>
+                <Typography>
+                  <b>Vlad Constantinescu</b>
+                </Typography>
+                <Typography>
+                  Softpedia editor
+                </Typography>
+              </CardContent>
               <CardActions>
                 <Button
                   variant="outlined"
