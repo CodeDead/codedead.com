@@ -217,9 +217,10 @@ const AdvancedPassGenPage = () => {
             <Button
               color="primary"
               variant="outlined"
+              href="/software/advanced-passgen/requirements"
               style={{ width: '100%' }}
             >
-              System requirements
+              Requirements
             </Button>
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
@@ -243,6 +244,17 @@ const AdvancedPassGenPage = () => {
               style={{ width: '100%' }}
             >
               License
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Button
+              color="primary"
+              variant="outlined"
+              href="https://github.com/CodeDead/Advanced-PassGen"
+              target="_blank"
+              style={{ width: '100%' }}
+            >
+              Source code
             </Button>
           </Grid>
         </Grid>

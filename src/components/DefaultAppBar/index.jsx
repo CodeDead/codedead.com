@@ -10,7 +10,6 @@ import { SvgIcon } from '@material-ui/core';
 import NavigationDrawer from '../NavigationDrawer';
 import GitHubIcon from '../GithubIcon';
 import TwitterIcon from '../TwitterIcon';
-import RedditIcon from '../RedditIcon';
 import FacebookIcon from '../FacebookIcon';
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DefaultAppBar = ({
-  title, githubUrl, twitterUrl, redditUrl, facebookUrl,
+  title, githubUrl, twitterUrl, facebookUrl,
 }) => {
   const classes = useStyles();
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -60,12 +59,13 @@ const DefaultAppBar = ({
               color: 'inherit',
               textDecoration: 'inherit',
             }}
-            className={classes.title}
           >
             <Typography variant="h6">
               {title}
             </Typography>
           </Link>
+
+          <div className={classes.title} />
 
           <IconButton color="inherit" onClick={() => openSite(facebookUrl)}>
             <SvgIcon>
@@ -75,11 +75,6 @@ const DefaultAppBar = ({
           <IconButton color="inherit" onClick={() => openSite(twitterUrl)}>
             <SvgIcon>
               <TwitterIcon />
-            </SvgIcon>
-          </IconButton>
-          <IconButton color="inherit" onClick={() => openSite(redditUrl)}>
-            <SvgIcon>
-              <RedditIcon />
             </SvgIcon>
           </IconButton>
           <IconButton color="inherit" onClick={() => openSite(githubUrl)}>

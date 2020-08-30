@@ -21,7 +21,6 @@ const Layout = ({ children }) => {
         title={data.site.siteMetadata.title}
         githubUrl={data.site.siteMetadata.github}
         twitterUrl={data.site.siteMetadata.twitter}
-        redditUrl={data.site.siteMetadata.reddit}
         facebookUrl={data.site.siteMetadata.facebook}
       />
       {children}

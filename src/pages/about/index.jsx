@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
+import { Container, SvgIcon } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -13,8 +13,19 @@ import GitHubIcon from '../../components/GithubIcon';
 import LinkedInIcon from '../../components/LinkedInIcon';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
+import RedditIcon from '../../components/RedditIcon';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const AboutPage = () => {
+  const data = useStaticQuery(graphql`query {
+      site {
+        siteMetadata {
+          github,
+          reddit,
+        }
+      }
+     }`);
+
   /**
    * Open a website
    * @param url The website that should be opened
@@ -88,7 +99,7 @@ const AboutPage = () => {
               <CardActions>
                 <IconButton
                   color="inherit"
-                  onClick={() => openSite('https://github.com/CodeDead')}
+                  onClick={() => openSite(data.site.siteMetadata.github)}
                 >
                   <GitHubIcon />
                 </IconButton>
@@ -97,6 +108,11 @@ const AboutPage = () => {
                   onClick={() => openSite('https://be.linkedin.com/in/alessandro-mercier-aab153125')}
                 >
                   <LinkedInIcon />
+                </IconButton>
+                <IconButton color="inherit" onClick={() => openSite(data.site.siteMetadata.reddit)}>
+                  <SvgIcon>
+                    <RedditIcon />
+                  </SvgIcon>
                 </IconButton>
               </CardActions>
             </Card>
