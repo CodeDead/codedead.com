@@ -128,7 +128,7 @@ const AdvancedPassGenPage = () => {
               style={{ width: '100%' }}
               href="https://codedead.com/Software/Advanced%20PassGen/AP_setup.exe"
             >
-              Download installer
+              Installer
             </Button>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
@@ -139,7 +139,7 @@ const AdvancedPassGenPage = () => {
               style={{ width: '100%' }}
               href="https://codedead.com/Software/Advanced%20PassGen/AP_portable.zip"
             >
-              Download portable
+              Portable
             </Button>
           </Grid>
         </Grid>
