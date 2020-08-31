@@ -32,9 +32,9 @@ const Donate = () => {
         <Card style={{ marginTop: 10 }}>
           <CardContent>
             <Typography>
-              Donations are always welcome. All of the money that was donated to us will go towards
+              Donations are always welcome. All of the money that is donated to us will go towards
               the development of new and old projects, the maintenance of our servers, domain name
-              fees and the occasional cup of coffee! Simply click the PaypPal or BTC button to start
+              fees and the occasional cup of coffee! Simply click the PayPal or BTC button to start
               the donation process! PayPal allows you to donate using practically any payment method
               you like. Brave tips are also welcome!
               <br />
