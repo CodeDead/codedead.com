@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
 import HomeIcon from '@material-ui/icons/Home';
 import BuildIcon from '@material-ui/icons/Build';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import InfoIcon from '@material-ui/icons/Info';
 import EmailIcon from '@material-ui/icons/Email';
@@ -84,6 +85,10 @@ const NavigationDrawer = ({ open, onClose }) => {
       </List>
       <Divider />
       <List>
+        <ListItem button onClick={() => navigate('/donate')}>
+          <ListItemIcon><AttachMoneyIcon /></ListItemIcon>
+          <ListItemText>Donate</ListItemText>
+        </ListItem>
         <ListItem button onClick={() => navigate('/about')}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
           <ListItemText>About</ListItemText>
