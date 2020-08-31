@@ -45,7 +45,7 @@ const Home = () => {
     <Layout>
       <PageHeader title="Home" subTitle="Welcome" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <BuildIcon color="inherit" />
