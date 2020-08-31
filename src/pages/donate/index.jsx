@@ -24,7 +24,7 @@ const Donate = () => {
     <Layout>
       <PageHeader title="Donate" subTitle="Keep us going" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Typography variant="h5" color="textPrimary">
+        <Typography variant="h5" color="textPrimary" style={{ marginTop: 10 }}>
           <InfoIcon color="inherit" />
           {' '}
           General
