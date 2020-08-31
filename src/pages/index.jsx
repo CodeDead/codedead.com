@@ -10,10 +10,10 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Layout from '../components/Layout';
-import PageHeader from '../components/PageHeader';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import BuildIcon from '@material-ui/icons/Build';
+import Layout from '../components/Layout';
+import PageHeader from '../components/PageHeader';
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -99,6 +99,15 @@ const Home = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
+                    <Link to="/software/deadhash">
+                      <Img fluid={{
+                        ...data.deadhash.childImageSharp.fluid,
+                        aspectRatio: 21 / 9,
+                      }}
+                      />
+                    </Link>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6" color="textPrimary" paragraph>
                       DeadHash
                     </Typography>
@@ -114,15 +123,6 @@ const Home = () => {
                     >
                       Download now
                     </Button>
-                  </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Link to="/software/deadhash">
-                      <Img fluid={{
-                        ...data.deadhash.childImageSharp.fluid,
-                        aspectRatio: 21 / 9,
-                      }}
-                      />
-                    </Link>
                   </Grid>
                 </Grid>
               </CardContent>

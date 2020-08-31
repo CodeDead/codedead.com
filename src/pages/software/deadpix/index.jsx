@@ -9,8 +9,11 @@ import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import PageHeader from '../../../components/PageHeader';
+import InfoIcon from '@material-ui/icons/Info';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import Layout from '../../../components/Layout';
+import PageHeader from '../../../components/PageHeader';
 
 const DeadPixPage = () => {
   const data = useStaticQuery(graphql`
@@ -45,6 +48,8 @@ const DeadPixPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <InfoIcon color="inherit" />
+              {' '}
               General
             </Typography>
           </Grid>
@@ -101,6 +106,8 @@ const DeadPixPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <GetAppIcon color="inherit" />
+              {' '}
               Download
             </Typography>
           </Grid>
@@ -152,6 +159,8 @@ const DeadPixPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <FormatQuoteIcon color="inherit" />
+              {' '}
               What others say
             </Typography>
           </Grid>

@@ -1,7 +1,5 @@
 import React from 'react';
-import Layout from '../../../components/Layout';
 import { graphql, useStaticQuery } from 'gatsby';
-import PageHeader from '../../../components/PageHeader';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -11,6 +9,11 @@ import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import InfoIcon from '@material-ui/icons/Info';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import PageHeader from '../../../components/PageHeader';
+import Layout from '../../../components/Layout';
 
 const DeadLockPage = () => {
   const data = useStaticQuery(graphql`
@@ -40,16 +43,18 @@ const DeadLockPage = () => {
 
   return (
     <Layout>
-      <PageHeader title="DeadLock" subTitle="Unlock files and folders"/>
+      <PageHeader title="DeadLock" subTitle="Unlock files and folders" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <InfoIcon color="inherit" />
+              {' '}
               General
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
@@ -65,7 +70,7 @@ const DeadLockPage = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.main.childImageSharp.fixed}/>
+                <Img fixed={data.main.childImageSharp.fixed} />
               </Grid>
             </Grid>
           </Grid>
@@ -73,7 +78,7 @@ const DeadLockPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.settings.childImageSharp.fixed}/>
+                <Img fixed={data.settings.childImageSharp.fixed} />
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
                 <Typography variant="h6">
@@ -100,7 +105,7 @@ const DeadLockPage = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.about.childImageSharp.fixed}/>
+                <Img fixed={data.about.childImageSharp.fixed} />
               </Grid>
             </Grid>
           </Grid>
@@ -109,11 +114,13 @@ const DeadLockPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <GetAppIcon color="inherit" />
+              {' '}
               Download
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
 
@@ -134,11 +141,13 @@ const DeadLockPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <FormatQuoteIcon color="inherit" />
+              {' '}
               What others say
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
 
@@ -154,7 +163,8 @@ const DeadLockPage = () => {
                     &quot;
                     Aside from the functions mentioned above, this application also allows you to
                     perform scans on your files with the online VirusTotal service.
-                    <br/><br/>
+                    <br />
+                    <br />
                     To sum it up, DeadLock is a lightweight application that enables you to unlock
                     files that are restricted by certain processes on your computer in a convenient,
                     effortless manner. It comes with a minimalistic, yet efficient user interface
@@ -191,7 +201,7 @@ const DeadLockPage = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
 

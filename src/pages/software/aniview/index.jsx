@@ -1,7 +1,5 @@
 import React from 'react';
-import Layout from '../../../components/Layout';
 import { graphql, useStaticQuery } from 'gatsby';
-import PageHeader from '../../../components/PageHeader';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -11,6 +9,11 @@ import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import InfoIcon from '@material-ui/icons/Info';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import PageHeader from '../../../components/PageHeader';
+import Layout from '../../../components/Layout';
 
 const AniViewPage = () => {
   const data = useStaticQuery(graphql`
@@ -40,16 +43,18 @@ const AniViewPage = () => {
 
   return (
     <Layout>
-      <PageHeader title="AniView" subTitle="GIF Image Viewer"/>
+      <PageHeader title="AniView" subTitle="GIF Image Viewer" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <InfoIcon color="inherit" />
+              {' '}
               General
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
@@ -65,7 +70,7 @@ const AniViewPage = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.main.childImageSharp.fixed}/>
+                <Img fixed={data.main.childImageSharp.fixed} />
               </Grid>
             </Grid>
           </Grid>
@@ -73,7 +78,7 @@ const AniViewPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.settings.childImageSharp.fixed}/>
+                <Img fixed={data.settings.childImageSharp.fixed} />
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
                 <Typography variant="h6">
@@ -101,7 +106,7 @@ const AniViewPage = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.image.childImageSharp.fixed}/>
+                <Img fixed={data.image.childImageSharp.fixed} />
               </Grid>
             </Grid>
           </Grid>
@@ -110,11 +115,13 @@ const AniViewPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <GetAppIcon color="inherit" />
+              {' '}
               Download
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
 
@@ -146,11 +153,13 @@ const AniViewPage = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
+              <FormatQuoteIcon color="inherit" />
+              {' '}
               What others say
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
 
@@ -169,7 +178,8 @@ const AniViewPage = () => {
                     features: automatic updates, drag and drop functionality, automatic window
                     resizing, full-screen support. What is more, you can also change the repeat
                     behavior or even create custom ones.
-                    <br/><br/>
+                    <br />
+                    <br />
                     Despite its simplicity, you might be surprised to hear that the app also comes
                     with a few UI customization options. For example, within the Theme Tab, you can
                     change the app’s interface style, the metro brush’s color and even the border
@@ -205,7 +215,7 @@ const AniViewPage = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
-            <Divider/>
+            <Divider />
           </Grid>
         </Grid>
 
