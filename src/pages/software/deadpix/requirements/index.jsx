@@ -13,7 +13,7 @@ import Layout from '../../../../components/Layout';
 
 const Requirements = () => (
   <Layout>
-    <PageHeader title="DeadPix" subTitle="System requirements" backButton/>
+    <PageHeader title="DeadPix" subTitle="System requirements" backButton />
     <Container maxWidth="md" style={{ marginTop: 10 }}>
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
@@ -22,7 +22,7 @@ const Requirements = () => (
           </Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
-          <Divider/>
+          <Divider />
         </Grid>
       </Grid>
 
@@ -57,8 +57,11 @@ const Requirements = () => (
           <TableRow>
             <TableCell><b>Other</b></TableCell>
             <TableCell>
-              <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48"
-                 rel="noreferrer" target="_blank">
+              <a
+                href="https://dotnet.microsoft.com/download/dotnet-framework/net48"
+                rel="noreferrer"
+                target="_blank"
+              >
                 .NET
                 Framework 4.8
               </a>
@@ -74,7 +77,7 @@ const Requirements = () => (
           </Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
-          <Divider/>
+          <Divider />
         </Grid>
       </Grid>
 
