@@ -8,6 +8,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { Button } from '@material-ui/core';
+import InfoIcon from '@material-ui/icons/Info';
+import SecurityIcon from '@material-ui/icons/Security';
 import PageHeader from '../../../../components/PageHeader';
 import Layout from '../../../../components/Layout';
 
@@ -18,6 +20,8 @@ const Requirements = () => (
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <InfoIcon color="inherit" />
+            {' '}
             General
           </Typography>
         </Grid>
@@ -68,6 +72,8 @@ const Requirements = () => (
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <SecurityIcon color="inherit" />
+            {' '}
             Malware scan
           </Typography>
         </Grid>

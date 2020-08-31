@@ -8,6 +8,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { Button } from '@material-ui/core';
+import SecurityIcon from '@material-ui/icons/Security';
+import InfoIcon from '@material-ui/icons/Info';
 import PageHeader from '../../../../components/PageHeader';
 import Layout from '../../../../components/Layout';
 
@@ -18,6 +20,8 @@ const Requirements = () => (
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <InfoIcon color="inherit" />
+            {' '}
             General
           </Typography>
         </Grid>
@@ -31,7 +35,9 @@ const Requirements = () => (
           <TableRow>
             <TableCell><b>Operating System</b></TableCell>
             <TableCell>
-              Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64), Windows 10 (x86 and x64), Windows Server 2008 R2 SP1 (x64), Windows Server 2012 (x64), Windows Server 2012 R2 (x64), Windows Server 2016 (x64)
+              Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64), Windows 10 (x86 and x64),
+              Windows Server 2008 R2 SP1 (x64), Windows Server 2012 (x64), Windows Server 2012 R2
+              (x64), Windows Server 2016 (x64)
             </TableCell>
           </TableRow>
           <TableRow>
@@ -54,7 +60,11 @@ const Requirements = () => (
           <TableRow>
             <TableCell><b>Other</b></TableCell>
             <TableCell>
-              <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48" rel="noreferrer" target="_blank">
+              <a
+                href="https://dotnet.microsoft.com/download/dotnet-framework/net48"
+                rel="noreferrer"
+                target="_blank"
+              >
                 .NET
                 Framework 4.8
               </a>
@@ -66,6 +76,8 @@ const Requirements = () => (
       <Grid container spacing={2} style={{ marginTop: 10 }}>
         <Grid item xs={12} md={12} lg={12}>
           <Typography variant="h5" color="textPrimary">
+            <SecurityIcon color="inherit" />
+            {' '}
             Malware scan
           </Typography>
         </Grid>
