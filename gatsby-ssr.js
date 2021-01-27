@@ -1,8 +1,7 @@
 const React = require('react');
-const MainContextProvider = require('./src/contexts/MainContextProvider');
+const MainContextProvider = require('./src/contexts/MainContextProvider').default;
 
 exports.wrapRootElement = ({ element }) => (
-  // eslint-disable-next-line react/jsx-filename-extension
   <MainContextProvider>
     {element}
   </MainContextProvider>
