@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import Layout from '../../../components/Layout';
 import PageHeader from '../../../components/PageHeader';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const MemPlusPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     memplus: file(relativePath: { eq: "MemPlus/memplus.png" }) {
@@ -41,6 +44,10 @@ const MemPlusPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="MemPlus" subTitle="RAM Optimizer" />
@@ -59,56 +66,69 @@ const MemPlusPage = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Memory optimization
-                </Typography>
-                <Typography paragraph>
-                  MemPlus can be used to reduce the amount of RAM that is being used by applications
-                  on your system. In essence, freeing up memory so that more memory is available to
-                  you!
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.memplus.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Memory optimization
+                    </Typography>
+                    <Typography paragraph>
+                      MemPlus can be used to reduce the amount of RAM that is being used by
+                      applications on your system. In essence, freeing up memory so that
+                      more memory is available to you!
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.memplus.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.analyzer.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  RAM Analyzer
-                </Typography>
-                <Typography paragraph>
-                  MemPlus can help recover the specification of the RAM that is installed on your
-                  system. This information can be exported in TEXT, HTML, CSV and Excel formats.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.analyzer.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      RAM Analyzer
+                    </Typography>
+                    <Typography paragraph>
+                      MemPlus can help recover the specification of the RAM that is
+                      installed on your system. This information can be exported in
+                      TEXT, HTML, CSV and Excel formats.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Preferences
-                </Typography>
-                <Typography paragraph>
-                  Need MemPlus to automatically optimize your RAM in the background? Want a
-                  different theme or start MemPlus when your computer starts up? You got it! MemPlus
-                  offers a myriad of settings to make MemPlus truly yours.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.optimizer.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Preferences
+                    </Typography>
+                    <Typography paragraph>
+                      Need MemPlus to automatically optimize your RAM in the background? Want a
+                      different theme or start MemPlus when your computer starts up? You got it!
+                      MemPlus offers a myriad of settings to make MemPlus truly yours.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.optimizer.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

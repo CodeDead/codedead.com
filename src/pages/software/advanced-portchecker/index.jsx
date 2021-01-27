@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const AdvancedPortCheckerPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     main: file(relativePath: { eq: "Advanced PortChecker/ap.png" }) {
@@ -41,6 +44,10 @@ const AdvancedPortCheckerPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="Advanced PortChecker" subTitle="Check TCP/UDP ports" />
@@ -59,55 +66,69 @@ const AdvancedPortCheckerPage = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Port scanning
-                </Typography>
-                <Typography paragraph>
-                  Scanning TCP and UDP ports has never been this easy. Watch how Advanced
-                  PortChecker updates you with real-time information while it’s scanning!
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.main.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Port scanning
+                    </Typography>
+                    <Typography paragraph>
+                      Scanning TCP and UDP ports has never been this easy. Watch how Advanced
+                      PortChecker updates you with real-time information while it’s scanning!
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.main.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.settings.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Preferences
-                </Typography>
-                <Typography paragraph>
-                  Need a specific time-out set for port scanning? Want a different theme or would
-                  you like to disable automatic updates? It’s all possible, thanks to our intuitive
-                  and easy to use GUI.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.settings.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Preferences
+                    </Typography>
+                    <Typography paragraph>
+                      Need a specific time-out set for port scanning? Want a
+                      different theme or would you like to disable automatic
+                      updates? It’s all possible, thanks to our intuitive and
+                      easy to use GUI.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Exporting
-                </Typography>
-                <Typography paragraph>
-                  Advanced PortChecker can export any and all data that it finds for you in a couple
-                  of different formats including: HTML, CSV and of course plain text.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.about.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Exporting
+                    </Typography>
+                    <Typography paragraph>
+                      Advanced PortChecker can export any and all data that it
+                      finds for you in a couple of different formats including:
+                      HTML, CSV and of course plain text.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.about.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

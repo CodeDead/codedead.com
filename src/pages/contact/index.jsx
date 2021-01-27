@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -10,8 +10,11 @@ import Card from '@material-ui/core/Card';
 import Layout from '../../components/Layout';
 import PageHeader from '../../components/PageHeader';
 import AlertDialog from '../../components/AlertDialog';
+import { setPageIndex } from '../../reducers/MainReducer/Actions';
+import { MainContext } from '../../contexts/MainContextProvider';
 
 const ContactPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const [contactOpen, setContactOpen] = useState(false);
 
   /**
@@ -30,11 +33,14 @@ const ContactPage = () => {
     setContactOpen(false);
   };
 
+  useEffect(() => {
+    dispatch(setPageIndex(5));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="Contact" subTitle="Have a question or need support?" />
-      <Container maxWidth={"md"}>
-
+      <Container maxWidth="md">
         {contactOpen
           ? (
             <AlertDialog

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const AniViewPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     main: file(relativePath: { eq: "AniView/aniview.png" }) {
@@ -41,6 +44,10 @@ const AniViewPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="AniView" subTitle="GIF Image Viewer" />
@@ -59,56 +66,70 @@ const AniViewPage = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  GIF
-                </Typography>
-                <Typography paragraph>
-                  AniView is a free and open source GIF image viewer. You can watch GIF images your
-                  way, thanks to all the options that are available in AniView.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.main.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      GIF
+                    </Typography>
+                    <Typography paragraph>
+                      AniView is a free and open source GIF image viewer. You
+                      can watch GIF images your way, thanks to all the
+                      options that are available in AniView.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.main.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.settings.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Preferences
-                </Typography>
-                <Typography paragraph>
-                  Want a different theme or would you like to disable automatic updates? Don’t want
-                  your GIF’s to loop? It’s all possible, thanks to our intuitive and easy to use
-                  GUI.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.settings.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Preferences
+                    </Typography>
+                    <Typography paragraph>
+                      Want a different theme or would you like to disable automatic
+                      updates? Don’t want your GIF’s to loop? It’s all possible,
+                      thanks to our intuitive and easy to use GUI.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Frame extraction
-                </Typography>
-                <Typography paragraph>
-                  As an added bonus, you can also extract each individual frame inside a GIF image
-                  to a format of your liking. Particularly interesting if you’re only interested in
-                  a single frame.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.image.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Frame extraction
+                    </Typography>
+                    <Typography paragraph>
+                      As an added bonus, you can also extract each individual
+                      frame inside a GIF image to a format of your liking.
+                      Particularly interesting if you’re only interested in a
+                      single frame.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.image.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

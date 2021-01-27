@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import {
@@ -14,6 +14,8 @@ import AnnouncementIcon from '@material-ui/icons/Announcement';
 import BuildIcon from '@material-ui/icons/Build';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
+import { MainContext } from '../contexts/MainContextProvider';
+import { setPageIndex } from '../reducers/MainReducer/Actions';
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -40,6 +42,12 @@ const Home = () => {
       }
     }
   }`);
+
+  const [, dispatch] = useContext(MainContext);
+
+  useEffect(() => {
+    dispatch(setPageIndex(0));
+  }, []);
 
   return (
     <Layout>

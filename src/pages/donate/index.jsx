@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Container } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import TableContainer from '@material-ui/core/TableContainer';
 import Table from '@material-ui/core/Table';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
@@ -16,9 +17,16 @@ import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import AlertDialog from '../../components/AlertDialog';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
+import { MainContext } from '../../contexts/MainContextProvider';
+import { setPageIndex } from '../../reducers/MainReducer/Actions';
 
 const Donate = () => {
+  const [, dispatch] = useContext(MainContext);
   const [btcOpen, setBtcOpen] = useState(false);
+
+  useEffect(() => {
+    dispatch(setPageIndex(3));
+  }, []);
 
   return (
     <Layout>
@@ -58,7 +66,7 @@ const Donate = () => {
           </CardContent>
         </Card>
 
-        <Typography variant="h5" color="textPrimary" style={{ marginTop: 10 }}>
+        <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
           <AccountBalanceIcon color="inherit" />
           {' '}
           Hall of fame
@@ -66,37 +74,39 @@ const Donate = () => {
 
         <Card style={{ marginTop: 10 }}>
           <CardContent>
-            <Table size="small">
-              <TableHead>
-                <TableRow>
-                  <TableCell>Date</TableCell>
-                  <TableCell>Name</TableCell>
-                  <TableCell>Amount</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                <TableRow>
-                  <TableCell>13/12/2015</TableCell>
-                  <TableCell>Jaschar Domann</TableCell>
-                  <TableCell>€5.00</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>16/05/2017</TableCell>
-                  <TableCell><a href="https://leomoon.com/">LeoMoon Studios</a></TableCell>
-                  <TableCell>€10.00</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>17/01/2019</TableCell>
-                  <TableCell>John B.</TableCell>
-                  <TableCell>€20.00</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>12/08/2019</TableCell>
-                  <TableCell>Anonymous</TableCell>
-                  <TableCell>€1.00</TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Date</TableCell>
+                    <TableCell>Name</TableCell>
+                    <TableCell>Amount</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <TableCell>13/12/2015</TableCell>
+                    <TableCell>Jaschar Domann</TableCell>
+                    <TableCell>€5.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>16/05/2017</TableCell>
+                    <TableCell><a href="https://leomoon.com/">LeoMoon Studios</a></TableCell>
+                    <TableCell>€10.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>17/01/2019</TableCell>
+                    <TableCell>John B.</TableCell>
+                    <TableCell>€20.00</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>12/08/2019</TableCell>
+                    <TableCell>Anonymous</TableCell>
+                    <TableCell>€1.00</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
           </CardContent>
         </Card>
 
@@ -104,12 +114,12 @@ const Donate = () => {
           <AlertDialog
             title="Donate"
             onClose={() => setBtcOpen(false)}
-            content="You can donate using this BTC address: 3PFD5MqnVeftqKiqhDVYodyk2izxWDLLMs"
+            content="You can donate using this BTC address: 1LCWomLj5AEM3t7C2XTj3PwGvs98GJEJx5"
             ok="OK"
           />
         ) : null}
 
-        <Typography variant="h5" color="textPrimary" style={{ marginTop: 10 }}>
+        <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
           <AttachMoneyIcon color="inherit" />
           {' '}
           Donate

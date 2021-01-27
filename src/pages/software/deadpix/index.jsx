@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import Layout from '../../../components/Layout';
 import PageHeader from '../../../components/PageHeader';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const DeadPixPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     main: file(relativePath: { eq: "DeadPix/deadpix.png" }) {
@@ -41,6 +44,10 @@ const DeadPixPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="DeadPix" subTitle="Fix broken pixels" />
@@ -59,47 +66,63 @@ const DeadPixPage = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Fix your display
-                </Typography>
-                <Typography paragraph>
-                  Fix dead or stuck pixels on your screen with just a couple of mouse clicks, free
-                  of charge!
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.main.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Fix your display
+                    </Typography>
+                    <Typography paragraph>
+                      Fix dead or stuck pixels on your screen with just a couple of mouse
+                      clicks, free of charge!
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.main.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.settings.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Method of action
-                </Typography>
-                <Typography paragraph>
-                  DeadPix can fix stuck or dead pixels by rapidly cycling the color value of the
-                  pixel. Please note that this tool does not provide a 100% success rate.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.settings.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Method of action
+                    </Typography>
+                    <Typography paragraph>
+                      DeadPix can fix stuck or dead pixels by rapidly cycling the color value of the
+                      pixel. Please note that this tool does not provide a 100% success rate.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Typography variant="h6">
-              Installation
-            </Typography>
-            <Typography paragraph>
-              DeadPix can be installed using the installer or if you don’t want to install it,
-              you can always use the portable version!
-            </Typography>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={12} lg={12}>
+                    <Typography variant="h6">
+                      Installation
+                    </Typography>
+                    <Typography paragraph>
+                      DeadPix can be installed using the installer or if you don’t want to install
+                      it, you can always use the portable version!
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

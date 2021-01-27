@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container } from '@material-ui/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image/index';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import Layout from '../../../components/Layout';
 import PageHeader from '../../../components/PageHeader';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const AdvancedPassGenPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     advancedpassgen: file(relativePath: { eq: "Advanced PassGen/ap.png" }) {
@@ -41,6 +44,10 @@ const AdvancedPassGenPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="Advanced PassGen" subTitle="Generate passwords with ease" />
@@ -59,57 +66,69 @@ const AdvancedPassGenPage = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Password generation
-                </Typography>
-                <Typography paragraph>
-                  Easily generate thousands of passwords using the options that are available in
-                  Advanced PassGen. You can even go so far as to define your own character set that
-                  Advanced PassGen can use to generate passwords!
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.advancedpassgen.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Password generation
+                    </Typography>
+                    <Typography paragraph>
+                      Easily generate thousands of passwords using the options that are available in
+                      Advanced PassGen. You can even go so far as to define your own character set
+                      that Advanced PassGen can use to generate passwords!
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.advancedpassgen.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.advancedpassgensettings.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Preferences
-                </Typography>
-                <Typography paragraph>
-                  Want a different theme or would you like to disable automatic updates? Don’t
-                  want to export a certain field? It’s all possible, thanks to our intuitive and
-                  easy to use GUI.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.advancedpassgensettings.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Preferences
+                    </Typography>
+                    <Typography paragraph>
+                      Want a different theme or would you like to disable automatic updates? Don’t
+                      want to export a certain field? It’s all possible, thanks to our intuitive and
+                      easy to use GUI.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Exporting
-                </Typography>
-                <Typography paragraph>
-                  Advanced PassGen can export any and all data that it generates for you in a couple
-                  of different formats including: HTML, CSV, JSON, Excel and of course plain text. A
-                  simple copy is also available!
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.advancedpassgensettingsadvanced.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Exporting
+                    </Typography>
+                    <Typography paragraph>
+                      Advanced PassGen can export any and all data that it generates for you in a
+                      couple of different formats including: HTML, CSV, JSON, Excel and of course
+                      plain text. A simple copy is also available!
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.advancedpassgensettingsadvanced.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

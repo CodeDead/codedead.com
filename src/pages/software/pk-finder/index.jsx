@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const PkFinderPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
@@ -41,6 +44,10 @@ const PkFinderPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="PK Finder" subTitle="Find your Windows product key" />
@@ -59,54 +66,66 @@ const PkFinderPage = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Product key
-                </Typography>
-                <Typography paragraph>
-                  Easily recover your Windows product key with PK Finder. As soon as you open PK
-                  Finder, you’ll be able to view your product key.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.pkfinder.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Product key
+                    </Typography>
+                    <Typography paragraph>
+                      Easily recover your Windows product key with PK Finder. As soon as you open PK
+                      Finder, you’ll be able to view your product key.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.pkfinder.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.general.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Preferences
-                </Typography>
-                <Typography paragraph>
-                  Want a different theme or would you like to disable automatic updates? It’s all
-                  possible, thanks to our intuitive and easy to use GUI.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.general.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Preferences
+                    </Typography>
+                    <Typography paragraph>
+                      Want a different theme or would you like to disable automatic updates?
+                      It’s all possible, thanks to our intuitive and easy to use GUI.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Exporting
-                </Typography>
-                <Typography paragraph>
-                  You can export your product key in any of the supported formats, including: HTML,
-                  Excel, CSV and of course plain text format.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.theme.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Exporting
+                    </Typography>
+                    <Typography paragraph>
+                      You can export your product key in any of the supported formats,
+                      including: HTML, Excel, CSV and of course plain text format.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.theme.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

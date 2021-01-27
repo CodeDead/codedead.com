@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -14,8 +14,11 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
+import { MainContext } from '../../../contexts/MainContextProvider';
+import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 
 const DeadHashPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`
   query {
     deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
@@ -41,6 +44,10 @@ const DeadHashPage = () => {
     }
   }`);
 
+  useEffect(() => {
+    dispatch(setPageIndex(-1));
+  }, []);
+
   return (
     <Layout>
       <PageHeader title="DeadHash" subTitle="File and text hash calculator" />
@@ -60,54 +67,67 @@ const DeadHashPage = () => {
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Simplicity
-                </Typography>
-                <Typography paragraph>
-                  Calculate file and text hashes with ease thanks to an easy to use GUI, drag and
-                  drop functionality and help documentation that are all included!
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.deadhash.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Simplicity
+                    </Typography>
+                    <Typography paragraph>
+                      Calculate file and text hashes with ease thanks to an easy
+                      to use GUI, drag and drop functionality and help documentation
+                      that are all included!
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.deadhash.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.deadhashresult.childImageSharp.fixed} />
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Formats
-                </Typography>
-                <Typography paragraph>
-                  MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHA224, SHA256, SHA384,
-                  SHA512 and RIPEMD160 are all supported out of the box.
-                </Typography>
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.deadhashresult.childImageSharp.fixed} />
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Formats
+                    </Typography>
+                    <Typography paragraph>
+                      MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512,
+                      SHA224, SHA256, SHA384, SHA512 and RIPEMD160 are all supported out of the box.
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6} lg={6}>
-                <Typography variant="h6">
-                  Cross platform
-                </Typography>
-                <Typography paragraph>
-                  DeadHash is available for Android, Linux and Windows out of the box, offering a
-                  similar look and feel on all platforms.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6} lg={6}>
-                <Img fixed={data.deadhashtext.childImageSharp.fixed} />
-              </Grid>
-            </Grid>
+            <Card>
+              <CardContent>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Typography variant="h6">
+                      Cross platform
+                    </Typography>
+                    <Typography paragraph>
+                      DeadHash is available for Android, Linux and Windows out of the box,
+                      offering a similar look and feel on all platforms.
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Img fixed={data.deadhashtext.childImageSharp.fixed} />
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
 

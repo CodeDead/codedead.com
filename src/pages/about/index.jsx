@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Container, SvgIcon } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -14,8 +14,11 @@ import LinkedInIcon from '../../components/LinkedInIcon';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
 import RedditIcon from '../../components/RedditIcon';
+import { MainContext } from '../../contexts/MainContextProvider';
+import { setPageIndex } from '../../reducers/MainReducer/Actions';
 
 const AboutPage = () => {
+  const [, dispatch] = useContext(MainContext);
   const data = useStaticQuery(graphql`query {
       site {
         siteMetadata {
@@ -34,6 +37,10 @@ const AboutPage = () => {
       window.open(url, '_blank');
     }
   };
+
+  useEffect(() => {
+    dispatch(setPageIndex(4));
+  }, []);
 
   return (
     <Layout>
@@ -54,8 +61,7 @@ const AboutPage = () => {
             <Typography variant="body2" color="textSecondary">
               CodeDead is based in Belgium. We try to help solve problems by writing code.
               The concept and idea behind CodeDead started in december 2014 and
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
-              we've been releasing free and open-source applications ever since!
+              we&apos;ve been releasing free and open-source applications ever since!
             </Typography>
 
             <Typography variant="h6" gutterBottom color="textPrimary">
@@ -68,7 +74,7 @@ const AboutPage = () => {
           </CardContent>
         </Card>
 
-        <Typography variant="h5" gutterBottom color="textPrimary" style={{ marginTop: 10 }}>
+        <Typography variant="h5" gutterBottom color="textPrimary" style={{ marginTop: 20 }}>
           <GroupIcon color="inherit" />
           {' '}
           Team
@@ -127,8 +133,7 @@ const AboutPage = () => {
                   projects. Translations,
                   code
                   contributions, donations, issue reporting and more. Thanks to all the people
-                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  who've made this a possibility!
+                  who&apos;ve made this a possibility!
                 </Typography>
               </CardContent>
             </Card>
