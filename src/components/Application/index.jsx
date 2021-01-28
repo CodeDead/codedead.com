@@ -4,23 +4,34 @@ import { navigate } from 'gatsby';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
+import { CardHeader } from '@material-ui/core';
 
-const Application = ({ name, description, url }) => (
-  <Card style={{ height: '100%' }}>
-    <CardActionArea
-      style={{ height: '100%' }}
-      onClick={() => navigate(url)}
-    >
-      <CardContent>
-        <Typography variant="h6" color="textPrimary" paragraph>
-          {name}
-        </Typography>
-        <Typography color="textSecondary" paragraph>
-          {description}
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
-);
+const Application = ({ name, description, url }) => {
+  /**
+   * Go to the designated URL
+   */
+  const goToUrl = () => {
+    navigate(url);
+  };
+
+  return (
+    <Card style={{ height: '100%' }}>
+      <CardHeader
+        title={name}
+        style={{ cursor: 'pointer' }}
+        onClick={goToUrl}
+      />
+      <CardActionArea
+        onClick={goToUrl}
+      >
+        <CardContent>
+          <Typography color="textSecondary" paragraph>
+            {description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+};
 
 export default Application;
