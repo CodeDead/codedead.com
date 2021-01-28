@@ -128,7 +128,7 @@ const Donate = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell>16/05/2017</TableCell>
-                    <TableCell><a href="https://leomoon.com/">LeoMoon Studios</a></TableCell>
+                    <TableCell><a href="https://leomoon.com/" target="_blank">LeoMoon Studios</a></TableCell>
                     <TableCell>€10.00</TableCell>
                   </TableRow>
                   <TableRow>
