@@ -74,6 +74,36 @@ const Donate = () => {
         </Card>
 
         <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
+          <AttachMoneyIcon color="inherit" />
+          {' '}
+          Donate
+        </Typography>
+
+        <Grid container spacing={2} style={{ marginTop: 10 }}>
+          <Grid item xs={12} md={6} lg={6}>
+            <Button
+              variant="outlined"
+              color="primary"
+              target="_blank"
+              href="https://paypal.me/codedead"
+              style={{ width: '100%' }}
+            >
+              Donate via PayPal
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={6} lg={6}>
+            <Button
+              variant="outlined"
+              color="primary"
+              style={{ width: '100%' }}
+              onClick={() => setBtcOpen(true)}
+            >
+              Donate BTC
+            </Button>
+          </Grid>
+        </Grid>
+
+        <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
           <AccountBalanceIcon color="inherit" />
           {' '}
           Hall of fame
@@ -125,36 +155,6 @@ const Donate = () => {
             ok="OK"
           />
         ) : null}
-
-        <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
-          <AttachMoneyIcon color="inherit" />
-          {' '}
-          Donate
-        </Typography>
-
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
-            <Button
-              variant="outlined"
-              color="primary"
-              target="_blank"
-              href="https://paypal.me/codedead"
-              style={{ width: '100%' }}
-            >
-              Donate via PayPal
-            </Button>
-          </Grid>
-          <Grid item xs={12} md={6} lg={6}>
-            <Button
-              variant="outlined"
-              color="primary"
-              style={{ width: '100%' }}
-              onClick={() => setBtcOpen(true)}
-            >
-              Donate BTC
-            </Button>
-          </Grid>
-        </Grid>
       </Container>
     </Layout>
   );
