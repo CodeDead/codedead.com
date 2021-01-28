@@ -1,8 +1,16 @@
 import React, { useReducer, createContext } from 'react';
 import MainReducer from '../../reducers/MainReducer';
 
+const themeIndex = localStorage.themeIndex ? parseFloat(localStorage.themeIndex) : 0;
+const themeColorIndex = localStorage.themeColorIndex ? parseFloat(localStorage.themeColorIndex) : 0;
+
 const initState = {
   pageIndex: 0,
+  themeIndex,
+  themeColorIndex,
+  themes: {
+    defaultColor: '#3f50b5',
+  },
 };
 
 export const MainContext = createContext(initState);

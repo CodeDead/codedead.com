@@ -1,4 +1,8 @@
-import { SET_PAGE_INDEX } from './Actions/actionTypes';
+import {
+  SET_PAGE_INDEX,
+  SET_THEME_COLOR_INDEX,
+  SET_THEME_INDEX,
+} from './Actions/actionTypes';
 
 const MainReducer = (state, action) => {
   switch (action.type) {
@@ -6,6 +10,18 @@ const MainReducer = (state, action) => {
       return {
         ...state,
         pageIndex: action.payload,
+      };
+    case SET_THEME_INDEX:
+      localStorage.themeIndex = action.payload;
+      return {
+        ...state,
+        themeIndex: action.payload,
+      };
+    case SET_THEME_COLOR_INDEX:
+      localStorage.themeColorIndex = action.payload;
+      return {
+        ...state,
+        themeColorIndex: action.payload,
       };
     default:
       return state;
