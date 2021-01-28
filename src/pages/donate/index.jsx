@@ -42,23 +42,30 @@ const Donate = () => {
             <Typography>
               Donations are always welcome. All of the money that is donated to us will go towards
               the development of new and old projects, the maintenance of our servers, domain name
-              fees and the occasional cup of coffee! Simply click the PayPal or BTC button to start
-              the donation process! PayPal allows you to donate using practically any payment method
-              you like. Brave tips are also welcome!
-              <br />
-              <br />
-              Don’t worry if you don’t immediately appear in the hall of fame. We’ll update the hall
-              of fame within 3 days after your donation (and if we haven’t, because we should have,
-              send us a mail to let us know!!). In case of a BTC donation, please email us if you’d
+              fees and the occasional cup of coffee! Simply click the PayPal or BTC button to
+              start the donation process! PayPal allows you to donate using practically
+              any payment method you like. Brave tips are also welcome!
+            </Typography>
+
+            <Typography style={{ marginTop: 20 }}>
+              Don’t worry if you don’t immediately appear in the hall of fame. We’ll update the
+              hall of fame within 3 days after your donation (and if we haven’t, because we should
+              have, send us a mail to let us know!!).
+            </Typography>
+
+            <Typography style={{ marginTop: 20 }}>
+              In case of a BTC donation, please email us if you’d
               like to appear in the hall of fame, otherwise it will show up as an anonymous
               donation.
-              <br />
-              <br />
+            </Typography>
+
+            <Typography style={{ marginTop: 20 }}>
               Even if you don’t want to donate, simply spreading the word means a lot to us. Thank
               you for your interest in our software and for making the world a better place,
               together!
-              <br />
-              <br />
+            </Typography>
+
+            <Typography style={{ marginTop: 20 }}>
               If you don’t want your name to appear in the hall of fame or would like to have it
               removed, feel free to let us know in the message of the donation or by sending us an
               e-mail.

@@ -50,7 +50,7 @@ const AdvancedPortCheckerPage = () => {
 
   return (
     <Layout>
-      <PageHeader title="Advanced PortChecker" subTitle="Check TCP/UDP ports" />
+      <PageHeader title="Advanced PortChecker" subTitle="Scan for open TCP/UDP ports" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
