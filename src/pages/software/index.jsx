@@ -94,6 +94,7 @@ const Software = () => {
             <Card>
               <CardContent>
                 <TextField
+                  autoFocus
                   value={searchValue}
                   onChange={(e) => setSearchValue(e.target.value)}
                   variant="outlined"
