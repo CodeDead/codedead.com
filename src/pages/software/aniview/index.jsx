@@ -151,7 +151,7 @@ const AniViewPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/AniView/AV_setup.exe"
             >
@@ -162,7 +162,7 @@ const AniViewPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/AniView/AV_portable.zip"
             >
@@ -217,8 +217,7 @@ const AniViewPage = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  variant="outlined"
-                  color="primary"
+                  variant="contained"
                   href="https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Viewers/AniView.shtml"
                   target="_blank"
                 >
@@ -244,7 +243,7 @@ const AniViewPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="/software/aniview/requirements"
               style={{ width: '100%' }}
             >
@@ -254,7 +253,7 @@ const AniViewPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/AniView/help.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -266,7 +265,7 @@ const AniViewPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="hhttps://codedead.com/Software/AniView/gpl.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -277,7 +276,7 @@ const AniViewPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://github.com/CodeDead/AniView"
               target="_blank"
               style={{ width: '100%' }}

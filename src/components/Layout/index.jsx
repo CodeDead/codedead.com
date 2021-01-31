@@ -6,6 +6,7 @@ import DefaultAppBar from '../DefaultAppBar';
 import Footer from '../Footer';
 import { MainContext } from '../../contexts/MainContextProvider';
 import ThemeSelector from '../../utils/ThemeSelector';
+import './index.css';
 
 const Layout = ({ children }) => {
   const [state] = useContext(MainContext);
@@ -39,14 +40,13 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <DefaultAppBar
-        title={data.site.siteMetadata.title}
+      <DefaultAppBar title={data.site.siteMetadata.title} />
+      {children}
+      <Footer
+        facebookUrl={data.site.siteMetadata.facebook}
         githubUrl={data.site.siteMetadata.github}
         twitterUrl={data.site.siteMetadata.twitter}
-        facebookUrl={data.site.siteMetadata.facebook}
       />
-      {children}
-      <Footer />
     </ThemeProvider>
   );
 };

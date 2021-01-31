@@ -9,6 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import GroupIcon from '@material-ui/icons/Group';
 import InfoIcon from '@material-ui/icons/Info';
 import { graphql, useStaticQuery } from 'gatsby';
+import Divider from '@material-ui/core/Divider';
 import GitHubIcon from '../../components/GithubIcon';
 import LinkedInIcon from '../../components/LinkedInIcon';
 import PageHeader from '../../components/PageHeader';
@@ -45,13 +46,19 @@ const AboutPage = () => {
   return (
     <Layout>
       <PageHeader title="About" subTitle="Solving problems using software!" />
-      <Container maxWidth="md">
-
-        <Typography variant="h5" gutterBottom color="textPrimary" style={{ marginTop: 10 }}>
-          <InfoIcon color="inherit" />
-          {' '}
-          General
-        </Typography>
+      <Container maxWidth="md" style={{ marginTop: 10 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary">
+              <InfoIcon color="inherit" />
+              {' '}
+              General
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
 
         <Card style={{ marginTop: 10 }}>
           <CardContent>
@@ -74,11 +81,18 @@ const AboutPage = () => {
           </CardContent>
         </Card>
 
-        <Typography variant="h5" gutterBottom color="textPrimary" style={{ marginTop: 20 }}>
-          <GroupIcon color="inherit" />
-          {' '}
-          Team
-        </Typography>
+        <Grid container spacing={2} style={{ marginTop: 20 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary">
+              <GroupIcon color="inherit" />
+              {' '}
+              Team
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
 
         <Grid container spacing={2}>
           <Grid item xs={12} md={6} lg={6}>

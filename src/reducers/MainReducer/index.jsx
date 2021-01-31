@@ -1,4 +1,5 @@
 import {
+  SET_BLOG_LIMIT,
   SET_PAGE_INDEX,
   SET_THEME_COLOR_INDEX,
   SET_THEME_INDEX,
@@ -22,6 +23,11 @@ const MainReducer = (state, action) => {
       return {
         ...state,
         themeColorIndex: action.payload,
+      };
+    case SET_BLOG_LIMIT:
+      return {
+        ...state,
+        blogLimit: action.payload,
       };
     default:
       return state;

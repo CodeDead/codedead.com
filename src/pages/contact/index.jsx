@@ -58,22 +58,20 @@ const ContactPage = () => {
               height: '100%',
             }}
             >
-              <CardActionArea>
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="h2">
-                    Report an issue
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Feel free to report issues on any of the GitHub repositories for our software
-                    projects. You can also contact us directly by sending us an email.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <CardContent>
+                <Typography gutterBottom variant="h6" component="h2">
+                  Report an issue
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Feel free to report issues on any of the GitHub repositories for our software
+                  projects. You can also contact us directly by sending us an email.
+                </Typography>
+              </CardContent>
               <CardActions>
-                <Button variant="outlined" color="primary" onClick={openGithub}>
+                <Button variant="outlined" onClick={openGithub}>
                   GitHub
                 </Button>
-                <Button variant="outlined" color="primary" onClick={() => setContactOpen(true)}>
+                <Button variant="outlined" onClick={() => setContactOpen(true)}>
                   Contact
                 </Button>
               </CardActions>
@@ -85,19 +83,17 @@ const ContactPage = () => {
               height: '100%',
             }}
             >
-              <CardActionArea>
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="h2">
-                    Other
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    If you have any questions, feel free to send us an email.
-                    All advertisement offers will be discarded instantly without notification.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <CardContent>
+                <Typography gutterBottom variant="h6" component="h2">
+                  Other
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  If you have any questions, feel free to send us an email.
+                  All advertisement offers will be discarded instantly without notification.
+                </Typography>
+              </CardContent>
               <CardActions>
-                <Button variant="outlined" color="primary" onClick={() => setContactOpen(true)}>
+                <Button variant="outlined" onClick={() => setContactOpen(true)}>
                   Contact
                 </Button>
               </CardActions>

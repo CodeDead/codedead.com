@@ -150,7 +150,7 @@ const MemPlusPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/MemPlus/MP_setup.exe"
             >
@@ -161,7 +161,7 @@ const MemPlusPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/MemPlus/MP_portable.zip"
             >
@@ -206,8 +206,7 @@ const MemPlusPage = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  variant="outlined"
-                  color="primary"
+                  variant="contained"
                   href="http://www.softpedia.com/get/Tweak/Memory-Tweak/MemPlus-CodeDead.shtml"
                   target="_blank"
                 >
@@ -233,7 +232,7 @@ const MemPlusPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="/software/memplus/requirements"
               style={{ width: '100%' }}
             >
@@ -243,7 +242,7 @@ const MemPlusPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/MemPlus/help.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -255,7 +254,7 @@ const MemPlusPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/MemPlus/gpl.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -266,7 +265,7 @@ const MemPlusPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://github.com/CodeDead/MemPlus"
               target="_blank"
               style={{ width: '100%' }}

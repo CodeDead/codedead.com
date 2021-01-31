@@ -14,6 +14,7 @@ import TableBody from '@material-ui/core/TableBody';
 import InfoIcon from '@material-ui/icons/Info';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import Divider from '@material-ui/core/Divider';
 import AlertDialog from '../../components/AlertDialog';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
@@ -32,11 +33,18 @@ const Donate = () => {
     <Layout>
       <PageHeader title="Donate" subTitle="Keep us going" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Typography variant="h5" color="textPrimary" style={{ marginTop: 10 }}>
-          <InfoIcon color="inherit" />
-          {' '}
-          General
-        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary" style={{ marginTop: 10 }}>
+              <InfoIcon color="inherit" />
+              {' '}
+              General
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
         <Card style={{ marginTop: 10 }}>
           <CardContent>
             <Typography>
@@ -73,17 +81,23 @@ const Donate = () => {
           </CardContent>
         </Card>
 
-        <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
-          <AttachMoneyIcon color="inherit" />
-          {' '}
-          Donate
-        </Typography>
+        <Grid container spacing={2} style={{ marginTop: 20 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary">
+              <AttachMoneyIcon color="inherit" />
+              {' '}
+              Donate
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={6} lg={6}>
             <Button
               variant="outlined"
-              color="primary"
               target="_blank"
               href="https://paypal.me/codedead"
               style={{ width: '100%' }}
@@ -94,7 +108,6 @@ const Donate = () => {
           <Grid item xs={12} md={6} lg={6}>
             <Button
               variant="outlined"
-              color="primary"
               style={{ width: '100%' }}
               onClick={() => setBtcOpen(true)}
             >
@@ -103,11 +116,18 @@ const Donate = () => {
           </Grid>
         </Grid>
 
-        <Typography variant="h5" color="textPrimary" style={{ marginTop: 20 }}>
-          <AccountBalanceIcon color="inherit" />
-          {' '}
-          Hall of fame
-        </Typography>
+        <Grid container spacing={2} style={{ marginTop: 20 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary">
+              <AccountBalanceIcon color="inherit" />
+              {' '}
+              Hall of fame
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
 
         <Card style={{ marginTop: 10 }}>
           <CardContent>

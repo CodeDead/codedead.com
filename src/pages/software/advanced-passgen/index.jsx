@@ -150,7 +150,7 @@ const AdvancedPassGenPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/Advanced%20PassGen/AP_setup.exe"
             >
@@ -161,7 +161,7 @@ const AdvancedPassGenPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/Advanced%20PassGen/AP_portable.zip"
             >
@@ -214,8 +214,7 @@ const AdvancedPassGenPage = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  variant="outlined"
-                  color="primary"
+                  variant="contained"
                   href="https://www.softpedia.com/get/Security/Password-Managers-Generators/Advanced-PassGen.shtml"
                   target="_blank"
                 >
@@ -241,7 +240,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="/software/advanced-passgen/requirements"
               style={{ width: '100%' }}
             >
@@ -251,7 +250,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/Advanced%20PassGen/help.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -263,7 +262,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/Advanced%20PassGen/gpl.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -274,7 +273,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://github.com/CodeDead/Advanced-PassGen"
               target="_blank"
               style={{ width: '100%' }}

@@ -16,10 +16,24 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { MainContext } from '../contexts/MainContextProvider';
 import { setPageIndex } from '../reducers/MainReducer/Actions';
+import BlogList from '../components/BlogList';
+import CardActionArea from '@material-ui/core/CardActionArea';
 
 const Home = () => {
   const data = useStaticQuery(graphql`
   query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            date(formatString: "MMMM DD, YYYY")
+            abstract
+          }
+        }
+      }
+    },
     deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
       childImageSharp {
         fluid(maxHeight: 250) {
@@ -68,109 +82,97 @@ const Home = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Card>
-              <CardContent>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Link to="/software/memplus">
-                      <Img fluid={{
-                        ...data.memplus.childImageSharp.fluid,
-                        aspectRatio: 21 / 9,
-                      }}
-                      />
-                    </Link>
+              <CardActionArea
+                onClick={() => navigate('/software/memplus')}
+              >
+                <CardContent>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} md={6} lg={6}>
+                      <Link to="/software/memplus">
+                        <Img fluid={{
+                          ...data.memplus.childImageSharp.fluid,
+                          aspectRatio: 21 / 9,
+                        }}
+                        />
+                      </Link>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={6}>
+                      <Typography variant="h6" color="textPrimary" paragraph>
+                        MemPlus
+                      </Typography>
+                      <Typography color="textSecondary" paragraph>
+                        MemPlus can be used to reduce the amount of RAM that is being used by
+                        applications on your system. In essence, freeing up memory so that more
+                        memory is available to you!
+                      </Typography>
+                    </Grid>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Typography variant="h6" color="textPrimary" paragraph>
-                      MemPlus
-                    </Typography>
-                    <Typography color="textSecondary" paragraph>
-                      MemPlus can be used to reduce the amount of RAM that is being used by
-                      applications on your system. In essence, freeing up memory so that more memory
-                      is available to you!
-                    </Typography>
-                    <Button
-                      style={{ width: '100%' }}
-                      color="primary"
-                      variant="outlined"
-                      onClick={() => navigate('/software/memplus')}
-                    >
-                      Download now
-                    </Button>
-                  </Grid>
-                </Grid>
-              </CardContent>
+                </CardContent>
+              </CardActionArea>
             </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
             <Card>
-              <CardContent>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Link to="/software/deadhash">
-                      <Img fluid={{
-                        ...data.deadhash.childImageSharp.fluid,
-                        aspectRatio: 21 / 9,
-                      }}
-                      />
-                    </Link>
+              <CardActionArea
+                onClick={() => navigate('/software/deadhash')}
+              >
+                <CardContent>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} md={6} lg={6}>
+                      <Link to="/software/deadhash">
+                        <Img fluid={{
+                          ...data.deadhash.childImageSharp.fluid,
+                          aspectRatio: 21 / 9,
+                        }}
+                        />
+                      </Link>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={6}>
+                      <Typography variant="h6" color="textPrimary" paragraph>
+                        DeadHash
+                      </Typography>
+                      <Typography color="textSecondary" paragraph>
+                        Calculate file hashes on any platform with ease thanks to an easy to
+                        use GUI, drag and drop functionality and help documentation that
+                        are all included!
+                      </Typography>
+                    </Grid>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Typography variant="h6" color="textPrimary" paragraph>
-                      DeadHash
-                    </Typography>
-                    <Typography color="textSecondary" paragraph>
-                      Calculate file hashes on any platform with ease thanks to an easy to use GUI,
-                      drag and drop functionality and help documentation that are all included!
-                    </Typography>
-                    <Button
-                      style={{ width: '100%' }}
-                      color="primary"
-                      variant="outlined"
-                      onClick={() => navigate('/software/deadhash')}
-                    >
-                      Download now
-                    </Button>
-                  </Grid>
-                </Grid>
-              </CardContent>
+                </CardContent>
+              </CardActionArea>
             </Card>
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
             <Card>
-              <CardContent>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Link to="/software/pk-finder">
-                      <Img fluid={{
-                        ...data.pkfinder.childImageSharp.fluid,
-                        aspectRatio: 21 / 9,
-                      }}
-                      />
-                    </Link>
-                  </Grid>
+              <CardActionArea
+                onClick={() => navigate('/software/pk-finder')}
+              >
+                <CardContent>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} md={6} lg={6}>
+                      <Link to="/software/pk-finder">
+                        <Img fluid={{
+                          ...data.pkfinder.childImageSharp.fluid,
+                          aspectRatio: 21 / 9,
+                        }}
+                        />
+                      </Link>
+                    </Grid>
 
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Typography variant="h6" color="textPrimary" paragraph>
-                      PK Finder
-                    </Typography>
-                    <Typography color="textSecondary" paragraph>
-                      Easily recover your Windows Product Key with PK Finder. As soon as you open PK
-                      Finder,
-                      you’ll be able to view your product key.
-                    </Typography>
-                    <Button
-                      style={{ width: '100%' }}
-                      color="primary"
-                      variant="outlined"
-                      onClick={() => navigate('/software/pk-finder')}
-                    >
-                      Download now
-                    </Button>
+                    <Grid item xs={12} md={6} lg={6}>
+                      <Typography variant="h6" color="textPrimary" paragraph>
+                        PK Finder
+                      </Typography>
+                      <Typography color="textSecondary" paragraph>
+                        Easily recover your Windows Product Key with PK Finder. As soon as you open
+                        PK Finder, you’ll be able to view your product key.
+                      </Typography>
+                    </Grid>
                   </Grid>
-                </Grid>
-              </CardContent>
+                </CardContent>
+              </CardActionArea>
             </Card>
           </Grid>
 
@@ -198,6 +200,9 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
             <Divider />
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <BlogList blogPosts={data.allMarkdownRemark.edges} />
           </Grid>
         </Grid>
 

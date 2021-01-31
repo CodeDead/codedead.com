@@ -147,7 +147,7 @@ const PkFinderPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/PK%20Finder/PK_setup.exe"
             >
@@ -158,7 +158,7 @@ const PkFinderPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/PK%20Finder/PK_portable.zip"
             >
@@ -203,8 +203,7 @@ const PkFinderPage = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  variant="outlined"
-                  color="primary"
+                  variant="contained"
                   href="https://www.softpedia.com/get/System/System-Info/PK-Finder.shtml"
                   target="_blank"
                 >
@@ -230,7 +229,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="/software/pk-finder/requirements"
               style={{ width: '100%' }}
             >
@@ -240,7 +239,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/PK%20Finder/help.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -252,7 +251,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/PK%20Finder/gpl.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -263,7 +262,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://github.com/CodeDead/PK-Finder"
               target="_blank"
               style={{ width: '100%' }}

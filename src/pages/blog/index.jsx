@@ -1,22 +1,155 @@
 import React, { useContext, useEffect } from 'react';
 import Container from '@material-ui/core/Container';
+import { graphql, useStaticQuery } from 'gatsby';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import Layout from '../../components/Layout';
 import PageHeader from '../../components/PageHeader';
 import { MainContext } from '../../contexts/MainContextProvider';
-import { setPageIndex } from '../../reducers/MainReducer/Actions';
+import { setBlogLimit, setPageIndex } from '../../reducers/MainReducer/Actions';
+import BlogList from '../../components/BlogList';
+import FirstPageIcon from '@material-ui/icons/FirstPage';
+import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
+import SkipNextIcon from '@material-ui/icons/SkipNext';
+import LastPageIcon from '@material-ui/icons/LastPage';
 
 const Blog = () => {
-  const [, dispatch] = useContext(MainContext);
+  const [state, dispatch] = useContext(MainContext);
+  const { blogLimit } = state;
+  const skip = 10;
+
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            date(formatString: "MMMM DD, YYYY")
+            abstract
+          }
+        }
+      }
+    }
+  }`);
+
+  /**
+   * Go to the next slice of blog posts
+   */
+  const gotoNext = () => {
+    let newLimit = blogLimit + skip;
+    if (newLimit > allMarkdownRemark.edges.length) {
+      newLimit = allMarkdownRemark.edges.length;
+    }
+    dispatch(setBlogLimit(newLimit));
+  };
+
+  /**
+   * Go to the first slice of blog posts
+   */
+  const gotoFirst = () => {
+    dispatch(setBlogLimit(0));
+  };
+
+  /**
+   * Go to the last page
+   */
+  const gotoLast = () => {
+    const mod = allMarkdownRemark.edges.length % skip;
+    let newLimit = Math.floor(allMarkdownRemark.edges.length / skip) * skip - skip;
+    if (mod > 0) {
+      newLimit = Math.floor(allMarkdownRemark.edges.length / skip) * skip;
+    }
+    dispatch(setBlogLimit(newLimit));
+  };
+
+  /**
+   * Go to the previous slice of blog posts
+   */
+  const gotoPrevious = () => {
+    let newLimit = blogLimit - skip;
+    if (newLimit < 0) {
+      newLimit = 0;
+    }
+    dispatch(setBlogLimit(newLimit));
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(2));
   }, []);
 
+  let maxSlice = blogLimit + skip;
+  if (maxSlice > allMarkdownRemark.edges.length) {
+    maxSlice = allMarkdownRemark.edges.length;
+  }
+
   return (
     <Layout>
       <PageHeader title="Blog" subTitle="Read our status updates" />
-      <Container maxWidth="sm">
-        T.B.D.
+      <Container maxWidth="md" style={{ marginTop: 10 }}>
+        <Grid container spacing={1}>
+          <Grid item xs={12} md={12} lg={12}>
+            <BlogList blogPosts={allMarkdownRemark.edges.slice(blogLimit, maxSlice)} />
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            {maxSlice < allMarkdownRemark.edges.length ? (
+              <>
+                <Button
+                  style={{
+                    marginTop: 10,
+                    float: 'right',
+                  }}
+                  variant="outlined"
+                  onClick={gotoLast}
+                  title="Last"
+                >
+                  <LastPageIcon color="inherit" />
+                </Button>
+                <Button
+                  style={{
+                    marginTop: 10,
+                    marginRight: 5,
+                    float: 'right',
+                  }}
+                  variant="outlined"
+                  onClick={gotoNext}
+                  title="Next"
+                >
+                  <SkipNextIcon color="inherit" />
+                </Button>
+              </>
+            ) : null}
+            {blogLimit !== 0 ? (
+              <>
+                <Button
+                  style={{
+                    marginTop: 10,
+                    marginRight: maxSlice < allMarkdownRemark.edges.length ? 5 : 0,
+                    float: 'right',
+                  }}
+                  variant="outlined"
+                  onClick={gotoPrevious}
+                  title="Previous"
+                >
+                  <SkipPreviousIcon color="inherit" />
+                </Button>
+                <Button
+                  style={{
+                    marginTop: 10,
+                    marginRight: 5,
+                    float: 'right',
+                  }}
+                  variant="outlined"
+                  onClick={gotoFirst}
+                  title="First"
+                >
+                  <FirstPageIcon color="inherit" />
+                </Button>
+              </>
+            ) : null}
+          </Grid>
+        </Grid>
       </Container>
     </Layout>
   );

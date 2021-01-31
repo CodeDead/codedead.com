@@ -1,4 +1,5 @@
 import {
+  SET_BLOG_LIMIT,
   SET_PAGE_INDEX,
   SET_THEME_COLOR_INDEX,
   SET_THEME_INDEX,
@@ -17,4 +18,9 @@ export const setThemeIndex = (index) => ({
 export const setThemeColorIndex = (index) => ({
   type: SET_THEME_COLOR_INDEX,
   payload: index,
+});
+
+export const setBlogLimit = (limit) => ({
+  type: SET_BLOG_LIMIT,
+  payload: limit,
 });

@@ -110,7 +110,7 @@ const Requirements = () => {
           <Grid item xs={12} md={6} lg={6}>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://www.virustotal.com/#/file/82400b0be59a9b83fc3b78332bbec98eeb3dff6be91aafd4e7cfa09e75820db5/detection"
               target="_blank"
@@ -121,7 +121,7 @@ const Requirements = () => {
           <Grid item xs={12} md={6} lg={6}>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://www.virustotal.com/#/file/01a49424a25f439ca8a595d0c67e7a215f3b201bd469ea85554d8e42facfea4a/detection"
               target="_blank"

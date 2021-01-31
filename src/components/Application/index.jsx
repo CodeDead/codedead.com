@@ -16,14 +16,13 @@ const Application = ({ name, description, url }) => {
 
   return (
     <Card style={{ height: '100%' }}>
-      <CardHeader
-        title={name}
-        style={{ cursor: 'pointer' }}
-        onClick={goToUrl}
-      />
       <CardActionArea
         onClick={goToUrl}
+        style={{ height: '100%' }}
       >
+        <CardHeader
+          title={name}
+        />
         <CardContent>
           <Typography color="textSecondary" paragraph>
             {description}

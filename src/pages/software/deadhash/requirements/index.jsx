@@ -95,7 +95,7 @@ const Requirements = () => {
             </Typography>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/903b947bb03f02b7f4fda8417f0ca57c6b0e12463896d9e22aba90d9494022a0/detection"
               target="_blank"
@@ -104,7 +104,7 @@ const Requirements = () => {
             </Button>
             <Button
               style={{ width: '100%', marginTop: 10 }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/e1e7d3c6a7deff4da6567fdd983bcc5d103a4e35842e0c34c5c4c21d910d0226/detection"
               target="_blank"
@@ -118,7 +118,7 @@ const Requirements = () => {
             </Typography>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/1ba1335dd39ba7c92a528f9833fce04a2c9b040a4c28b53e3341e50871c9ef5e/detection"
               target="_blank"

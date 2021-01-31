@@ -1,30 +1,53 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import Brightness7Icon from '@material-ui/icons/Brightness7';
-import Brightness5Icon from '@material-ui/icons/Brightness5';
-import { MainContext } from '../../contexts/MainContextProvider';
-import { setThemeIndex } from '../../reducers/MainReducer/Actions';
+import { SvgIcon } from '@material-ui/core';
+import FacebookIcon from '../FacebookIcon';
+import TwitterIcon from '../TwitterIcon';
+import GitHubIcon from '../GithubIcon';
 
-const Footer = () => {
-  const [state, dispatch] = useContext(MainContext);
-  const currentYear = new Date().getFullYear();
-
-  const { themeIndex } = state;
-
+const Footer = ({ facebookUrl, githubUrl, twitterUrl }) => {
   /**
-   * Change the theme
+   * Open a website
+   * @param site The website that should be opened
    */
-  const changeTheme = () => {
-    dispatch(setThemeIndex(themeIndex === 1 ? 0 : 1));
+  const openSite = (site) => {
+    if (site) {
+      window.open(site, '_blank');
+    }
   };
 
   return (
-    <BottomNavigation showLabels style={{ marginTop: 20 }}>
-      <BottomNavigationAction label={`Copyright © ${currentYear} CodeDead`} />
+    <BottomNavigation
+      showLabels
+      style={{ marginTop: 20 }}
+    >
       <BottomNavigationAction
-        icon={themeIndex === 0 ? <Brightness5Icon /> : <Brightness7Icon />}
-        onClick={changeTheme}
+        icon={(
+          <SvgIcon>
+            <FacebookIcon />
+          </SvgIcon>
+        )}
+        label="Facebook"
+        onClick={() => openSite(facebookUrl)}
+      />
+      <BottomNavigationAction
+        icon={(
+          <SvgIcon>
+            <TwitterIcon />
+          </SvgIcon>
+        )}
+        label="Twitter"
+        onClick={() => openSite(twitterUrl)}
+      />
+      <BottomNavigationAction
+        icon={(
+          <SvgIcon>
+            <GitHubIcon />
+          </SvgIcon>
+        )}
+        label="GitHub"
+        onClick={() => openSite(githubUrl)}
       />
     </BottomNavigation>
   );

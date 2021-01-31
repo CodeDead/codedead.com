@@ -106,7 +106,7 @@ const Requirements = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://virustotal.com/en/file/edfe8daab3ff2ac264a7cf44699b8d1e96de1cba9ec03eaba0ccb0c8e988bd00/analysis/"
               target="_blank"

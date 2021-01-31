@@ -150,7 +150,7 @@ const DeadHashPage = () => {
             </Typography>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://play.google.com/store/apps/details?id=com.codedead.deadhash"
               target="_blank"
@@ -164,7 +164,7 @@ const DeadHashPage = () => {
             </Typography>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.0.3.exe"
             >
@@ -175,7 +175,7 @@ const DeadHashPage = () => {
                 width: '100%',
                 marginTop: 10,
               }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://codedead.com/Software/DeadHash/DeadHash%202.0.3.exe"
             >
@@ -188,7 +188,7 @@ const DeadHashPage = () => {
             </Typography>
             <Button
               style={{ width: '100%' }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               href="https://codedead.com/Software/DeadHash/DeadHash-2.0.3.AppImage"
             >
@@ -233,8 +233,7 @@ const DeadHashPage = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  variant="outlined"
-                  color="primary"
+                  variant="contained"
                   href="https://www.softpedia.com/get/Security/Security-Related/DeadHash.shtml"
                   target="_blank"
                 >
@@ -260,7 +259,7 @@ const DeadHashPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="/software/deadhash/requirements"
               style={{ width: '100%' }}
             >
@@ -270,7 +269,7 @@ const DeadHashPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/DeadHash/help.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -282,7 +281,7 @@ const DeadHashPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/DeadHash/gpl.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -293,7 +292,7 @@ const DeadHashPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://github.com/CodeDead/DeadHash-js"
               target="_blank"
               style={{ width: '100%' }}

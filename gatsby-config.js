@@ -12,6 +12,7 @@ module.exports = {
     title: 'CodeDead',
     description: 'Solving problems using code',
     siteUrl: 'https://codedead.com',
+    author: 'CodeDead',
     github: 'https://github.com/CodeDead',
     twitter: 'https://twitter.com/C0DEDEAD',
     reddit: 'https://reddit.com/r/CodeDead/',
@@ -25,6 +26,29 @@ module.exports = {
         path: path.join(__dirname, 'src', 'images'),
       },
     },
-    'gatsby-theme-material-ui', 'gatsby-transformer-sharp', 'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/markdown/blog`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+    'gatsby-transformer-remark',
+    'gatsby-theme-material-ui',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
   ],
 };

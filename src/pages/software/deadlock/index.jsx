@@ -149,7 +149,7 @@ const DeadLockPage = () => {
             <Button
               size="large"
               color="primary"
-              variant="outlined"
+              variant="contained"
               style={{ width: '100%' }}
               href="https://codedead.com/Software/DeadLock/dl_setup.exe"
             >
@@ -202,8 +202,7 @@ const DeadLockPage = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  variant="outlined"
-                  color="primary"
+                  variant="contained"
                   href="https://www.softpedia.com/get/System/File-Management/DeadLock-CodeDead.shtml"
                   target="_blank"
                 >
@@ -229,7 +228,7 @@ const DeadLockPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="/software/deadlock/requirements"
               style={{ width: '100%' }}
             >
@@ -239,7 +238,7 @@ const DeadLockPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/DeadLock/help.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -251,7 +250,7 @@ const DeadLockPage = () => {
           <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://codedead.com/Software/DeadLock/gpl.pdf"
               target="_blank"
               style={{ width: '100%' }}
@@ -262,7 +261,7 @@ const DeadLockPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Button
               color="primary"
-              variant="outlined"
+              variant="contained"
               href="https://github.com/CodeDead/DeadLock"
               target="_blank"
               style={{ width: '100%' }}
