@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
@@ -34,7 +33,7 @@ const ContactPage = () => {
   };
 
   useEffect(() => {
-    dispatch(setPageIndex(5));
+    dispatch(setPageIndex(6));
   }, []);
 
   return (

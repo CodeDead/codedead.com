@@ -7,6 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import IconButton from '@material-ui/core/IconButton';
+import VisibilityIcon from '@material-ui/icons/Visibility';
 import Divider from '@material-ui/core/Divider';
 import HomeIcon from '@material-ui/icons/Home';
 import BuildIcon from '@material-ui/icons/Build';
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const NavigationDrawer = ({ open, onClose }) => {
-  const [state,] = useContext(MainContext);
+  const [state] = useContext(MainContext);
   const classes = useStyles();
 
   const { pageIndex } = state;
@@ -97,7 +98,14 @@ const NavigationDrawer = ({ open, onClose }) => {
           <ListItemIcon><InfoIcon /></ListItemIcon>
           <ListItemText>About</ListItemText>
         </ListItem>
-        <ListItem button onClick={() => navigate('/contact')} selected={pageIndex === 5}>
+        <ListItem button onClick={() => navigate('/privacy')} selected={pageIndex === 5}>
+          <ListItemIcon><VisibilityIcon /></ListItemIcon>
+          <ListItemText>Privacy</ListItemText>
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <ListItem button onClick={() => navigate('/contact')} selected={pageIndex === 6}>
           <ListItemIcon><EmailIcon /></ListItemIcon>
           <ListItemText>Contact</ListItemText>
         </ListItem>
