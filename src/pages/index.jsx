@@ -12,12 +12,12 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import BuildIcon from '@material-ui/icons/Build';
+import CardActionArea from '@material-ui/core/CardActionArea';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { MainContext } from '../contexts/MainContextProvider';
 import { setPageIndex } from '../reducers/MainReducer/Actions';
 import BlogList from '../components/BlogList';
-import CardActionArea from '@material-ui/core/CardActionArea';
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -72,7 +72,7 @@ const Home = () => {
             <Typography variant="h5" color="textPrimary">
               <BuildIcon color="inherit" />
               {' '}
-              Our tools
+              Highlighted tools
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -185,7 +185,7 @@ const Home = () => {
               variant="outlined"
               onClick={() => navigate('/software')}
             >
-              See all
+              More
             </Button>
           </Grid>
         </Grid>
