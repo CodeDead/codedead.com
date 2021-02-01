@@ -1,0 +1,4 @@
+export const SET_PAGE_INDEX = 'SET_PAGE_INDEX';
+export const SET_THEME_INDEX = 'SET_THEME_INDEX';
+export const SET_THEME_COLOR_INDEX = 'SET_THEME_COLOR_INDEX';
+export const SET_BLOG_LIMIT = 'SET_BLOG_LIMIT';
