@@ -10,6 +10,7 @@ import GroupIcon from '@material-ui/icons/Group';
 import InfoIcon from '@material-ui/icons/Info';
 import { graphql, useStaticQuery } from 'gatsby';
 import Divider from '@material-ui/core/Divider';
+import CardActionArea from '@material-ui/core/CardActionArea';
 import GitHubIcon from '../../components/GithubIcon';
 import LinkedInIcon from '../../components/LinkedInIcon';
 import PageHeader from '../../components/PageHeader';
@@ -150,6 +151,36 @@ const AboutPage = () => {
                   who&apos;ve made this a possibility!
                 </Typography>
               </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2} style={{ marginTop: 20 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary">
+              <SvgIcon color="inherit">
+                <GitHubIcon />
+              </SvgIcon>
+              {' '}
+              Open Source
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
+        <Grid container spacing={2} style={{ marginTop: 20 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Card>
+              <CardActionArea onClick={() => window.open('https://github.com/CodeDead/codedead.com/', '_blank')}>
+                <CardContent>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    Did you know that this website is completely open-source?
+                    You are free to edit, build and create pull requests to make
+                    this website even better!
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
             </Card>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
