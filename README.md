@@ -25,4 +25,4 @@ yarn build
 
 This website is maintained by CodeDead.
 
-Copyright (c) 2020 CodeDead
+Copyright © 2021 CodeDead
