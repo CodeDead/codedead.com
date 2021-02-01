@@ -111,7 +111,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/#/file/32f9f1de13bc52519eec42c8e7014c4888ccd8631f20cbf9a366fee95ecce8f3/detection"
+              href="https://www.virustotal.com/gui/file/fb12d76af444181df43017b99af5a77e11b6a6ca9c4c96b81794c6b269ba8dc7/detection"
               target="_blank"
             >
               Installer
@@ -122,7 +122,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/#/file/6fede958fcc5d5f937f9d3c568269b4c5b02fc2e0cc0c9092ab4221acc5bcc62/detection"
+              href="https://www.virustotal.com/gui/file/e19b1292138f06b353efe86e827282c55c0370be881a9aaf249937b0ffc6b88b/detection"
               target="_blank"
             >
               Portable
