@@ -1,8 +1,8 @@
 ---
-path: "/blog/2021/02/03/new-layout"
+path: "/blog/2021/02/02/new-layout"
 title: "New website layout"
 author: "CodeDead"
-date: "2021-02-03"
+date: "2021-02-02"
 abstract: "If you're a frequent visitor of our website, you might have noticed that we've switched over to an all-new design. Our previous website used WordPress to both manage and display the content on our website, but performance wise, WordPress is quite heavy and slow..."
 categories: "JavaScript, HTML, News"
 ---
