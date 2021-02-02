@@ -6,13 +6,9 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'gatsby';
-import { SvgIcon } from '@material-ui/core';
-import NavigationDrawer from '../NavigationDrawer';
-import GitHubIcon from '../GithubIcon';
-import TwitterIcon from '../TwitterIcon';
-import FacebookIcon from '../FacebookIcon';
 import Brightness5Icon from '@material-ui/icons/Brightness5';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
+import NavigationDrawer from '../NavigationDrawer';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setThemeIndex } from '../../reducers/MainReducer/Actions';
 
@@ -29,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DefaultAppBar = ({
-  title, githubUrl, twitterUrl, facebookUrl,
+  title,
 }) => {
   const [state, dispatch] = useContext(MainContext);
 
