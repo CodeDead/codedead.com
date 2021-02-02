@@ -5,6 +5,7 @@ const themeIndex = typeof window !== 'undefined' && localStorage.themeIndex ? pa
 const themeColorIndex = typeof window !== 'undefined' && localStorage.themeColorIndex
   ? parseFloat(localStorage.themeColorIndex)
   : 0;
+const hasAcceptedCookieNotice = typeof window !== 'undefined' && localStorage.hasAcceptedCookieNotice ? localStorage.hasAcceptedCookieNotice === 'true' : false;
 
 const initState = {
   pageIndex: 0,
@@ -14,6 +15,7 @@ const initState = {
     defaultColor: '#3f50b5',
   },
   blogLimit: 0,
+  hasAcceptedCookieNotice,
 };
 
 export const MainContext = createContext(initState);
