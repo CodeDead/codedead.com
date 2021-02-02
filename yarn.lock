@@ -4938,6 +4938,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     gatsby: ^2.31.1
     gatsby-image: ^2.10.0
+    gatsby-plugin-google-gtag: ^2.7.0
     gatsby-plugin-sharp: ^2.13.4
     gatsby-plugin-sitemap: ^2.11.0
     gatsby-remark-images: ^3.10.0
@@ -4947,6 +4948,7 @@ __metadata:
     gatsby-transformer-sharp: ^2.11.0
     react: ^17.0.1
     react-dom: ^17.0.1
+    react-helmet: ^6.1.0
   languageName: unknown
   linkType: soft
 
@@ -8284,6 +8286,18 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ">2.0.0-alpha"
   checksum: d3a7041668cea179af6eff106f1ba280f49da23009627c1a62976a9f14b90d29c370bd4d79f43adbbd47243cbe02940e5592bd8a25c96c61b6a12e35f28573be
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-google-gtag@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "gatsby-plugin-google-gtag@npm:2.7.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    minimatch: ^3.0.4
+  peerDependencies:
+    gatsby: ^2.0.0
+  checksum: 28e5ce35eacdfc5d31b42749b987e931ce7a22a58b065fd3d617fbc929ca9552a9dc4fa162f0198f29266c73a4a85694471a34d2376464675990bd3f2602ddbc
   languageName: node
   linkType: hard
 

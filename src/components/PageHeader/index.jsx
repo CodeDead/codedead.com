@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import BackButton from '../BackButton';
+import SEO from '../SEO';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -16,6 +17,7 @@ const PageHeader = ({ title, subTitle, backButton }) => {
 
   return (
     <div className={classes.heroContent}>
+      <SEO title={title} description={subTitle} />
       <Container maxWidth="sm">
         <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
           {backButton
