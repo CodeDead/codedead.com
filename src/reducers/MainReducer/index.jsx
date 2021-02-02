@@ -1,5 +1,6 @@
 import {
   SET_BLOG_LIMIT,
+  SET_HAS_ACCEPTED_COOKIE_NOTICE,
   SET_PAGE_INDEX,
   SET_THEME_COLOR_INDEX,
   SET_THEME_INDEX,
@@ -28,6 +29,12 @@ const MainReducer = (state, action) => {
       return {
         ...state,
         blogLimit: action.payload,
+      };
+    case SET_HAS_ACCEPTED_COOKIE_NOTICE:
+      localStorage.hasAcceptedCookieNotice = action.payload;
+      return {
+        ...state,
+        hasAcceptedCookieNotice: action.payload,
       };
     default:
       return state;
