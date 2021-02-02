@@ -27,7 +27,7 @@ const Requirements = () => {
 
   return (
     <Layout>
-      <PageHeader title="MemPlus" subTitle="System requirements" backButton />
+      <PageHeader title="MemPlus - Requirements" subTitle="System requirements" backButton />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>

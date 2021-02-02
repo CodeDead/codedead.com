@@ -27,7 +27,7 @@ const Requirements = () => {
 
   return (
     <Layout>
-      <PageHeader title="Advanced PassGen" subTitle="System requirements" backButton />
+      <PageHeader title="Advanced PassGen - Requirements" subTitle="System requirements" backButton />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>

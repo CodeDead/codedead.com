@@ -46,6 +46,19 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: [
+          'G-5BW4G4STJ8',
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+      },
+    },
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     'gatsby-theme-material-ui',
     'gatsby-transformer-sharp',
