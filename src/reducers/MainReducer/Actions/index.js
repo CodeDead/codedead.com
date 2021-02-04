@@ -2,7 +2,7 @@ import {
   SET_BLOG_LIMIT, SET_HAS_ACCEPTED_COOKIE_NOTICE,
   SET_PAGE_INDEX,
   SET_THEME_COLOR_INDEX,
-  SET_THEME_INDEX
+  SET_THEME_INDEX,
 } from './actionTypes';
 
 export const setPageIndex = (index) => ({
