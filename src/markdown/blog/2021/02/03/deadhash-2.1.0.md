@@ -27,4 +27,4 @@ You can download the latest version of DeadHash by clicking on the following lin
 
 ## Other
 
-Feel free to contact us if you have any questions or if you need help.
+Feel free to [contact us](/contact) if you have any questions or if you need help.

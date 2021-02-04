@@ -75,7 +75,7 @@ const DeadHashPage = () => {
                       Simplicity
                     </Typography>
                     <Typography paragraph>
-                      Calculate file and text hashes with ease thanks to an easy
+                      Calculate file and text hashes and checksums with ease thanks to an easy
                       to use GUI, drag and drop functionality and help documentation
                       that are all included!
                     </Typography>
@@ -101,7 +101,8 @@ const DeadHashPage = () => {
                     </Typography>
                     <Typography paragraph>
                       MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512,
-                      SHA224, SHA256, SHA384, SHA512 and RIPEMD160 are all supported out of the box.
+                      SHA224, SHA256, SHA384, SHA512, RIPEMD160 and CRC32 are all supported
+                      out of the box.
                     </Typography>
                   </Grid>
                 </Grid>
