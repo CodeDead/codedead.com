@@ -45,7 +45,13 @@ const ContactPage = () => {
             <AlertDialog
               title="Contact us"
               ok="OK"
-              content={`Feel free to send an email to ${atob('c3VwcG9ydEBjb2RlZGVhZC5jb20=')}`}
+              content={(
+                <div>
+                  Feel free to send an email to
+                  {' '}
+                  <a href="mailto:support@codedead.com">support@codedead.com</a>
+                </div>
+              )}
               onClose={onContactClose}
             />
           )
