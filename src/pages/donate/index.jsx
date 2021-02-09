@@ -15,7 +15,6 @@ import InfoIcon from '@material-ui/icons/Info';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import Divider from '@material-ui/core/Divider';
-import { Link } from 'gatsby';
 import AlertDialog from '../../components/AlertDialog';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
@@ -101,6 +100,7 @@ const Donate = () => {
               variant="outlined"
               target="_blank"
               href="https://paypal.me/codedead"
+              rel="noreferrer"
               style={{ width: '100%' }}
             >
               Donate via PayPal
@@ -174,21 +174,19 @@ const Donate = () => {
             onClose={() => setEgldOpen(false)}
             content={(
               <>
-                <p>
-                  You can donate
-                  {' '}
-                  <Link to="https://elrond.com">EGLD</Link>
-                  {' '}
-                  to the following address:
-                  erd1qkrm8vlxhhazj6gl3jsfhsdppjvyn5zukdvas26hlqmyyhkce90qfc3sw5
-                </p>
-                <p>
-                  Alternatively, you can donate using this
-                  {' '}
-                  <Link to="https://maiar.com">Maiar</Link>
-                  {' '}
-                  herotag: @codedead
-                </p>
+                You can donate
+                {' '}
+                <a href="https://elrond.com" target="_blank" rel="noreferrer">EGLD</a>
+                {' '}
+                to the following address:
+                erd1qkrm8vlxhhazj6gl3jsfhsdppjvyn5zukdvas26hlqmyyhkce90qfc3sw5
+                <br />
+                <br />
+                Alternatively, you can donate using this
+                {' '}
+                <a href="https://maiar.com" target="_blank" rel="noreferrer">Maiar</a>
+                {' '}
+                herotag: @codedead
               </>
             )}
             ok="OK"
