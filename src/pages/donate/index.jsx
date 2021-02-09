@@ -15,6 +15,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import Divider from '@material-ui/core/Divider';
+import { Link } from 'gatsby';
 import AlertDialog from '../../components/AlertDialog';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
@@ -23,7 +24,7 @@ import { setPageIndex } from '../../reducers/MainReducer/Actions';
 
 const Donate = () => {
   const [, dispatch] = useContext(MainContext);
-  const [btcOpen, setBtcOpen] = useState(false);
+  const [egldOpen, setEgldOpen] = useState(false);
 
   useEffect(() => {
     dispatch(setPageIndex(3));
@@ -50,7 +51,7 @@ const Donate = () => {
             <Typography>
               Donations are always welcome. All of the money that is donated to us will go towards
               the development of new and old projects, the maintenance of our servers, domain name
-              fees and the occasional cup of coffee! Simply click the PayPal or BTC button to
+              fees and the occasional cup of coffee! Simply click the PayPal or EGLD button to
               start the donation process! PayPal allows you to donate using practically
               any payment method you like. Brave tips are also welcome!
             </Typography>
@@ -62,7 +63,7 @@ const Donate = () => {
             </Typography>
 
             <Typography style={{ marginTop: 20 }}>
-              In case of a BTC donation, please email us if you’d
+              In case of a EGLD donation, please email us if you’d
               like to appear in the hall of fame, otherwise it will show up as an anonymous
               donation.
             </Typography>
@@ -109,9 +110,9 @@ const Donate = () => {
             <Button
               variant="outlined"
               style={{ width: '100%' }}
-              onClick={() => setBtcOpen(true)}
+              onClick={() => setEgldOpen(true)}
             >
-              Donate BTC
+              Donate EGLD
             </Button>
           </Grid>
         </Grid>
@@ -167,11 +168,29 @@ const Donate = () => {
           </CardContent>
         </Card>
 
-        {btcOpen ? (
+        {egldOpen ? (
           <AlertDialog
             title="Donate"
-            onClose={() => setBtcOpen(false)}
-            content="You can donate using this BTC address: 1LCWomLj5AEM3t7C2XTj3PwGvs98GJEJx5"
+            onClose={() => setEgldOpen(false)}
+            content={(
+              <>
+                <p>
+                  You can donate
+                  {' '}
+                  <Link to="https://elrond.com">EGLD</Link>
+                  {' '}
+                  to the following address:
+                  erd1qkrm8vlxhhazj6gl3jsfhsdppjvyn5zukdvas26hlqmyyhkce90qfc3sw5
+                </p>
+                <p>
+                  Alternatively, you can donate using this
+                  {' '}
+                  <Link to="https://maiar.com">Maiar</Link>
+                  {' '}
+                  herotag: @codedead
+                </p>
+              </>
+            )}
             ok="OK"
           />
         ) : null}
