@@ -118,9 +118,13 @@ const DeadHashPage = () => {
                     <Typography variant="h6">
                       Cross platform
                     </Typography>
-                    <Typography paragraph>
-                      DeadHash is available for Android, Linux and Windows out of the box,
+                    <Typography paragraph gutterBottom>
+                      DeadHash is available for Android, Linux and Windows,
                       offering a similar look and feel on all platforms.
+                    </Typography>
+
+                    <Typography paragraph>
+                      Additionally, DeadHash can be compiled manually to run on macOS.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>

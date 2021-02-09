@@ -133,9 +133,9 @@ const Home = () => {
                         DeadHash
                       </Typography>
                       <Typography color="textSecondary" paragraph>
-                        Calculate file hashes on any platform with ease thanks to an easy to
-                        use GUI, drag and drop functionality and help documentation that
-                        are all included!
+                        Calculate file and text hashes on any platform with ease thanks to an easy
+                        to use GUI, drag and drop functionality and help documentation that are
+                        all included!
                       </Typography>
                     </Grid>
                   </Grid>
