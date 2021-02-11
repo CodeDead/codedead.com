@@ -101,8 +101,8 @@ const DeadHashPage = () => {
                     </Typography>
                     <Typography paragraph>
                       MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512,
-                      SHA224, SHA256, SHA384, SHA512, RIPEMD160 and CRC32 are all supported
-                      out of the box.
+                      SHA224, SHA256, SHA384, SHA512, RIPEMD160, CRC1, CRC8,
+                      CRC16, CRC24 and CRC32 are all supported out of the box.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -171,7 +171,7 @@ const DeadHashPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.1.1.exe"
+              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.1.2.exe"
             >
               Installer
             </Button>
@@ -182,7 +182,7 @@ const DeadHashPage = () => {
               }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%202.1.1.exe"
+              href="https://codedead.com/Software/DeadHash/DeadHash%202.1.2.exe"
             >
               Portable
             </Button>
@@ -195,7 +195,7 @@ const DeadHashPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash-2.1.1.AppImage"
+              href="https://codedead.com/Software/DeadHash/DeadHash-2.1.2.AppImage"
             >
               AppImage
             </Button>
