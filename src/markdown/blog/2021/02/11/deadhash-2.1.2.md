@@ -2,7 +2,7 @@
 path: "/blog/2021/02/11/deadhash-2.1.2"
 title: "DeadHash 2.1.2 - Release"
 author: "CodeDead"
-date: "2021-02-05"
+date: "2021-02-11"
 abstract: "DeadHash 2.1.2 has just been released. We've added a couple of new CRC checksum calculation techniques and some additional themes..."
 categories: "JavaScript, News"
 ---
