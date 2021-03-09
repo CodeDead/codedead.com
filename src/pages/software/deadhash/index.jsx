@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { Container } from '@material-ui/core';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -23,23 +23,17 @@ const DeadHashPage = () => {
   query {
     deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     deadhashresult: file(relativePath: { eq: "DeadHash/deadhash_result.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     deadhashtext: file(relativePath: { eq: "DeadHash/deadhash_text.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -81,7 +75,10 @@ const DeadHashPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.deadhash.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.deadhash.childImageSharp.gatsbyImageData}
+                      alt="DeadHash main window"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -93,7 +90,10 @@ const DeadHashPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.deadhashresult.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.deadhashresult.childImageSharp.gatsbyImageData}
+                      alt="DeadHash result"
+                    />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -128,7 +128,10 @@ const DeadHashPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.deadhashtext.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.deadhashtext.childImageSharp.gatsbyImageData}
+                      alt="DeadHash text"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>

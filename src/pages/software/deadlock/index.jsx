@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -23,23 +23,17 @@ const DeadLockPage = () => {
   query {
     main: file(relativePath: { eq: "DeadLock/deadlock.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     settings: file(relativePath: { eq: "DeadLock/settings.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     about: file(relativePath: { eq: "DeadLock/about.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -79,7 +73,10 @@ const DeadLockPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.main.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.main.childImageSharp.gatsbyImageData}
+                      alt="DeadLock main window"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -91,7 +88,10 @@ const DeadLockPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.settings.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.settings.childImageSharp.gatsbyImageData}
+                      alt="DeadLock settings"
+                    />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -123,7 +123,10 @@ const DeadLockPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.about.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.about.childImageSharp.gatsbyImageData}
+                      alt="Deadlock about"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
