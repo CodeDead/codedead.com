@@ -37,7 +37,7 @@ const Software = () => {
     name: 'PK Finder',
     url: '/software/pk-finder',
     description: 'Easily recover your Windows Product Key with PK Finder. As soon as you open PK Finder, you’ll be able to view your product key.',
-    tags: ['PK Finder', 'Product key'],
+    tags: ['PK Finder', 'Product key', 'serial', 'license'],
   }, {
     name: 'Advanced PortChecker',
     url: '/software/advanced-portchecker',
