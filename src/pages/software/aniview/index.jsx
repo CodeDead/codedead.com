@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -23,23 +23,17 @@ const AniViewPage = () => {
   query {
     main: file(relativePath: { eq: "AniView/aniview.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     settings: file(relativePath: { eq: "AniView/settings.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     image: file(relativePath: { eq: "AniView/av_settings_image.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -80,7 +74,10 @@ const AniViewPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.main.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.main.childImageSharp.gatsbyImageData}
+                      alt="AniView main window"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -92,7 +89,10 @@ const AniViewPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.settings.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.settings.childImageSharp.gatsbyImageData}
+                      alt="AniView settings"
+                    />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -125,7 +125,10 @@ const AniViewPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.image.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.image.childImageSharp.gatsbyImageData}
+                      alt="AniView image"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>

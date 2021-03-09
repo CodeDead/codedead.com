@@ -7,7 +7,6 @@ const path = require('path');
 
 module.exports = {
   polyfill: false,
-  /* Your site config here */
   siteMetadata: {
     title: 'CodeDead',
     description: 'Solving problems using code',
@@ -61,9 +60,10 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     'gatsby-theme-material-ui',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
 };

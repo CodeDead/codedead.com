@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -23,23 +23,17 @@ const MemPlusPage = () => {
   query {
     memplus: file(relativePath: { eq: "MemPlus/memplus.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     analyzer: file(relativePath: { eq: "MemPlus/memplus_analyzer.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     optimizer: file(relativePath: { eq: "MemPlus/memplus_settings_monitor.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -80,7 +74,10 @@ const MemPlusPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.memplus.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.memplus.childImageSharp.gatsbyImageData}
+                      alt="MemPlus main window"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -92,7 +89,10 @@ const MemPlusPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.analyzer.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.analyzer.childImageSharp.gatsbyImageData}
+                      alt="MemPlus analyzer"
+                    />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -124,7 +124,10 @@ const MemPlusPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.optimizer.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.optimizer.childImageSharp.gatsbyImageData}
+                      alt="MemPlus Optimizer"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
