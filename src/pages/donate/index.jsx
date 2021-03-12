@@ -184,14 +184,7 @@ const Donate = () => {
                 <a href="https://elrond.com" target="_blank" rel="noreferrer">EGLD</a>
                 {' '}
                 to the following address:
-                erd1qkrm8vlxhhazj6gl3jsfhsdppjvyn5zukdvas26hlqmyyhkce90qfc3sw5
-                <br />
-                <br />
-                Alternatively, you can donate using this
-                {' '}
-                <a href="https://maiar.com" target="_blank" rel="noreferrer">Maiar</a>
-                {' '}
-                herotag: @codedead
+                erd1rdc6w82ftjsyp5ethh0q56297fsef6w5ht75vyltcjh3ms220urqezdhd3
               </>
             )}
             ok="OK"

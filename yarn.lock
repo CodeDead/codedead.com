@@ -4952,11 +4952,12 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.22.0
     eslint-plugin-react-hooks: ^4.2.0
-    gatsby: ^3.0.3
+    gatsby: ^3.0.4
+    gatsby-plugin-catch-links: ^3.0.0
     gatsby-plugin-google-gtag: ^3.0.0
-    gatsby-plugin-image: ^1.0.0
+    gatsby-plugin-image: ^1.0.1
     gatsby-plugin-robots-txt: ^1.5.5
-    gatsby-plugin-sharp: ^3.0.0
+    gatsby-plugin-sharp: ^3.0.1
     gatsby-plugin-sitemap: ^3.0.0
     gatsby-remark-images: ^4.0.0
     gatsby-source-filesystem: ^3.0.0
@@ -8116,6 +8117,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-catch-links@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "gatsby-plugin-catch-links@npm:3.0.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    escape-string-regexp: ^1.0.5
+  peerDependencies:
+    gatsby: ^3.0.0-next.0
+  checksum: 7457d75e0f3c99999e54a8fc2117e9d098f6d4b5d32ab2c5abd9d4b69a4cd55ce5913047ac99f19da4ad9871a0850581e5d2e7ebdccc5cf8af5511834b05e5b0
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-compile-es6-packages@npm:^2.1.0":
   version: 2.1.0
   resolution: "gatsby-plugin-compile-es6-packages@npm:2.1.0"
@@ -8142,9 +8155,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "gatsby-plugin-image@npm:1.0.0"
+"gatsby-plugin-image@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "gatsby-plugin-image@npm:1.0.1"
   dependencies:
     "@babel/parser": ^7.12.5
     "@babel/traverse": ^7.12.5
@@ -8163,7 +8176,7 @@ fsevents@~2.3.1:
     gatsby-source-filesystem: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: cac63799ef0de9db7221c0315604d57094eb30993b12f129f676f73bf9b202794cb8d6d053fdb8e0749409c63224479bc032a43971debf2c4ec0faf278352795
+  checksum: bffaf20fe788d45c74738f33bbe165692c840ff6196d1991cdefd6a4ac61f60b121cfcd5a3ded8ec9da4632ee6f4cf767443a745ff1b57e58b76a60a0997de61
   languageName: node
   linkType: hard
 
@@ -8223,9 +8236,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "gatsby-plugin-sharp@npm:3.0.0"
+"gatsby-plugin-sharp@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "gatsby-plugin-sharp@npm:3.0.1"
   dependencies:
     "@babel/runtime": ^7.12.5
     async: ^3.2.0
@@ -8249,7 +8262,7 @@ fsevents@~2.3.1:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: ad2d27da4e81df65410334254baa953c24a4867059062c42121c89e00827c7ba77933995bb3c4da5a9ac1cee9acee88efbb4d036c61de73bd71a3b2a72766cf3
+  checksum: 07c51521c1ecfcb8849fd9e1f00424d53f16f0ea507681ebaadd0b69c3e8f842dc2b560d71fda83594a533065067db6f4dc18c2ebb1150f589977c8c33fbb962
   languageName: node
   linkType: hard
 
@@ -8538,9 +8551,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "gatsby@npm:3.0.3"
+"gatsby@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "gatsby@npm:3.0.4"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -8699,7 +8712,7 @@ fsevents@~2.3.1:
     react-dom: ^16.9.0 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: 94395eafc080b8f93c9fc14935019589bb346d3d847f2019f52a7ee8a753c5a7bb916f40e9ec00c8dfb875c88fb6ab4c65e95dda7e8deaa053f2e4cd396ae5ff
+  checksum: bd542f2ccea9382d15e37dccc01008d5316a52901f2accbef7d0552060263be12900f47e194d59909143ea2b50e3acea5a61cb8e37686a6e89631997c3053a91
   languageName: node
   linkType: hard
 
