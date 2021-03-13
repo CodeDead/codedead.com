@@ -46,6 +46,7 @@ const BlogTemplate = ({ data }) => {
           {frontmatter.categories}
         </Typography>
         <Divider />
+        {/* eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
     </Layout>

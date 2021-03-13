@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import SecurityIcon from '@material-ui/icons/Security';
 import ComputerIcon from '@material-ui/icons/Computer';
 import AppsIcon from '@material-ui/icons/Apps';
+import { graphql, useStaticQuery } from 'gatsby';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
 import { MainContext } from '../../contexts/MainContextProvider';
@@ -18,46 +19,98 @@ const Software = () => {
   const [, dispatch] = useContext(MainContext);
   const [searchValue, setSearchValue] = useState('');
 
+  const imageData = useStaticQuery(graphql`
+  query {
+    advancedpassgen: file(relativePath: { eq: "Advanced PassGen/ap.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    advancedportchecker: file(relativePath: { eq: "Advanced PortChecker/ap.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    aniview: file(relativePath: { eq: "AniView/aniview.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    deadlock: file(relativePath: { eq: "DeadLock/deadlock.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    deadpix: file(relativePath: { eq: "DeadPix/deadpix.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    memplus: file(relativePath: { eq: "MemPlus/memplus.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    }
+  }`);
+
   const applications = [{
     name: 'DeadHash',
     url: '/software/deadhash',
-    description: 'Calculate file hashes on any platform with ease thanks to an easy to use GUI, drag and drop functionality and help documentation that are all included!',
+    description: 'Calculate file hashes on any platform with ease thanks to an easy to use GUI, drag and drop functionality and help documentation!',
     tags: ['DeadHash', 'hashing', 'file'],
+    image: imageData.deadhash.childImageSharp.gatsbyImageData,
   }, {
     name: 'Advanced PassGen',
     url: '/software/advanced-passgen',
     description: 'Easily generate thousands of passwords using Advanced PassGen. You can even go so far as to define your own character set!',
     tags: ['Advanced PassGen', 'password', 'generator'],
+    image: imageData.advancedpassgen.childImageSharp.gatsbyImageData,
   }, {
     name: 'MemPlus',
     url: '/software/memplus',
     description: 'MemPlus can be used to reduce the amount of RAM that is being used by applications on your system. In essence, freeing up memory so that more memory is available to you!',
     tags: ['MemPlus', 'RAM', 'Random access memory'],
+    image: imageData.memplus.childImageSharp.gatsbyImageData,
   }, {
     name: 'PK Finder',
     url: '/software/pk-finder',
     description: 'Easily recover your Windows Product Key with PK Finder. As soon as you open PK Finder, you’ll be able to view your product key.',
     tags: ['PK Finder', 'Product key', 'serial', 'license'],
+    image: imageData.pkfinder.childImageSharp.gatsbyImageData,
   }, {
     name: 'Advanced PortChecker',
     url: '/software/advanced-portchecker',
     description: 'Scanning TCP and UDP ports has never been this easy. Watch how Advanced PortChecker updates you with real-time information while it’s scanning!',
     tags: ['Advanced PortChecker', 'scanner'],
+    image: imageData.advancedportchecker.childImageSharp.gatsbyImageData,
   }, {
     name: 'DeadLock',
     url: '/software/deadlock',
     description: 'Unlock files and folders, take full ownership over them and remove, move or copy them, free of charge! Windows Explorer integration is also possible.',
     tags: ['DeadLock', 'file', 'folder'],
+    image: imageData.deadlock.childImageSharp.gatsbyImageData,
   }, {
     name: 'DeadPix',
     url: '/software/deadpix',
-    description: 'Fix dead or stuck pixels on your screen with just a couple of mouse clicks, free of charge! DeadPix can fix stuck or dead pixels by rapidly cycling the color value of the pixel. Please note that this tool does not provide a 100% success rate.',
+    description: 'Fix dead or stuck pixels on your screen with just a couple of mouse clicks, free of charge! DeadPix can fix stuck or dead pixels by rapidly cycling the color value of the pixel.',
     tags: ['DeadPix', 'Pixel', 'Screen', 'LCD'],
+    image: imageData.deadpix.childImageSharp.gatsbyImageData,
   }, {
     name: 'AniView',
     url: '/software/aniview',
     description: 'AniView is a free and open source GIF image viewer. You can watch GIF images your way, thanks to all the options that are available in AniView.',
     tags: ['AniView', 'images', 'GIF', 'viewer'],
+    image: imageData.aniview.childImageSharp.gatsbyImageData,
   }];
 
   useEffect(() => {
@@ -80,6 +133,7 @@ const Software = () => {
             name={application.name}
             description={application.description}
             url={application.url}
+            image={application.image}
           />
         </Grid>
       ));
@@ -151,6 +205,7 @@ const Software = () => {
                   name={applications.filter((item) => item.name === 'DeadHash')[0].name}
                   description={applications.filter((item) => item.name === 'DeadHash')[0].description}
                   url={applications.filter((item) => item.name === 'DeadHash')[0].url}
+                  image={applications.filter((item) => item.name === 'DeadHash')[0].image}
                 />
               </Grid>
               <Grid item xs={12} md={3} lg={4}>
@@ -158,6 +213,7 @@ const Software = () => {
                   name={applications.filter((item) => item.name === 'Advanced PassGen')[0].name}
                   description={applications.filter((item) => item.name === 'Advanced PassGen')[0].description}
                   url={applications.filter((item) => item.name === 'Advanced PassGen')[0].url}
+                  image={applications.filter((item) => item.name === 'Advanced PassGen')[0].image}
                 />
               </Grid>
             </Grid>
@@ -191,6 +247,7 @@ const Software = () => {
                   name={applications.filter((item) => item.name === 'MemPlus')[0].name}
                   description={applications.filter((item) => item.name === 'MemPlus')[0].description}
                   url={applications.filter((item) => item.name === 'MemPlus')[0].url}
+                  image={applications.filter((item) => item.name === 'MemPlus')[0].image}
                 />
               </Grid>
               <Grid item xs={12} md={3} lg={4}>
@@ -198,6 +255,7 @@ const Software = () => {
                   name={applications.filter((item) => item.name === 'PK Finder')[0].name}
                   description={applications.filter((item) => item.name === 'PK Finder')[0].description}
                   url={applications.filter((item) => item.name === 'PK Finder')[0].url}
+                  image={applications.filter((item) => item.name === 'PK Finder')[0].image}
                 />
               </Grid>
             </Grid>
@@ -227,6 +285,7 @@ const Software = () => {
                     name={applications.filter((item) => item.name === 'Advanced PortChecker')[0].name}
                     description={applications.filter((item) => item.name === 'Advanced PortChecker')[0].description}
                     url={applications.filter((item) => item.name === 'Advanced PortChecker')[0].url}
+                    image={applications.filter((item) => item.name === 'Advanced PortChecker')[0].image}
                   />
                 </Grid>
                 <Grid item xs={12} md={3} lg={4}>
@@ -234,6 +293,7 @@ const Software = () => {
                     name={applications.filter((item) => item.name === 'DeadLock')[0].name}
                     description={applications.filter((item) => item.name === 'DeadLock')[0].description}
                     url={applications.filter((item) => item.name === 'DeadLock')[0].url}
+                    image={applications.filter((item) => item.name === 'DeadLock')[0].image}
                   />
                 </Grid>
                 <Grid item xs={12} md={3} lg={4}>
@@ -241,6 +301,7 @@ const Software = () => {
                     name={applications.filter((item) => item.name === 'DeadPix')[0].name}
                     description={applications.filter((item) => item.name === 'DeadPix')[0].description}
                     url={applications.filter((item) => item.name === 'DeadPix')[0].url}
+                    image={applications.filter((item) => item.name === 'DeadPix')[0].image}
                   />
                 </Grid>
                 <Grid item xs={12} md={3} lg={4}>
@@ -248,6 +309,7 @@ const Software = () => {
                     name={applications.filter((item) => item.name === 'AniView')[0].name}
                     description={applications.filter((item) => item.name === 'AniView')[0].description}
                     url={applications.filter((item) => item.name === 'AniView')[0].url}
+                    image={applications.filter((item) => item.name === 'AniView')[0].image}
                   />
                 </Grid>
               </Grid>
