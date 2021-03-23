@@ -75,9 +75,9 @@ const Privacy = () => {
             </ul>
 
             <Typography gutterBottom>
-              Take a look at google’s privacy policy to find out more. We don’t export this data to
-              any hard drives or sell it or anything. This information is quite useful for our
-              applications in the following sense:
+              <a href="https://policies.google.com/" rel="noopener noreferrer" target="_blank">Take a look at google’s privacy policy to find out more.</a>
+              We don’t export this data to any hard drives or sell it or anything. This information
+              is quite useful for our applications in the following sense:
             </Typography>
             <ul>
               <li>

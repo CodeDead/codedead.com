@@ -60,6 +60,11 @@ const Software = () => {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, height: 160)
       }
+    },
+    egld: file(relativePath: { eq: "Elrond/egld.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
     }
   }`);
 
@@ -111,6 +116,12 @@ const Software = () => {
     description: 'AniView is a free and open source GIF image viewer. You can watch GIF images your way, thanks to all the options that are available in AniView.',
     tags: ['AniView', 'images', 'GIF', 'viewer'],
     image: imageData.aniview.childImageSharp.gatsbyImageData,
+  }, {
+    name: 'EGLD Price Calculator',
+    url: '/software/egld-price-calculator',
+    description: 'A simple and easy to use price calculator for Elrond (EGLD).',
+    tags: ['egld', 'elrond', 'currency', 'Crypto'],
+    image: imageData.egld.childImageSharp.gatsbyImageData,
   }];
 
   useEffect(() => {
@@ -310,6 +321,14 @@ const Software = () => {
                     description={applications.filter((item) => item.name === 'AniView')[0].description}
                     url={applications.filter((item) => item.name === 'AniView')[0].url}
                     image={applications.filter((item) => item.name === 'AniView')[0].image}
+                  />
+                </Grid>
+                <Grid item xs={12} md={3} lg={4}>
+                  <Application
+                    name={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].name}
+                    description={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].description}
+                    url={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].url}
+                    image={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].image}
                   />
                 </Grid>
               </Grid>
