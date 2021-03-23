@@ -145,6 +145,7 @@ const EgldPriceCalculator = () => {
                         label="Amount"
                         value={egld}
                         type="number"
+                        style={{ marginTop: 10 }}
                         fullWidth
                         onChange={changeEgldAmount}
                       />
@@ -152,6 +153,7 @@ const EgldPriceCalculator = () => {
                     <Grid item xs={12} md={2} lg={2}>
                       <FormControl
                         variant="outlined"
+                        style={{ marginTop: 10 }}
                         fullWidth
                       >
                         <InputLabel>Currency</InputLabel>
@@ -176,6 +178,7 @@ const EgldPriceCalculator = () => {
                         label="Amount"
                         value={currencyAmount}
                         type="number"
+                        style={{ marginTop: 10 }}
                         fullWidth
                         onChange={changeCurrencyAmount}
                       />
@@ -183,6 +186,7 @@ const EgldPriceCalculator = () => {
                     <Grid item xs={12} md={2} lg={2}>
                       <FormControl
                         variant="outlined"
+                        style={{ marginTop: 10 }}
                         fullWidth
                       >
                         <InputLabel>Currency</InputLabel>
