@@ -1,7 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import {
   Card,
-  Container, FormControl, InputLabel, MenuItem, Select, TextField,
+  Container,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
 } from '@material-ui/core';
 import axios from 'axios';
 import Grid from '@material-ui/core/Grid';
@@ -47,7 +52,7 @@ const EgldPriceCalculator = () => {
 
     axios.get('https://api.coingecko.com/api/v3/simple/supported_vs_currencies')
       .then((res) => {
-        setSupportedCurrencies(res.data);
+        setSupportedCurrencies(res.data.sort((a, b) => a.localeCompare(b)));
       })
       .catch((err) => {
         setError(err);
@@ -207,7 +212,11 @@ const EgldPriceCalculator = () => {
                               >
                                 {item.toUpperCase()}
                               </MenuItem>
-                            )) : null}
+                            )) : (
+                              <MenuItem value="usd">
+                                USD
+                              </MenuItem>
+                            )}
                         </Select>
                       </FormControl>
                     </Grid>

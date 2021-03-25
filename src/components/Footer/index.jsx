@@ -20,7 +20,9 @@ const Footer = ({ facebookUrl, githubUrl, twitterUrl }) => {
   return (
     <BottomNavigation
       showLabels
-      style={{ marginTop: 20 }}
+      style={{
+        position: 'fixed', bottom: 0, width: '100%',
+      }}
     >
       <BottomNavigationAction
         icon={(
