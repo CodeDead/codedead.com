@@ -46,10 +46,9 @@ const BlogTemplate = ({ data }) => {
               {`${frontmatter.author} | ${frontmatter.date} | ${frontmatter.categories}`}
             </Typography>
             <Divider />
-            <Typography
-              variant="body2"
+            <div
               color="textSecondary"
-              component="p"
+              /* eslint-disable-next-line react/no-danger */
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </CardContent>
