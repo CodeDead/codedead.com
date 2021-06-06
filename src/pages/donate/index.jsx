@@ -23,7 +23,7 @@ import { setPageIndex } from '../../reducers/MainReducer/Actions';
 
 const Donate = () => {
   const [, dispatch] = useContext(MainContext);
-  const [btcOpen, setBtcOpen] = useState(false);
+  const [egldOpen, setEgldOpen] = useState(false);
 
   useEffect(() => {
     dispatch(setPageIndex(3));
@@ -50,9 +50,26 @@ const Donate = () => {
             <Typography>
               Donations are always welcome. All of the money that is donated to us will go towards
               the development of new and old projects, the maintenance of our servers, domain name
-              fees and the occasional cup of coffee! Simply click the PayPal or BTC button to
+              fees and the occasional cup of coffee! Simply click the PayPal or EGLD button to
               start the donation process! PayPal allows you to donate using practically
-              any payment method you like. Brave tips are also welcome!
+              any payment method you like.
+            </Typography>
+
+            <Typography style={{ marginTop: 20 }}>
+              In addition, we are verified Brave creators, which means you can donate BAT directly
+              to us via the Brave browser.
+              <a
+                href="https://www.youtube.com/watch?v=iJwLxeKxp3k"
+                rel="noopener noreferrer"
+              >
+                You can find more information on how to donate BAT here.
+              </a>
+            </Typography>
+
+            <Typography style={{ marginTop: 20 }}>
+              BAT donations will not appear in the hall of fame because it&apos;s impossible to
+              retrace. However, if you have donated a certain amount of BAT, you can always contact
+              us so we can add you to the hall of fame.
             </Typography>
 
             <Typography style={{ marginTop: 20 }}>
@@ -62,7 +79,7 @@ const Donate = () => {
             </Typography>
 
             <Typography style={{ marginTop: 20 }}>
-              In case of a BTC donation, please email us if you’d
+              In case of a EGLD donation, please email us if you’d
               like to appear in the hall of fame, otherwise it will show up as an anonymous
               donation.
             </Typography>
@@ -97,9 +114,11 @@ const Donate = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={6} lg={6}>
             <Button
-              variant="outlined"
+              variant="contained"
+              color="primary"
               target="_blank"
               href="https://paypal.me/codedead"
+              rel="noreferrer"
               style={{ width: '100%' }}
             >
               Donate via PayPal
@@ -107,11 +126,12 @@ const Donate = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Button
-              variant="outlined"
+              variant="contained"
+              color="primary"
               style={{ width: '100%' }}
-              onClick={() => setBtcOpen(true)}
+              onClick={() => setEgldOpen(true)}
             >
-              Donate BTC
+              Donate EGLD
             </Button>
           </Grid>
         </Grid>
@@ -161,17 +181,31 @@ const Donate = () => {
                     <TableCell>Anonymous</TableCell>
                     <TableCell>€1.00</TableCell>
                   </TableRow>
+                  <TableRow>
+                    <TableCell>08/03/2021</TableCell>
+                    <TableCell>Ron Rooker</TableCell>
+                    <TableCell>€5.00</TableCell>
+                  </TableRow>
                 </TableBody>
               </Table>
             </TableContainer>
           </CardContent>
         </Card>
 
-        {btcOpen ? (
+        {egldOpen ? (
           <AlertDialog
             title="Donate"
-            onClose={() => setBtcOpen(false)}
-            content="You can donate using this BTC address: 1LCWomLj5AEM3t7C2XTj3PwGvs98GJEJx5"
+            onClose={() => setEgldOpen(false)}
+            content={(
+              <>
+                You can donate
+                {' '}
+                <a href="https://elrond.com" target="_blank" rel="noreferrer">EGLD</a>
+                {' '}
+                to the following address:
+                erd1rdc6w82ftjsyp5ethh0q56297fsef6w5ht75vyltcjh3ms220urqezdhd3
+              </>
+            )}
             ok="OK"
           />
         ) : null}

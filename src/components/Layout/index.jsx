@@ -88,6 +88,7 @@ const Layout = ({ children }) => {
           </Button>
         </Alert>
       )}
+      <div style={{ marginBottom: 65 }} />
       <Footer
         facebookUrl={data.site.siteMetadata.facebook}
         githubUrl={data.site.siteMetadata.github}

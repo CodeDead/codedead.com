@@ -4,9 +4,13 @@ import { navigate } from 'gatsby';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
-import { CardHeader } from '@material-ui/core';
+import { CardMedia } from '@material-ui/core';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import CardHeader from '@material-ui/core/CardHeader';
 
-const Application = ({ name, description, url }) => {
+const Application = ({
+  name, description, url, image,
+}) => {
   /**
    * Go to the designated URL
    */
@@ -20,6 +24,11 @@ const Application = ({ name, description, url }) => {
         onClick={goToUrl}
         style={{ height: '100%' }}
       >
+        <CardMedia
+          title={name}
+        >
+          <GatsbyImage alt={name} image={image} style={{ width: '100%' }} />
+        </CardMedia>
         <CardHeader
           title={name}
         />

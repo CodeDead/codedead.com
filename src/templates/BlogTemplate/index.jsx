@@ -3,6 +3,8 @@ import Container from '@material-ui/core/Container';
 import { graphql } from 'gatsby';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
+import { Card } from '@material-ui/core';
+import CardContent from '@material-ui/core/CardContent';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
 import { MainContext } from '../../contexts/MainContextProvider';
@@ -38,15 +40,20 @@ const BlogTemplate = ({ data }) => {
         title={frontmatter.title}
       />
       <Container maxWidth="md">
-        <Typography variant="subtitle1" gutterBottom style={{ marginTop: 10 }}>
-          {frontmatter.author}
-          {' | '}
-          {frontmatter.date}
-          {' | '}
-          {frontmatter.categories}
-        </Typography>
+        <Card style={{ marginTop: 20 }}>
+          <CardContent>
+            <Typography gutterBottom>
+              {`${frontmatter.author} | ${frontmatter.date} | ${frontmatter.categories}`}
+            </Typography>
+            <Divider />
+            <div
+              color="textSecondary"
+              /* eslint-disable-next-line react/no-danger */
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </CardContent>
+        </Card>
         <Divider />
-        <div dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
     </Layout>
   );

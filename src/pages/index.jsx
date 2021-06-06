@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import {
   graphql, useStaticQuery, navigate, Link,
 } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
@@ -36,23 +36,17 @@ const Home = () => {
     },
     deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
       childImageSharp {
-        fluid(maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     memplus: file(relativePath: { eq: "MemPlus/memplus.png" }) {
       childImageSharp {
-        fluid(maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
       childImageSharp {
-        fluid(maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -89,10 +83,12 @@ const Home = () => {
                   <Grid container spacing={2}>
                     <Grid item xs={12} md={6} lg={6}>
                       <Link to="/software/memplus">
-                        <Img fluid={{
-                          ...data.memplus.childImageSharp.fluid,
-                          aspectRatio: 21 / 9,
-                        }}
+                        <GatsbyImage
+                          image={{
+                            ...data.memplus.childImageSharp.gatsbyImageData,
+                            aspectRatio: 21 / 9,
+                          }}
+                          alt="MemPlus"
                         />
                       </Link>
                     </Grid>
@@ -121,10 +117,12 @@ const Home = () => {
                   <Grid container spacing={2}>
                     <Grid item xs={12} md={6} lg={6}>
                       <Link to="/software/deadhash">
-                        <Img fluid={{
-                          ...data.deadhash.childImageSharp.fluid,
-                          aspectRatio: 21 / 9,
-                        }}
+                        <GatsbyImage
+                          image={{
+                            ...data.deadhash.childImageSharp.gatsbyImageData,
+                            aspectRatio: 21 / 9,
+                          }}
+                          alt="DeadHash"
                         />
                       </Link>
                     </Grid>
@@ -133,9 +131,9 @@ const Home = () => {
                         DeadHash
                       </Typography>
                       <Typography color="textSecondary" paragraph>
-                        Calculate file hashes on any platform with ease thanks to an easy to
-                        use GUI, drag and drop functionality and help documentation that
-                        are all included!
+                        Calculate file and text hashes on any platform with ease thanks to an easy
+                        to use GUI, drag and drop functionality and help documentation that are
+                        all included!
                       </Typography>
                     </Grid>
                   </Grid>
@@ -153,10 +151,12 @@ const Home = () => {
                   <Grid container spacing={2}>
                     <Grid item xs={12} md={6} lg={6}>
                       <Link to="/software/pk-finder">
-                        <Img fluid={{
-                          ...data.pkfinder.childImageSharp.fluid,
-                          aspectRatio: 21 / 9,
-                        }}
+                        <GatsbyImage
+                          image={{
+                            ...data.pkfinder.childImageSharp.gatsbyImageData,
+                            aspectRatio: 21 / 9,
+                          }}
+                          alt="PK Finder"
                         />
                       </Link>
                     </Grid>

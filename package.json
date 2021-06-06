@@ -2,7 +2,7 @@
   "name": "codedead.com",
   "private": true,
   "description": "CodeDead Website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -14,35 +14,39 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
+    "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "gatsby": "^2.31.1",
-    "gatsby-image": "^2.10.0",
-    "gatsby-plugin-google-gtag": "^2.7.0",
-    "gatsby-plugin-sharp": "^2.13.4",
-    "gatsby-plugin-sitemap": "^2.11.0",
-    "gatsby-remark-images": "^3.10.0",
-    "gatsby-source-filesystem": "^2.10.0",
-    "gatsby-theme-material-ui": "^1.0.13",
-    "gatsby-transformer-remark": "^2.15.0",
-    "gatsby-transformer-sharp": "^2.11.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "axios": "^0.21.1",
+    "gatsby": "^3.6.2",
+    "gatsby-plugin-catch-links": "^3.6.0",
+    "gatsby-plugin-google-gtag": "^3.6.0",
+    "gatsby-plugin-image": "^1.6.0",
+    "gatsby-plugin-robots-txt": "^1.6.2",
+    "gatsby-plugin-sharp": "^3.6.0",
+    "gatsby-plugin-sitemap": "^4.2.0",
+    "gatsby-remark-images": "^5.3.0",
+    "gatsby-source-filesystem": "^3.6.0",
+    "gatsby-theme-material-ui": "^2.0.1",
+    "gatsby-transformer-remark": "^4.3.0",
+    "gatsby-transformer-sharp": "^3.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/CodeDead/codedead.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/CodeDead/codedead.com/issues"
   }
 }

@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { Container } from '@material-ui/core';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -23,23 +23,17 @@ const DeadHashPage = () => {
   query {
     deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     deadhashresult: file(relativePath: { eq: "DeadHash/deadhash_result.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     deadhashtext: file(relativePath: { eq: "DeadHash/deadhash_text.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -75,13 +69,16 @@ const DeadHashPage = () => {
                       Simplicity
                     </Typography>
                     <Typography paragraph>
-                      Calculate file and text hashes with ease thanks to an easy
+                      Calculate file and text hashes and checksums with ease thanks to an easy
                       to use GUI, drag and drop functionality and help documentation
                       that are all included!
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.deadhash.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.deadhash.childImageSharp.gatsbyImageData}
+                      alt="DeadHash main window"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -93,7 +90,10 @@ const DeadHashPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.deadhashresult.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.deadhashresult.childImageSharp.gatsbyImageData}
+                      alt="DeadHash result"
+                    />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -101,7 +101,8 @@ const DeadHashPage = () => {
                     </Typography>
                     <Typography paragraph>
                       MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512,
-                      SHA224, SHA256, SHA384, SHA512 and RIPEMD160 are all supported out of the box.
+                      SHA224, SHA256, SHA384, SHA512, RIPEMD160, CRC1, CRC8,
+                      CRC16, CRC24 and CRC32 are all supported out of the box.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -117,13 +118,20 @@ const DeadHashPage = () => {
                     <Typography variant="h6">
                       Cross platform
                     </Typography>
-                    <Typography paragraph>
-                      DeadHash is available for Android, Linux and Windows out of the box,
+                    <Typography paragraph gutterBottom>
+                      DeadHash is available for Android, Linux and Windows,
                       offering a similar look and feel on all platforms.
+                    </Typography>
+
+                    <Typography paragraph>
+                      Additionally, DeadHash can be compiled manually to run on macOS.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.deadhashtext.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.deadhashtext.childImageSharp.gatsbyImageData}
+                      alt="DeadHash text"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -166,7 +174,7 @@ const DeadHashPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.0.4.exe"
+              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.1.2.exe"
             >
               Installer
             </Button>
@@ -177,7 +185,7 @@ const DeadHashPage = () => {
               }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%202.0.4.exe"
+              href="https://codedead.com/Software/DeadHash/DeadHash%202.1.2.exe"
             >
               Portable
             </Button>
@@ -190,7 +198,7 @@ const DeadHashPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash-2.0.4.AppImage"
+              href="https://codedead.com/Software/DeadHash/DeadHash-2.1.2.AppImage"
             >
               AppImage
             </Button>

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { Container } from '@material-ui/core';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image/index';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -23,23 +23,17 @@ const AdvancedPassGenPage = () => {
   query {
     advancedpassgen: file(relativePath: { eq: "Advanced PassGen/ap.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     advancedpassgensettings: file(relativePath: { eq: "Advanced PassGen/ap_theme_settings.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     advancedpassgensettingsadvanced: file(relativePath: { eq: "Advanced PassGen/ap_advanced_settings.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -80,7 +74,7 @@ const AdvancedPassGenPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.advancedpassgen.childImageSharp.fixed} />
+                    <GatsbyImage image={data.advancedpassgen.childImageSharp.gatsbyImageData} alt="Advanced PassGen" />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -92,7 +86,7 @@ const AdvancedPassGenPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.advancedpassgensettings.childImageSharp.fixed} />
+                    <GatsbyImage image={data.advancedpassgensettings.childImageSharp.gatsbyImageData} alt="Advanced PassGen settings" />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -124,7 +118,10 @@ const AdvancedPassGenPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.advancedpassgensettingsadvanced.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.advancedpassgensettingsadvanced.childImageSharp.gatsbyImageData}
+                      alt="Advanced PassGen advanced settings"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>

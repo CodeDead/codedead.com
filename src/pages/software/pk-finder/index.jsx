@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -23,23 +23,17 @@ const PkFinderPage = () => {
   query {
     pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     general: file(relativePath: { eq: "PK Finder/pkgeneral.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     },
     theme: file(relativePath: { eq: "PK Finder/pktheme.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }`);
@@ -79,7 +73,10 @@ const PkFinderPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.pkfinder.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.pkfinder.childImageSharp.gatsbyImageData}
+                      alt="PK Finder main window"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
@@ -91,7 +88,10 @@ const PkFinderPage = () => {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.general.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.general.childImageSharp.gatsbyImageData}
+                      alt="PK Finder general settings"
+                    />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
                     <Typography variant="h6">
@@ -121,7 +121,10 @@ const PkFinderPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
-                    <Img fixed={data.theme.childImageSharp.fixed} />
+                    <GatsbyImage
+                      image={data.theme.childImageSharp.gatsbyImageData}
+                      alt="PK Finder theme settings"
+                    />
                   </Grid>
                 </Grid>
               </CardContent>
