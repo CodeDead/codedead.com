@@ -97,7 +97,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/b2f3898cfc0f85e7ec65deebbbdd7b336c866a6a395f4c2ebada97e3337eb1b7/detection"
+              href="https://www.virustotal.com/gui/file/427e3ef043665b2b181254e2cfedde666d24789291b933077561aa65936fb38f/detection"
               target="_blank"
             >
               Installer
@@ -106,7 +106,7 @@ const Requirements = () => {
               style={{ width: '100%', marginTop: 10 }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/fb5903c0a4d4bfd4883a66522892cb39b3cab221ca0669b1fe38a84dc91a3c6a/detection"
+              href="https://www.virustotal.com/gui/file/5b303f2206f10146f4f60d8b8c91524cf2d869ef425b36faa55c02d1c5be25c4/detection"
               target="_blank"
             >
               Portable
@@ -120,7 +120,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/987fd35e497cbfaf6f08cbba7d15e57f4c295d7de04d0da750efe4049e9a62d8/detection"
+              href="https://www.virustotal.com/gui/file/63d06f86eca527ac28847671879de153240008a349554c38e25d3dcb8a9bef76/detection"
               target="_blank"
             >
               AppImage
