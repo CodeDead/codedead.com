@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { graphql, useStaticQuery, navigate } from 'gatsby';
 import { CssBaseline } from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import DefaultAppBar from '../DefaultAppBar';
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
 
   const color = ThemeSelector(themeColorIndex, state.themes.defaultColor);
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       primary: color,
       type: themeType,

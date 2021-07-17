@@ -7,6 +7,7 @@ import {
   MenuItem,
   Select,
   TextField,
+  Typography,
 } from '@material-ui/core';
 import axios from 'axios';
 import Grid from '@material-ui/core/Grid';
@@ -31,6 +32,7 @@ const EgldPriceCalculator = () => {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [priceDate, setPriceDate] = useState(null);
 
   /**
    * Close the snackbar
@@ -77,6 +79,7 @@ const EgldPriceCalculator = () => {
 
     axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=elrond-erd-2&vs_currencies=${newCurrency}`)
       .then((res) => {
+        setPriceDate(new Date());
         const values = Object.values(res.data['elrond-erd-2']);
         const ppegld = parseFloat(values[0]);
 
@@ -226,6 +229,11 @@ const EgldPriceCalculator = () => {
             )}
           </CardContent>
         </Card>
+        {priceDate ? (
+            <Typography variant="subtitle1" gutterBottom>
+              Last update: {priceDate.toLocaleString()}
+            </Typography>
+        ) : null}
       </Container>
       <Snackbar open={!!error} autoHideDuration={6000} onClose={closeSnackbar}>
         {error
