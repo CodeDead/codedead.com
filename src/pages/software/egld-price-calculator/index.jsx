@@ -230,9 +230,14 @@ const EgldPriceCalculator = () => {
           </CardContent>
         </Card>
         {priceDate ? (
-            <Typography variant="subtitle1" gutterBottom>
-              Last update: {priceDate.toLocaleString()}
-            </Typography>
+            <>
+              <Typography variant="subtitle1" gutterBottom>
+                Last update: {priceDate.toLocaleString()}
+              </Typography>
+              <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer">
+                Source
+              </a>
+            </>
         ) : null}
       </Container>
       <Snackbar open={!!error} autoHideDuration={6000} onClose={closeSnackbar}>
