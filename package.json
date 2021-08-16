@@ -18,11 +18,11 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "axios": "^0.21.1",
-    "gatsby": "^3.11.0",
+    "gatsby": "^3.11.1",
     "gatsby-plugin-catch-links": "^3.11.0",
     "gatsby-plugin-google-gtag": "^3.11.0",
     "gatsby-plugin-image": "^1.11.0",
-    "gatsby-plugin-robots-txt": "^1.6.8",
+    "gatsby-plugin-robots-txt": "^1.6.9",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-sitemap": "^4.7.0",
     "gatsby-remark-images": "^5.8.0",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0"
@@ -48,5 +48,6 @@
   },
   "bugs": {
     "url": "https://github.com/CodeDead/codedead.com/issues"
-  }
+  },
+  "packageManager": "yarn@3.0.1"
 }
