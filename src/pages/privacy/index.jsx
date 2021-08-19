@@ -35,8 +35,8 @@ const Privacy = () => {
           <CardContent>
             <Typography gutterBottom>
               Let’s get started shall we. We’re all about transparency. That is why our applications
-              are always open-source and compiled as-is. No hidden fee’s anywhere. There’s a good
-              reason for that too. Not only do we not want your money by means of adware or other
+              are always open-source and compiled as-is. There are no hidden fee’s or trackers in our software.
+              There’s a good reason for that too. Not only do we not want your money by means of adware or other
               dubious methods like including other products in our installers, we want you to know
               exactly what we know about you. Donations are still welcome though ;).
             </Typography>
