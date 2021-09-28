@@ -5,7 +5,6 @@ import Alert from '@mui/material/Alert';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Helmet } from 'react-helmet';
 import DefaultAppBar from '../DefaultAppBar';
 import Footer from '../Footer';
 import { MainContext } from '../../contexts/MainContextProvider';
@@ -58,10 +57,6 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Helmet>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-      </Helmet>
       <CssBaseline />
       <DefaultAppBar title={data.site.siteMetadata.title} />
       {children}
