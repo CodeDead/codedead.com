@@ -18,6 +18,7 @@ module.exports = {
     facebook: 'https://facebook.com/deadlinecodedead',
   },
   plugins: [
+    'gatsby-plugin-material-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -60,7 +61,6 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
-    'gatsby-theme-material-ui',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-image',

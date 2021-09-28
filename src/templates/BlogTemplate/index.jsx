@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import Container from '@material-ui/core/Container';
+import Container from '@mui/material/Container';
 import { graphql } from 'gatsby';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import { Card } from '@material-ui/core';
-import CardContent from '@material-ui/core/CardContent';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
 import { MainContext } from '../../contexts/MainContextProvider';

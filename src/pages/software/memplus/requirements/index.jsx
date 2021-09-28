@@ -1,18 +1,18 @@
 import React, { useContext, useEffect } from 'react';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableRow from '@material-ui/core/TableRow';
-import TableCell from '@material-ui/core/TableCell';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import InfoIcon from '@material-ui/icons/Info';
-import SecurityIcon from '@material-ui/icons/Security';
-import TableContainer from '@material-ui/core/TableContainer';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableRow from '@mui/material/TableRow';
+import TableCell from '@mui/material/TableCell';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Button from '@mui/material/Button';
+import InfoIcon from '@mui/icons-material/Info';
+import SecurityIcon from '@mui/icons-material/Security';
+import TableContainer from '@mui/material/TableContainer';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import PageHeader from '../../../../components/PageHeader';
 import Layout from '../../../../components/Layout';
 import { MainContext } from '../../../../contexts/MainContextProvider';
@@ -44,7 +44,7 @@ const Requirements = () => {
 
         <Card style={{ marginTop: 10 }}>
           <CardContent>
-            <TableContainer >
+            <TableContainer>
               <Table>
                 <TableBody>
                   <TableRow>

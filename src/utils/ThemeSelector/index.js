@@ -1,11 +1,11 @@
-import deepPurple from '@material-ui/core/colors/deepPurple';
-import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
-import lightGreen from '@material-ui/core/colors/lightGreen';
-import blue from '@material-ui/core/colors/blue';
-import lightBlue from '@material-ui/core/colors/lightBlue';
-import red from '@material-ui/core/colors/red';
-import grey from '@material-ui/core/colors/grey';
+import deepPurple from '@mui/material/colors/deepPurple';
+import purple from '@mui/material/colors/purple';
+import green from '@mui/material/colors/green';
+import lightGreen from '@mui/material/colors/lightGreen';
+import blue from '@mui/material/colors/blue';
+import lightBlue from '@mui/material/colors/lightBlue';
+import red from '@mui/material/colors/red';
+import grey from '@mui/material/colors/grey';
 
 const ThemeSelector = (index, defaultColor) => {
   switch (index) {

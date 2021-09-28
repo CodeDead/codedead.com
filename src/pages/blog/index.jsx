@@ -1,17 +1,17 @@
 import React, { useContext, useEffect } from 'react';
-import Container from '@material-ui/core/Container';
+import Container from '@mui/material/Container';
 import { graphql, useStaticQuery } from 'gatsby';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import FirstPageIcon from '@mui/icons-material/FirstPage';
+import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+import SkipNextIcon from '@mui/icons-material/SkipNext';
+import LastPageIcon from '@mui/icons-material/LastPage';
 import Layout from '../../components/Layout';
 import PageHeader from '../../components/PageHeader';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setBlogLimit, setPageIndex } from '../../reducers/MainReducer/Actions';
 import BlogList from '../../components/BlogList';
-import FirstPageIcon from '@material-ui/icons/FirstPage';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-import LastPageIcon from '@material-ui/icons/LastPage';
 
 const Blog = () => {
   const [state, dispatch] = useContext(MainContext);
