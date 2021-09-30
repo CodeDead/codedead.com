@@ -17,9 +17,9 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/icons-material": "^5.0.1",
-    "@mui/material": "^5.0.1",
+    "@mui/material": "^5.0.2",
     "axios": "^0.21.4",
-    "gatsby": "^3.14.0",
+    "gatsby": "^3.14.1",
     "gatsby-plugin-catch-links": "^3.14.0",
     "gatsby-plugin-google-gtag": "^3.14.0",
     "gatsby-plugin-image": "^1.14.0",
@@ -41,7 +41,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "repository": {
