@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({
+const SEO = ({
   description, lang, meta, title,
-}) {
+}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -52,7 +52,7 @@ function SEO({
         },
         {
           name: 'twitter:creator',
-          content: site.siteMetadata.author || '',
+          content: 'C0DEDEAD',
         },
         {
           name: 'twitter:title',
@@ -65,7 +65,7 @@ function SEO({
       ].concat(meta)}
     />
   );
-}
+};
 
 SEO.defaultProps = {
   lang: 'en',

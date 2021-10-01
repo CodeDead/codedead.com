@@ -1,22 +1,21 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import { useTheme } from '@mui/material/styles';
 import BackButton from '../BackButton';
 import SEO from '../SEO';
 
-const useStyles = makeStyles((theme) => ({
-  heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(4, 0, 2),
-  },
-}));
-
 const PageHeader = ({ title, subTitle, backButton }) => {
-  const classes = useStyles();
+  const theme = useTheme();
 
   return (
-    <div className={classes.heroContent}>
+    <Box
+      sx={{
+        backgroundColor: 'background.paper',
+        padding: theme.spacing(4, 0, 2),
+      }}
+    >
       <SEO title={title} description={subTitle} />
       <Container maxWidth="sm">
         <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
@@ -29,7 +28,7 @@ const PageHeader = ({ title, subTitle, backButton }) => {
           {subTitle}
         </Typography>
       </Container>
-    </div>
+    </Box>
   );
 };
 

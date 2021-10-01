@@ -1,19 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react';
-import {
-  Card,
-  Container,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  TextField,
-  Typography,
-} from '@material-ui/core';
+import Card from '@mui/material/Card';
+import Container from '@mui/material/Container';
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 import axios from 'axios';
-import Grid from '@material-ui/core/Grid';
-import CardContent from '@material-ui/core/CardContent';
-import MuiAlert from '@material-ui/lab/Alert';
-import Snackbar from '@material-ui/core/Snackbar';
+import Grid from '@mui/material/Grid';
+import CardContent from '@mui/material/CardContent';
+import MuiAlert from '@mui/material/Alert';
+import Snackbar from '@mui/material/Snackbar';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
@@ -230,14 +228,16 @@ const EgldPriceCalculator = () => {
           </CardContent>
         </Card>
         {priceDate ? (
-            <>
-              <Typography variant="subtitle1" gutterBottom>
-                Last update: {priceDate.toLocaleString()}
-              </Typography>
-              <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer">
-                Source
-              </a>
-            </>
+          <>
+            <Typography variant="subtitle1" gutterBottom>
+              Last update:
+              {' '}
+              {priceDate.toLocaleString()}
+            </Typography>
+            <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer">
+              Source
+            </a>
+          </>
         ) : null}
       </Container>
       <Snackbar open={!!error} autoHideDuration={6000} onClose={closeSnackbar}>

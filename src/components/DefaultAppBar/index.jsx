@@ -1,28 +1,16 @@
 import React, { useContext, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'gatsby';
-import Brightness5Icon from '@material-ui/icons/Brightness5';
-import Brightness7Icon from '@material-ui/icons/Brightness7';
+import Brightness5Icon from '@mui/icons-material/Brightness5';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { useTheme } from '@mui/material/styles';
 import NavigationDrawer from '../NavigationDrawer';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setThemeIndex } from '../../reducers/MainReducer/Actions';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
 
 const DefaultAppBar = ({
   title,
@@ -31,7 +19,7 @@ const DefaultAppBar = ({
 
   const { themeIndex } = state;
 
-  const classes = useStyles();
+  const theme = useTheme();
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   /**
@@ -42,12 +30,14 @@ const DefaultAppBar = ({
   };
 
   return (
-    <div className={classes.root}>
+    <div style={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
             edge="start"
-            className={classes.menuButton}
+            sx={{
+              marginRight: theme.spacing(2),
+            }}
             color="inherit"
             aria-label="menu"
             onClick={() => setDrawerOpen(true)}
@@ -66,7 +56,7 @@ const DefaultAppBar = ({
             </Typography>
           </Link>
 
-          <div className={classes.title} />
+          <div style={{ flexGrow: 1 }} />
 
           <IconButton color="inherit" onClick={changeTheme}>
             {themeIndex === 1 ? <Brightness5Icon /> : <Brightness7Icon />}
