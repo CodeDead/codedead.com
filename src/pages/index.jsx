@@ -44,11 +44,11 @@ const Home = () => {
         gatsbyImageData(layout: FULL_WIDTH)
       }
     },
-    pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
+    opal: file(relativePath: { eq: "Opal/Opal.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
-    }
+    } 
   }`);
 
   const [, dispatch] = useContext(MainContext);
@@ -145,15 +145,15 @@ const Home = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Card>
               <CardActionArea
-                onClick={() => navigate('/software/pk-finder')}
+                onClick={() => navigate('/software/opal')}
               >
                 <CardContent>
                   <Grid container spacing={2}>
                     <Grid item xs={12} md={6} lg={6}>
-                      <Link to="/software/pk-finder">
+                      <Link to="/software/opal">
                         <GatsbyImage
                           image={{
-                            ...data.pkfinder.childImageSharp.gatsbyImageData,
+                            ...data.opal.childImageSharp.gatsbyImageData,
                             aspectRatio: 21 / 9,
                           }}
                           alt="PK Finder"
@@ -163,11 +163,11 @@ const Home = () => {
 
                     <Grid item xs={12} md={6} lg={6}>
                       <Typography variant="h6" color="textPrimary" paragraph>
-                        PK Finder
+                        Opal
                       </Typography>
                       <Typography color="textSecondary" paragraph>
-                        Easily recover your Windows Product Key with PK Finder. As soon as you open
-                        PK Finder, you’ll be able to view your product key.
+                        A free and open source music player that will help you relax. Opal has
+                        14 sounds available that will help you relax. It runs on Windows and Linux.
                       </Typography>
                     </Grid>
                   </Grid>
