@@ -14,6 +14,8 @@ import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import CardActions from '@mui/material/CardActions';
 
 const OpalPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -193,6 +195,54 @@ const OpalPage = () => {
             >
               AppImage
             </Button>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2} style={{ marginTop: 10 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h5" color="textPrimary">
+              <FormatQuoteIcon color="inherit" />
+              {' '}
+              What others say
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Divider />
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2} style={{ marginTop: 10 }}>
+          <Grid item xs={12} md={12} lg={12}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" color="textPrimary" gutterBottom>
+                  A simple app that includes different sound groupings to suit anyone,
+                  from office to fantasy
+                </Typography>
+                <Typography gutterBottom>
+                  <i>
+                    &quot;Opal is a simple app that includes different sound groupings to suit
+                    anyone, from office to fantasy. All have volume controls so you can keep faint
+                    in the background or bring them forward.
+                    You can also set up a delay timer from the settings tab to remind you to take a
+                    break. You also have the option to combine multiple sounds at varying volumes
+                    to produce the perfect background noise.&quot;
+                  </i>
+                </Typography>
+                <Typography>
+                  <b>MajorGeeks</b>
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  variant="contained"
+                  href="https://www.majorgeeks.com/files/details/opal.html"
+                  target="_blank"
+                >
+                  Source
+                </Button>
+              </CardActions>
+            </Card>
           </Grid>
         </Grid>
 
