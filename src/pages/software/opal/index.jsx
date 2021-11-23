@@ -10,12 +10,12 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import InfoIcon from '@mui/icons-material/Info';
 import GetAppIcon from '@mui/icons-material/GetApp';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import CardActions from '@mui/material/CardActions';
 import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import CardActions from '@mui/material/CardActions';
 
 const OpalPage = () => {
   const [, dispatch] = useContext(MainContext);
