@@ -69,7 +69,7 @@ const OpalPage = () => {
                       Simplicity
                     </Typography>
                     <Typography paragraph gutterBottom>
-                      Select the sounds (14 relaxing tracks are available) that you want to hear,
+                      Select the sounds (17 relaxing tracks are available) that you want to hear,
                       turn them on and you can listen to and enjoy the music for as long as you
                       want, without interruption.
                     </Typography>
