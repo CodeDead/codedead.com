@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import Layout from '../../components/Layout';
 import PageHeader from '../../components/PageHeader';
 import { MainContext } from '../../contexts/MainContextProvider';
@@ -35,10 +35,11 @@ const Privacy = () => {
           <CardContent>
             <Typography gutterBottom>
               Let’s get started shall we. We’re all about transparency. That is why our applications
-              are always open-source and compiled as-is. No hidden fee’s anywhere. There’s a good
-              reason for that too. Not only do we not want your money by means of adware or other
-              dubious methods like including other products in our installers, we want you to know
-              exactly what we know about you. Donations are still welcome though ;).
+              are always open-source and compiled as-is. There are no hidden fee’s or trackers in
+              our software. There’s a good reason for that too. Not only do we not want your money
+              by means of adware or other dubious methods like including other products in our
+              installers, we want you to know exactly what we know about you. Donations are still
+              welcome though ;).
             </Typography>
 
             <Typography>

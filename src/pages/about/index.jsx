@@ -1,21 +1,21 @@
 import React, { useContext, useEffect } from 'react';
-import { Container, SvgIcon } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Grid from '@material-ui/core/Grid';
-import CardActions from '@material-ui/core/CardActions';
-import IconButton from '@material-ui/core/IconButton';
-import GroupIcon from '@material-ui/icons/Group';
-import InfoIcon from '@material-ui/icons/Info';
+import Container from '@mui/material/Container';
+import SvgIcon from '@mui/material/SvgIcon';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Grid from '@mui/material/Grid';
+import CardActions from '@mui/material/CardActions';
+import IconButton from '@mui/material/IconButton';
+import GroupIcon from '@mui/icons-material/Group';
+import InfoIcon from '@mui/icons-material/Info';
 import { graphql, useStaticQuery } from 'gatsby';
-import Divider from '@material-ui/core/Divider';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import Divider from '@mui/material/Divider';
+import CardActionArea from '@mui/material/CardActionArea';
 import GitHubIcon from '../../components/GithubIcon';
 import LinkedInIcon from '../../components/LinkedInIcon';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
-import RedditIcon from '../../components/RedditIcon';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';
 
@@ -25,7 +25,6 @@ const AboutPage = () => {
       site {
         siteMetadata {
           github,
-          reddit,
         }
       }
      }`);
@@ -124,11 +123,6 @@ const AboutPage = () => {
                   onClick={() => openSite('https://be.linkedin.com/in/alessandro-mercier-aab153125')}
                 >
                   <LinkedInIcon />
-                </IconButton>
-                <IconButton color="inherit" onClick={() => openSite(data.site.siteMetadata.reddit)}>
-                  <SvgIcon>
-                    <RedditIcon />
-                  </SvgIcon>
                 </IconButton>
               </CardActions>
             </Card>

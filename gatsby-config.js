@@ -14,10 +14,10 @@ module.exports = {
     author: 'CodeDead',
     github: 'https://github.com/CodeDead',
     twitter: 'https://twitter.com/C0DEDEAD',
-    reddit: 'https://reddit.com/r/CodeDead/',
     facebook: 'https://facebook.com/deadlinecodedead',
   },
   plugins: [
+    'gatsby-theme-material-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -60,7 +60,6 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
-    'gatsby-theme-material-ui',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-image',

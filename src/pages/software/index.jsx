@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Container, TextField } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import SecurityIcon from '@material-ui/icons/Security';
-import ComputerIcon from '@material-ui/icons/Computer';
-import AppsIcon from '@material-ui/icons/Apps';
+import Container from '@mui/material/Container';
+import TextField from '@mui/material/TextField';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import SecurityIcon from '@mui/icons-material/Security';
+import ComputerIcon from '@mui/icons-material/Computer';
+import AppsIcon from '@mui/icons-material/Apps';
 import { graphql, useStaticQuery } from 'gatsby';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
@@ -57,6 +58,11 @@ const Software = () => {
       }
     },
     pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    },
+    opal: file(relativePath: { eq: "Opal/Opal.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, height: 160)
       }
@@ -122,6 +128,12 @@ const Software = () => {
     description: 'A simple and easy to use price calculator for Elrond (EGLD).',
     tags: ['egld', 'elrond', 'currency', 'Crypto'],
     image: imageData.egld.childImageSharp.gatsbyImageData,
+  }, {
+    name: 'Opal',
+    url: '/software/opal',
+    description: 'Opal is a free and open source music player that will help you relax. It runs on Windows and Linux.',
+    tags: ['Opal', 'music', 'relax', 'sound', 'relaxation', 'relaxing', 'linux'],
+    image: imageData.opal.childImageSharp.gatsbyImageData,
   }];
 
   useEffect(() => {
@@ -190,7 +202,7 @@ const Software = () => {
 
         {/* eslint-disable-next-line no-nested-ternary */}
         {searchResult && searchResult.length > 0 ? (
-          <Grid container spacing={2}>
+          <Grid container spacing={2} style={{ marginTop: 10 }}>
             {searchResult}
           </Grid>
         ) : searchValue && searchValue.length > 0 ? (
@@ -225,6 +237,14 @@ const Software = () => {
                   description={applications.filter((item) => item.name === 'Advanced PassGen')[0].description}
                   url={applications.filter((item) => item.name === 'Advanced PassGen')[0].url}
                   image={applications.filter((item) => item.name === 'Advanced PassGen')[0].image}
+                />
+              </Grid>
+              <Grid item xs={12} md={3} lg={4}>
+                <Application
+                  name={applications.filter((item) => item.name === 'Advanced PortChecker')[0].name}
+                  description={applications.filter((item) => item.name === 'Advanced PortChecker')[0].description}
+                  url={applications.filter((item) => item.name === 'Advanced PortChecker')[0].url}
+                  image={applications.filter((item) => item.name === 'Advanced PortChecker')[0].image}
                 />
               </Grid>
             </Grid>
@@ -269,6 +289,14 @@ const Software = () => {
                   image={applications.filter((item) => item.name === 'PK Finder')[0].image}
                 />
               </Grid>
+              <Grid item xs={12} md={3} lg={4}>
+                <Application
+                  name={applications.filter((item) => item.name === 'DeadLock')[0].name}
+                  description={applications.filter((item) => item.name === 'DeadLock')[0].description}
+                  url={applications.filter((item) => item.name === 'DeadLock')[0].url}
+                  image={applications.filter((item) => item.name === 'DeadLock')[0].image}
+                />
+              </Grid>
             </Grid>
           )}
 
@@ -293,26 +321,10 @@ const Software = () => {
               <Grid container spacing={2} style={{ marginTop: 10 }}>
                 <Grid item xs={12} md={3} lg={4}>
                   <Application
-                    name={applications.filter((item) => item.name === 'Advanced PortChecker')[0].name}
-                    description={applications.filter((item) => item.name === 'Advanced PortChecker')[0].description}
-                    url={applications.filter((item) => item.name === 'Advanced PortChecker')[0].url}
-                    image={applications.filter((item) => item.name === 'Advanced PortChecker')[0].image}
-                  />
-                </Grid>
-                <Grid item xs={12} md={3} lg={4}>
-                  <Application
-                    name={applications.filter((item) => item.name === 'DeadLock')[0].name}
-                    description={applications.filter((item) => item.name === 'DeadLock')[0].description}
-                    url={applications.filter((item) => item.name === 'DeadLock')[0].url}
-                    image={applications.filter((item) => item.name === 'DeadLock')[0].image}
-                  />
-                </Grid>
-                <Grid item xs={12} md={3} lg={4}>
-                  <Application
-                    name={applications.filter((item) => item.name === 'DeadPix')[0].name}
-                    description={applications.filter((item) => item.name === 'DeadPix')[0].description}
-                    url={applications.filter((item) => item.name === 'DeadPix')[0].url}
-                    image={applications.filter((item) => item.name === 'DeadPix')[0].image}
+                    name={applications.filter((item) => item.name === 'Opal')[0].name}
+                    description={applications.filter((item) => item.name === 'Opal')[0].description}
+                    url={applications.filter((item) => item.name === 'Opal')[0].url}
+                    image={applications.filter((item) => item.name === 'Opal')[0].image}
                   />
                 </Grid>
                 <Grid item xs={12} md={3} lg={4}>
@@ -321,6 +333,14 @@ const Software = () => {
                     description={applications.filter((item) => item.name === 'AniView')[0].description}
                     url={applications.filter((item) => item.name === 'AniView')[0].url}
                     image={applications.filter((item) => item.name === 'AniView')[0].image}
+                  />
+                </Grid>
+                <Grid item xs={12} md={3} lg={4}>
+                  <Application
+                    name={applications.filter((item) => item.name === 'DeadPix')[0].name}
+                    description={applications.filter((item) => item.name === 'DeadPix')[0].description}
+                    url={applications.filter((item) => item.name === 'DeadPix')[0].url}
+                    image={applications.filter((item) => item.name === 'DeadPix')[0].image}
                   />
                 </Grid>
                 <Grid item xs={12} md={3} lg={4}>

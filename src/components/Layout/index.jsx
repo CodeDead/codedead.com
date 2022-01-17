@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { graphql, useStaticQuery, navigate } from 'gatsby';
-import { CssBaseline } from '@material-ui/core';
-import Alert from '@material-ui/lab/Alert';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { CssBaseline } from '@mui/material';
+import Alert from '@mui/material/Alert';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import DefaultAppBar from '../DefaultAppBar';
 import Footer from '../Footer';
 import { MainContext } from '../../contexts/MainContextProvider';
@@ -21,7 +21,6 @@ const Layout = ({ children }) => {
           title,
           github,
           twitter,
-          reddit,
           facebook
         }
       }
@@ -34,10 +33,10 @@ const Layout = ({ children }) => {
 
   const color = ThemeSelector(themeColorIndex, state.themes.defaultColor);
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       primary: color,
-      type: themeType,
+      mode: themeType,
     },
   });
 

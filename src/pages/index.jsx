@@ -1,18 +1,18 @@
 import React, { useContext, useEffect } from 'react';
-import { Container } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import {
   graphql, useStaticQuery, navigate, Link,
 } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import Divider from '@material-ui/core/Divider';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import AnnouncementIcon from '@material-ui/icons/Announcement';
-import BuildIcon from '@material-ui/icons/Build';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import AnnouncementIcon from '@mui/icons-material/Announcement';
+import BuildIcon from '@mui/icons-material/Build';
+import CardActionArea from '@mui/material/CardActionArea';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { MainContext } from '../contexts/MainContextProvider';
@@ -44,11 +44,11 @@ const Home = () => {
         gatsbyImageData(layout: FULL_WIDTH)
       }
     },
-    pkfinder: file(relativePath: { eq: "PK Finder/pkfinder.png" }) {
+    opal: file(relativePath: { eq: "Opal/Opal.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
-    }
+    } 
   }`);
 
   const [, dispatch] = useContext(MainContext);
@@ -145,15 +145,15 @@ const Home = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Card>
               <CardActionArea
-                onClick={() => navigate('/software/pk-finder')}
+                onClick={() => navigate('/software/opal')}
               >
                 <CardContent>
                   <Grid container spacing={2}>
                     <Grid item xs={12} md={6} lg={6}>
-                      <Link to="/software/pk-finder">
+                      <Link to="/software/opal">
                         <GatsbyImage
                           image={{
-                            ...data.pkfinder.childImageSharp.gatsbyImageData,
+                            ...data.opal.childImageSharp.gatsbyImageData,
                             aspectRatio: 21 / 9,
                           }}
                           alt="PK Finder"
@@ -163,11 +163,11 @@ const Home = () => {
 
                     <Grid item xs={12} md={6} lg={6}>
                       <Typography variant="h6" color="textPrimary" paragraph>
-                        PK Finder
+                        Opal
                       </Typography>
                       <Typography color="textSecondary" paragraph>
-                        Easily recover your Windows Product Key with PK Finder. As soon as you open
-                        PK Finder, you’ll be able to view your product key.
+                        A free and open source music player that will help you relax. Opal has
+                        14 sounds available that will help you relax. It runs on Windows and Linux.
                       </Typography>
                     </Grid>
                   </Grid>

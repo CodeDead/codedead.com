@@ -1,17 +1,17 @@
 import React, { useContext, useEffect } from 'react';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableRow from '@material-ui/core/TableRow';
-import TableCell from '@material-ui/core/TableCell';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import { Button, Card } from '@material-ui/core';
-import SecurityIcon from '@material-ui/icons/Security';
-import InfoIcon from '@material-ui/icons/Info';
-import CardContent from '@material-ui/core/CardContent';
-import TableContainer from '@material-ui/core/TableContainer';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableRow from '@mui/material/TableRow';
+import TableCell from '@mui/material/TableCell';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import { Button, Card } from '@mui/material';
+import SecurityIcon from '@mui/icons-material/Security';
+import InfoIcon from '@mui/icons-material/Info';
+import CardContent from '@mui/material/CardContent';
+import TableContainer from '@mui/material/TableContainer';
 import PageHeader from '../../../../components/PageHeader';
 import Layout from '../../../../components/Layout';
 import { MainContext } from '../../../../contexts/MainContextProvider';
@@ -97,7 +97,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/b2f3898cfc0f85e7ec65deebbbdd7b336c866a6a395f4c2ebada97e3337eb1b7/detection"
+              href="https://www.virustotal.com/gui/file/ec66b4ef2960a82a5946b3ffef24479a1024339e278e7572a31a76a160e4e16f?nocache=1"
               target="_blank"
             >
               Installer
@@ -106,7 +106,7 @@ const Requirements = () => {
               style={{ width: '100%', marginTop: 10 }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/fb5903c0a4d4bfd4883a66522892cb39b3cab221ca0669b1fe38a84dc91a3c6a/detection"
+              href="https://www.virustotal.com/gui/file/a1ff2f9aaf903a3f4a424bd14b0c6838f6c06ca0603adedca7775392fa9165cf?nocache=1"
               target="_blank"
             >
               Portable
@@ -120,7 +120,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/987fd35e497cbfaf6f08cbba7d15e57f4c295d7de04d0da750efe4049e9a62d8/detection"
+              href="https://www.virustotal.com/gui/file/87233e0a96bdc4083ee8cfac81042ed3bb387937cd560e17d5855bef6fd453de?nocache=1"
               target="_blank"
             >
               AppImage

@@ -23,6 +23,6 @@ yarn build
 
 ## About
 
-This website is maintained by CodeDead.
+This website is maintained by [CodeDead](https://codedead.com).
 
 Copyright © 2021 CodeDead
