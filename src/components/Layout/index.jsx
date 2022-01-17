@@ -21,7 +21,6 @@ const Layout = ({ children }) => {
           title,
           github,
           twitter,
-          reddit,
           facebook
         }
       }

@@ -25,7 +25,6 @@ const AboutPage = () => {
       site {
         siteMetadata {
           github,
-          reddit,
         }
       }
      }`);
