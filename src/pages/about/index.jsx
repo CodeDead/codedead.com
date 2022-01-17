@@ -16,7 +16,6 @@ import GitHubIcon from '../../components/GithubIcon';
 import LinkedInIcon from '../../components/LinkedInIcon';
 import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
-import RedditIcon from '../../components/RedditIcon';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';
 
@@ -125,11 +124,6 @@ const AboutPage = () => {
                   onClick={() => openSite('https://be.linkedin.com/in/alessandro-mercier-aab153125')}
                 >
                   <LinkedInIcon />
-                </IconButton>
-                <IconButton color="inherit" onClick={() => openSite(data.site.siteMetadata.reddit)}>
-                  <SvgIcon>
-                    <RedditIcon />
-                  </SvgIcon>
                 </IconButton>
               </CardActions>
             </Card>
