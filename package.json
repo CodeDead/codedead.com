@@ -2,7 +2,7 @@
   "name": "codedead.com",
   "private": true,
   "description": "CodeDead Website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
