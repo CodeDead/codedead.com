@@ -2,7 +2,7 @@
   "name": "codedead.com",
   "private": true,
   "description": "CodeDead Website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -14,34 +14,34 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.2.5",
-    "@mui/material": "^5.2.8",
-    "axios": "^0.24.0",
-    "gatsby": "^4.5.3",
-    "gatsby-plugin-catch-links": "^4.5.0",
-    "gatsby-plugin-google-gtag": "^4.5.0",
-    "gatsby-plugin-image": "^2.5.2",
-    "gatsby-plugin-react-helmet": "^5.5.0",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.0",
+    "@mui/material": "^5.5.0",
+    "axios": "^0.26.1",
+    "gatsby": "^4.9.3",
+    "gatsby-plugin-catch-links": "^4.9.0",
+    "gatsby-plugin-google-gtag": "^4.9.0",
+    "gatsby-plugin-image": "^2.9.1",
+    "gatsby-plugin-react-helmet": "^5.9.0",
     "gatsby-plugin-robots-txt": "^1.7.0",
-    "gatsby-plugin-sharp": "^4.5.2",
-    "gatsby-plugin-sitemap": "^5.5.0",
-    "gatsby-remark-images": "^6.5.2",
-    "gatsby-source-filesystem": "^4.5.2",
+    "gatsby-plugin-sharp": "^4.9.1",
+    "gatsby-plugin-sitemap": "^5.9.0",
+    "gatsby-remark-images": "^6.9.1",
+    "gatsby-source-filesystem": "^4.9.1",
     "gatsby-theme-material-ui": "^5.1.0",
-    "gatsby-transformer-remark": "^5.5.2",
-    "gatsby-transformer-sharp": "^4.5.0",
+    "gatsby-transformer-remark": "^5.9.1",
+    "gatsby-transformer-sharp": "^4.9.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
+    "eslint": "^8.10.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "repository": {
@@ -51,5 +51,5 @@
   "bugs": {
     "url": "https://github.com/CodeDead/codedead.com/issues"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }
