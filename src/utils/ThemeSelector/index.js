@@ -9,10 +9,6 @@ import grey from '@mui/material/colors/grey';
 
 const ThemeSelector = (index, defaultColor) => {
   switch (index) {
-    default:
-      return {
-        main: defaultColor,
-      };
     case 1:
       return purple;
     case 2:
@@ -29,6 +25,10 @@ const ThemeSelector = (index, defaultColor) => {
       return lightBlue;
     case 8:
       return grey;
+    default:
+      return {
+        main: defaultColor,
+      };
   }
 };
 
