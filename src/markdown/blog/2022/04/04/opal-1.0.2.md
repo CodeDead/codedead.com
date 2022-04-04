@@ -3,7 +3,7 @@ path: "/blog/2022/04/04/opal-1.0.2"
 title: "Opal 1.0.2 - Release"
 author: "CodeDead"
 date: "2022-04-04"
-abstract: "Opal v1.0.2 has just been released. We've added a couple of new sounds that you can listen to, along with some user-experience related..."
+abstract: "Opal v1.0.2 has just been released. We've added a couple of new tracks to enjoy while relaxing and application..."
 categories: "Java, News"
 ---
 ## Information
