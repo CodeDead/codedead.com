@@ -174,7 +174,7 @@ const DeadHashPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.2.1.exe"
+              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.2.2.exe"
             >
               Installer
             </Button>
@@ -185,7 +185,7 @@ const DeadHashPage = () => {
               }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%202.2.1.exe"
+              href="https://codedead.com/Software/DeadHash/DeadHash%202.2.2.exe"
             >
               Portable
             </Button>
@@ -198,7 +198,7 @@ const DeadHashPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash-2.2.1.AppImage"
+              href="https://codedead.com/Software/DeadHash/DeadHash-2.2.2.AppImage"
             >
               AppImage
             </Button>
