@@ -24,15 +24,6 @@ instance!
 
 You can find the source code of this very website here: [GitHub](https://github.com/CodeDead/codedead.com)
 
-## Hosting
-
-![DigitalOcean](https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format)
-
-We are currently hosting this website on [DigitalOcean](https://digitalocean.com). If you want to host your own website(s), feel free to sign-up using our referral link.
-If you use our referral link, you will receive $100 USD in credit to set up your own droplets!
-
-[Sign up here](https://m.do.co/c/6ab122f4a392)
-
 ## Other
 
 Some functionalities might still be missing at the time of this post, but bear with us while we update and improve the site and our server even further!
