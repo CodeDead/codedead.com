@@ -160,14 +160,13 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-
                     <Grid item xs={12} md={6} lg={6}>
                       <Typography variant="h6" color="textPrimary" paragraph>
                         Opal
                       </Typography>
                       <Typography color="textSecondary" paragraph>
                         A free and open source music player that will help you relax. Opal has
-                        17 sounds available that will help you relax. It runs on Windows and Linux.
+                        20+ sounds available that will help you relax. It runs on Windows and Linux.
                       </Typography>
                     </Grid>
                   </Grid>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { useTheme } from '@mui/material/styles';
@@ -15,8 +15,8 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AnnouncementIcon from '@mui/icons-material/Announcement';
 import InfoIcon from '@mui/icons-material/Info';
 import EmailIcon from '@mui/icons-material/Email';
+import Box from '@mui/material/Box';
 import { navigate } from 'gatsby';
-import { Box } from '@mui/material';
 import { MainContext } from '../../contexts/MainContextProvider';
 
 const NavigationDrawer = ({ open, onClose }) => {
@@ -61,48 +61,48 @@ const NavigationDrawer = ({ open, onClose }) => {
       >
         <Divider />
         <List>
-          <ListItem button onClick={() => navigate('/')} selected={pageIndex === 0}>
+          <ListItemButton onClick={() => navigate('/')} selected={pageIndex === 0}>
             <ListItemIcon><HomeIcon /></ListItemIcon>
             <ListItemText>
               Home
             </ListItemText>
-          </ListItem>
+          </ListItemButton>
         </List>
         <Divider />
         <List>
-          <ListItem button onClick={() => navigate('/software')} selected={pageIndex === 1}>
+          <ListItemButton onClick={() => navigate('/software')} selected={pageIndex === 1}>
             <ListItemIcon><BuildIcon /></ListItemIcon>
             <ListItemText>Software</ListItemText>
-          </ListItem>
+          </ListItemButton>
         </List>
         <Divider />
         <List>
-          <ListItem button onClick={() => navigate('/blog')} selected={pageIndex === 2}>
+          <ListItemButton onClick={() => navigate('/blog')} selected={pageIndex === 2}>
             <ListItemIcon><AnnouncementIcon /></ListItemIcon>
             <ListItemText>Blog</ListItemText>
-          </ListItem>
+          </ListItemButton>
         </List>
         <Divider />
         <List>
-          <ListItem button onClick={() => navigate('/donate')} selected={pageIndex === 3}>
+          <ListItemButton onClick={() => navigate('/donate')} selected={pageIndex === 3}>
             <ListItemIcon><AttachMoneyIcon /></ListItemIcon>
             <ListItemText>Donate</ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => navigate('/about')} selected={pageIndex === 4}>
+          </ListItemButton>
+          <ListItemButton onClick={() => navigate('/about')} selected={pageIndex === 4}>
             <ListItemIcon><InfoIcon /></ListItemIcon>
             <ListItemText>About</ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => navigate('/privacy')} selected={pageIndex === 5}>
+          </ListItemButton>
+          <ListItemButton onClick={() => navigate('/privacy')} selected={pageIndex === 5}>
             <ListItemIcon><VisibilityIcon /></ListItemIcon>
             <ListItemText>Privacy</ListItemText>
-          </ListItem>
+          </ListItemButton>
         </List>
         <Divider />
         <List>
-          <ListItem button onClick={() => navigate('/contact')} selected={pageIndex === 6}>
+          <ListItemButton onClick={() => navigate('/contact')} selected={pageIndex === 6}>
             <ListItemIcon><EmailIcon /></ListItemIcon>
             <ListItemText>Contact</ListItemText>
-          </ListItem>
+          </ListItemButton>
         </List>
       </Box>
     </Drawer>
