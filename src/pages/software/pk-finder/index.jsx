@@ -117,7 +117,7 @@ const PkFinderPage = () => {
                     </Typography>
                     <Typography paragraph>
                       You can export your product key in any of the supported formats,
-                      including: HTML, Excel, CSV and of course plain text format.
+                      including: HTML, Excel, JSON, CSV and of course plain text format.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
@@ -152,7 +152,7 @@ const PkFinderPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/PK%20Finder/PK_setup.exe"
+              href="https://codedead.com/Software/PK%20Finder/PK-Finder-Setup-2.0.exe"
             >
               Installer
             </Button>
@@ -163,7 +163,7 @@ const PkFinderPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/PK%20Finder/PK_portable.zip"
+              href="https://codedead.com/Software/PK%20Finder/PK-Finder-2.0.zip"
             >
               Portable
             </Button>

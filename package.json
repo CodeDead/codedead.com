@@ -17,7 +17,7 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.1",
+    "@mui/material": "^5.9.2",
     "axios": "^0.27.2",
     "gatsby": "^4.19.2",
     "gatsby-plugin-catch-links": "^4.19.0",

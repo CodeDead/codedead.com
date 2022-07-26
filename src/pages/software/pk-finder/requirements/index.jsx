@@ -50,40 +50,25 @@ const Requirements = () => {
                   <TableRow>
                     <TableCell><b>Operating System</b></TableCell>
                     <TableCell>
-                      Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64),
-                      Windows 10 (x86 and x64), Windows Server 2008 R2 SP1 (x64),
-                      Windows Server 2012 (x64), Windows Server 2012 R2 (x64),
-                      Windows Server 2016 (x64)
+                      Windows 7 SP1 (x64), Windows 8.1 (x64),
+                      Windows 10 (x64), Windows 11 (x64)
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Disk space</b></TableCell>
                     <TableCell>
-                      At least 40 MB free disk space
+                      At least 250 MB free disk space
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Memory</b></TableCell>
-                    <TableCell>At least 80 MB free RAM memory</TableCell>
+                    <TableCell>At least 100 MB free RAM memory</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Internet connection</b></TableCell>
                     <TableCell>
                       Required in order to check for updates. This can be turned off in the
                       settings menu
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell><b>Other</b></TableCell>
-                    <TableCell>
-                      <a
-                        href="https://dotnet.microsoft.com/download/dotnet-framework/net48"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        .NET
-                        Framework 4.8
-                      </a>
                     </TableCell>
                   </TableRow>
                 </TableBody>
@@ -96,8 +81,7 @@ const Requirements = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <SecurityIcon color="inherit" />
-              {' '}
-              Malware scan
+              {' Malware scan'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -111,7 +95,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/#/file/d49762e1fedf25d5417e9ea644dbd57b90ca418a634dcb01ff1f4ec4b62572ca/detection"
+              href="https://www.virustotal.com/gui/file/2975767da759be282e00630d28f9b618f95ee98fbdd760fb65a6f250cc7946a0?nocache=1"
               target="_blank"
             >
               Installer
@@ -122,7 +106,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/#/file/7bb675c55b5a833dc7f3cd28c00a96da5528a78d9f2bbb8c49583f7a54461d61/detection"
+              href="https://www.virustotal.com/gui/file/0add01a1189b357892ccd73e8e00f6f94c4a9971f56cd56fb87fb466ebab2fa8?nocache=1"
               target="_blank"
             >
               Portable
