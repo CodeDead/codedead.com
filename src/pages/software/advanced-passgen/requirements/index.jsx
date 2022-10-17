@@ -107,7 +107,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/1b63c174d5b8d289dbea1d1b868b98fd4055c015771cca26a9ecda9c5b0b9963?nocache=1"
+              href="https://www.virustotal.com/gui/file/1245f84352e2f1f7575ac1066ad288aa8f4a94b008e5671ed6b3547bad5fe18a?nocache=1"
               target="_blank"
             >
               Windows Installer
@@ -118,7 +118,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/ad27b7dd276bebe844f425bb124b1e47a0f08aa349a52703698ec33097618068?nocache=1"
+              href="https://www.virustotal.com/gui/file/a9e314ebcdad4ee19988ef52c3167bdfad866597b39990491bb5f680cfd484b7?nocache=1"
               target="_blank"
             >
               Linux AppImage
@@ -129,7 +129,7 @@ const Requirements = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/2a517bbe0edb6e6a69d6fd9a6934bcadb819efbbb69bd3f9e78dc06a773cfbda?nocache=1"
+              href="https://www.virustotal.com/gui/file/8bee2efd6b2da7254507e786bd289cdb3d25082125241ff375178745642cc808?nocache=1"
               target="_blank"
             >
               macOS dmg
