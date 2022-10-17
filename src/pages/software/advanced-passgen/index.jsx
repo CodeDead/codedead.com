@@ -173,14 +173,28 @@ const AdvancedPassGenPage = () => {
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
             <Typography variant="h6" align="center">
+              macOS
+            </Typography>
+            <Button
+              size="large"
+              color="primary"
+              variant="contained"
+              style={{ width: '100%' }}
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.0.0_x64.dmg"
+            >
+              AppImage
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h6" align="center">
               Web
             </Typography>
             <Button
-                size="large"
-                color="primary"
-                variant="contained"
-                style={{ width: '100%' }}
-                href="https://advancedpassgen.codedead.com"
+              size="large"
+              color="primary"
+              variant="contained"
+              style={{ width: '100%' }}
+              href="https://advancedpassgen.codedead.com"
             >
               Web version
             </Button>

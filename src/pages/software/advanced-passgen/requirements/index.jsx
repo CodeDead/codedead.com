@@ -13,6 +13,7 @@ import SecurityIcon from '@mui/icons-material/Security';
 import CardContent from '@mui/material/CardContent';
 import TableContainer from '@mui/material/TableContainer';
 import Card from '@mui/material/Card';
+import TableHead from '@mui/material/TableHead';
 import Layout from '../../../../components/Layout';
 import PageHeader from '../../../../components/PageHeader';
 import { MainContext } from '../../../../contexts/MainContextProvider';
@@ -45,25 +46,37 @@ const Requirements = () => {
           <CardContent>
             <TableContainer>
               <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>#</TableCell>
+                    <TableCell>Windows 10 and later (x64)</TableCell>
+                    <TableCell>GNU/Linux(x64)</TableCell>
+                    <TableCell>macOS</TableCell>
+                  </TableRow>
+                </TableHead>
                 <TableBody>
                   <TableRow>
-                    <TableCell><b>Operating System</b></TableCell>
-                    <TableCell>
-                      Windows 10 and later (x64), GNU/Linux (x64)
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
                     <TableCell><b>Disk space</b></TableCell>
-                    <TableCell>
-                      At least 70MB free disk space
-                    </TableCell>
+                    <TableCell>At least 5MB</TableCell>
+                    <TableCell>At least 70MB</TableCell>
+                    <TableCell>At least 5MB</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Memory</b></TableCell>
                     <TableCell>At least 30 MB free RAM memory</TableCell>
+                    <TableCell>At least 30 MB free RAM memory</TableCell>
+                    <TableCell>At least 30 MB free RAM memory</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Internet connection</b></TableCell>
+                    <TableCell>
+                      Required in order to check for updates. This can be turned off in the
+                      settings menu
+                    </TableCell>
+                    <TableCell>
+                      Required in order to check for updates. This can be turned off in the
+                      settings menu
+                    </TableCell>
                     <TableCell>
                       Required in order to check for updates. This can be turned off in the
                       settings menu
@@ -89,7 +102,7 @@ const Requirements = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               style={{ width: '100%' }}
               variant="contained"
@@ -100,7 +113,7 @@ const Requirements = () => {
               Windows Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               style={{ width: '100%' }}
               variant="contained"
@@ -109,6 +122,17 @@ const Requirements = () => {
               target="_blank"
             >
               Linux AppImage
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Button
+              style={{ width: '100%' }}
+              variant="contained"
+              color="primary"
+              href="https://www.virustotal.com/gui/file/2a517bbe0edb6e6a69d6fd9a6934bcadb819efbbb69bd3f9e78dc06a773cfbda?nocache=1"
+              target="_blank"
+            >
+              macOS dmg
             </Button>
           </Grid>
         </Grid>

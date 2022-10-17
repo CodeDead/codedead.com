@@ -8,10 +8,18 @@ categories: "Tauri, React, News"
 ---
 ## Information
 
+![Advanced PassGen](https://i.imgur.com/bVTaGO7.png)
+
 As time goes on, so do our applications. We've just released Advanced PassGen 2.0, which is a complete rewrite of the application.
-We've removed the .NET dependency and instead opted for a Tauri application.
-This means that Advanced PassGen is now a native application, which is much faster and more lightweight than the previous version. In addition, it will
-run on macOS, Windows and Linux without requiring the .NET Framework to be installed at all!
+We've removed the .NET dependency and instead opted to rewrite it into a Tauri application.
+
+The reason behind this is that we want to be able to create applications that are cross-platform, without having to use Electron or .NET.
+.NET does not offer cross-platform UI tools, which is why we've opted to use Tauri. Tauri is a great alternative to Electron, as it is a lot faster and uses less resources.
+
+This means that Advanced PassGen is now a native application, which runs in your system's WebView, which is much faster and more lightweight than
+what the previous version used (e.g. the .NET Framework).
+
+In addition, because we are using Tauri, Advanced PassGen will run on macOS, Windows and Linux without requiring any dependencies to be installed!
 
 ## Changelog
 
