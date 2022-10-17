@@ -182,7 +182,7 @@ const AdvancedPassGenPage = () => {
               style={{ width: '100%' }}
               href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.0.0_x64.dmg"
             >
-              AppImage
+              dmg
             </Button>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
