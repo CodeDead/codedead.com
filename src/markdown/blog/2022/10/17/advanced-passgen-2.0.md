@@ -3,7 +3,7 @@ path: "/blog/2022/10/17/advanced-passgen-2.0"
 title: "Advanced PassGen 2.0 - Release"
 author: "CodeDead"
 date: "2022-10-17"
-abstract: ""
+abstract: "As time goes on, so do our applications. We've just released Advanced PassGen 2.0, which is a complete rewrite of the application..."
 categories: "Tauri, React, News"
 ---
 ## Information
