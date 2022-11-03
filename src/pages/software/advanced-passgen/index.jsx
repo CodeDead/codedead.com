@@ -50,8 +50,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -133,8 +132,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
-              {' '}
-              Download
+              {' Download'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -152,7 +150,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.0.0_x64_en-US.msi"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.1.0_x64_en-US.msi"
             >
               Installer
             </Button>
@@ -166,7 +164,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.0.0_amd64.AppImage"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.1.0_amd64.AppImage"
             >
               AppImage
             </Button>
@@ -180,7 +178,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.0.0_x64.dmg"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.1.0_x64.dmg"
             >
               dmg
             </Button>
@@ -205,8 +203,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
-              {' '}
-              What others say
+              {' What others say'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
