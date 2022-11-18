@@ -151,8 +151,7 @@ const Donate = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <AccountBalanceIcon color="inherit" />
-              {' '}
-              Hall of fame
+              {' Hall of fame'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>

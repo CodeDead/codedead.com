@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import axios from 'axios';
 import Grid from '@mui/material/Grid';
 import CardContent from '@mui/material/CardContent';
-import MuiAlert from '@mui/material/Alert';
+import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import PageHeader from '../../../components/PageHeader';
@@ -231,8 +231,7 @@ const EgldPriceCalculator = () => {
           <>
             <Typography variant="subtitle1" gutterBottom>
               Last update:
-              {' '}
-              {priceDate.toLocaleString()}
+              {` ${priceDate.toLocaleString()}`}
             </Typography>
             <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer">
               Source
@@ -241,13 +240,9 @@ const EgldPriceCalculator = () => {
         ) : null}
       </Container>
       <Snackbar open={!!error} autoHideDuration={6000} onClose={closeSnackbar}>
-        {error
-          ? (
-            <MuiAlert elevation={6} variant="filled" severity="error" onClose={closeSnackbar}>
-              {error.message}
-            </MuiAlert>
-          )
-          : null}
+        <Alert elevation={6} variant="filled" severity="error" onClose={closeSnackbar}>
+          {error ? error.message : null}
+        </Alert>
       </Snackbar>
     </Layout>
   );

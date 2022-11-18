@@ -51,8 +51,7 @@ const AboutPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -85,8 +84,7 @@ const AboutPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <GroupIcon color="inherit" />
-              {' '}
-              Team
+              {' Team'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -155,8 +153,7 @@ const AboutPage = () => {
               <SvgIcon color="inherit">
                 <GitHubIcon />
               </SvgIcon>
-              {' '}
-              Open Source
+              {' Open Source'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>

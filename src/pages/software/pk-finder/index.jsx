@@ -50,8 +50,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -136,8 +135,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
-              {' '}
-              Download
+              {' Download'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -174,8 +172,7 @@ const PkFinderPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
-              {' '}
-              What others say
+              {' What others say'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
