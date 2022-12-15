@@ -137,7 +137,7 @@ const EgldPriceCalculator = () => {
 
   return (
     <Layout>
-      <PageHeader title="Elrond (EGLD) Price Calculator" subTitle="Simple Elrond (EGLD) price calculator" />
+      <PageHeader title="MultiversX (EGLD) Price Calculator" subTitle="Simple MultiversX (EGLD) price calculator" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Card>
           <CardContent>

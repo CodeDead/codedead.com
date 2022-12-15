@@ -8,7 +8,7 @@ categories: "JavaScript, News, Cryptocurrency"
 ---
 ## Information
 
-We've added a new tool to our website. This time, a cryptocurrency price calculator, specifically made for [Elrond (EGLD)](https://elrond.com).
+We've added a new tool to our website. This time, a cryptocurrency price calculator, specifically made for [MultiversX (EGLD)](https://multiversx.com).
 With this tool, you can retrieve the current simple price for the EGLD currency, using data retrieved from [CoinGecko](https://coingecko.com).
 
 ## EGLD Price Calculator

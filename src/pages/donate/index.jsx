@@ -215,7 +215,7 @@ const Donate = () => {
               <>
                 You can donate
                 {' '}
-                <a href="https://elrond.com" target="_blank" rel="noreferrer">EGLD</a>
+                <a href="https://multiversx.com/" target="_blank" rel="noreferrer">EGLD</a>
                 {' '}
                 to the following address:
                 erd1rdc6w82ftjsyp5ethh0q56297fsef6w5ht75vyltcjh3ms220urqezdhd3
