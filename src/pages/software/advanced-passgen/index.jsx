@@ -150,7 +150,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.1.0_x64_en-US.msi"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.2.0_x64_en-US.msi"
             >
               Installer
             </Button>
@@ -164,7 +164,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.1.0_amd64.AppImage"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.2.0_amd64.AppImage"
             >
               AppImage
             </Button>
@@ -178,7 +178,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.1.0_x64.dmg"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.2.0_x64.dmg"
             >
               dmg
             </Button>
