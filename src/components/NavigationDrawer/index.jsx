@@ -17,6 +17,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import EmailIcon from '@mui/icons-material/Email';
 import Box from '@mui/material/Box';
 import { navigate } from 'gatsby';
+import ListItem from '@mui/material/ListItem';
 import { MainContext } from '../../contexts/MainContextProvider';
 
 const NavigationDrawer = ({ open, onClose }) => {
@@ -61,48 +62,62 @@ const NavigationDrawer = ({ open, onClose }) => {
       >
         <Divider />
         <List>
-          <ListItemButton onClick={() => navigate('/')} selected={pageIndex === 0}>
-            <ListItemIcon><HomeIcon /></ListItemIcon>
-            <ListItemText>
-              Home
-            </ListItemText>
-          </ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/')} selected={pageIndex === 0}>
+              <ListItemIcon><HomeIcon /></ListItemIcon>
+              <ListItemText>
+                Home
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
         <Divider />
         <List>
-          <ListItemButton onClick={() => navigate('/software')} selected={pageIndex === 1}>
-            <ListItemIcon><BuildIcon /></ListItemIcon>
-            <ListItemText>Software</ListItemText>
-          </ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/software')} selected={pageIndex === 1}>
+              <ListItemIcon><BuildIcon /></ListItemIcon>
+              <ListItemText>Software</ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
         <Divider />
         <List>
-          <ListItemButton onClick={() => navigate('/blog')} selected={pageIndex === 2}>
-            <ListItemIcon><AnnouncementIcon /></ListItemIcon>
-            <ListItemText>Blog</ListItemText>
-          </ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/blog')} selected={pageIndex === 2}>
+              <ListItemIcon><AnnouncementIcon /></ListItemIcon>
+              <ListItemText>Blog</ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
         <Divider />
         <List>
-          <ListItemButton onClick={() => navigate('/donate')} selected={pageIndex === 3}>
-            <ListItemIcon><AttachMoneyIcon /></ListItemIcon>
-            <ListItemText>Donate</ListItemText>
-          </ListItemButton>
-          <ListItemButton onClick={() => navigate('/about')} selected={pageIndex === 4}>
-            <ListItemIcon><InfoIcon /></ListItemIcon>
-            <ListItemText>About</ListItemText>
-          </ListItemButton>
-          <ListItemButton onClick={() => navigate('/privacy')} selected={pageIndex === 5}>
-            <ListItemIcon><VisibilityIcon /></ListItemIcon>
-            <ListItemText>Privacy</ListItemText>
-          </ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/donate')} selected={pageIndex === 3}>
+              <ListItemIcon><AttachMoneyIcon /></ListItemIcon>
+              <ListItemText>Donate</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/about')} selected={pageIndex === 4}>
+              <ListItemIcon><InfoIcon /></ListItemIcon>
+              <ListItemText>About</ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/privacy')} selected={pageIndex === 5}>
+              <ListItemIcon><VisibilityIcon /></ListItemIcon>
+              <ListItemText>Privacy</ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
         <Divider />
         <List>
-          <ListItemButton onClick={() => navigate('/contact')} selected={pageIndex === 6}>
-            <ListItemIcon><EmailIcon /></ListItemIcon>
-            <ListItemText>Contact</ListItemText>
-          </ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => navigate('/contact')} selected={pageIndex === 6}>
+              <ListItemIcon><EmailIcon /></ListItemIcon>
+              <ListItemText>Contact</ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
       </Box>
     </Drawer>
