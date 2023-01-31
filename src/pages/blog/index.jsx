@@ -20,19 +20,19 @@ const Blog = () => {
 
   const { allMarkdownRemark } = useStaticQuery(graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          frontmatter {
-            path
-            title
-            date(formatString: "MMMM DD, YYYY")
-            abstract
-          }
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    edges {
+      node {
+        frontmatter {
+          path
+          title
+          date(formatString: "MMMM DD, YYYY")
+          abstract
         }
       }
     }
-  }`);
+  }
+}`);
 
   /**
    * Go to the next slice of blog posts

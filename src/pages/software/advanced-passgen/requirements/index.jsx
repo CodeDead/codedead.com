@@ -13,6 +13,7 @@ import SecurityIcon from '@mui/icons-material/Security';
 import CardContent from '@mui/material/CardContent';
 import TableContainer from '@mui/material/TableContainer';
 import Card from '@mui/material/Card';
+import TableHead from '@mui/material/TableHead';
 import Layout from '../../../../components/Layout';
 import PageHeader from '../../../../components/PageHeader';
 import { MainContext } from '../../../../contexts/MainContextProvider';
@@ -33,8 +34,7 @@ const Requirements = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -46,25 +46,26 @@ const Requirements = () => {
           <CardContent>
             <TableContainer>
               <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>#</TableCell>
+                    <TableCell>Windows 10 and later (x64)</TableCell>
+                    <TableCell>GNU/Linux(x64)</TableCell>
+                    <TableCell>macOS</TableCell>
+                  </TableRow>
+                </TableHead>
                 <TableBody>
                   <TableRow>
-                    <TableCell><b>Operating System</b></TableCell>
-                    <TableCell>
-                      Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64),
-                      Windows 10 (x86 and x64), Windows Server 2008 R2 SP1 (x64),
-                      Windows Server 2012 (x64), Windows Server 2012 R2 (x64),
-                      Windows Server 2016 (x64), Windows Server 2019 (x64)
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
                     <TableCell><b>Disk space</b></TableCell>
-                    <TableCell>
-                      At least 45 MB free disk space
-                    </TableCell>
+                    <TableCell>At least 5MB</TableCell>
+                    <TableCell>At least 75MB</TableCell>
+                    <TableCell>At least 5MB</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Memory</b></TableCell>
-                    <TableCell>At least 50 MB free RAM memory</TableCell>
+                    <TableCell>At least 30 MB free RAM memory</TableCell>
+                    <TableCell>At least 30 MB free RAM memory</TableCell>
+                    <TableCell>At least 30 MB free RAM memory</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Internet connection</b></TableCell>
@@ -72,14 +73,13 @@ const Requirements = () => {
                       Required in order to check for updates. This can be turned off in the
                       settings menu
                     </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell><b>Other</b></TableCell>
                     <TableCell>
-                      <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48" rel="noreferrer" target="_blank">
-                        .NET
-                        Framework 4.8
-                      </a>
+                      Required in order to check for updates. This can be turned off in the
+                      settings menu
+                    </TableCell>
+                    <TableCell>
+                      Required in order to check for updates. This can be turned off in the
+                      settings menu
                     </TableCell>
                   </TableRow>
                 </TableBody>
@@ -92,8 +92,7 @@ const Requirements = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <SecurityIcon color="inherit" />
-              {' '}
-              Malware scan
+              {' Malware scan'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -102,26 +101,37 @@ const Requirements = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/ef9aceb92fa47d5a9b38b04e29ccc08428b487cf41719bf2cbaf5651d11f113c/detection"
+              href="https://www.virustotal.com/gui/file/a60183a21b31ee19299786298dad362dbc8843b9d0a648a36f3e4165f9029996?nocache=1"
               target="_blank"
             >
-              Installer
+              Windows Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/c3806088bb64514a128a26e490fe01993fb8ae997a3b367be4e2e65e8fbeafdb/detection"
+              href="https://www.virustotal.com/gui/file/5195266971a8c2b215ee8f4fb87ee635e3331d3e2dbc7048afd025a4fc7a21af?nocache=1"
               target="_blank"
             >
-              Portable
+              Linux AppImage
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Button
+              style={{ width: '100%' }}
+              variant="contained"
+              color="primary"
+              href="https://www.virustotal.com/gui/file/8d4ae9297c1f3a8583439b3dbf9c23fdb210eb7b5bdbee64a7bcf0ffc7671ef4?nocache=1"
+              target="_blank"
+            >
+              macOS dmg
             </Button>
           </Grid>
         </Grid>

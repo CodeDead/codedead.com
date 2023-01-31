@@ -102,8 +102,7 @@ const Donate = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <AttachMoneyIcon color="inherit" />
-              {' '}
-              Donate
+              {' Donate'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -112,23 +111,35 @@ const Donate = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               variant="contained"
               color="primary"
               target="_blank"
               href="https://paypal.me/codedead"
               rel="noreferrer"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Donate via PayPal
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               variant="contained"
               color="primary"
-              style={{ width: '100%' }}
+              fullWidth
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/sponsors/CodeDead"
+            >
+              GitHub Sponsor
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Button
+              variant="contained"
+              color="primary"
+              fullWidth
               onClick={() => setEgldOpen(true)}
             >
               Donate EGLD
@@ -140,8 +151,7 @@ const Donate = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <AccountBalanceIcon color="inherit" />
-              {' '}
-              Hall of fame
+              {' Hall of fame'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -205,7 +215,7 @@ const Donate = () => {
               <>
                 You can donate
                 {' '}
-                <a href="https://elrond.com" target="_blank" rel="noreferrer">EGLD</a>
+                <a href="https://multiversx.com/" target="_blank" rel="noreferrer">EGLD</a>
                 {' '}
                 to the following address:
                 erd1rdc6w82ftjsyp5ethh0q56297fsef6w5ht75vyltcjh3ms220urqezdhd3

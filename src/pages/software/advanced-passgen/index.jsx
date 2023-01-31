@@ -50,8 +50,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -113,7 +112,7 @@ const AdvancedPassGenPage = () => {
                     </Typography>
                     <Typography paragraph>
                       Advanced PassGen can export any and all data that it generates for you in a
-                      couple of different formats including: HTML, CSV, JSON, Excel and of course
+                      couple of different formats including: CSV, JSON and of course
                       plain text. A simple copy is also available!
                     </Typography>
                   </Grid>
@@ -133,8 +132,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
-              {' '}
-              Download
+              {' Download'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -143,26 +141,60 @@ const AdvancedPassGenPage = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              Windows
+            </Typography>
             <Button
               size="large"
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/AP_setup.exe"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.3.0_x64_en-US.msi"
             >
               Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              Linux
+            </Typography>
             <Button
               size="large"
               color="primary"
               variant="contained"
               style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/AP_portable.zip"
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.3.0_amd64.AppImage"
             >
-              Portable
+              AppImage
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              macOS
+            </Typography>
+            <Button
+              size="large"
+              color="primary"
+              variant="contained"
+              style={{ width: '100%' }}
+              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.3.0_x64.dmg"
+            >
+              dmg
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
+            <Typography variant="h6" align="center">
+              Web
+            </Typography>
+            <Button
+              size="large"
+              color="primary"
+              variant="contained"
+              style={{ width: '100%' }}
+              href="https://advancedpassgen.codedead.com"
+            >
+              Web version
             </Button>
           </Grid>
         </Grid>
@@ -171,8 +203,7 @@ const AdvancedPassGenPage = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
-              {' '}
-              What others say
+              {' What others say'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>

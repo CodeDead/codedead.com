@@ -2,7 +2,7 @@
   "name": "codedead.com",
   "private": true,
   "description": "CodeDead Website",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -14,34 +14,34 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.1",
-    "axios": "^0.27.2",
-    "gatsby": "^4.19.2",
-    "gatsby-plugin-catch-links": "^4.19.0",
-    "gatsby-plugin-google-gtag": "^4.19.0",
-    "gatsby-plugin-image": "^2.19.0",
-    "gatsby-plugin-react-helmet": "^5.19.0",
-    "gatsby-plugin-robots-txt": "^1.7.1",
-    "gatsby-plugin-sharp": "^4.19.0",
-    "gatsby-plugin-sitemap": "^5.19.0",
-    "gatsby-remark-images": "^6.19.0",
-    "gatsby-source-filesystem": "^4.19.0",
-    "gatsby-theme-material-ui": "^5.2.0",
-    "gatsby-transformer-remark": "^5.19.0",
-    "gatsby-transformer-sharp": "^4.19.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.7",
+    "axios": "^1.2.6",
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-catch-links": "^5.5.0",
+    "gatsby-plugin-google-gtag": "^5.5.0",
+    "gatsby-plugin-image": "^3.5.0",
+    "gatsby-plugin-react-helmet": "^6.5.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-sitemap": "^6.5.0",
+    "gatsby-remark-images": "^7.5.0",
+    "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-theme-material-ui": "^5.3.0",
+    "gatsby-transformer-remark": "^6.5.0",
+    "gatsby-transformer-sharp": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.20.0",
+    "eslint": "^8.33.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "repository": {
@@ -51,5 +51,5 @@
   "bugs": {
     "url": "https://github.com/CodeDead/codedead.com/issues"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.3.1"
 }

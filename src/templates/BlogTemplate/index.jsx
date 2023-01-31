@@ -39,7 +39,7 @@ const BlogTemplate = ({ data }) => {
         backButton
         title={frontmatter.title}
       />
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Card style={{ marginTop: 20 }}>
           <CardContent>
             <Typography gutterBottom>

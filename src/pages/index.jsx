@@ -22,34 +22,34 @@ import BlogList from '../components/BlogList';
 const Home = () => {
   const data = useStaticQuery(graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1) {
-      edges {
-        node {
-          frontmatter {
-            path
-            title
-            date(formatString: "MMMM DD, YYYY")
-            abstract
-          }
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1) {
+    edges {
+      node {
+        frontmatter {
+          path
+          title
+          date(formatString: "MMMM DD, YYYY")
+          abstract
         }
       }
-    },
-    deadhash: file(relativePath: { eq: "DeadHash/DeadHash.png" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    },
-    memplus: file(relativePath: { eq: "MemPlus/memplus.png" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    },
-    opal: file(relativePath: { eq: "Opal/Opal.png" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    } 
-  }`);
+    }
+  }
+  deadhash: file(relativePath: {eq: "DeadHash/DeadHash.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  memplus: file(relativePath: {eq: "MemPlus/memplus.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  opal: file(relativePath: {eq: "Opal/Opal.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+}`);
 
   const [, dispatch] = useContext(MainContext);
 
@@ -65,8 +65,7 @@ const Home = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <BuildIcon color="inherit" />
-              {' '}
-              Highlighted tools
+              {' Highlighted tools'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>

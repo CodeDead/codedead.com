@@ -33,8 +33,7 @@ const Requirements = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>
@@ -93,8 +92,7 @@ const Requirements = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h5" color="textPrimary">
               <SecurityIcon color="inherit" />
-              {' '}
-              Malware scan
+              {' Malware scan'}
             </Typography>
           </Grid>
           <Grid item xs={12} md={12} lg={12}>

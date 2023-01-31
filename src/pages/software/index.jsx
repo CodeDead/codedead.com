@@ -125,8 +125,8 @@ const Software = () => {
   }, {
     name: 'EGLD Price Calculator',
     url: '/software/egld-price-calculator',
-    description: 'A simple and easy to use price calculator for Elrond (EGLD).',
-    tags: ['egld', 'elrond', 'currency', 'Crypto'],
+    description: 'A simple and easy to use price calculator for MultiversX (EGLD).',
+    tags: ['egld', 'elrond', 'currency', 'Crypto', 'multiversx', 'multiverse', 'multi'],
     image: imageData.egld.childImageSharp.gatsbyImageData,
   }, {
     name: 'Opal',

@@ -7,6 +7,7 @@ const path = require('path');
 
 module.exports = {
   polyfill: false,
+  trailingSlash: 'ignore',
   siteMetadata: {
     title: 'CodeDead',
     description: 'Solving problems using code',
@@ -35,6 +36,8 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        footnotes: true,
+        gfm: true,
         plugins: [
           {
             resolve: 'gatsby-remark-images',
