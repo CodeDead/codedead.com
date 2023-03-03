@@ -58,7 +58,11 @@ const DefaultAppBar = ({
 
           <div style={{ flexGrow: 1 }} />
 
-          <IconButton color="inherit" onClick={changeTheme}>
+          <IconButton
+            color="inherit"
+            onClick={changeTheme}
+            aria-label="Theme"
+          >
             {themeIndex === 1 ? <Brightness5Icon /> : <Brightness7Icon />}
           </IconButton>
         </Toolbar>
