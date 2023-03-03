@@ -39,7 +39,7 @@ const DefaultAppBar = ({
               marginRight: theme.spacing(2),
             }}
             color="inherit"
-            aria-label="menu"
+            aria-label="Menu"
             onClick={() => setDrawerOpen(true)}
           >
             <MenuIcon />
