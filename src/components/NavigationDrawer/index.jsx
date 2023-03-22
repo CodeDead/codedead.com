@@ -11,6 +11,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import Divider from '@mui/material/Divider';
 import HomeIcon from '@mui/icons-material/Home';
 import BuildIcon from '@mui/icons-material/Build';
+import HandymanIcon from '@mui/icons-material/Handyman';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AnnouncementIcon from '@mui/icons-material/Announcement';
 import InfoIcon from '@mui/icons-material/Info';
@@ -35,6 +36,14 @@ const NavigationDrawer = ({ open, onClose }) => {
     if (onClose) onClose();
   };
 
+  /**
+   * Open Jenkins
+   */
+  const openJenkins = () => {
+    window.open('https://jenkins.codedead.com', '_blank');
+    closeDrawer();
+  };
+
   return (
     <Drawer
       anchor="left"
@@ -56,7 +65,7 @@ const NavigationDrawer = ({ open, onClose }) => {
       </Box>
       <Box
         sx={{
-          width: 220,
+          width: 240,
           flexShrink: 0,
         }}
       >
@@ -108,6 +117,17 @@ const NavigationDrawer = ({ open, onClose }) => {
               <ListItemIcon><VisibilityIcon /></ListItemIcon>
               <ListItemText>Privacy</ListItemText>
             </ListItemButton>
+          </ListItem>
+        </List>
+        <Divider />
+        <List>
+          <ListItem disablePadding>
+            <ListItem disablePadding>
+              <ListItemButton onClick={openJenkins}>
+                <ListItemIcon><HandymanIcon /></ListItemIcon>
+                <ListItemText>Jenkins</ListItemText>
+              </ListItemButton>
+            </ListItem>
           </ListItem>
         </List>
         <Divider />
