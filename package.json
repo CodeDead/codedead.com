@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
