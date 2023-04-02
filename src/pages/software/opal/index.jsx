@@ -165,7 +165,7 @@ const OpalPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/Opal/Opal-1.0.3.msi"
+              href="https://codedead.com/Software/Opal/Opal-1.1.0.msi"
             >
               Installer
             </Button>
@@ -176,7 +176,7 @@ const OpalPage = () => {
               }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/Opal/Opal-1.0.3.zip"
+              href="https://codedead.com/Software/Opal/Opal-1.1.0.zip"
             >
               Portable
             </Button>
@@ -189,7 +189,7 @@ const OpalPage = () => {
               style={{ width: '100%' }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/Opal/Opal-x86_64-1.0.3.AppImage"
+              href="https://codedead.com/Software/Opal/Opal-x86_64-1.1.0.AppImage"
             >
               AppImage
             </Button>
