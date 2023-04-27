@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -16,6 +16,7 @@ import Layout from '../../../components/Layout';
 import PageHeader from '../../../components/PageHeader';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import DonationAlert from '../../../components/DonationAlert';
 
 const MemPlusPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -37,6 +38,16 @@ const MemPlusPage = () => {
       }
     }
   }`);
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
+  /**
+   * Open a link
+   * @param link The link to open
+   */
+  const openLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(-1));
@@ -152,8 +163,11 @@ const MemPlusPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/MemPlus/MP_setup.exe"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/MemPlus/MP_setup.exe');
+                setDonateOpen(true);
+              }}
             >
               installer
             </Button>
@@ -163,8 +177,11 @@ const MemPlusPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/MemPlus/MP_portable.zip"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/MemPlus/MP_portable.zip');
+                setDonateOpen(true);
+              }}
             >
               Portable
             </Button>
@@ -234,7 +251,7 @@ const MemPlusPage = () => {
               color="primary"
               variant="contained"
               href="/software/memplus/requirements"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Requirements
             </Button>
@@ -245,7 +262,7 @@ const MemPlusPage = () => {
               variant="contained"
               href="https://codedead.com/Software/MemPlus/help.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Help documentation
             </Button>
@@ -257,7 +274,7 @@ const MemPlusPage = () => {
               variant="contained"
               href="https://codedead.com/Software/MemPlus/gpl.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               License
             </Button>
@@ -268,12 +285,13 @@ const MemPlusPage = () => {
               variant="contained"
               href="https://github.com/CodeDead/MemPlus"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Source code
             </Button>
           </Grid>
         </Grid>
+        {donateOpen ? <DonationAlert onClose={() => setDonateOpen(false)} /> : null}
       </Container>
     </Layout>
   );

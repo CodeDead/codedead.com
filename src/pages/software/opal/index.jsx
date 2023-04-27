@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -16,6 +16,7 @@ import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import DonationAlert from '../../../components/DonationAlert';
 
 const OpalPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -37,6 +38,16 @@ const OpalPage = () => {
       }
     }
   }`);
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
+  /**
+   * Open a link
+   * @param link The link to open
+   */
+  const openLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(-1));
@@ -68,7 +79,7 @@ const OpalPage = () => {
                       Simplicity
                     </Typography>
                     <Typography paragraph gutterBottom>
-                      Select the sounds (20+ relaxing tracks are available) that you want to hear,
+                      Select the sounds (30+ relaxing tracks are available) that you want to hear,
                       turn them on and you can listen to and enjoy the music for as long as you
                       want, without interruption.
                     </Typography>
@@ -162,21 +173,25 @@ const OpalPage = () => {
               Windows
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/Opal/Opal-1.1.0.msi"
+              onClick={() => {
+                openLink('https://codedead.com/Software/Opal/Opal-1.1.0.msi');
+                setDonateOpen(true);
+              }}
             >
               Installer
             </Button>
             <Button
-              style={{
-                width: '100%',
-                marginTop: 10,
-              }}
+              fullWidth
+              style={{ marginTop: 10 }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/Opal/Opal-1.1.0.zip"
+              onClick={() => {
+                openLink('https://codedead.com/Software/Opal/Opal-1.1.0.zip');
+                setDonateOpen(true);
+              }}
             >
               Portable
             </Button>
@@ -186,10 +201,13 @@ const OpalPage = () => {
               Linux
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/Opal/Opal-x86_64-1.1.0.AppImage"
+              onClick={() => {
+                openLink('https://codedead.com/Software/Opal/Opal-x86_64-1.1.0.AppImage');
+                setDonateOpen(true);
+              }}
             >
               AppImage
             </Button>
@@ -296,6 +314,7 @@ const OpalPage = () => {
             </Button>
           </Grid>
         </Grid>
+        {donateOpen ? <DonationAlert onClose={() => setDonateOpen(false)} /> : null}
       </Container>
     </Layout>
   );

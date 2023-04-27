@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -16,6 +16,7 @@ import Layout from '../../../components/Layout';
 import PageHeader from '../../../components/PageHeader';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import DonationAlert from '../../../components/DonationAlert';
 
 const AdvancedPassGenPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -37,6 +38,16 @@ const AdvancedPassGenPage = () => {
       }
     }
   }`);
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
+  /**
+   * Open a link
+   * @param link The link to open
+   */
+  const openLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(-1));
@@ -149,8 +160,11 @@ const AdvancedPassGenPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.0_x64_en-US.msi"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.0_x64_en-US.msi');
+                setDonateOpen(true);
+              }}
             >
               Installer
             </Button>
@@ -163,8 +177,11 @@ const AdvancedPassGenPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.0_amd64.AppImage"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.0_amd64.AppImage');
+                setDonateOpen(true);
+              }}
             >
               AppImage
             </Button>
@@ -177,8 +194,11 @@ const AdvancedPassGenPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.0_x64.dmg"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.0_x64.dmg');
+                setDonateOpen(true);
+              }}
             >
               dmg
             </Button>
@@ -270,7 +290,7 @@ const AdvancedPassGenPage = () => {
               color="primary"
               variant="contained"
               href="/software/advanced-passgen/requirements"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Requirements
             </Button>
@@ -281,7 +301,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               href="https://codedead.com/Software/Advanced%20PassGen/help.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Help documentation
             </Button>
@@ -304,12 +324,13 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               href="https://github.com/CodeDead/Advanced-PassGen"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Source code
             </Button>
           </Grid>
         </Grid>
+        {donateOpen ? <DonationAlert onClose={() => setDonateOpen(false)} /> : null}
       </Container>
     </Layout>
   );

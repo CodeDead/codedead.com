@@ -92,7 +92,7 @@ const Requirements = () => {
               Windows
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/f827527afe4c398518404ac782b3038aa7721642272d298a9e4f8b23f586d5d0?nocache=1"
@@ -101,7 +101,8 @@ const Requirements = () => {
               Installer
             </Button>
             <Button
-              style={{ width: '100%', marginTop: 10 }}
+              fullWidth
+              style={{ marginTop: 10 }}
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/7699b53825075198bd440eeb771a71aede2cb837874a08f97788831e84389369?nocache=1"
@@ -115,7 +116,7 @@ const Requirements = () => {
               Linux
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/d4080228e08a727d2145d443aec8b339b7f2088e35844f15690f3bc7714eea4e?nocache=1"

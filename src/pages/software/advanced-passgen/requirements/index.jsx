@@ -103,7 +103,7 @@ const Requirements = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={4} lg={4}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/8ea45ca2f538aca7f19a0be05cf5a45252bee89198a2a5cdfcd3268b532f80bc?nocache=1"
@@ -114,7 +114,7 @@ const Requirements = () => {
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/96b383f9c29cb0e4b8b809b80802b5eb6f252c4cbf115f40d2f6a79cb742ac58?nocache=1"
@@ -125,7 +125,7 @@ const Requirements = () => {
           </Grid>
           <Grid item xs={12} md={4} lg={4}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/gui/file/d83f71c7ddfe4baf72b8148068083c34a4138c2d8fe88beac4e4c1f497833eeb?nocache=1"
