@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -16,6 +16,7 @@ import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import DonationAlert from '../../../components/DonationAlert';
 
 const AdvancedPortCheckerPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -37,6 +38,16 @@ const AdvancedPortCheckerPage = () => {
       }
     }
   }`);
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
+  /**
+   * Open a link
+   * @param link The link to open
+   */
+  const openLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(-1));
@@ -155,7 +166,7 @@ const AdvancedPortCheckerPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
+              fullWidth
               href="https://play.google.com/store/apps/details?id=com.codedead.advancedportchecker"
             >
               Play Store
@@ -169,8 +180,11 @@ const AdvancedPortCheckerPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/Advanced%20PortChecker/AP_SETUP.exe"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/AP_SETUP.exe');
+                setDonateOpen(true);
+              }}
             >
               Installer
             </Button>
@@ -178,11 +192,12 @@ const AdvancedPortCheckerPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{
-                width: '100%',
-                marginTop: 10,
+              fullWidth
+              style={{ marginTop: 10 }}
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/AP_portable.zip');
+                setDonateOpen(true);
               }}
-              href="https://codedead.com/Software/Advanced%20PortChecker/AP_portable.zip"
             >
               Portable
             </Button>
@@ -254,7 +269,7 @@ const AdvancedPortCheckerPage = () => {
               color="primary"
               variant="contained"
               href="/software/advanced-portchecker/requirements"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Requirements
             </Button>
@@ -265,7 +280,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               href="https://codedead.com/Software/Advanced%20PortChecker/help.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Help documentation
             </Button>
@@ -277,7 +292,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               href="https://codedead.com/Software/Advanced%20PortChecker/gpl.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               License
             </Button>
@@ -288,12 +303,13 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               href="https://github.com/CodeDead/Advanced-PortChecker"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Source code
             </Button>
           </Grid>
         </Grid>
+        {donateOpen ? <DonationAlert onClose={() => setDonateOpen(false)} /> : null}
       </Container>
     </Layout>
   );

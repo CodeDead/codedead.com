@@ -103,7 +103,7 @@ const Requirements = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://virustotal.com/en/file/edfe8daab3ff2ac264a7cf44699b8d1e96de1cba9ec03eaba0ccb0c8e988bd00/analysis/"

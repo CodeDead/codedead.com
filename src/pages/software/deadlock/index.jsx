@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -16,6 +16,7 @@ import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import DonationAlert from '../../../components/DonationAlert';
 
 const DeadLockPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -37,6 +38,16 @@ const DeadLockPage = () => {
       }
     }
   }`);
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
+  /**
+   * Open a link
+   * @param link The link to open
+   */
+  const openLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(-1));
@@ -152,8 +163,11 @@ const DeadLockPage = () => {
               size="large"
               color="primary"
               variant="contained"
-              style={{ width: '100%' }}
-              href="https://codedead.com/Software/DeadLock/dl_setup.exe"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/DeadLock/dl_setup.exe');
+                setDonateOpen(true);
+              }}
             >
               Installer
             </Button>
@@ -231,7 +245,7 @@ const DeadLockPage = () => {
               color="primary"
               variant="contained"
               href="/software/deadlock/requirements"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Requirements
             </Button>
@@ -242,7 +256,7 @@ const DeadLockPage = () => {
               variant="contained"
               href="https://codedead.com/Software/DeadLock/help.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Help documentation
             </Button>
@@ -254,7 +268,7 @@ const DeadLockPage = () => {
               variant="contained"
               href="https://codedead.com/Software/DeadLock/gpl.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               License
             </Button>
@@ -265,12 +279,13 @@ const DeadLockPage = () => {
               variant="contained"
               href="https://github.com/CodeDead/DeadLock"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Source code
             </Button>
           </Grid>
         </Grid>
+        {donateOpen ? <DonationAlert onClose={() => setDonateOpen(false)} /> : null}
       </Container>
     </Layout>
   );

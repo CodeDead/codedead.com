@@ -80,8 +80,7 @@ const Requirements = () => {
                         rel="noreferrer"
                         target="_blank"
                       >
-                        .NET
-                        Framework 4.8
+                        .NET Framework 4.8
                       </a>
                     </TableCell>
                   </TableRow>
@@ -106,7 +105,7 @@ const Requirements = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={6} lg={6}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/#/file/362dd5565951231aa4b785a91b364bc819549e0ed8c9ce20d06976848d370ac3/detection"
@@ -117,7 +116,7 @@ const Requirements = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/#/file/854aaa86935cab36f25ee64576ee0883d685662feeae1fd4cb9e9d48fc4f8d71/detection"

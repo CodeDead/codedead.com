@@ -106,7 +106,7 @@ const Requirements = () => {
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={6} lg={6}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/#/file/82400b0be59a9b83fc3b78332bbec98eeb3dff6be91aafd4e7cfa09e75820db5/detection"
@@ -117,7 +117,7 @@ const Requirements = () => {
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://www.virustotal.com/#/file/01a49424a25f439ca8a595d0c67e7a215f3b201bd469ea85554d8e42facfea4a/detection"

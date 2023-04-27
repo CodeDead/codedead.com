@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -16,6 +16,7 @@ import PageHeader from '../../../components/PageHeader';
 import Layout from '../../../components/Layout';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
+import DonationAlert from '../../../components/DonationAlert';
 
 const DeadHashPage = () => {
   const [, dispatch] = useContext(MainContext);
@@ -37,6 +38,16 @@ const DeadHashPage = () => {
       }
     }
   }`);
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
+  /**
+   * Open a link
+   * @param link The link to open
+   */
+  const openLink = (link) => {
+    window.open(link, '_blank');
+  };
 
   useEffect(() => {
     dispatch(setPageIndex(-1));
@@ -155,7 +166,7 @@ const DeadHashPage = () => {
               Android
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
               href="https://play.google.com/store/apps/details?id=com.codedead.deadhash"
@@ -169,21 +180,25 @@ const DeadHashPage = () => {
               Windows
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.2.3.exe"
+              onClick={() => {
+                openLink('https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.2.3.exe');
+                setDonateOpen(true);
+              }}
             >
               Installer
             </Button>
             <Button
-              style={{
-                width: '100%',
-                marginTop: 10,
-              }}
+              fullWidth
+              style={{ marginTop: 10 }}
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash%202.2.3.exe"
+              onClick={() => {
+                openLink('https://codedead.com/Software/DeadHash/DeadHash%202.2.3.exe');
+                setDonateOpen(true);
+              }}
             >
               Portable
             </Button>
@@ -193,10 +208,13 @@ const DeadHashPage = () => {
               Linux
             </Typography>
             <Button
-              style={{ width: '100%' }}
+              fullWidth
               variant="contained"
               color="primary"
-              href="https://codedead.com/Software/DeadHash/DeadHash-2.2.3.AppImage"
+              onClick={() => {
+                openLink('https://codedead.com/Software/DeadHash/DeadHash-2.2.3.AppImage');
+                setDonateOpen(true);
+              }}
             >
               AppImage
             </Button>
@@ -266,7 +284,7 @@ const DeadHashPage = () => {
               color="primary"
               variant="contained"
               href="/software/deadhash/requirements"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Requirements
             </Button>
@@ -277,7 +295,7 @@ const DeadHashPage = () => {
               variant="contained"
               href="https://codedead.com/Software/DeadHash/help.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Help documentation
             </Button>
@@ -289,7 +307,7 @@ const DeadHashPage = () => {
               variant="contained"
               href="https://codedead.com/Software/DeadHash/gpl.pdf"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               License
             </Button>
@@ -300,12 +318,13 @@ const DeadHashPage = () => {
               variant="contained"
               href="https://github.com/CodeDead/DeadHash-js"
               target="_blank"
-              style={{ width: '100%' }}
+              fullWidth
             >
               Source code
             </Button>
           </Grid>
         </Grid>
+        {donateOpen ? <DonationAlert onClose={() => setDonateOpen(false)} /> : null}
       </Container>
     </Layout>
   );
