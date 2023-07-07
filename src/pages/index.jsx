@@ -74,7 +74,9 @@ const Home = () => {
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
-            <Card>
+            <Card
+              elevation={2}
+            >
               <CardActionArea
                 onClick={() => navigate('/software/memplus')}
               >
@@ -108,7 +110,9 @@ const Home = () => {
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Card>
+            <Card
+              elevation={2}
+            >
               <CardActionArea
                 onClick={() => navigate('/software/deadhash')}
               >
@@ -142,7 +146,9 @@ const Home = () => {
           </Grid>
 
           <Grid item xs={12} md={12} lg={12}>
-            <Card>
+            <Card
+              elevation={2}
+            >
               <CardActionArea
                 onClick={() => navigate('/software/opal')}
               >
