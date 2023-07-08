@@ -14,7 +14,7 @@ module.exports = {
     siteUrl: 'https://codedead.com',
     author: 'CodeDead',
     github: 'https://github.com/CodeDead',
-    twitter: 'https://twitter.com/C0DEDEAD',
+    mastodon: 'https://mstdn.social/@CodeDead',
     facebook: 'https://facebook.com/deadlinecodedead',
   },
   plugins: [

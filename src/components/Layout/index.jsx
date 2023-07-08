@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title,
           github,
-          twitter,
+          mastodon,
           facebook
         }
       }
@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
       <Footer
         facebookUrl={data.site.siteMetadata.facebook}
         githubUrl={data.site.siteMetadata.github}
-        twitterUrl={data.site.siteMetadata.twitter}
+        mastodonUrl={data.site.siteMetadata.mastodon}
       />
     </ThemeProvider>
   );

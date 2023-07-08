@@ -4,10 +4,10 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from '@mui/material/Paper';
 import SvgIcon from '@mui/material/SvgIcon';
 import FacebookIcon from '../FacebookIcon';
-import TwitterIcon from '../TwitterIcon';
 import GitHubIcon from '../GithubIcon';
+import MastodonIcon from "../MastodonIcon";
 
-const Footer = ({ facebookUrl, githubUrl, twitterUrl }) => {
+const Footer = ({ facebookUrl, githubUrl, mastodonUrl }) => {
   /**
    * Open a website
    * @param site The website that should be opened
@@ -43,11 +43,11 @@ const Footer = ({ facebookUrl, githubUrl, twitterUrl }) => {
         <BottomNavigationAction
           icon={(
             <SvgIcon>
-              <TwitterIcon />
+              <MastodonIcon />
             </SvgIcon>
           )}
-          label="Twitter"
-          onClick={() => openSite(twitterUrl)}
+          label="Mastodon"
+          onClick={() => openSite(mastodonUrl)}
         />
         <BottomNavigationAction
           icon={(
