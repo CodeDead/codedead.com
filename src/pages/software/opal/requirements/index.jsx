@@ -48,13 +48,13 @@ const Requirements = () => {
                   <TableRow>
                     <TableCell><b>Operating System</b></TableCell>
                     <TableCell>
-                      Windows 7 and later (x64), GNU/Linux (x64)
+                      Windows 7 and later (x64), GNU/Linux (x64), macOS (x64)(arm64)
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Disk space</b></TableCell>
                     <TableCell>
-                      At least 100MB
+                      At least 150MB
                     </TableCell>
                   </TableRow>
                   <TableRow>

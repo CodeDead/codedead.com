@@ -92,7 +92,7 @@ const OpalPage = () => {
                         <li>A river</li>
                         <li>Fire</li>
                         <li>Office background noises</li>
-                        <li>And much much more</li>
+                        <li>And much, much more!</li>
                       </ul>
                     </Typography>
                   </Grid>
@@ -140,8 +140,9 @@ const OpalPage = () => {
                       Cross platform
                     </Typography>
                     <Typography paragraph gutterBottom>
-                      Opal is available for Linux and Windows and community builds for macOS are
-                      also possible. All offering the same easy-to-use look and feel.
+                      Opal is available for Linux, Windows and macOS. All offering the same
+                      easy-to-use look and feel. No matter what device you use it on,
+                      you will always feel right at home.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
@@ -168,7 +169,7 @@ const OpalPage = () => {
           </Grid>
         </Grid>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -196,7 +197,23 @@ const OpalPage = () => {
               Portable
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              macOS
+            </Typography>
+            <Button
+              fullWidth
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                openLink('https://codedead.com/Software/Opal/Opal-1.1.0.dmg');
+                setDonateOpen(true);
+              }}
+            >
+              dmg
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
