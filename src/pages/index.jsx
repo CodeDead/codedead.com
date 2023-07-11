@@ -171,7 +171,7 @@ const Home = () => {
                       </Typography>
                       <Typography color="textSecondary" paragraph>
                         A free and open source music player that will help you relax. Opal has
-                        20+ sounds available that will help you relax. It runs on Windows and Linux.
+                        30+ sounds available that will help you relax. It runs on Windows and Linux.
                       </Typography>
                     </Grid>
                   </Grid>
