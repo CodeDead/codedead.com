@@ -162,7 +162,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.1_x64_en-US.msi');
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.2_x64_en-US.msi');
                 setDonateOpen(true);
               }}
             >
@@ -179,7 +179,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.1_amd64.AppImage');
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.2_amd64.AppImage');
                 setDonateOpen(true);
               }}
             >
@@ -196,7 +196,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.1_x64.dmg');
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.2_x64.dmg');
                 setDonateOpen(true);
               }}
             >
@@ -285,7 +285,7 @@ const AdvancedPassGenPage = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} md={3} lg={3}>
             <Button
               color="primary"
               variant="contained"
@@ -295,19 +295,7 @@ const AdvancedPassGenPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
-            <Button
-              color="primary"
-              variant="contained"
-              href="https://codedead.com/Software/Advanced%20PassGen/help.pdf"
-              target="_blank"
-              fullWidth
-            >
-              Help documentation
-            </Button>
-          </Grid>
-
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} md={3} lg={3}>
             <Button
               color="primary"
               variant="contained"
@@ -318,7 +306,7 @@ const AdvancedPassGenPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid item xs={12} md={3} lg={3}>
             <Button
               color="primary"
               variant="contained"
