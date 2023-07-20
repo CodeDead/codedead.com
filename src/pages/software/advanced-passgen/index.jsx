@@ -285,7 +285,7 @@ const AdvancedPassGenPage = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={3} lg={3}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
               variant="contained"
@@ -295,7 +295,7 @@ const AdvancedPassGenPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={3} lg={3}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
               variant="contained"
@@ -306,7 +306,7 @@ const AdvancedPassGenPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={3} lg={3}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
               variant="contained"
