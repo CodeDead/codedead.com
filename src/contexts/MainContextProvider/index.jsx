@@ -1,7 +1,7 @@
 import React, { useReducer, createContext } from 'react';
 import MainReducer from '../../reducers/MainReducer';
 
-const themeIndex = typeof window !== 'undefined' && localStorage.themeIndex ? parseFloat(localStorage.themeIndex) : 1;
+const themeIndex = typeof window !== 'undefined' && localStorage.themeIndex ? parseFloat(localStorage.themeIndex) : 0;
 const themeColorIndex = typeof window !== 'undefined' && localStorage.themeColorIndex
   ? parseFloat(localStorage.themeColorIndex)
   : 0;
