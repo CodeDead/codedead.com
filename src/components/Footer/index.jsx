@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import SvgIcon from '@mui/material/SvgIcon';
 import FacebookIcon from '../FacebookIcon';
 import GitHubIcon from '../GithubIcon';
-import MastodonIcon from "../MastodonIcon";
+import MastodonIcon from '../MastodonIcon';
 
 const Footer = ({ facebookUrl, githubUrl, mastodonUrl }) => {
   /**

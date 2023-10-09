@@ -62,7 +62,9 @@ const Layout = ({ children }) => {
       {hasAcceptedCookieNotice ? null : (
         <Alert
           severity="warning"
-          style={{ position: 'sticky', bottom: 0, marginTop: 10, zIndex: 1000 }}
+          style={{
+            position: 'sticky', bottom: 0, marginTop: 10, zIndex: 1000,
+          }}
         >
           <Typography>
             We might use cookies to ensure that we give you the best experience on our website.

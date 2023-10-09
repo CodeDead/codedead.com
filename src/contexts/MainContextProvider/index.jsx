@@ -1,7 +1,10 @@
 import React, { useReducer, createContext } from 'react';
 import MainReducer from '../../reducers/MainReducer';
 
-const themeIndex = typeof window !== 'undefined' && localStorage.themeIndex ? parseFloat(localStorage.themeIndex) : 0;
+const darkThemeMq = typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches;
+const dark = darkThemeMq ? 1 : 0;
+
+const themeIndex = typeof window !== 'undefined' && localStorage.themeIndex ? parseFloat(localStorage.themeIndex) : dark;
 const themeColorIndex = typeof window !== 'undefined' && localStorage.themeColorIndex
   ? parseFloat(localStorage.themeColorIndex)
   : 0;
