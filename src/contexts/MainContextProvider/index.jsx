@@ -12,7 +12,7 @@ const initState = {
   themeIndex,
   themeColorIndex,
   themes: {
-    defaultColor: '#3f50b5',
+    defaultColor: '#1c2661',
   },
   blogLimit: 0,
   hasAcceptedCookieNotice,
