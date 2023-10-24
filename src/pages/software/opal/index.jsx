@@ -178,7 +178,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-1.2.0.msi');
+                openLink('https://codedead.com/Software/Opal/Opal-1.3.0.msi');
                 setDonateOpen(true);
               }}
             >
@@ -190,7 +190,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-win-portable-1.2.0.zip');
+                openLink('https://codedead.com/Software/Opal/Opal-win-portable-1.3.0.zip');
                 setDonateOpen(true);
               }}
             >
@@ -206,7 +206,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-1.2.0.dmg');
+                openLink('https://codedead.com/Software/Opal/Opal-1.3.0.dmg');
                 setDonateOpen(true);
               }}
             >
@@ -222,7 +222,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-x86_64-1.2.0.AppImage');
+                openLink('https://codedead.com/Software/Opal/Opal-x86_64-1.3.0.AppImage');
                 setDonateOpen(true);
               }}
             >
