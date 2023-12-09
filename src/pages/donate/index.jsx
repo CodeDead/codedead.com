@@ -211,6 +211,11 @@ const Donate = () => {
                     <TableCell>Anonymous</TableCell>
                     <TableCell>€2.00</TableCell>
                   </TableRow>
+                  <TableRow>
+                    <TableCell>09/12/2023</TableCell>
+                    <TableCell>Anonymous</TableCell>
+                    <TableCell>€3.27</TableCell>
+                  </TableRow>
                 </TableBody>
               </Table>
             </TableContainer>
