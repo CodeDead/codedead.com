@@ -162,7 +162,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.3_x64_en-US.msi');
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.0_x64_en-US.msi');
                 setDonateOpen(true);
               }}
             >
@@ -179,7 +179,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.3_amd64.AppImage');
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.0_amd64.AppImage');
                 setDonateOpen(true);
               }}
             >
@@ -196,7 +196,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.4.3_x64.dmg');
+                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.0_x64.dmg');
                 setDonateOpen(true);
               }}
             >
