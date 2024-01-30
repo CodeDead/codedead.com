@@ -55,7 +55,7 @@ const AdvancedPortCheckerPage = () => {
 
   return (
     <Layout>
-      <PageHeader title="Advanced PortChecker" subTitle="Scan for open TCP/UDP ports" />
+      <PageHeader title="Advanced PortChecker" subTitle="Scan for open TCP ports" />
       <Container maxWidth="md" style={{ marginTop: 10 }}>
         <Grid container spacing={2} style={{ marginTop: 10 }}>
           <Grid item xs={12} md={12} lg={12}>
@@ -78,8 +78,8 @@ const AdvancedPortCheckerPage = () => {
                       Port scanning
                     </Typography>
                     <Typography paragraph>
-                      Scanning TCP and UDP ports has never been this easy. Watch how Advanced
-                      PortChecker updates you with real-time information while it’s scanning!
+                      Scanning TCP/IP ports has never been this easy. Watch how Advanced
+                      PortChecker scans for open ports in seconds!
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
@@ -130,7 +130,7 @@ const AdvancedPortCheckerPage = () => {
                     <Typography paragraph>
                       Advanced PortChecker can export any and all data that it
                       finds for you in a couple of different formats including:
-                      HTML, CSV and of course plain text.
+                      HTML, JSON, CSV and of course plain text.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
@@ -158,7 +158,58 @@ const AdvancedPortCheckerPage = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              Windows
+            </Typography>
+            <Button
+              size="large"
+              color="primary"
+              variant="contained"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.0.0_x64_en-US.msi');
+                setDonateOpen(true);
+              }}
+            >
+              Installer
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              Linux
+            </Typography>
+            <Button
+              size="large"
+              color="primary"
+              variant="contained"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.0.0_amd64.AppImage');
+                setDonateOpen(true);
+              }}
+            >
+              AppImage
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={4} lg={4}>
+            <Typography variant="h6" align="center">
+              macOS
+            </Typography>
+            <Button
+              size="large"
+              color="primary"
+              variant="contained"
+              fullWidth
+              onClick={() => {
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.0.0_x64.dmg');
+                setDonateOpen(true);
+              }}
+            >
+              DMG
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={12} lg={12}>
             <Typography variant="h6" align="center">
               Android
             </Typography>
@@ -170,36 +221,6 @@ const AdvancedPortCheckerPage = () => {
               href="https://play.google.com/store/apps/details?id=com.codedead.advancedportchecker"
             >
               Play Store
-            </Button>
-          </Grid>
-          <Grid item xs={12} md={6} lg={6}>
-            <Typography variant="h6" align="center">
-              Windows
-            </Typography>
-            <Button
-              size="large"
-              color="primary"
-              variant="contained"
-              fullWidth
-              onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/AP_SETUP.exe');
-                setDonateOpen(true);
-              }}
-            >
-              Installer
-            </Button>
-            <Button
-              size="large"
-              color="primary"
-              variant="contained"
-              fullWidth
-              style={{ marginTop: 10 }}
-              onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/AP_portable.zip');
-                setDonateOpen(true);
-              }}
-            >
-              Portable
             </Button>
           </Grid>
         </Grid>
@@ -278,18 +299,6 @@ const AdvancedPortCheckerPage = () => {
             <Button
               color="primary"
               variant="contained"
-              href="https://codedead.com/Software/Advanced%20PortChecker/help.pdf"
-              target="_blank"
-              fullWidth
-            >
-              Help documentation
-            </Button>
-          </Grid>
-
-          <Grid item xs={12} md={4} lg={4}>
-            <Button
-              color="primary"
-              variant="contained"
               href="https://codedead.com/Software/Advanced%20PortChecker/gpl.pdf"
               target="_blank"
               fullWidth
@@ -297,7 +306,7 @@ const AdvancedPortCheckerPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid item xs={12} md={4} lg={4}>
             <Button
               color="primary"
               variant="contained"

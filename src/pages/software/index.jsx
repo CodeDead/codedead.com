@@ -101,8 +101,8 @@ const Software = () => {
   }, {
     name: 'Advanced PortChecker',
     url: '/software/advanced-portchecker',
-    description: 'Scanning TCP and UDP ports has never been this easy. Watch how Advanced PortChecker updates you with real-time information while it’s scanning!',
-    tags: ['Advanced PortChecker', 'scanner'],
+    description: 'Scanning TCP/IP ports has never been this easy. Watch how Advanced PortChecker scans for open ports in seconds!',
+    tags: ['Advanced PortChecker', 'scanner', 'port', 'tcp', 'ip', 'network'],
     image: imageData.advancedportchecker.childImageSharp.gatsbyImageData,
   }, {
     name: 'DeadLock',
@@ -165,7 +165,7 @@ const Software = () => {
   return (
     <Layout>
       <PageHeader title="Software" subTitle="Our work" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
+      <Container maxWidth="xl" style={{ marginTop: 10 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={12} lg={12}>
             <Card>
@@ -189,8 +189,7 @@ const Software = () => {
                 <Grid item xs={12} md={12} lg={12}>
                   <Typography variant="h5" color="textPrimary">
                     <SecurityIcon color="inherit" />
-                    {' '}
-                    Security
+                    {' Security'}
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={12} lg={12}>
@@ -258,8 +257,7 @@ const Software = () => {
               <Grid item xs={12} md={12} lg={12}>
                 <Typography variant="h5" color="textPrimary">
                   <ComputerIcon color="inherit" />
-                  {' '}
-                  System
+                  {' System'}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={12} lg={12}>
@@ -309,8 +307,7 @@ const Software = () => {
                 <Grid item xs={12} md={12} lg={12}>
                   <Typography variant="h5" color="textPrimary">
                     <AppsIcon color="inherit" />
-                    {' '}
-                    Utilities
+                    {' Utilities'}
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={12} lg={12}>
