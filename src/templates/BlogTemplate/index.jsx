@@ -9,6 +9,7 @@ import PageHeader from '../../components/PageHeader';
 import Layout from '../../components/Layout';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';
+import './index.css';
 
 export const blogPageQuery = graphql`
   query($path: String!) {
