@@ -312,7 +312,7 @@ const DeadHashPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid item xs={12} md={6} lg={6}>
             <Button
               color="primary"
               variant="contained"
@@ -320,7 +320,18 @@ const DeadHashPage = () => {
               target="_blank"
               fullWidth
             >
-              Source code
+              Source code (Desktop)
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={6} lg={6}>
+            <Button
+              color="primary"
+              variant="contained"
+              href="https://github.com/CodeDead/DeadHash-android"
+              target="_blank"
+              fullWidth
+            >
+              Source code (Android)
             </Button>
           </Grid>
         </Grid>

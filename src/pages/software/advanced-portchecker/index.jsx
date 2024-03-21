@@ -285,7 +285,7 @@ const AdvancedPortCheckerPage = () => {
         </Grid>
 
         <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} md={6} lg={6}>
             <Button
               color="primary"
               variant="contained"
@@ -295,7 +295,7 @@ const AdvancedPortCheckerPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} md={6} lg={6}>
             <Button
               color="primary"
               variant="contained"
@@ -306,7 +306,7 @@ const AdvancedPortCheckerPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid item xs={12} md={6} lg={6}>
             <Button
               color="primary"
               variant="contained"
@@ -314,7 +314,18 @@ const AdvancedPortCheckerPage = () => {
               target="_blank"
               fullWidth
             >
-              Source code
+              Source code (Desktop)
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={6} lg={6}>
+            <Button
+              color="primary"
+              variant="contained"
+              href="https://github.com/CodeDead/Advanced-PortChecker-android"
+              target="_blank"
+              fullWidth
+            >
+              Source code (Android)
             </Button>
           </Grid>
         </Grid>
