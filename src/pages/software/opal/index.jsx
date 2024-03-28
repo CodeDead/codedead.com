@@ -114,7 +114,7 @@ const OpalPage = () => {
                   <Grid item xs={12} md={6} lg={6}>
                     <GatsbyImage
                       image={data.opalTimer.childImageSharp.gatsbyImageData}
-                      alt="Opal Timer"
+                      alt="Opal timer"
                     />
                   </Grid>
                   <Grid item xs={12} md={6} lg={6}>
@@ -178,7 +178,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-1.3.0.msi');
+                openLink('https://codedead.com/Software/Opal/Opal-1.3.1.msi');
                 setDonateOpen(true);
               }}
             >
@@ -190,7 +190,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-win-portable-1.3.0.zip');
+                openLink('https://codedead.com/Software/Opal/Opal-win-portable-1.3.1.zip');
                 setDonateOpen(true);
               }}
             >
@@ -206,7 +206,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-1.3.0.dmg');
+                openLink('https://codedead.com/Software/Opal/Opal-1.3.1.dmg');
                 setDonateOpen(true);
               }}
             >
@@ -222,7 +222,7 @@ const OpalPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/Opal/Opal-x86_64-1.3.0.AppImage');
+                openLink('https://codedead.com/Software/Opal/Opal-x86_64-1.3.1.AppImage');
                 setDonateOpen(true);
               }}
             >
