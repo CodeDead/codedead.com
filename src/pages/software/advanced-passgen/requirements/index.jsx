@@ -51,14 +51,14 @@ const Requirements = () => {
                     <TableCell>#</TableCell>
                     <TableCell>Windows 10 and later (x64)</TableCell>
                     <TableCell>GNU/Linux(x64)</TableCell>
-                    <TableCell>macOS</TableCell>
+                    <TableCell>macOS (aarch64)</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   <TableRow>
                     <TableCell><b>Disk space</b></TableCell>
                     <TableCell>At least 5MB</TableCell>
-                    <TableCell>At least 85MB</TableCell>
+                    <TableCell>At least 120MB</TableCell>
                     <TableCell>At least 5MB</TableCell>
                   </TableRow>
                   <TableRow>
@@ -106,7 +106,7 @@ const Requirements = () => {
               fullWidth
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/63b7a2b61d481bd9c90b02390875a2620c8b6e2e5428db990711b56c4f0b24f2?nocache=1"
+              href="https://www.virustotal.com/gui/file/09ad6cbf29175404adaab0a278cbbf2c71535f1beb1fb55c8fc124d9d94aa9b3?nocache=1"
               target="_blank"
             >
               Windows Installer
@@ -117,7 +117,7 @@ const Requirements = () => {
               fullWidth
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/746dd6de5224ae4112c13c4506f9ffbfd3d52890b6599ece78e41dd1759ce5f2?nocache=1"
+              href="https://www.virustotal.com/gui/file/97327914131f79faba4d27d4e0e69bb87ff6c56382868378b77619a641e53c04?nocache=1"
               target="_blank"
             >
               Linux AppImage
@@ -128,7 +128,7 @@ const Requirements = () => {
               fullWidth
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/ad7400a3e8fef5c5d5c7b6e7e3699a1dd194264496f34ee0c73ee0a0ee5b014a?nocache=1"
+              href="https://www.virustotal.com/gui/file/fcef32243dea616e50790865bcaddf82a95a6e6f42c30b65d04db035e4c70faf?nocache=1"
               target="_blank"
             >
               macOS dmg
