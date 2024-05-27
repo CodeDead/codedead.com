@@ -9,12 +9,16 @@ import CardHeader from '@mui/material/CardHeader';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Application = ({
-  name, description, url, image,
+  name, description, url, image, newTab,
 }) => {
   /**
    * Go to the designated URL
    */
   const goToUrl = () => {
+    if (newTab) {
+      window.open(url, '_blank');
+      return;
+    }
     navigate(url);
   };
 

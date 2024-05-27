@@ -71,7 +71,12 @@ const Software = () => {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, height: 160)
       }
-    }
+    },
+    compressr: file(relativePath: { eq: "Compressr/compressr.png" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED, height: 160)
+      }
+    } 
   }`);
 
   const applications = [{
@@ -134,7 +139,14 @@ const Software = () => {
     description: 'Opal is a free and open source music player that will help you relax. It runs on Windows and Linux.',
     tags: ['Opal', 'music', 'relax', 'sound', 'relaxation', 'relaxing', 'linux'],
     image: imageData.opal.childImageSharp.gatsbyImageData,
-  }];
+  },
+    {
+      name: 'Compressr',
+      url: 'https://compressr.codedead.com/',
+      description: 'Compressr is a free and open source bulk image compressor / compression tool that you can use in the browser ',
+      tags: ['image', 'compression', 'compress', 'bulk', 'art', 'pixel', 'lossless', 'lossy'],
+      image: imageData.compressr.childImageSharp.gatsbyImageData,
+    }];
 
   useEffect(() => {
     dispatch(setPageIndex(1));
@@ -144,7 +156,8 @@ const Software = () => {
   if (searchValue && searchValue.length > 0) {
     searchResult = applications.filter((application) => {
       for (let i = 0; i < application.tags.length; i += 1) {
-        if (application.tags[i].toLowerCase().indexOf(searchValue.toLowerCase()) !== -1) {
+        if (application.tags[i].toLowerCase()
+          .indexOf(searchValue.toLowerCase()) !== -1) {
           return true;
         }
       }
@@ -164,7 +177,7 @@ const Software = () => {
 
   return (
     <Layout>
-      <PageHeader title="Software" subTitle="Our work" />
+      <PageHeader title="Software" subTitle="Our work"/>
       <Container maxWidth="xl" style={{ marginTop: 10 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={12} lg={12}>
@@ -188,12 +201,12 @@ const Software = () => {
               <>
                 <Grid item xs={12} md={12} lg={12}>
                   <Typography variant="h5" color="textPrimary">
-                    <SecurityIcon color="inherit" />
+                    <SecurityIcon color="inherit"/>
                     {' Security'}
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={12} lg={12}>
-                  <Divider />
+                  <Divider/>
                 </Grid>
               </>
             )}
@@ -256,12 +269,12 @@ const Software = () => {
             <Grid container spacing={2} style={{ marginTop: 20 }}>
               <Grid item xs={12} md={12} lg={12}>
                 <Typography variant="h5" color="textPrimary">
-                  <ComputerIcon color="inherit" />
+                  <ComputerIcon color="inherit"/>
                   {' System'}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={12} lg={12}>
-                <Divider />
+                <Divider/>
               </Grid>
             </Grid>
           )}
@@ -306,12 +319,12 @@ const Software = () => {
               <Grid container spacing={2} style={{ marginTop: 20 }}>
                 <Grid item xs={12} md={12} lg={12}>
                   <Typography variant="h5" color="textPrimary">
-                    <AppsIcon color="inherit" />
+                    <AppsIcon color="inherit"/>
                     {' Utilities'}
                   </Typography>
                 </Grid>
                 <Grid item xs={12} md={12} lg={12}>
-                  <Divider />
+                  <Divider/>
                 </Grid>
               </Grid>
 
@@ -346,6 +359,15 @@ const Software = () => {
                     description={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].description}
                     url={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].url}
                     image={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].image}
+                  />
+                </Grid>
+                <Grid item xs={12} md={3} lg={4}>
+                  <Application
+                    name={applications.filter((item) => item.name === 'Compressr')[0].name}
+                    description={applications.filter((item) => item.name === 'Compressr')[0].description}
+                    url={applications.filter((item) => item.name === 'Compressr')[0].url}
+                    image={applications.filter((item) => item.name === 'Compressr')[0].image}
+                    newTab={true}
                   />
                 </Grid>
               </Grid>
