@@ -216,6 +216,11 @@ const Donate = () => {
                     <TableCell>Anonymous</TableCell>
                     <TableCell>€3.27</TableCell>
                   </TableRow>
+                  <TableRow>
+                    <TableCell>18/06/2024</TableCell>
+                    <TableCell><a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">PandaRainbow</a></TableCell>
+                    <TableCell>$10.00</TableCell>
+                  </TableRow>
                 </TableBody>
               </Table>
             </TableContainer>
