@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
    * Go to the GDPR site
    */
   const gotoGdpr = () => {
-    navigate('http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm');
+    navigate('https://commission.europa.eu/resources-partners/europa-web-guide_en');
   };
 
   return (
@@ -62,8 +62,8 @@ const Layout = ({ children }) => {
       {hasAcceptedCookieNotice ? null : (
         <Alert
           severity="warning"
-          style={{
-            position: 'sticky', bottom: 0, marginTop: 10, zIndex: 1000,
+          sx={{
+            position: 'sticky', bottom: 0, mt: 5, zIndex: 1000,
           }}
         >
           <Typography>
@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
             variant="contained"
             color="secondary"
             onClick={gotoGdpr}
-            style={{ marginRight: 5 }}
+            sx={{ mr: 1 }}
           >
             Decline
           </Button>

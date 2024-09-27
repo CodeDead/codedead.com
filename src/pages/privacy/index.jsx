@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Card from '@mui/material/Card';
@@ -20,18 +20,18 @@ const Privacy = () => {
   return (
     <Layout>
       <PageHeader title="Privacy" subTitle="What?" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Information
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Card style={{ marginTop: 10 }}>
+        <Card sx={{ mt: 5 }}>
           <CardContent>
             <Typography gutterBottom>
               Let’s get started shall we. We’re all about transparency. That is why our applications
@@ -50,17 +50,17 @@ const Privacy = () => {
             </Typography>
           </CardContent>
         </Card>
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Google Analytics
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Card style={{ marginTop: 10 }}>
+        <Card sx={{ mt: 5 }}>
           <CardContent>
             <Typography gutterBottom>
               This is an external party we use to collect information on the usage of this
@@ -92,17 +92,19 @@ const Privacy = () => {
             </ul>
           </CardContent>
         </Card>
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Server logs
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Card style={{ marginTop: 10 }}>
+
+        <Card sx={{ mt: 5 }}>
           <CardContent>
             <Typography gutterBottom>
               Server logs are data that is automatically collected by our server when you visit our
@@ -137,17 +139,19 @@ const Privacy = () => {
             </Typography>
           </CardContent>
         </Card>
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               E-mail
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Card style={{ marginTop: 10 }}>
+
+        <Card sx={{ mt: 5 }}>
           <CardContent>
             <Typography gutterBottom>
               It’s quite possible that you have to send us a mail, contact us in order to get
@@ -165,17 +169,18 @@ const Privacy = () => {
             </Typography>
           </CardContent>
         </Card>
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               That&apos;s it?
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Card style={{ marginTop: 10 }}>
+
+        <Card sx={{ mt: 5 }}>
           <CardContent>
             <Typography gutterBottom>
               Yeah. That’s it. We’re not internet gangster collecting tons of e-mail addresses or

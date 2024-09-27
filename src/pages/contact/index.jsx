@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
@@ -57,10 +57,9 @@ const ContactPage = () => {
           )
           : null}
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} lg={6}>
-            <Card style={{
-              marginTop: 10,
-              height: '100%',
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
+            <Card sx={{
+              mt: 5,
             }}
             >
               <CardContent>
@@ -73,19 +72,18 @@ const ContactPage = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button variant="outlined" onClick={openGithub}>
+                <Button variant="outlined" onClick={openGithub} sx={{mb: 1}}>
                   GitHub
                 </Button>
-                <Button variant="outlined" onClick={() => setContactOpen(true)}>
+                <Button variant="outlined" onClick={() => setContactOpen(true)} sx={{mb: 1}}>
                   Contact
                 </Button>
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
-            <Card style={{
-              marginTop: 10,
-              height: '100%',
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
+            <Card sx={{
+              mt: 5,
             }}
             >
               <CardContent>
@@ -98,7 +96,7 @@ const ContactPage = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button variant="outlined" onClick={() => setContactOpen(true)}>
+                <Button variant="outlined" onClick={() => setContactOpen(true)} sx={{mb: 1}}>
                   Contact
                 </Button>
               </CardActions>

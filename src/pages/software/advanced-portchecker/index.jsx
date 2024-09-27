@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -56,33 +56,33 @@ const AdvancedPortCheckerPage = () => {
   return (
     <Layout>
       <PageHeader title="Advanced PortChecker" subTitle="Scan for open TCP ports" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 10 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Port scanning
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Scanning TCP/IP ports has never been this easy. Watch how Advanced
                       PortChecker scans for open ports in seconds!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="Advanced PortChecker main window"
@@ -93,21 +93,21 @@ const AdvancedPortCheckerPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="Advanced PortChecker settings"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Need a specific time-out set for port scanning? Want a
                       different theme or would you like to disable automatic
                       updates? It’s all possible, thanks to our intuitive and
@@ -119,21 +119,21 @@ const AdvancedPortCheckerPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Exporting
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Advanced PortChecker can export any and all data that it
                       finds for you in a couple of different formats including:
                       HTML, JSON, CSV and of course plain text.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.about.childImageSharp.gatsbyImageData}
                       alt="Advanced PortChecker about"
@@ -145,20 +145,20 @@ const AdvancedPortCheckerPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -175,7 +175,7 @@ const AdvancedPortCheckerPage = () => {
               Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
@@ -192,7 +192,7 @@ const AdvancedPortCheckerPage = () => {
               AppImage
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               macOS
             </Typography>
@@ -209,7 +209,7 @@ const AdvancedPortCheckerPage = () => {
               DMG
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Typography variant="h6" align="center">
               Android
             </Typography>
@@ -225,20 +225,20 @@ const AdvancedPortCheckerPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5  }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -273,19 +273,19 @@ const AdvancedPortCheckerPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               color="primary"
               variant="contained"
@@ -295,7 +295,7 @@ const AdvancedPortCheckerPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               color="primary"
               variant="contained"
@@ -306,7 +306,7 @@ const AdvancedPortCheckerPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               color="primary"
               variant="contained"
@@ -317,7 +317,7 @@ const AdvancedPortCheckerPage = () => {
               Source code (Desktop)
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               color="primary"
               variant="contained"

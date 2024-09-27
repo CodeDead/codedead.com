@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -56,34 +56,34 @@ const AniViewPage = () => {
   return (
     <Layout>
       <PageHeader title="AniView" subTitle="GIF Image Viewer" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       GIF
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       AniView is a free and open source GIF image viewer. You
                       can watch GIF images your way, thanks to all the
                       options that are available in AniView.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="AniView main window"
@@ -94,21 +94,21 @@ const AniViewPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="AniView settings"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Want a different theme or would you like to disable automatic
                       updates? Don’t want your GIF’s to loop? It’s all possible,
                       thanks to our intuitive and easy to use GUI.
@@ -119,22 +119,22 @@ const AniViewPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Frame extraction
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       As an added bonus, you can also extract each individual
                       frame inside a GIF image to a format of your liking.
                       Particularly interesting if you’re only interested in a
                       single frame.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.image.childImageSharp.gatsbyImageData}
                       alt="AniView image"
@@ -146,20 +146,20 @@ const AniViewPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               size="large"
               color="primary"
@@ -173,7 +173,7 @@ const AniViewPage = () => {
               Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               size="large"
               color="primary"
@@ -189,20 +189,20 @@ const AniViewPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -245,19 +245,19 @@ const AniViewPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -267,7 +267,7 @@ const AniViewPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -279,7 +279,7 @@ const AniViewPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -290,7 +290,7 @@ const AniViewPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
               color="primary"
               variant="contained"

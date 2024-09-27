@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
@@ -56,47 +56,47 @@ const OpalPage = () => {
   return (
     <Layout>
       <PageHeader title="Opal" subTitle="Relaxing music player" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Simplicity
                     </Typography>
-                    <Typography paragraph gutterBottom>
+                    <Typography component="p" gutterBottom>
                       Select the sounds (30+ relaxing tracks are available) that you want to hear,
                       turn them on and you can listen to and enjoy the music for as long as you
                       want, without interruption.
                     </Typography>
-                    <Typography paragraph gutterBottom>
+                    <Typography component="p" gutterBottom>
                       You can listen to the sound of:
-                      <ul>
-                        <li>Rain</li>
-                        <li>Wind</li>
-                        <li>Thunder</li>
-                        <li>A river</li>
-                        <li>Fire</li>
-                        <li>Office background noises</li>
-                        <li>And much, much more!</li>
-                      </ul>
                     </Typography>
+                    <ul>
+                      <li>Rain</li>
+                      <li>Wind</li>
+                      <li>Thunder</li>
+                      <li>A river</li>
+                      <li>Fire</li>
+                      <li>Office background noises</li>
+                      <li>And much, much more!</li>
+                    </ul>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.opal.childImageSharp.gatsbyImageData}
                       alt="Opal main window"
@@ -107,21 +107,21 @@ const OpalPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.opalTimer.childImageSharp.gatsbyImageData}
                       alt="Opal timer"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Timer
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       You can enable a timer to turn off all music after a specified amount of time.
                       An incredibly useful feature for when you are about to fall asleep.
                     </Typography>
@@ -131,21 +131,21 @@ const OpalPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Cross platform
                     </Typography>
-                    <Typography paragraph gutterBottom>
+                    <Typography component="p" gutterBottom>
                       Opal is available for Linux, Windows and macOS. All offering the same
                       easy-to-use look and feel. No matter what device you use it on,
                       you will always feel right at home.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.opalSettings.childImageSharp.gatsbyImageData}
                       alt="Opal settings"
@@ -157,19 +157,19 @@ const OpalPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -186,7 +186,7 @@ const OpalPage = () => {
             </Button>
             <Button
               fullWidth
-              style={{ marginTop: 10 }}
+              sx={{ mt: 1 }}
               variant="contained"
               color="primary"
               onClick={() => {
@@ -197,7 +197,7 @@ const OpalPage = () => {
               Portable
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               macOS
             </Typography>
@@ -213,7 +213,7 @@ const OpalPage = () => {
               dmg
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
@@ -231,20 +231,20 @@ const OpalPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -278,19 +278,19 @@ const OpalPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               variant="contained"
               href="/software/opal/requirements"
@@ -299,7 +299,7 @@ const OpalPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               variant="contained"
               href="https://codedead.com/Software/Opal/help.pdf"
@@ -310,7 +310,7 @@ const OpalPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               variant="contained"
               href="https://codedead.com/Software/Opal/gpl.pdf"
@@ -320,7 +320,7 @@ const OpalPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
               variant="contained"
               href="https://github.com/CodeDead/Opal"

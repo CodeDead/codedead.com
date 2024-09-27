@@ -24,7 +24,7 @@ const PageHeader = ({ title, subTitle, backButton }) => {
             : null}
           {title}
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" paragraph>
+        <Typography variant="h5" align="center" color="textSecondary" component="p">
           {subTitle}
         </Typography>
       </Container>

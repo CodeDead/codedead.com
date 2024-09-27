@@ -9,9 +9,7 @@ import Typography from '@mui/material/Typography';
 const BlogPost = ({
   title, path, abstract, date,
 }) => (
-  <Card
-    elevation={2}
-  >
+  <Card elevation={2}>
     <CardActionArea onClick={() => navigate(path)}>
       <CardHeader title={title} subheader={<i>{date}</i>} />
       <CardContent>

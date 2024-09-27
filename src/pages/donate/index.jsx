@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Button from '@mui/material/Button';
 import TableContainer from '@mui/material/TableContainer';
 import Table from '@mui/material/Table';
@@ -32,20 +32,19 @@ const Donate = () => {
   return (
     <Layout>
       <PageHeader title="Donate" subTitle="Keep us going" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Card style={{ marginTop: 10 }}>
+        <Card sx={{ mt: 3 }}>
           <CardContent>
             <Typography>
               Donations are always welcome. All of the money that is donated to us will go towards
@@ -55,7 +54,7 @@ const Donate = () => {
               any payment method you like.
             </Typography>
 
-            <Typography style={{ marginTop: 20 }}>
+            <Typography sx={{ mt: 3 }}>
               In addition, we are verified Brave creators, which means you can donate BAT directly
               to us via the Brave browser.
               <a
@@ -66,31 +65,31 @@ const Donate = () => {
               </a>
             </Typography>
 
-            <Typography style={{ marginTop: 20 }}>
+            <Typography sx={{ mt: 3 }}>
               BAT donations will not appear in the hall of fame because it&apos;s impossible to
               retrace. However, if you have donated a certain amount of BAT, you can always contact
               us so we can add you to the hall of fame.
             </Typography>
 
-            <Typography style={{ marginTop: 20 }}>
+            <Typography sx={{ mt: 3 }}>
               Don’t worry if you don’t immediately appear in the hall of fame. We’ll update the
               hall of fame within 3 days after your donation (and if we haven’t, because we should
               have, send us a mail to let us know!!).
             </Typography>
 
-            <Typography style={{ marginTop: 20 }}>
+            <Typography sx={{ mt: 3 }}>
               In case of a EGLD donation, please email us if you’d
               like to appear in the hall of fame, otherwise it will show up as an anonymous
               donation.
             </Typography>
 
-            <Typography style={{ marginTop: 20 }}>
+            <Typography sx={{ mt: 3 }}>
               Even if you don’t want to donate, simply spreading the word means a lot to us. Thank
               you for your interest in our software and for making the world a better place,
               together!
             </Typography>
 
-            <Typography style={{ marginTop: 20 }}>
+            <Typography sx={{ mt: 3 }}>
               If you don’t want your name to appear in the hall of fame or would like to have it
               removed, feel free to let us know in the message of the donation or by sending us an
               e-mail.
@@ -98,20 +97,20 @@ const Donate = () => {
           </CardContent>
         </Card>
 
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <AttachMoneyIcon color="inherit" />
               {' Donate'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 3 }}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               variant="contained"
               color="primary"
@@ -123,7 +122,7 @@ const Donate = () => {
               Donate via PayPal
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               variant="contained"
               color="primary"
@@ -135,7 +134,7 @@ const Donate = () => {
               GitHub Sponsor
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               variant="contained"
               color="primary"
@@ -147,19 +146,19 @@ const Donate = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <AccountBalanceIcon color="inherit" />
               {' Hall of fame'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Card style={{ marginTop: 10 }}>
+        <Card sx={{ mt: 3 }}>
           <CardContent>
             <TableContainer>
               <Table>

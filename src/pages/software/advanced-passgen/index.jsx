@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
@@ -56,34 +56,34 @@ const AdvancedPassGenPage = () => {
   return (
     <Layout>
       <PageHeader title="Advanced PassGen" subTitle="Generate passwords with ease" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Password generation
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Easily generate thousands of passwords using the options that are available in
                       Advanced PassGen. You can even go so far as to define your own character set
                       that Advanced PassGen can use to generate passwords!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage image={data.advancedpassgen.childImageSharp.gatsbyImageData} alt="Advanced PassGen" />
                   </Grid>
                 </Grid>
@@ -91,18 +91,18 @@ const AdvancedPassGenPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage image={data.advancedpassgensettings.childImageSharp.gatsbyImageData} alt="Advanced PassGen settings" />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Want a different theme or would you like to disable automatic updates? Don’t
                       want to export a certain field? It’s all possible, thanks to our intuitive and
                       easy to use GUI.
@@ -113,21 +113,21 @@ const AdvancedPassGenPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Exporting
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Advanced PassGen can export any and all data that it generates for you in a
                       couple of different formats including: CSV, JSON and of course
                       plain text. A simple copy is also available!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.advancedpassgensettingsadvanced.childImageSharp.gatsbyImageData}
                       alt="Advanced PassGen advanced settings"
@@ -139,20 +139,20 @@ const AdvancedPassGenPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs:12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -169,7 +169,7 @@ const AdvancedPassGenPage = () => {
               Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs:12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
@@ -186,7 +186,7 @@ const AdvancedPassGenPage = () => {
               AppImage
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               macOS
             </Typography>
@@ -203,7 +203,7 @@ const AdvancedPassGenPage = () => {
               dmg
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Typography variant="h6" align="center">
               Web
             </Typography>
@@ -219,20 +219,20 @@ const AdvancedPassGenPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -273,19 +273,19 @@ const AdvancedPassGenPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -295,7 +295,7 @@ const AdvancedPassGenPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -306,7 +306,7 @@ const AdvancedPassGenPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"

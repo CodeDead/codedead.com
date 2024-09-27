@@ -8,7 +8,7 @@ import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import CardContent from '@mui/material/CardContent';
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
@@ -138,28 +138,28 @@ const EgldPriceCalculator = () => {
   return (
     <Layout>
       <PageHeader title="MultiversX (EGLD) Price Calculator" subTitle="Simple MultiversX (EGLD) price calculator" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
         <Card>
           <CardContent>
             {loading ? <LoadingBar /> : (
               <Grid container spacing={2}>
-                <Grid item xs={12} md={12} lg={12}>
+                <Grid size={{ xs: 12, md: 12, lg: 12 }}>
                   <Grid container>
-                    <Grid item xs={12} md={10} lg={10}>
+                    <Grid size={{xs: 12, md: 10, lg: 10}} style={{ flexGrow: 1}}>
                       <TextField
                         variant="outlined"
                         label="Amount"
                         value={egld}
                         type="number"
-                        style={{ marginTop: 10 }}
+                        sx={{ mt: 1 }}
                         fullWidth
                         onChange={changeEgldAmount}
                       />
                     </Grid>
-                    <Grid item xs={12} md={2} lg={2}>
+                    <Grid size={{xs: 12, md: 2, lg: 2}}>
                       <FormControl
                         variant="outlined"
-                        style={{ marginTop: 10 }}
+                        sx={{ mt: 1 }}
                         fullWidth
                       >
                         <InputLabel>Currency</InputLabel>
@@ -167,6 +167,7 @@ const EgldPriceCalculator = () => {
                           value="egld"
                           label="Currency"
                           fullWidth
+                          variant="outlined"
                         >
                           <MenuItem value="egld">
                             <em>EGLD</em>
@@ -176,23 +177,23 @@ const EgldPriceCalculator = () => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item xs={12} md={12} lg={12}>
+                <Grid size={12}>
                   <Grid container>
-                    <Grid item xs={12} md={10} lg={10}>
+                    <Grid size={{xs: 12, md: 10, lg: 10}} style={{ flexGrow: 1}}>
                       <TextField
                         variant="outlined"
                         label="Amount"
                         value={currencyAmount}
                         type="number"
-                        style={{ marginTop: 10 }}
+                        sx={{ mt: 1 }}
                         fullWidth
                         onChange={changeCurrencyAmount}
                       />
                     </Grid>
-                    <Grid item xs={12} md={2} lg={2}>
+                    <Grid size={{xs: 12, md: 2, lg: 2}}>
                       <FormControl
                         variant="outlined"
-                        style={{ marginTop: 10 }}
+                        sx={{ mt: 1 }}
                         fullWidth
                       >
                         <InputLabel>Currency</InputLabel>
@@ -201,6 +202,7 @@ const EgldPriceCalculator = () => {
                           label="Currency"
                           fullWidth
                           onChange={changeCurrency}
+                          variant="outlined"
                         >
                           <MenuItem value="">
                             Select a currency

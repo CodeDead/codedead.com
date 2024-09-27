@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -56,33 +56,33 @@ const PkFinderPage = () => {
   return (
     <Layout>
       <PageHeader title="PK Finder" subTitle="Find your Windows product key" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Product key
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Easily recover your Windows product key with PK Finder. As soon as you open PK
                       Finder, you’ll be able to view your product key.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.pkfinder.childImageSharp.gatsbyImageData}
                       alt="PK Finder main window"
@@ -93,21 +93,21 @@ const PkFinderPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.general.childImageSharp.gatsbyImageData}
                       alt="PK Finder general settings"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Want a different theme or would you like to disable automatic updates?
                       It’s all possible, thanks to our intuitive and easy to use GUI.
                     </Typography>
@@ -117,20 +117,20 @@ const PkFinderPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Exporting
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       You can export your product key in any of the supported formats,
                       including: HTML, Excel, JSON, CSV and of course plain text format.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.theme.childImageSharp.gatsbyImageData}
                       alt="PK Finder theme settings"
@@ -142,20 +142,20 @@ const PkFinderPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               size="large"
               color="primary"
@@ -169,7 +169,7 @@ const PkFinderPage = () => {
               Installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               size="large"
               color="primary"
@@ -185,20 +185,20 @@ const PkFinderPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -231,19 +231,19 @@ const PkFinderPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -253,7 +253,7 @@ const PkFinderPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -265,7 +265,7 @@ const PkFinderPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -276,7 +276,7 @@ const PkFinderPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
               color="primary"
               variant="contained"
