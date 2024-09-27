@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Card from '@mui/material/Card';
@@ -164,7 +164,7 @@ const Software = () => {
       return false;
     })
       .map((application) => (
-        <Grid item xs={12} md={3} lg={4} key={application.name}>
+        <Grid size={{xs: 12, md: 3, lg: 4}} key={application.name}>
           <Application
             name={application.name}
             description={application.description}
@@ -178,9 +178,9 @@ const Software = () => {
   return (
     <Layout>
       <PageHeader title="Software" subTitle="Our work"/>
-      <Container maxWidth="xl" style={{ marginTop: 10 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="xl" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5}}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <TextField
@@ -189,36 +189,37 @@ const Software = () => {
                   onChange={(e) => setSearchValue(e.target.value)}
                   variant="outlined"
                   placeholder="Search"
-                  style={{ width: '100%' }}
+                  sx={{ width: '100%' }}
                 />
               </CardContent>
             </Card>
           </Grid>
-          {/* eslint-disable-next-line no-mixed-operators */}
-          {searchResult && searchResult.length > 0 || (searchValue && searchValue.length > 0)
-            ? null
-            : (
-              <>
-                <Grid item xs={12} md={12} lg={12}>
-                  <Typography variant="h5" color="textPrimary">
-                    <SecurityIcon color="inherit"/>
-                    {' Security'}
-                  </Typography>
-                </Grid>
-                <Grid item xs={12} md={12} lg={12}>
-                  <Divider/>
-                </Grid>
-              </>
-            )}
         </Grid>
+
+        {/* eslint-disable-next-line no-mixed-operators */}
+        {searchResult && searchResult.length > 0 || (searchValue && searchValue.length > 0)
+          ? null
+          : (
+            <Grid container spacing={2} sx={{mt: 5}}>
+              <Grid size={12}>
+                <Typography variant="h5" color="textPrimary">
+                  <SecurityIcon color="inherit"/>
+                  {' Security'}
+                </Typography>
+              </Grid>
+              <Grid size={12}>
+                <Divider/>
+              </Grid>
+            </Grid>
+          )}
 
         {/* eslint-disable-next-line no-nested-ternary */}
         {searchResult && searchResult.length > 0 ? (
-          <Grid container spacing={2} style={{ marginTop: 10 }}>
+          <Grid container spacing={2} sx={{ marginTop: 3 }}>
             {searchResult}
           </Grid>
         ) : searchValue && searchValue.length > 0 ? (
-          <Card style={{ marginTop: 10 }}>
+          <Card sx={{ mt: 3 }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 No results
@@ -234,8 +235,8 @@ const Software = () => {
         {searchResult && searchResult.length > 0 || (searchValue && searchValue.length > 0)
           ? null
           : (
-            <Grid container spacing={2} style={{ marginTop: 10 }}>
-              <Grid item xs={12} md={3} lg={4}>
+            <Grid container spacing={2} sx={{ mt: 3 }}>
+              <Grid size={{xs: 12, md: 3, lg: 4}}>
                 <Application
                   name={applications.filter((item) => item.name === 'DeadHash')[0].name}
                   description={applications.filter((item) => item.name === 'DeadHash')[0].description}
@@ -243,7 +244,7 @@ const Software = () => {
                   image={applications.filter((item) => item.name === 'DeadHash')[0].image}
                 />
               </Grid>
-              <Grid item xs={12} md={3} lg={4}>
+              <Grid size={{xs: 12, md: 3, lg: 4}}>
                 <Application
                   name={applications.filter((item) => item.name === 'Advanced PassGen')[0].name}
                   description={applications.filter((item) => item.name === 'Advanced PassGen')[0].description}
@@ -251,7 +252,7 @@ const Software = () => {
                   image={applications.filter((item) => item.name === 'Advanced PassGen')[0].image}
                 />
               </Grid>
-              <Grid item xs={12} md={3} lg={4}>
+              <Grid size={{xs: 12, md: 3, lg: 4}}>
                 <Application
                   name={applications.filter((item) => item.name === 'Advanced PortChecker')[0].name}
                   description={applications.filter((item) => item.name === 'Advanced PortChecker')[0].description}
@@ -266,14 +267,14 @@ const Software = () => {
         {searchResult && searchResult.length > 0 || (searchValue && searchValue.length > 0)
           ? null
           : (
-            <Grid container spacing={2} style={{ marginTop: 20 }}>
-              <Grid item xs={12} md={12} lg={12}>
+            <Grid container spacing={2} sx={{ mt: 5 }}>
+              <Grid size={12}>
                 <Typography variant="h5" color="textPrimary">
                   <ComputerIcon color="inherit"/>
                   {' System'}
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={12} lg={12}>
+              <Grid size={12}>
                 <Divider/>
               </Grid>
             </Grid>
@@ -283,8 +284,8 @@ const Software = () => {
         {searchResult && searchResult.length > 0 || (searchValue && searchValue.length > 0)
           ? null
           : (
-            <Grid container spacing={2} style={{ marginTop: 10 }}>
-              <Grid item xs={12} md={3} lg={4}>
+            <Grid container spacing={2} sx={{ mt: 3 }}>
+              <Grid size={{xs: 12, md: 3, lg: 4}}>
                 <Application
                   name={applications.filter((item) => item.name === 'MemPlus')[0].name}
                   description={applications.filter((item) => item.name === 'MemPlus')[0].description}
@@ -292,7 +293,7 @@ const Software = () => {
                   image={applications.filter((item) => item.name === 'MemPlus')[0].image}
                 />
               </Grid>
-              <Grid item xs={12} md={3} lg={4}>
+              <Grid size={{xs: 12, md: 3, lg: 4}}>
                 <Application
                   name={applications.filter((item) => item.name === 'PK Finder')[0].name}
                   description={applications.filter((item) => item.name === 'PK Finder')[0].description}
@@ -300,7 +301,7 @@ const Software = () => {
                   image={applications.filter((item) => item.name === 'PK Finder')[0].image}
                 />
               </Grid>
-              <Grid item xs={12} md={3} lg={4}>
+              <Grid size={{xs: 12, md: 3, lg: 4}}>
                 <Application
                   name={applications.filter((item) => item.name === 'DeadLock')[0].name}
                   description={applications.filter((item) => item.name === 'DeadLock')[0].description}
@@ -316,20 +317,20 @@ const Software = () => {
           ? null
           : (
             <>
-              <Grid container spacing={2} style={{ marginTop: 20 }}>
-                <Grid item xs={12} md={12} lg={12}>
+              <Grid container spacing={2} sx={{ mt: 5 }}>
+                <Grid size={12}>
                   <Typography variant="h5" color="textPrimary">
                     <AppsIcon color="inherit"/>
                     {' Utilities'}
                   </Typography>
                 </Grid>
-                <Grid item xs={12} md={12} lg={12}>
+                <Grid size={12}>
                   <Divider/>
                 </Grid>
               </Grid>
 
-              <Grid container spacing={2} style={{ marginTop: 10 }}>
-                <Grid item xs={12} md={3} lg={4}>
+              <Grid container spacing={2} sx={{ mt: 3 }}>
+                <Grid size={{xs: 12, md: 3, lg: 4}}>
                   <Application
                     name={applications.filter((item) => item.name === 'Opal')[0].name}
                     description={applications.filter((item) => item.name === 'Opal')[0].description}
@@ -337,7 +338,7 @@ const Software = () => {
                     image={applications.filter((item) => item.name === 'Opal')[0].image}
                   />
                 </Grid>
-                <Grid item xs={12} md={3} lg={4}>
+                <Grid size={{xs: 12, md: 3, lg: 4}}>
                   <Application
                     name={applications.filter((item) => item.name === 'AniView')[0].name}
                     description={applications.filter((item) => item.name === 'AniView')[0].description}
@@ -345,7 +346,7 @@ const Software = () => {
                     image={applications.filter((item) => item.name === 'AniView')[0].image}
                   />
                 </Grid>
-                <Grid item xs={12} md={3} lg={4}>
+                <Grid size={{xs: 12, md: 3, lg: 4}}>
                   <Application
                     name={applications.filter((item) => item.name === 'DeadPix')[0].name}
                     description={applications.filter((item) => item.name === 'DeadPix')[0].description}
@@ -353,7 +354,7 @@ const Software = () => {
                     image={applications.filter((item) => item.name === 'DeadPix')[0].image}
                   />
                 </Grid>
-                <Grid item xs={12} md={3} lg={4}>
+                <Grid size={{xs: 12, md: 3, lg: 4}}>
                   <Application
                     name={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].name}
                     description={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].description}
@@ -361,7 +362,7 @@ const Software = () => {
                     image={applications.filter((item) => item.name === 'EGLD Price Calculator')[0].image}
                   />
                 </Grid>
-                <Grid item xs={12} md={3} lg={4}>
+                <Grid size={{xs: 12, md: 3, lg: 4}}>
                   <Application
                     name={applications.filter((item) => item.name === 'Compressr')[0].name}
                     description={applications.filter((item) => item.name === 'Compressr')[0].description}

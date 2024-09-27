@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import Container from '@mui/material/Container';
 import { graphql, useStaticQuery } from 'gatsby';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import FirstPageIcon from '@mui/icons-material/FirstPage';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
@@ -87,17 +87,17 @@ const Blog = () => {
   return (
     <Layout>
       <PageHeader title="Blog" subTitle="Read our status updates" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
         <Grid container spacing={1}>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <BlogList blogPosts={allMarkdownRemark.edges.slice(blogLimit, maxSlice)} />
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             {maxSlice < allMarkdownRemark.edges.length ? (
               <>
                 <Button
-                  style={{
-                    marginTop: 10,
+                  sx={{
+                    mt: 2,
                     float: 'right',
                   }}
                   variant="outlined"
@@ -107,9 +107,9 @@ const Blog = () => {
                   <LastPageIcon color="inherit" />
                 </Button>
                 <Button
-                  style={{
-                    marginTop: 10,
-                    marginRight: 5,
+                  sx={{
+                    mt: 2,
+                    mr: 1,
                     float: 'right',
                   }}
                   variant="outlined"
@@ -123,9 +123,9 @@ const Blog = () => {
             {blogLimit !== 0 ? (
               <>
                 <Button
-                  style={{
-                    marginTop: 10,
-                    marginRight: maxSlice < allMarkdownRemark.edges.length ? 5 : 0,
+                  sx={{
+                    mt: 2,
+                    mr: maxSlice < allMarkdownRemark.edges.length ? 1 : 0,
                     float: 'right',
                   }}
                   variant="outlined"
@@ -135,9 +135,9 @@ const Blog = () => {
                   <SkipPreviousIcon color="inherit" />
                 </Button>
                 <Button
-                  style={{
-                    marginTop: 10,
-                    marginRight: 5,
+                  sx={{
+                    mt: 2,
+                    mr: 1,
                     float: 'right',
                   }}
                   variant="outlined"

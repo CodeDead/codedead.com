@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -56,34 +56,33 @@ const DeadLockPage = () => {
   return (
     <Layout>
       <PageHeader title="DeadLock" subTitle="Unlock files and folders" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
-              {' '}
-              General
+              {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Unlocking
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Unlock files and folders, take full ownership over them
                       and remove, move or copy them, free of charge!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="DeadLock main window"
@@ -94,21 +93,21 @@ const DeadLockPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="DeadLock settings"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Want a different theme or would you like to disable automatic updates? Want to
                       enable Windows Explorer integration? It’s all possible thanks to our many
                       settings!
@@ -119,21 +118,21 @@ const DeadLockPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Commandline interface
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       You don’t have to open the GUI to unlock files or folders.
                       You can jump straight into PowerShell or CMD to pass along
                       arguments to DeadLock!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.about.childImageSharp.gatsbyImageData}
                       alt="Deadlock about"
@@ -145,20 +144,20 @@ const DeadLockPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12  }>
             <Button
               size="large"
               color="primary"
@@ -174,20 +173,20 @@ const DeadLockPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -228,19 +227,19 @@ const DeadLockPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -250,7 +249,7 @@ const DeadLockPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -262,7 +261,7 @@ const DeadLockPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -273,7 +272,7 @@ const DeadLockPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
               color="primary"
               variant="contained"

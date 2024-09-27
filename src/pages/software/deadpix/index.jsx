@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -51,33 +51,33 @@ const DeadPixPage = () => {
   return (
     <Layout>
       <PageHeader title="DeadPix" subTitle="Fix broken pixels" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Fix your display
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Fix dead or stuck pixels on your screen with just a couple of mouse
                       clicks, free of charge!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}} >
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="DeadPix main window"
@@ -88,21 +88,21 @@ const DeadPixPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="DeadPix settings"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Method of action
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       DeadPix can fix stuck or dead pixels by rapidly cycling the color value of the
                       pixel. Please note that this tool does not provide a 100% success rate.
                     </Typography>
@@ -112,15 +112,15 @@ const DeadPixPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={12} lg={12}>
-                    <Typography variant="h6">
+                  <Grid size={12}>
+                    <Typography variant="h6" gutterBottom>
                       Installation
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       DeadPix can be installed using the installer or if you don’t want to install
                       it, you can always use the portable version!
                     </Typography>
@@ -131,20 +131,20 @@ const DeadPixPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Typography variant="h6" align="center">
               Android
             </Typography>
@@ -158,7 +158,7 @@ const DeadPixPage = () => {
               Play Store
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -179,7 +179,7 @@ const DeadPixPage = () => {
               color="primary"
               variant="contained"
               fullWidth
-              style={{ marginTop: 10 }}
+              sx={{ mt: 1 }}
               onClick={() => {
                 openLink('https://codedead.com/Software/DeadPix/DP_Port.zip');
                 setDonateOpen(true);
@@ -190,20 +190,20 @@ const DeadPixPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -237,19 +237,19 @@ const DeadPixPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -259,7 +259,7 @@ const DeadPixPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -271,7 +271,7 @@ const DeadPixPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -282,7 +282,7 @@ const DeadPixPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
               color="primary"
               variant="contained"

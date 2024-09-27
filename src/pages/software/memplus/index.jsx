@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -56,34 +56,35 @@ const MemPlusPage = () => {
   return (
     <Layout>
       <PageHeader title="MemPlus" subTitle="RAM Optimizer" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Memory optimization
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       MemPlus can be used to reduce the amount of RAM that is being used by
                       applications on your system. In essence, freeing up memory so that
                       more memory is available to you!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.memplus.childImageSharp.gatsbyImageData}
                       alt="MemPlus main window"
@@ -94,21 +95,21 @@ const MemPlusPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.analyzer.childImageSharp.gatsbyImageData}
                       alt="MemPlus analyzer"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       RAM Analyzer
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       MemPlus can help recover the specification of the RAM that is
                       installed on your system. This information can be exported in
                       TEXT, HTML, CSV and Excel formats.
@@ -119,21 +120,21 @@ const MemPlusPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Need MemPlus to automatically optimize your RAM in the background? Want a
                       different theme or start MemPlus when your computer starts up? You got it!
                       MemPlus offers a myriad of settings to make MemPlus truly yours.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.optimizer.childImageSharp.gatsbyImageData}
                       alt="MemPlus Optimizer"
@@ -145,20 +146,20 @@ const MemPlusPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={6} lg={6}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 6, lg: 6}}>
             <Button
               size="large"
               color="primary"
@@ -172,7 +173,7 @@ const MemPlusPage = () => {
               installer
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{ xs: 12, md: 6, lg: 6}}>
             <Button
               size="large"
               color="primary"
@@ -188,20 +189,20 @@ const MemPlusPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -224,7 +225,7 @@ const MemPlusPage = () => {
               <CardActions>
                 <Button
                   variant="contained"
-                  href="http://www.softpedia.com/get/Tweak/Memory-Tweak/MemPlus-CodeDead.shtml"
+                  href="https://www.softpedia.com/get/Tweak/Memory-Tweak/MemPlus-CodeDead.shtml"
                   target="_blank"
                 >
                   Source
@@ -234,19 +235,19 @@ const MemPlusPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -256,7 +257,7 @@ const MemPlusPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -268,7 +269,7 @@ const MemPlusPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -279,7 +280,7 @@ const MemPlusPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
               color="primary"
               variant="contained"

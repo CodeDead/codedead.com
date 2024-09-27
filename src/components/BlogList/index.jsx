@@ -1,13 +1,13 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import BlogPost from '../BlogPost';
 
-const BlogList = ({ blogPosts, style }) => (
-  <Grid container spacing={2} style={style}>
+const BlogList = ({ blogPosts}) => (
+  <Grid container spacing={2}>
     {blogPosts && blogPosts.map((item) => {
       const post = item.node.frontmatter;
       return (
-        <Grid item xs={12} md={12} lg={12} key={post.path}>
+        <Grid size={12} key={post.path}>
           <BlogPost
             title={post.title}
             abstract={post.abstract}

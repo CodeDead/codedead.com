@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import {
   graphql, useStaticQuery, navigate, Link,
 } from 'gatsby';
@@ -60,20 +60,20 @@ const Home = () => {
   return (
     <Layout>
       <PageHeader title="Welcome" subTitle="CodeDead provides free and open-source applications to make your life easer." />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 3 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <BuildIcon color="inherit" />
               {' Highlighted tools'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 3 }}>
+          <Grid size={12}>
             <Card
               elevation={2}
             >
@@ -82,7 +82,7 @@ const Home = () => {
               >
                 <CardContent>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} md={6} lg={6}>
+                    <Grid size={{xs: 12, md: 6, lg: 6}}>
                       <Link to="/software/memplus">
                         <GatsbyImage
                           image={{
@@ -93,11 +93,11 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={6}>
-                      <Typography variant="h6" color="textPrimary" paragraph>
+                    <Grid size={{xs: 12, md:6, lg: 6}}>
+                      <Typography variant="h6" color="textPrimary" component="p" gutterBottom>
                         MemPlus
                       </Typography>
-                      <Typography color="textSecondary" paragraph>
+                      <Typography color="textSecondary" component="p">
                         MemPlus can be used to reduce the amount of RAM that is being used by
                         applications on your system. In essence, freeing up memory so that more
                         memory is available to you!
@@ -109,16 +109,14 @@ const Home = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
-            <Card
-              elevation={2}
-            >
+          <Grid size={12}>
+            <Card elevation={2}>
               <CardActionArea
                 onClick={() => navigate('/software/deadhash')}
               >
                 <CardContent>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} md={6} lg={6}>
+                    <Grid size={{xs: 12, md: 6, lg: 6}}>
                       <Link to="/software/deadhash">
                         <GatsbyImage
                           image={{
@@ -129,11 +127,11 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={6}>
-                      <Typography variant="h6" color="textPrimary" paragraph>
+                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                      <Typography variant="h6" color="textPrimary" component="p" gutterBottom>
                         DeadHash
                       </Typography>
-                      <Typography color="textSecondary" paragraph>
+                      <Typography color="textSecondary" component="p">
                         Calculate file and text hashes on any platform with ease thanks to an easy
                         to use GUI, drag and drop functionality and help documentation that are
                         all included!
@@ -145,7 +143,7 @@ const Home = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card
               elevation={2}
             >
@@ -154,7 +152,7 @@ const Home = () => {
               >
                 <CardContent>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} md={6} lg={6}>
+                    <Grid size={{xs: 12, md: 6, lg: 6}}>
                       <Link to="/software/opal">
                         <GatsbyImage
                           image={{
@@ -165,11 +163,11 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-                    <Grid item xs={12} md={6} lg={6}>
-                      <Typography variant="h6" color="textPrimary" paragraph>
+                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                      <Typography variant="h6" color="textPrimary" component="p" gutterBottom>
                         Opal
                       </Typography>
-                      <Typography color="textSecondary" paragraph>
+                      <Typography color="textSecondary" component="p">
                         A free and open source music player that will help you relax. Opal has
                         30+ sounds available that will help you relax. It runs on Windows and Linux.
                       </Typography>
@@ -180,10 +178,10 @@ const Home = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Button
-              style={{
-                marginTop: 10,
+              sx={{
+                mt: 2,
                 float: 'right',
               }}
               variant="outlined"
@@ -194,24 +192,23 @@ const Home = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <AnnouncementIcon color="inherit" />
-              {' '}
-              Latest news
+              {' Latest news'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <BlogList blogPosts={data.allMarkdownRemark.edges} />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12} style={{ marginTop: 10 }}>
+        <Grid container spacing={2} sx={{ mt: 3, mb: 10 }}>
+          <Grid size={12}>
             <Button variant="outlined" onClick={() => navigate('/blog')}>
               Check out our blog
             </Button>

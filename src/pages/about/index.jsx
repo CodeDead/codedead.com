@@ -4,7 +4,7 @@ import SvgIcon from '@mui/material/SvgIcon';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import CardActions from '@mui/material/CardActions';
 import IconButton from '@mui/material/IconButton';
 import GroupIcon from '@mui/icons-material/Group';
@@ -46,20 +46,20 @@ const AboutPage = () => {
   return (
     <Layout>
       <PageHeader title="About" subTitle="Solving problems using software!" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Card style={{ marginTop: 10 }}>
+        <Card sx={{ mt: 3 }}>
           <CardContent>
             <Typography variant="h6" gutterBottom color="textPrimary">
               Our story
@@ -80,22 +80,22 @@ const AboutPage = () => {
           </CardContent>
         </Card>
 
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GroupIcon color="inherit" />
               {' Team'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6} lg={6}>
-            <Card style={{
-              marginTop: 10,
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
+            <Card sx={{
+              mt: 3,
               height: '100%',
             }}
             >
@@ -125,9 +125,9 @@ const AboutPage = () => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
-            <Card style={{
-              marginTop: 10,
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
+            <Card sx={{
+              mt: 3,
               height: '100%',
             }}
             >
@@ -147,8 +147,8 @@ const AboutPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 10 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <SvgIcon color="inherit">
                 <GitHubIcon />
@@ -156,12 +156,13 @@ const AboutPage = () => {
               {' Open Source'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 20 }}>
-          <Grid item xs={12} md={12} lg={12}>
+
+        <Grid container spacing={2} sx={{ mt: 3 }}>
+          <Grid size={12}>
             <Card>
               <CardActionArea onClick={() => window.open('https://github.com/CodeDead/codedead.com/', '_blank')}>
                 <CardContent>
@@ -174,10 +175,9 @@ const AboutPage = () => {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Typography variant="body2" align="center">
-              Logo and favicon by
-              {' '}
+              {'Logo and favicon by '}
               <a rel="noopener noreferrer" target="_blank" href="https://icons8.com">icons8</a>
             </Typography>
           </Grid>

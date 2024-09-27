@@ -20,7 +20,7 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <PageHeader title="Not found" subTitle="The requested page could not be found" />
-      <Container maxWidth="md" style={{ marginTop: 20 }}>
+      <Container maxWidth="md" sx={{ mt: 10 }}>
         <Card>
           <CardContent>
             <Typography gutterBottom>

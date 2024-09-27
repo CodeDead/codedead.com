@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
@@ -56,35 +56,35 @@ const DeadHashPage = () => {
   return (
     <Layout>
       <PageHeader title="DeadHash" subTitle="File and text hash calculator" />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Simplicity
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       Calculate file and text hashes and checksums with ease thanks to an easy
                       to use GUI, drag and drop functionality and help documentation
                       that are all included!
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.deadhash.childImageSharp.gatsbyImageData}
                       alt="DeadHash main window"
@@ -95,21 +95,21 @@ const DeadHashPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.deadhashresult.childImageSharp.gatsbyImageData}
                       alt="DeadHash result"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Formats
                     </Typography>
-                    <Typography paragraph>
+                    <Typography component="p">
                       MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512,
                       SHA224, SHA256, SHA384, SHA512, RIPEMD160, CRC1, CRC8,
                       CRC16, CRC24 and CRC32 are all supported out of the box.
@@ -120,24 +120,24 @@ const DeadHashPage = () => {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <Typography variant="h6">
                       Cross platform
                     </Typography>
-                    <Typography paragraph gutterBottom>
+                    <Typography component="p" gutterBottom>
                       DeadHash is available for Android, Linux and Windows,
                       offering a similar look and feel on all platforms.
                     </Typography>
 
-                    <Typography paragraph>
+                    <Typography component="p">
                       Additionally, DeadHash can be compiled manually to run on macOS.
                     </Typography>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
+                  <Grid size={{xs: 12, md: 6, lg: 6}}>
                     <GatsbyImage
                       image={data.deadhashtext.childImageSharp.gatsbyImageData}
                       alt="DeadHash text"
@@ -149,19 +149,19 @@ const DeadHashPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <GetAppIcon color="inherit" />
               {' Download'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4}}>
             <Typography variant="h6" align="center">
               Android
             </Typography>
@@ -175,7 +175,7 @@ const DeadHashPage = () => {
               Google Play
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4}}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -192,7 +192,7 @@ const DeadHashPage = () => {
             </Button>
             <Button
               fullWidth
-              style={{ marginTop: 10 }}
+              sx={{ mt: 1 }}
               variant="contained"
               color="primary"
               onClick={() => {
@@ -203,7 +203,7 @@ const DeadHashPage = () => {
               Portable
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4}}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
@@ -221,20 +221,20 @@ const DeadHashPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
               {' What others say'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="textPrimary" gutterBottom>
@@ -267,19 +267,19 @@ const DeadHashPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               Extra
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -289,7 +289,7 @@ const DeadHashPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -301,7 +301,7 @@ const DeadHashPage = () => {
             </Button>
           </Grid>
 
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{xs: 12, md: 4, lg: 4}}>
             <Button
               color="primary"
               variant="contained"
@@ -312,7 +312,7 @@ const DeadHashPage = () => {
               License
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               color="primary"
               variant="contained"
@@ -323,7 +323,7 @@ const DeadHashPage = () => {
               Source code (Desktop)
             </Button>
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid size={{xs: 12, md: 6, lg: 6}}>
             <Button
               color="primary"
               variant="contained"

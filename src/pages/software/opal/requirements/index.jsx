@@ -4,7 +4,7 @@ import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { Button, Card } from '@mui/material';
@@ -27,20 +27,20 @@ const Requirements = () => {
   return (
     <Layout>
       <PageHeader title="Opal - Requirements" subTitle="System requirements" backButton />
-      <Container maxWidth="md" style={{ marginTop: 10 }}>
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+      <Container maxWidth="md" sx={{ mt: 5 }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <InfoIcon color="inherit" />
               {' General'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Card style={{ marginTop: 10 }}>
+        <Card sx={{ mt: 5 }}>
           <CardContent>
             <TableContainer>
               <Table>
@@ -74,20 +74,20 @@ const Requirements = () => {
           </CardContent>
         </Card>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={12} lg={12}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <SecurityIcon color="inherit" />
               {' Malware scan'}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid size={12}>
             <Divider />
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{ marginTop: 10 }}>
-          <Grid item xs={12} md={4} lg={4}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -100,7 +100,7 @@ const Requirements = () => {
               Installer
             </Button>
             <Button
-              style={{ marginTop: 10 }}
+              sx={{ mt: 1 }}
               variant="contained"
               fullWidth
               href="https://www.virustotal.com/gui/file/a4acf5443e81228cd4b5faa923f84e6a54d0105942ba31e2d69af90bc21c3173?nocache=1"
@@ -109,7 +109,7 @@ const Requirements = () => {
               Portable
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               macOS
             </Typography>
@@ -122,7 +122,7 @@ const Requirements = () => {
               dmg
             </Button>
           </Grid>
-          <Grid item xs={12} md={4} lg={4}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>

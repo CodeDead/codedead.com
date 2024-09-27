@@ -23,10 +23,10 @@ const Application = ({
   };
 
   return (
-    <Card style={{ height: '100%' }}>
+    <Card sx={{ height: '100%' }}>
       <CardActionArea
         onClick={goToUrl}
-        style={{ height: '100%' }}
+        sx={{ height: '100%' }}
       >
         <CardMedia
           title={name}
@@ -37,7 +37,7 @@ const Application = ({
           title={name}
         />
         <CardContent>
-          <Typography color="textSecondary" paragraph>
+          <Typography color="textSecondary" component="p">
             {description}
           </Typography>
         </CardContent>
