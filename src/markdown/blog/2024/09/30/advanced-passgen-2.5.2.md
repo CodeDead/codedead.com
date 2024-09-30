@@ -3,7 +3,7 @@ path: "/blog/2024/09/30/advanced-passgen-2.5.2"
 title: "Advanced PassGen 2.5.2 - Release"
 author: "CodeDead"
 date: "2024-09-30"
-abstract: ""
+abstract: "Advanced PassGen v2.5.2 has just been released. This release includes mostly bug fixes and minor improvements to the bundle size..."
 categories: "Tauri, React, News"
 ---
 ## Information
