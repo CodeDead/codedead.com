@@ -8,7 +8,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint": "eslint .",
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -18,8 +18,8 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fontsource/roboto": "^5.1.0",
-    "@mui/icons-material": "^6.1.1",
-    "@mui/material": "^6.1.1",
+    "@mui/icons-material": "^6.1.4",
+    "@mui/material": "^6.1.4",
     "axios": "^1.7.7",
     "gatsby": "^5.13.7",
     "gatsby-plugin-catch-links": "^5.13.1",
@@ -39,12 +39,12 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^9.11.1",
+    "eslint": "^9.13.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.0",
-    "eslint-plugin-react-hooks": "^4.6.2"
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0"
   },
   "repository": {
     "type": "git",
@@ -53,5 +53,5 @@
   "bugs": {
     "url": "https://github.com/CodeDead/codedead.com/issues"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.5.1"
 }

@@ -168,7 +168,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.0.1_x64_en-US.msi');
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_x64_en-US.msi');
                 setDonateOpen(true);
               }}
             >
@@ -185,7 +185,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.0.1_amd64.AppImage');
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_amd64.AppImage');
                 setDonateOpen(true);
               }}
             >
@@ -202,7 +202,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.0.1_x64.dmg');
+                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_aarch64.dmg');
                 setDonateOpen(true);
               }}
             >

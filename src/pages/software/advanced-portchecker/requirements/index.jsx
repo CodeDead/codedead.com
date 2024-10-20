@@ -58,7 +58,7 @@ const Requirements = () => {
                   <TableRow>
                     <TableCell><b>Disk space</b></TableCell>
                     <TableCell>At least 5MB</TableCell>
-                    <TableCell>At least 80MB</TableCell>
+                    <TableCell>At least 85MB</TableCell>
                     <TableCell>At least 5MB</TableCell>
                   </TableRow>
                   <TableRow>
@@ -106,7 +106,7 @@ const Requirements = () => {
               fullWidth
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/5af9766164c131ddcef6b5f9fcd68927c3b101fbbc8184fe77f178f57d33bfa6?nocache=1"
+              href="https://www.virustotal.com/gui/file/be652b842b0a6933067fcb471e79bd110e4ed64346e9ec8b5acb66810f372593?nocache=1"
               target="_blank"
             >
               Windows Installer
@@ -117,7 +117,7 @@ const Requirements = () => {
               fullWidth
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/fc97c3262546c5454cab64b2be06c6ae575d2458ab98c9767dcc5c088904cb78?nocache=1"
+              href="https://www.virustotal.com/gui/file/727b9c8c83717f448ac03d9d7e9920ac18226fc1edec7f3cafb1ecf383e23840?nocache=1"
               target="_blank"
             >
               Linux AppImage
@@ -128,7 +128,7 @@ const Requirements = () => {
               fullWidth
               variant="contained"
               color="primary"
-              href="https://www.virustotal.com/gui/file/202e323d57f4537296f49496e4ead4176cbb1bdbbac8e69800621faa8f07c8ec?nocache=1"
+              href="https://www.virustotal.com/gui/file/605c7b8bf290452c6999a1bd414d089f2c8eca3813b48f7e2d3300036a644c54?nocache=1"
               target="_blank"
             >
               macOS dmg
