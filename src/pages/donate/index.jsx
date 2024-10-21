@@ -173,27 +173,27 @@ const Donate = () => {
                   <TableRow>
                     <TableCell>13/12/2015</TableCell>
                     <TableCell>Jaschar Domann</TableCell>
-                    <TableCell>€5.00</TableCell>
+                    <TableCell>EUR €5.00</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>16/05/2017</TableCell>
                     <TableCell><a href="https://leomoon.com/" target="_blank" rel="noreferrer">LeoMoon Studios</a></TableCell>
-                    <TableCell>€10.00</TableCell>
+                    <TableCell>EUR €10.00</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>17/01/2019</TableCell>
                     <TableCell>John B.</TableCell>
-                    <TableCell>€20.00</TableCell>
+                    <TableCell>EUR €20.00</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>12/08/2019</TableCell>
                     <TableCell>Anonymous</TableCell>
-                    <TableCell>€1.00</TableCell>
+                    <TableCell>EUR €1.00</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>08/03/2021</TableCell>
                     <TableCell>Ron Rooker</TableCell>
-                    <TableCell>€5.00</TableCell>
+                    <TableCell>EUR €5.00</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>03/05/2022</TableCell>
@@ -203,22 +203,27 @@ const Donate = () => {
                   <TableRow>
                     <TableCell>03/03/2023</TableCell>
                     <TableCell>Anonymous</TableCell>
-                    <TableCell>€1.73</TableCell>
+                    <TableCell>EUR €1.73</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>08/10/2023</TableCell>
                     <TableCell>Anonymous</TableCell>
-                    <TableCell>€2.00</TableCell>
+                    <TableCell>EUR €2.00</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>09/12/2023</TableCell>
                     <TableCell>Anonymous</TableCell>
-                    <TableCell>€3.27</TableCell>
+                    <TableCell>EUR €3.27</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>18/06/2024</TableCell>
                     <TableCell><a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">PandaRainbow</a></TableCell>
-                    <TableCell>$10.00</TableCell>
+                    <TableCell>$10.00 USD</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>21/10/2024</TableCell>
+                    <TableCell><a href="https://freesoft-100.com/" target="_blank" rel="noreferrer">freesoft100</a></TableCell>
+                    <TableCell>$5.00 USD</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
