@@ -68,7 +68,7 @@ const DeadPixPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Fix your display
                     </Typography>
@@ -77,7 +77,7 @@ const DeadPixPage = () => {
                       clicks, free of charge!
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}} >
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="DeadPix main window"
@@ -92,13 +92,13 @@ const DeadPixPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="DeadPix settings"
                     />
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Method of action
                     </Typography>
@@ -144,7 +144,7 @@ const DeadPixPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Typography variant="h6" align="center">
               Android
             </Typography>
@@ -158,7 +158,7 @@ const DeadPixPage = () => {
               Play Store
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -168,7 +168,7 @@ const DeadPixPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadPix/DP_setup.exe');
+                openLink('https://codedead.com/Software/DeadPix/DP_setup.exe\')');
                 setDonateOpen(true);
               }}
             >
@@ -181,7 +181,7 @@ const DeadPixPage = () => {
               fullWidth
               sx={{ mt: 1 }}
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadPix/DP_Port.zip');
+                openLink('https://github.com/CodeDead/DeadPix/releases/download/1.2/DP_Port.zip');
                 setDonateOpen(true);
               }}
             >
@@ -249,7 +249,7 @@ const DeadPixPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -259,7 +259,7 @@ const DeadPixPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -271,7 +271,7 @@ const DeadPixPage = () => {
             </Button>
           </Grid>
 
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"

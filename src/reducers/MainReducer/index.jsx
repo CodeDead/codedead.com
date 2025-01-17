@@ -2,7 +2,6 @@ import {
   SET_BLOG_LIMIT,
   SET_HAS_ACCEPTED_COOKIE_NOTICE,
   SET_PAGE_INDEX,
-  SET_THEME_COLOR_INDEX,
   SET_THEME_INDEX,
 } from './Actions/actionTypes';
 
@@ -18,12 +17,6 @@ const MainReducer = (state, action) => {
       return {
         ...state,
         themeIndex: action.payload,
-      };
-    case SET_THEME_COLOR_INDEX:
-      localStorage.themeColorIndex = action.payload;
-      return {
-        ...state,
-        themeColorIndex: action.payload,
       };
     case SET_BLOG_LIMIT:
       return {

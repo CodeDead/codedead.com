@@ -162,7 +162,7 @@ const PkFinderPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/PK%20Finder/PK-Finder-Setup-2.0.exe');
+                openLink('https://github.com/CodeDead/PK-Finder/releases/download/v2.0.0/PK.Finder.Setup.exe');
                 setDonateOpen(true);
               }}
             >
@@ -176,7 +176,7 @@ const PkFinderPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/PK%20Finder/PK-Finder-2.0.zip');
+                openLink('https://github.com/CodeDead/PK-Finder/releases/download/v2.0.0/PK-Finder.zip');
                 setDonateOpen(true);
               }}
             >

@@ -93,7 +93,7 @@ const AboutPage = () => {
         </Grid>
 
         <Grid container spacing={2}>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Card sx={{
               mt: 3,
               height: '100%',
@@ -125,7 +125,7 @@ const AboutPage = () => {
               </CardActions>
             </Card>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Card sx={{
               mt: 3,
               height: '100%',

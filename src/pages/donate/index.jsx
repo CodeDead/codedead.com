@@ -110,7 +110,7 @@ const Donate = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 3 }}>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               variant="contained"
               color="primary"
@@ -122,7 +122,7 @@ const Donate = () => {
               Donate via PayPal
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               variant="contained"
               color="primary"
@@ -134,7 +134,7 @@ const Donate = () => {
               GitHub Sponsor
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               variant="contained"
               color="primary"

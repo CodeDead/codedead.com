@@ -168,7 +168,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_x64_en-US.msi');
+                openLink('https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_x64_en-US.msi');
                 setDonateOpen(true);
               }}
             >
@@ -185,7 +185,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_amd64.AppImage');
+                openLink('https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_amd64.AppImage');
                 setDonateOpen(true);
               }}
             >
@@ -202,7 +202,7 @@ const AdvancedPortCheckerPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_aarch64.dmg');
+                openLink('https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_aarch64.dmg');
                 setDonateOpen(true);
               }}
             >
@@ -225,7 +225,7 @@ const AdvancedPortCheckerPage = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} sx={{ mt: 5  }}>
+        <Grid container spacing={2} sx={{ mt: 5 }}>
           <Grid size={12}>
             <Typography variant="h5" color="textPrimary">
               <FormatQuoteIcon color="inherit" />
@@ -285,7 +285,7 @@ const AdvancedPortCheckerPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               color="primary"
               variant="contained"
@@ -295,7 +295,7 @@ const AdvancedPortCheckerPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               color="primary"
               variant="contained"
@@ -306,7 +306,7 @@ const AdvancedPortCheckerPage = () => {
               License
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               color="primary"
               variant="contained"
@@ -317,7 +317,7 @@ const AdvancedPortCheckerPage = () => {
               Source code (Desktop)
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               color="primary"
               variant="contained"

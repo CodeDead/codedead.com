@@ -145,7 +145,7 @@ const EgldPriceCalculator = () => {
               <Grid container spacing={2}>
                 <Grid size={{ xs: 12, md: 12, lg: 12 }}>
                   <Grid container>
-                    <Grid size={{xs: 12, md: 10, lg: 10}} style={{ flexGrow: 1}}>
+                    <Grid size={{ xs: 12, md: 10, lg: 10 }} style={{ flexGrow: 1 }}>
                       <TextField
                         variant="outlined"
                         label="Amount"
@@ -156,7 +156,7 @@ const EgldPriceCalculator = () => {
                         onChange={changeEgldAmount}
                       />
                     </Grid>
-                    <Grid size={{xs: 12, md: 2, lg: 2}}>
+                    <Grid size={{ xs: 12, md: 2, lg: 2 }}>
                       <FormControl
                         variant="outlined"
                         sx={{ mt: 1 }}
@@ -179,7 +179,7 @@ const EgldPriceCalculator = () => {
                 </Grid>
                 <Grid size={12}>
                   <Grid container>
-                    <Grid size={{xs: 12, md: 10, lg: 10}} style={{ flexGrow: 1}}>
+                    <Grid size={{ xs: 12, md: 10, lg: 10 }} style={{ flexGrow: 1 }}>
                       <TextField
                         variant="outlined"
                         label="Amount"
@@ -190,7 +190,7 @@ const EgldPriceCalculator = () => {
                         onChange={changeCurrencyAmount}
                       />
                     </Grid>
-                    <Grid size={{xs: 12, md: 2, lg: 2}}>
+                    <Grid size={{ xs: 12, md: 2, lg: 2 }}>
                       <FormControl
                         variant="outlined"
                         sx={{ mt: 1 }}

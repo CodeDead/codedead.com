@@ -101,7 +101,7 @@ const Requirements = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               fullWidth
               variant="contained"
@@ -112,7 +112,7 @@ const Requirements = () => {
               Windows Installer
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               fullWidth
               variant="contained"
@@ -123,7 +123,7 @@ const Requirements = () => {
               Linux AppImage
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               fullWidth
               variant="contained"

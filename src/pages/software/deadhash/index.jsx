@@ -74,7 +74,7 @@ const DeadHashPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Simplicity
                     </Typography>
@@ -84,7 +84,7 @@ const DeadHashPage = () => {
                       that are all included!
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.deadhash.childImageSharp.gatsbyImageData}
                       alt="DeadHash main window"
@@ -99,13 +99,13 @@ const DeadHashPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.deadhashresult.childImageSharp.gatsbyImageData}
                       alt="DeadHash result"
                     />
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Formats
                     </Typography>
@@ -124,7 +124,7 @@ const DeadHashPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Cross platform
                     </Typography>
@@ -137,7 +137,7 @@ const DeadHashPage = () => {
                       Additionally, DeadHash can be compiled manually to run on macOS.
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.deadhashtext.childImageSharp.gatsbyImageData}
                       alt="DeadHash text"
@@ -161,7 +161,7 @@ const DeadHashPage = () => {
           </Grid>
         </Grid>
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{ xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Android
             </Typography>
@@ -175,7 +175,7 @@ const DeadHashPage = () => {
               Google Play
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -184,7 +184,7 @@ const DeadHashPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.2.3.exe');
+                openLink('https://github.com/CodeDead/DeadHash-js/releases/download/v2.2.3/DeadHash.Setup.2.2.3.exe');
                 setDonateOpen(true);
               }}
             >
@@ -196,14 +196,14 @@ const DeadHashPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadHash/DeadHash%202.2.3.exe');
+                openLink('https://github.com/CodeDead/DeadHash-js/releases/download/v2.2.3/DeadHash.2.2.3.exe');
                 setDonateOpen(true);
               }}
             >
               Portable
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
@@ -212,7 +212,7 @@ const DeadHashPage = () => {
               variant="contained"
               color="primary"
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadHash/DeadHash-2.2.3.AppImage');
+                openLink('https://github.com/CodeDead/DeadHash-js/releases/download/v2.2.3/DeadHash-2.2.3.AppImage');
                 setDonateOpen(true);
               }}
             >
@@ -279,7 +279,7 @@ const DeadHashPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -289,7 +289,7 @@ const DeadHashPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -301,7 +301,7 @@ const DeadHashPage = () => {
             </Button>
           </Grid>
 
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -312,7 +312,7 @@ const DeadHashPage = () => {
               License
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               color="primary"
               variant="contained"
@@ -323,7 +323,7 @@ const DeadHashPage = () => {
               Source code (Desktop)
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               color="primary"
               variant="contained"

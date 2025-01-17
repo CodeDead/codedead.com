@@ -152,7 +152,7 @@ const AdvancedPassGenPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{ xs:12, md: 4, lg: 4 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -162,14 +162,14 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_x64_en-US.msi');
+                openLink('https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_x64_en-US.msi');
                 setDonateOpen(true);
               }}
             >
               Installer
             </Button>
           </Grid>
-          <Grid size={{ xs:12, md: 4, lg: 4 }}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>
@@ -179,7 +179,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_amd64.AppImage');
+                openLink('https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_amd64.AppImage');
                 setDonateOpen(true);
               }}
             >
@@ -196,7 +196,7 @@ const AdvancedPassGenPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_aarch64.dmg');
+                openLink('https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_aarch64.dmg');
                 setDonateOpen(true);
               }}
             >
@@ -285,7 +285,7 @@ const AdvancedPassGenPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{ xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -295,7 +295,7 @@ const AdvancedPassGenPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -306,7 +306,7 @@ const AdvancedPassGenPage = () => {
               License
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"

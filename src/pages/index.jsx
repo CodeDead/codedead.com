@@ -82,7 +82,7 @@ const Home = () => {
               >
                 <CardContent>
                   <Grid container spacing={2}>
-                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                    <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                       <Link to="/software/memplus">
                         <GatsbyImage
                           image={{
@@ -93,7 +93,7 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-                    <Grid size={{xs: 12, md:6, lg: 6}}>
+                    <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                       <Typography variant="h6" color="textPrimary" component="p" gutterBottom>
                         MemPlus
                       </Typography>
@@ -116,7 +116,7 @@ const Home = () => {
               >
                 <CardContent>
                   <Grid container spacing={2}>
-                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                    <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                       <Link to="/software/deadhash">
                         <GatsbyImage
                           image={{
@@ -127,7 +127,7 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                    <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                       <Typography variant="h6" color="textPrimary" component="p" gutterBottom>
                         DeadHash
                       </Typography>
@@ -152,7 +152,7 @@ const Home = () => {
               >
                 <CardContent>
                   <Grid container spacing={2}>
-                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                    <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                       <Link to="/software/opal">
                         <GatsbyImage
                           image={{
@@ -163,7 +163,7 @@ const Home = () => {
                         />
                       </Link>
                     </Grid>
-                    <Grid size={{xs: 12, md: 6, lg: 6}}>
+                    <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                       <Typography variant="h6" color="textPrimary" component="p" gutterBottom>
                         Opal
                       </Typography>

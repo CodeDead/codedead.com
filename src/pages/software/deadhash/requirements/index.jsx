@@ -87,7 +87,7 @@ const Requirements = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Typography variant="h6" align="center">
               Windows
             </Typography>
@@ -111,7 +111,7 @@ const Requirements = () => {
               Portable
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Typography variant="h6" align="center">
               Linux
             </Typography>

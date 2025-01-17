@@ -4,7 +4,7 @@ import MainReducer from '../../reducers/MainReducer';
 const themeIndex = typeof window !== 'undefined' && localStorage.themeIndex ? parseFloat(localStorage.themeIndex) : 0;
 const themeColorIndex = typeof window !== 'undefined' && localStorage.themeColorIndex
   ? parseFloat(localStorage.themeColorIndex)
-  : 0;
+  : 6;
 const hasAcceptedCookieNotice = typeof window !== 'undefined' && localStorage.hasAcceptedCookieNotice ? localStorage.hasAcceptedCookieNotice === 'true' : false;
 
 const initState = {

@@ -57,7 +57,7 @@ const ContactPage = () => {
           )
           : null}
         <Grid container spacing={2}>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Card sx={{
               mt: 5,
             }}
@@ -72,16 +72,16 @@ const ContactPage = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button variant="outlined" onClick={openGithub} sx={{mb: 1}}>
+                <Button variant="outlined" onClick={openGithub} sx={{ mb: 1 }}>
                   GitHub
                 </Button>
-                <Button variant="outlined" onClick={() => setContactOpen(true)} sx={{mb: 1}}>
+                <Button variant="outlined" onClick={() => setContactOpen(true)} sx={{ mb: 1 }}>
                   Contact
                 </Button>
               </CardActions>
             </Card>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Card sx={{
               mt: 5,
             }}
@@ -96,7 +96,7 @@ const ContactPage = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button variant="outlined" onClick={() => setContactOpen(true)} sx={{mb: 1}}>
+                <Button variant="outlined" onClick={() => setContactOpen(true)} sx={{ mb: 1 }}>
                   Contact
                 </Button>
               </CardActions>

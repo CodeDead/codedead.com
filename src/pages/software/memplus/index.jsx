@@ -74,7 +74,7 @@ const MemPlusPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Memory optimization
                     </Typography>
@@ -84,7 +84,7 @@ const MemPlusPage = () => {
                       more memory is available to you!
                     </Typography>
                   </Grid>
-                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.memplus.childImageSharp.gatsbyImageData}
                       alt="MemPlus main window"
@@ -99,13 +99,13 @@ const MemPlusPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.analyzer.childImageSharp.gatsbyImageData}
                       alt="MemPlus analyzer"
                     />
                   </Grid>
-                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       RAM Analyzer
                     </Typography>
@@ -124,7 +124,7 @@ const MemPlusPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
@@ -134,7 +134,7 @@ const MemPlusPage = () => {
                       MemPlus offers a myriad of settings to make MemPlus truly yours.
                     </Typography>
                   </Grid>
-                  <Grid size={{ xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.optimizer.childImageSharp.gatsbyImageData}
                       alt="MemPlus Optimizer"
@@ -159,28 +159,28 @@ const MemPlusPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{ xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               size="large"
               color="primary"
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/MemPlus/MP_setup.exe');
+                openLink('https://github.com/CodeDead/MemPlus/releases/download/1.3.2/MP_setup.exe');
                 setDonateOpen(true);
               }}
             >
               installer
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               size="large"
               color="primary"
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/MemPlus/MP_portable.zip');
+                openLink('https://github.com/CodeDead/MemPlus/releases/download/1.3.2/MP_portable.zip');
                 setDonateOpen(true);
               }}
             >

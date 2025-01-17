@@ -73,7 +73,7 @@ const DeadLockPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Unlocking
                     </Typography>
@@ -82,7 +82,7 @@ const DeadLockPage = () => {
                       and remove, move or copy them, free of charge!
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="DeadLock main window"
@@ -97,13 +97,13 @@ const DeadLockPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="DeadLock settings"
                     />
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
@@ -122,7 +122,7 @@ const DeadLockPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Commandline interface
                     </Typography>
@@ -132,7 +132,7 @@ const DeadLockPage = () => {
                       arguments to DeadLock!
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.about.childImageSharp.gatsbyImageData}
                       alt="Deadlock about"
@@ -157,14 +157,14 @@ const DeadLockPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={12  }>
+          <Grid size={12}>
             <Button
               size="large"
               color="primary"
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadLock/dl_setup.exe');
+                openLink('https://github.com/CodeDead/DeadLock/releases/download/1.4/dl_setup.exe');
                 setDonateOpen(true);
               }}
             >
@@ -239,7 +239,7 @@ const DeadLockPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -249,7 +249,7 @@ const DeadLockPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -261,7 +261,7 @@ const DeadLockPage = () => {
             </Button>
           </Grid>
 
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"

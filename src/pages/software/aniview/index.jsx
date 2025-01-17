@@ -73,7 +73,7 @@ const AniViewPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       GIF
                     </Typography>
@@ -83,7 +83,7 @@ const AniViewPage = () => {
                       options that are available in AniView.
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.main.childImageSharp.gatsbyImageData}
                       alt="AniView main window"
@@ -98,13 +98,13 @@ const AniViewPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.settings.childImageSharp.gatsbyImageData}
                       alt="AniView settings"
                     />
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Preferences
                     </Typography>
@@ -123,7 +123,7 @@ const AniViewPage = () => {
             <Card>
               <CardContent>
                 <Grid container spacing={2}>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <Typography variant="h6">
                       Frame extraction
                     </Typography>
@@ -134,7 +134,7 @@ const AniViewPage = () => {
                       single frame.
                     </Typography>
                   </Grid>
-                  <Grid size={{xs: 12, md: 6, lg: 6}}>
+                  <Grid size={{ xs: 12, md: 6, lg: 6 }}>
                     <GatsbyImage
                       image={data.image.childImageSharp.gatsbyImageData}
                       alt="AniView image"
@@ -159,28 +159,28 @@ const AniViewPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               size="large"
               color="primary"
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/AniView/AV_setup.exe');
+                openLink('https://github.com/CodeDead/AniView/releases/download/1.6.0/AV_setup.exe');
                 setDonateOpen(true);
               }}
             >
               Installer
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6}}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               size="large"
               color="primary"
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/AniView/AV_portable.zip');
+                openLink('https://github.com/CodeDead/AniView/releases/download/1.6.0/AV_portable.zip');
                 setDonateOpen(true);
               }}
             >
@@ -257,7 +257,7 @@ const AniViewPage = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -267,7 +267,7 @@ const AniViewPage = () => {
               Requirements
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"
@@ -279,7 +279,7 @@ const AniViewPage = () => {
             </Button>
           </Grid>
 
-          <Grid size={{xs: 12, md: 4, lg: 4}}>
+          <Grid size={{ xs: 12, md: 4, lg: 4 }}>
             <Button
               color="primary"
               variant="contained"

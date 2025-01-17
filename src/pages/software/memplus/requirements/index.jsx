@@ -103,7 +103,7 @@ const Requirements = () => {
         </Grid>
 
         <Grid container spacing={2} sx={{ mt: 5 }}>
-          <Grid size={{xs: 12, md: 6, lg: 6 }}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               fullWidth
               variant="contained"
@@ -114,7 +114,7 @@ const Requirements = () => {
               Installer
             </Button>
           </Grid>
-          <Grid size={{xs: 12, md: 6, lg: 6 }}>
+          <Grid size={{ xs: 12, md: 6, lg: 6 }}>
             <Button
               fullWidth
               variant="contained"
