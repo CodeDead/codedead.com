@@ -58,8 +58,8 @@ const Requirements = () => {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell><b>Memory</b></TableCell>
-                    <TableCell>At least 100MB free RAM memory</TableCell>
+                    <TableCell><b>RAM</b></TableCell>
+                    <TableCell>At least 100MB free RAM</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell><b>Internet connection</b></TableCell>
@@ -94,7 +94,7 @@ const Requirements = () => {
             <Button
               fullWidth
               variant="contained"
-              href="https://www.virustotal.com/gui/file/8317601baf0b7aad708cf0bd726649443b13b96c06f77e32f2dbb352365b6b16?nocache=1"
+              href="https://www.virustotal.com/gui/file/8d7ca9569e28e682fefe46babad51e2abef2af0587b5a412736e2fa5a0be3102"
               target="_blank"
             >
               Installer
@@ -103,7 +103,7 @@ const Requirements = () => {
               sx={{ mt: 1 }}
               variant="contained"
               fullWidth
-              href="https://www.virustotal.com/gui/file/a4acf5443e81228cd4b5faa923f84e6a54d0105942ba31e2d69af90bc21c3173?nocache=1"
+              href="https://www.virustotal.com/gui/file/139f2242d61b620f11eeefd0fb1918d7418252b31efd5d81979827e460b22565"
               target="_blank"
             >
               Portable
@@ -116,7 +116,7 @@ const Requirements = () => {
             <Button
               fullWidth
               variant="contained"
-              href="https://www.virustotal.com/gui/file/4512507469c45ff8fb8f5d544da79419582e87b18e7cdaa3de229140120c409c?nocache=1"
+              href="https://www.virustotal.com/gui/file/38ff013e13afb9b7e9b41d546c0977c5ca2d8af13281d3e6f7e6071b307d0216"
               target="_blank"
             >
               dmg
@@ -129,7 +129,7 @@ const Requirements = () => {
             <Button
               fullWidth
               variant="contained"
-              href="https://www.virustotal.com/gui/file/839fe1acb7ea5d9b13be2dd3eea6c18b5cea7f8b597189a221c73ca6f0b4316a?nocache=1"
+              href="https://www.virustotal.com/gui/file/fb1d6c1f26f98a2123c88085668079f71d21ace34d0f40de608604e13f0032cb"
               target="_blank"
             >
               AppImage
