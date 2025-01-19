@@ -94,7 +94,7 @@ const Requirements = () => {
             <Button
               fullWidth
               variant="contained"
-              href="https://www.virustotal.com/gui/file/8d7ca9569e28e682fefe46babad51e2abef2af0587b5a412736e2fa5a0be3102"
+              href="https://www.virustotal.com/gui/file/940e9b083ec6ac28ecc4e9de11250ae1f1ed1fa95a891b95fb5000756f6b8289"
               target="_blank"
             >
               Installer
@@ -103,7 +103,7 @@ const Requirements = () => {
               sx={{ mt: 1 }}
               variant="contained"
               fullWidth
-              href="https://www.virustotal.com/gui/file/139f2242d61b620f11eeefd0fb1918d7418252b31efd5d81979827e460b22565"
+              href="https://www.virustotal.com/gui/file/caed8e5626503f60a5e44b9f052f5613bda2e7c70d08bc3e4eb9b6f05441de13"
               target="_blank"
             >
               Portable
@@ -116,7 +116,7 @@ const Requirements = () => {
             <Button
               fullWidth
               variant="contained"
-              href="https://www.virustotal.com/gui/file/38ff013e13afb9b7e9b41d546c0977c5ca2d8af13281d3e6f7e6071b307d0216"
+              href="https://www.virustotal.com/gui/file/9fbd8ba43238388a40d62853a70c1709c78b02266dd63e4a625d21cb3ec9f365"
               target="_blank"
             >
               dmg
@@ -129,7 +129,7 @@ const Requirements = () => {
             <Button
               fullWidth
               variant="contained"
-              href="https://www.virustotal.com/gui/file/fb1d6c1f26f98a2123c88085668079f71d21ace34d0f40de608604e13f0032cb"
+              href="https://www.virustotal.com/gui/file/027497a7b5adb42dee1b2c7ef59674f4309bc4d5716e360504cc2d3e858b60c4"
               target="_blank"
             >
               AppImage
