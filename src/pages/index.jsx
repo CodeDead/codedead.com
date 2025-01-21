@@ -59,7 +59,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <PageHeader title="Welcome" subTitle="CodeDead provides free and open-source applications to make your life easer." />
+      <PageHeader title="Welcome" subTitle="CodeDead provides free and open-source applications to make your life easier." />
       <Container maxWidth="md" sx={{ mt: 5 }}>
         <Grid container spacing={2} sx={{ mt: 3 }}>
           <Grid size={12}>
