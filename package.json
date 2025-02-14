@@ -18,8 +18,8 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.1.1",
-    "@mui/icons-material": "^6.4.0",
-    "@mui/material": "^6.4.0",
+    "@mui/icons-material": "^6.4.4",
+    "@mui/material": "^6.4.4",
     "axios": "^1.7.9",
     "gatsby": "^5.14.1",
     "gatsby-plugin-catch-links": "^5.14.0",
@@ -39,7 +39,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "eslint": "^9.18.0",
+    "eslint": "^9.20.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",

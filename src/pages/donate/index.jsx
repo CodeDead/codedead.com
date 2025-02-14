@@ -218,12 +218,17 @@ const Donate = () => {
                   <TableRow>
                     <TableCell>18/06/2024</TableCell>
                     <TableCell><a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">PandaRainbow</a></TableCell>
-                    <TableCell>$10.00 USD</TableCell>
+                    <TableCell>$10.00 USD (monthly)</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell>21/10/2024</TableCell>
                     <TableCell><a href="https://freesoft-100.com/" target="_blank" rel="noreferrer">freesoft100</a></TableCell>
-                    <TableCell>$5.00 USD</TableCell>
+                    <TableCell>$5.00 USD (monthly)</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>14/02/2025</TableCell>
+                    <TableCell><a href="https://github.com/sanesecurityguy" target="_blank" rel="noreferrer">sanesecurityguy</a></TableCell>
+                    <TableCell>$5.00 USD (monthly)</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
