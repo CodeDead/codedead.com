@@ -1,0 +1,135 @@
+import React from 'react';
+import { useRouter } from 'next/navigation';
+import { IconSun, IconSunOff } from '@tabler/icons-react';
+import {
+  ActionIcon,
+  Burger,
+  Container,
+  Divider,
+  Drawer,
+  Group,
+  rem,
+  ScrollArea,
+  Title,
+  Tooltip,
+  useMantineColorScheme,
+} from '@mantine/core';
+import classes from './index.module.css';
+
+const TopBar = ({ opened, toggle }) => {
+  const router = useRouter();
+  const { colorScheme, setColorScheme } = useMantineColorScheme();
+
+  /**
+   * Change the color scheme
+   */
+  const changeTheme = () => {
+    const newTheme = colorScheme === 'dark' ? 'light' : 'dark';
+    setColorScheme(newTheme);
+  };
+
+  /**
+   * Click the scroll link
+   * @param event The event argument
+   * @param link The link to navigate to
+   */
+  const clickScrollLink = (event, link) => {
+    event.preventDefault();
+
+    toggle();
+    router.push(link);
+  };
+
+  return (
+    <header>
+      <Container className={classes.inner}>
+        <Group gap={10} style={{ flexGrow: 1 }}>
+          <Title
+            order={2}
+            style={{ cursor: 'pointer' }}
+            onClick={(e) => {
+              e.preventDefault();
+              router.push('/');
+            }}
+          >
+            CodeDead
+          </Title>
+        </Group>
+
+        <Group gap={5} mr={10}>
+          <Tooltip label={colorScheme === 'dark' ? 'Light theme' : 'Dark theme'}>
+            <ActionIcon aria-label="Theme" variant="subtle" onClick={changeTheme}>
+              {colorScheme === 'dark' ? (
+                <IconSunOff style={{ width: '70%', height: '70%' }} stroke={1.5} />
+              ) : (
+                <IconSun style={{ width: '70%', height: '70%' }} stroke={1.5} />
+              )}
+            </ActionIcon>
+          </Tooltip>
+        </Group>
+
+        <Burger
+          aria-label="Burger menu"
+          opened={opened}
+          onClick={toggle}
+          hiddenFrom="xs"
+          size="sm"
+        />
+        <Drawer
+          opened={opened}
+          onClose={() => toggle()}
+          size="100%"
+          padding="md"
+          title="Navigation"
+          hiddenFrom="sm"
+          zIndex={1000000}
+        >
+          <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+            <Divider my="sm" />
+            <a href="/" className={classes.link} onClick={(e) => clickScrollLink(e, '/')}>
+              Home
+            </a>
+            <a
+              href="/software"
+              className={classes.link}
+              onClick={(e) => clickScrollLink(e, '/software')}
+            >
+              Software
+            </a>
+            <a href="/blog" className={classes.link} onClick={(e) => clickScrollLink(e, '/blog')}>
+              Blog
+            </a>
+            <Divider my="sm" />
+            <a
+              href="/donate"
+              className={classes.link}
+              onClick={(e) => clickScrollLink(e, '/donate')}
+            >
+              Donate
+            </a>
+            <a href="/about" className={classes.link} onClick={(e) => clickScrollLink(e, '/about')}>
+              About
+            </a>
+            <Divider my="sm" />
+            <a
+              href="/privacy"
+              className={classes.link}
+              onClick={(e) => clickScrollLink(e, '/privacy')}
+            >
+              Privacy
+            </a>
+            <a
+              href="/contact"
+              className={classes.link}
+              onClick={(e) => clickScrollLink(e, '/contact')}
+            >
+              Contact
+            </a>
+          </ScrollArea>
+        </Drawer>
+      </Container>
+    </header>
+  );
+};
+
+export default TopBar;
