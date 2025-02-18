@@ -227,7 +227,7 @@ const Donate = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell>14/02/2025</TableCell>
-                    <TableCell><a href="https://github.com/sanesecurityguy" target="_blank" rel="noreferrer">sanesecurityguy</a></TableCell>
+                    <TableCell><a href="https://sanesecurityguy.com/" target="_blank" rel="noreferrer">sanesecurityguy</a></TableCell>
                     <TableCell>$5.00 USD (monthly)</TableCell>
                   </TableRow>
                 </TableBody>
