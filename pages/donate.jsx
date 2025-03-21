@@ -178,7 +178,7 @@ const Donate = () => {
                 <Table.Tr>
                   <Table.Td>16/05/2017</Table.Td>
                   <Table.Td>
-                    <a href="https://leomoon.com/" target="_blank">
+                    <a href="https://leomoon.com/" target="_blank" rel="noreferrer">
                       LeoMoon Studios
                     </a>
                   </Table.Td>
@@ -222,7 +222,7 @@ const Donate = () => {
                 <Table.Tr>
                   <Table.Td>18/06/2024 (Monthly)</Table.Td>
                   <Table.Td>
-                    <a href="https://github.com/PandaRainbow" target="_blank">
+                    <a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">
                       PandaRainbow
                     </a>
                   </Table.Td>
@@ -231,8 +231,17 @@ const Donate = () => {
                 <Table.Tr>
                   <Table.Td>21/10/2024 (Monthly)</Table.Td>
                   <Table.Td>
-                    <a href="https://freesoft-100.com/" target="_blank">
+                    <a href="https://freesoft-100.com/" target="_blank" rel="noreferrer">
                       freesoft100
+                    </a>
+                  </Table.Td>
+                  <Table.Td>$5.00 USD</Table.Td>
+                </Table.Tr>
+                <Table.Tr>
+                  <Table.Td>14/02/2025 (Monthly)</Table.Td>
+                  <Table.Td>
+                    <a href="https://sanesecurityguy.com/" target="_blank" rel="noreferrer">
+                      sanesecurityguy
                     </a>
                   </Table.Td>
                   <Table.Td>$5.00 USD</Table.Td>

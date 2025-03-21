@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
-import { Badge, Card, Container, Group, Pagination, SimpleGrid, Text, Title } from '@mantine/core';
+import { Badge, Card, Container, Pagination, SimpleGrid, Text, Title } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { getAllPosts, getPostData } from '../../lib/posts';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';
@@ -10,19 +10,16 @@ import classes from '../../public/title.module.css';
 const numberOfPostsPerPage = 12;
 
 export const getStaticProps = () => {
-  const currentPage = 0;
-
   const posts = getAllPosts();
   // Sort posts by date
   const sortedPosts = posts.sort((a, b) => {
-    const concatA = a.params.year + '-' + a.params.month + '-' + a.params.day;
-    const concatB = b.params.year + '-' + b.params.month + '-' + b.params.day;
+    const concatA = `${a.params.year}-${a.params.month}-${a.params.day}`;
+    const concatB = `${b.params.year}-${b.params.month}-${b.params.day}`;
 
     if (concatA < concatB) {
       return 1;
-    } else {
-      return -1;
     }
+    return -1;
   });
 
   const requiredPosts = sortedPosts.slice(0, numberOfPostsPerPage);

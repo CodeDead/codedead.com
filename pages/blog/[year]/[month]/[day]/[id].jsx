@@ -12,7 +12,7 @@ export function getStaticPaths() {
   const paths = getAllPosts();
 
   return {
-    paths: paths,
+    paths,
     fallback: false,
   };
 }

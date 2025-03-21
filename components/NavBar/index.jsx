@@ -12,17 +12,18 @@ import {
 import { Divider, ScrollArea } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import classes from './navbar.module.css';
+import Link from 'next/link';
 
 const NavBar = () => {
   const router = useRouter();
-  const [state, d1] = useContext(MainContext);
+  const [state,] = useContext(MainContext);
   const { pageIndex } = state;
 
   return (
     <ScrollArea>
       <nav>
         <div className={classes.navbarMain}>
-          <a
+          <Link
             className={classes.link}
             href="/"
             data-active={pageIndex === 0 ? true : undefined}
@@ -33,8 +34,8 @@ const NavBar = () => {
           >
             <IconHome className={classes.linkIcon} stroke={1.5} />
             <span>Home</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className={classes.link}
             data-active={pageIndex === 1 ? true : undefined}
             href="/software"
@@ -45,8 +46,8 @@ const NavBar = () => {
           >
             <IconTool className={classes.linkIcon} stroke={1.5} />
             <span>Software</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className={classes.link}
             href="/blog"
             data-active={pageIndex === 2 ? true : undefined}
@@ -57,11 +58,11 @@ const NavBar = () => {
           >
             <IconArticle className={classes.linkIcon} stroke={1.5} />
             <span>Blog</span>
-          </a>
+          </Link>
 
           <Divider my="md" />
 
-          <a
+          <Link
             className={classes.link}
             href="/donate"
             data-active={pageIndex === 3 ? true : undefined}
@@ -72,8 +73,8 @@ const NavBar = () => {
           >
             <IconCoin className={classes.linkIcon} stroke={1.5} />
             <span>Donate</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className={classes.link}
             href="/about"
             data-active={pageIndex === 4 ? true : undefined}
@@ -84,11 +85,11 @@ const NavBar = () => {
           >
             <IconInfoCircle className={classes.linkIcon} stroke={1.5} />
             <span>About</span>
-          </a>
+          </Link>
 
           <Divider my="md" />
 
-          <a
+          <Link
             className={classes.link}
             href="/privacy"
             data-active={pageIndex === 5 ? true : undefined}
@@ -99,8 +100,8 @@ const NavBar = () => {
           >
             <IconLockSquare className={classes.linkIcon} stroke={1.5} />
             <span>Privacy</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className={classes.link}
             href="/contact"
             data-active={pageIndex === 6 ? true : undefined}
@@ -111,7 +112,7 @@ const NavBar = () => {
           >
             <IconMail className={classes.linkIcon} stroke={1.5} />
             <span>Contact</span>
-          </a>
+          </Link>
         </div>
       </nav>
     </ScrollArea>

@@ -15,6 +15,7 @@ import {
   useMantineColorScheme,
 } from '@mantine/core';
 import classes from './index.module.css';
+import Link from 'next/link';
 
 const TopBar = ({ opened, toggle }) => {
   const router = useRouter();
@@ -86,45 +87,53 @@ const TopBar = ({ opened, toggle }) => {
         >
           <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
             <Divider my="sm" />
-            <a href="/" className={classes.link} onClick={(e) => clickScrollLink(e, '/')}>
+            <Link href="/" className={classes.link} onClick={(e) => clickScrollLink(e, '/')}>
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/software"
               className={classes.link}
               onClick={(e) => clickScrollLink(e, '/software')}
             >
               Software
-            </a>
-            <a href="/blog" className={classes.link} onClick={(e) => clickScrollLink(e, '/blog')}>
+            </Link>
+            <Link
+                href="/blog"
+                className={classes.link}
+                onClick={(e) => clickScrollLink(e, '/blog')}
+            >
               Blog
-            </a>
+            </Link>
             <Divider my="sm" />
-            <a
+            <Link
               href="/donate"
               className={classes.link}
               onClick={(e) => clickScrollLink(e, '/donate')}
             >
               Donate
-            </a>
-            <a href="/about" className={classes.link} onClick={(e) => clickScrollLink(e, '/about')}>
+            </Link>
+            <Link
+                href="/about"
+                className={classes.link}
+                onClick={(e) => clickScrollLink(e, '/about')}
+            >
               About
-            </a>
+            </Link>
             <Divider my="sm" />
-            <a
+            <Link
               href="/privacy"
               className={classes.link}
               onClick={(e) => clickScrollLink(e, '/privacy')}
             >
               Privacy
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className={classes.link}
               onClick={(e) => clickScrollLink(e, '/contact')}
             >
               Contact
-            </a>
+            </Link>
           </ScrollArea>
         </Drawer>
       </Container>

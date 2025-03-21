@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import {
   IconBrandGooglePlay,
+  IconBrandAndroid,
   IconBrandWindows,
   IconDeviceDesktop,
   IconDownload,
@@ -25,6 +26,7 @@ import {
   Grid,
   Group,
   Image,
+  List,
   SimpleGrid,
   Text,
   Title,
@@ -86,6 +88,73 @@ const DeadHash = () => {
           </Card>
 
           <Group mt={20}>
+            <Badge variant="filled" size="lg" leftSection={<IconInfoCircle size={12} />}>
+              Info
+            </Badge>
+          </Group>
+
+          <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
+            <Text size="md">
+              DeadHash is a free and open source tool for hashing files and text in a matter of seconds. Supported hashes:
+            </Text>
+
+            <List mt={10}>
+              <List.Item>MD4</List.Item>
+              <List.Item>MD5</List.Item>
+              <List.Item>SHA-1</List.Item>
+              <List.Item>SHA-224</List.Item>
+              <List.Item>SHA-256</List.Item>
+              <List.Item>SHA-384</List.Item>
+              <List.Item>SHA-512</List.Item>
+              <List.Item>RIPEMD-160</List.Item>
+              <List.Item>CRC32</List.Item>
+            </List>
+
+            <Text size="md" mt={10}>
+              DeadHash respects your privacy, is open-source and does not collect any data. It is available for Android, Linux and Windows.
+            </Text>
+          </Card>
+
+          <Group mt={20}>
+            <Badge variant="filled" size="lg" leftSection={<IconInfoCircle size={12} />}>
+              Highlights
+            </Badge>
+          </Group>
+
+          <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={20}>
+            <FeatureCard
+              title="Performance"
+              description="Calculate file and text hashes and checksums with ease thanks to an easy to use GUI, drag and drop functionality and help documentation that are all included!"
+              icon={<IconGauge size={50} stroke={2} color={theme.colors.blue[6]} />}
+            />
+            <FeatureCard
+              title="Formats"
+              description="MD4, MD5, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512, RIPEMD-160 and CRC32 are all supported out of the box."
+              icon={<IconMath size={50} stroke={2} color={theme.colors.blue[6]} />}
+            />
+            <FeatureCard
+              title="Cross-platform"
+              description="DeadHash is available for Android, Linux and Windows, offering a similar look and feel on all platforms. Additionally, DeadHash can be compiled manually to run on macOS."
+              icon={<IconDeviceDesktop size={50} stroke={2} color={theme.colors.blue[6]} />}
+            />
+            <FeatureCard
+                title="Open source"
+                description="Being open source means that DeadHash is free to use and can be modified to suit your needs. The source code is available on GitHub."
+                icon={<IconBrandGithub size={50} stroke={2} color={theme.colors.blue[6]} />}
+            />
+            <FeatureCard
+                title="Private"
+                description="DeadHash does not collect any data from its users. The application is designed to be as transparent as possible. No ads, no trackers, no nonsense."
+                icon={<IconLockHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
+            />
+            <FeatureCard
+                title="Made with love"
+                description="DeadHash is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
+                icon={<IconHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
+            />
+          </SimpleGrid>
+
+          <Group mt={20}>
             <Badge variant="filled" size="lg" leftSection={<IconDownload size={12} />}>
               Downloads
             </Badge>
@@ -106,6 +175,18 @@ const DeadHash = () => {
                   size="md"
               >
                 Google Play
+              </Button>
+              <Button
+                  component="a"
+                  href="https://f-droid.org/en/packages/com.codedead.deadhash/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  fullWidth
+                  leftSection={<IconBrandAndroid size={20} />}
+                  size="md"
+                  mt={10}
+              >
+                F-Droid
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
@@ -153,45 +234,6 @@ const DeadHash = () => {
               </Button>
             </Grid.Col>
           </Grid>
-
-          <Group mt={20}>
-            <Badge variant="filled" size="lg" leftSection={<IconInfoCircle size={12} />}>
-              Highlights
-            </Badge>
-          </Group>
-
-          <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={20}>
-            <FeatureCard
-              title="Performance"
-              description="Calculate file and text hashes and checksums with ease thanks to an easy to use GUI, drag and drop functionality and help documentation that are all included!"
-              icon={<IconGauge size={50} stroke={2} color={theme.colors.blue[6]} />}
-            />
-            <FeatureCard
-              title="Formats"
-              description="MD4, MD5, SHA1, SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHA224, SHA256, SHA384, SHA512, RIPEMD160, CRC1, CRC8, CRC16, CRC24 and CRC32 are all supported out of the box."
-              icon={<IconMath size={50} stroke={2} color={theme.colors.blue[6]} />}
-            />
-            <FeatureCard
-              title="Cross-platform"
-              description="DeadHash is available for Android, Linux and Windows, offering a similar look and feel on all platforms. Additionally, DeadHash can be compiled manually to run on macOS."
-              icon={<IconDeviceDesktop size={50} stroke={2} color={theme.colors.blue[6]} />}
-            />
-            <FeatureCard
-                title="Open source"
-                description="Being open source means that DeadHash is free to use and can be modified to suit your needs. The source code is available on GitHub."
-                icon={<IconBrandGithub size={50} stroke={2} color={theme.colors.blue[6]} />}
-            />
-            <FeatureCard
-                title="Private"
-                description="DeadHash does not collect any data from its users. The application is designed to be as transparent as possible. No ads, no trackers."
-                icon={<IconLockHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
-            />
-            <FeatureCard
-                title="Made with love"
-                description="DeadHash is a project made with love by the CodeDead team. We hope you enjoy using it as much as we enjoyed making it."
-                icon={<IconHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
-            />
-          </SimpleGrid>
 
           <Group mt={20}>
             <Badge variant="filled" size="lg" leftSection={<IconQuote size={12} />}>

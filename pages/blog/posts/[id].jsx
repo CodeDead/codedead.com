@@ -35,14 +35,13 @@ export const getStaticProps = async ({ params }) => {
   const posts = getAllPosts();
   // Sort posts by date
   const sortedPosts = posts.sort((a, b) => {
-    const concatA = a.params.year + '-' + a.params.month + '-' + a.params.day;
-    const concatB = b.params.year + '-' + b.params.month + '-' + b.params.day;
+    const concatA = `${a.params.year}-${a.params.month}-${a.params.day}`;
+    const concatB = `${b.params.year}-${b.params.month}-${b.params.day}`;
 
     if (concatA < concatB) {
       return 1;
-    } else {
-      return -1;
     }
+    return -1;
   });
 
   const start = currentPage * numberOfPostsPerPage;
