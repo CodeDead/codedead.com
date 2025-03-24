@@ -261,6 +261,74 @@ const DeadHash = () => {
               </a>
             </Text>
           </Card>
+
+          <Group mt={20}>
+            <Badge variant="filled" size="lg" leftSection={<IconQuote size={12} />}>
+              Extra
+            </Badge>
+          </Group>
+
+          <Grid mt={20}>
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+              <Button
+                  component="a"
+                  href="/software/deadhash/requirements"
+                  fullWidth
+                  size="md"
+              >
+                Requirements
+              </Button>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+              <Button
+                  component="a"
+                  href="/Software/DeadHash/help.pdf"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  fullWidth
+                  size="md"
+              >
+                Help documentation
+              </Button>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+              <Button
+                  component="a"
+                  href="/Software/DeadHash/gpl.pdf"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  fullWidth
+                  size="md"
+              >
+                License
+              </Button>
+            </Grid.Col>
+
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+              <Button
+                  component="a"
+                  href="https://github.com/CodeDead/DeadHash-js"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  fullWidth
+                  size="md"
+              >
+                Source code (Desktop)
+              </Button>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+              <Button
+                  component="a"
+                  href="https://github.com/CodeDead/DeadHash-android"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  fullWidth
+                  size="md"
+              >
+                Source code (Android)
+              </Button>
+            </Grid.Col>
+          </Grid>
         </Container>
       </Container>
     </>
