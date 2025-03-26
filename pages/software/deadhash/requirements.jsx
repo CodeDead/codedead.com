@@ -1,13 +1,15 @@
 import React, {useContext, useEffect} from 'react';
 import Head from 'next/head';
-import { IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
+import {IconArrowLeft, IconInfoCircle, IconShieldCheckFilled} from '@tabler/icons-react';
 import {Badge, Button, Card, Center, Container, Grid, Group, Table, Text, Title} from '@mantine/core';
 import classes from '../../../public/title.module.css';
 import {MainContext} from "../../../contexts/MainContextProvider";
 import {setPageIndex} from "../../../reducers/MainReducer/Actions";
+import {useRouter} from "next/navigation";
 
-const Requirements = () => {
+const DeadHashRequirements = () => {
   const [, d] = useContext(MainContext);
+  const router = useRouter();
 
   useEffect(() => {
     d(setPageIndex(1));
@@ -22,18 +24,33 @@ const Requirements = () => {
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
-        <Title className={classes.title} ta="center">
-          <Text
-            inherit
-            variant="gradient"
-            component="span"
-            gradient={{ from: 'pink', to: 'yellow' }}
-            alt="DeadHash"
+        <Center>
+          <Button
+              variant="subtle"
+              mr={5}
+              component="a"
+              aria-label="Go back"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                router.back();
+              }}
           >
-            DeadHash
-          </Text>
-          {' requirements'}
-        </Title>
+            <IconArrowLeft size={14} />
+          </Button>
+          <Title className={classes.title} ta="center">
+            <Text
+                inherit
+                variant="gradient"
+                component="span"
+                gradient={{ from: 'pink', to: 'yellow' }}
+                alt="DeadHash"
+            >
+              DeadHash
+            </Text>
+            {' requirements'}
+          </Title>
+        </Center>
         <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="md">
           System requirements
         </Text>
@@ -133,4 +150,4 @@ const Requirements = () => {
   );
 };
 
-export default Requirements;
+export default DeadHashRequirements;

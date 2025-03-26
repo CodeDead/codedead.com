@@ -36,7 +36,7 @@ const BlogPage = ({ postData }) => {
   const router = useRouter();
 
   useEffect(() => {
-    d1(setPageIndex(-1));
+    d1(setPageIndex(2));
   }, []);
 
   return (

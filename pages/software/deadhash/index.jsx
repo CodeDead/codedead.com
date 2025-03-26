@@ -36,10 +36,18 @@ import FeatureCard from '../../../components/FeatureCard';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+import FloatingDownloadButton from "../../../components/FloatingDownloadButton";
 
 const DeadHash = () => {
   const theme = useMantineTheme();
   const [, d] = useContext(MainContext);
+
+  /**
+   * Scroll to the downloads section
+   */
+  const scrollToDownloads = () => {
+    document.getElementById('downloads').scrollIntoView();
+  };
 
   useEffect(() => {
     d(setPageIndex(1));
@@ -155,7 +163,7 @@ const DeadHash = () => {
           </SimpleGrid>
 
           <Group mt={20}>
-            <Badge variant="filled" size="lg" leftSection={<IconDownload size={12} />}>
+            <Badge variant="filled" size="lg" leftSection={<IconDownload size={12} />} id="downloads">
               Downloads
             </Badge>
           </Group>
@@ -329,6 +337,7 @@ const DeadHash = () => {
               </Button>
             </Grid.Col>
           </Grid>
+          <FloatingDownloadButton onClick={scrollToDownloads} />
         </Container>
       </Container>
     </>

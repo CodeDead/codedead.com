@@ -15,7 +15,6 @@ import {
   IconMath,
   IconQuote,
   IconTerminal2,
-  IconWorldWww,
 } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
 import {
@@ -33,12 +32,12 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
+import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-import FloatingDownloadButton from "../../../components/FloatingDownloadButton";
 
-const AdvancedPassGen = () => {
+const AdvancedPortChecker = () => {
   const theme = useMantineTheme();
   const [, d] = useContext(MainContext);
 
@@ -56,11 +55,11 @@ const AdvancedPassGen = () => {
   return (
     <>
       <Head>
-        <title>Advanced PassGen | CodeDead</title>
+        <title>Advanced PortChecker | CodeDead</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <meta
           name="description"
-          content="Advanced PassGen is a password generator that allows you to create safe and strong passwords."
+          content="Advanced PortChecker is a free and open source port checker that allows you to scan your network for open ports."
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
@@ -71,31 +70,31 @@ const AdvancedPassGen = () => {
             variant="gradient"
             component="span"
             gradient={{ from: 'pink', to: 'yellow' }}
-            alt="Advanced PassGen"
+            alt="Advanced PortChecker"
           >
             Advanced
           </Text>
-          {' PassGen'}
+          {' PortChecker'}
         </Title>
         <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="md">
-          A free and open source password generator!
+          A free and open source port checker
         </Text>
 
         <Container mt={50} size="xl">
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/advanced-passgen/ap.webp" />
-              </Carousel.Slide>
-              <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/advanced-passgen/ap_theme_settings.webp" />
+                <Image radius="md" fit="contain" src="/advanced-portchecker/ap.webp" />
               </Carousel.Slide>
               <Carousel.Slide>
                 <Image
                   radius="md"
                   fit="contain"
-                  src="/advanced-passgen/ap_advanced_settings.webp"
+                  src="/advanced-portchecker/ap_general_settings.webp"
                 />
+              </Carousel.Slide>
+              <Carousel.Slide>
+                <Image radius="md" fit="contain" src="/advanced-portchecker/ap_about.webp" />
               </Carousel.Slide>
             </Carousel>
           </Card>
@@ -108,22 +107,20 @@ const AdvancedPassGen = () => {
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Text size="md">
-              Advanced PassGen is a password generator that allows you to create safe and strong
-              passwords. It is a free and open source software that is available for Android, Linux
-              and Windows.
+              Advanced PortChecker is a free and open source port checker that allows you to scan
+              your network for open ports. The app is available for Android, Linux, macOS and
+              Windows, offering a similar look and feel on all platforms. Additionally, Advanced
+              PortChecker can be compiled on other platforms manually.
             </Text>
 
             <Text size="md" mt={10}>
-              The app has a lot of features that you can use to customize your passwords. You can
-              choose the length of the password, the characters that you want to use, and even the
-              number of passwords that you want to generate.
+              Scanning TCP/IP ports has never been this easy. Watch how Advanced PortChecker scans
+              for open ports in seconds!
             </Text>
 
             <Text size="md" mt={10}>
-              The app also has a dark mode that you can use to generate passwords in low light
-              conditions. Advanced PassGen can export any and all data that it generates for you in
-              a couple of different formats including: CSV, JSON and of course plain text. A simple
-              copy is also available!
+              Advanced PortChecker can export any and all data that it finds for you in a couple of
+              different formats including: HTML, JSON, CSV and of course plain text.
             </Text>
           </Card>
 
@@ -136,38 +133,43 @@ const AdvancedPassGen = () => {
           <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={20}>
             <FeatureCard
               title="Performance"
-              description="Easily generate thousands of passwords using the options that are available in Advanced PassGen. You can even go so far as to define your own character set that Advanced PassGen can use to generate passwords!"
+              description="Made with performance in mind, Advanced PortChecker is fast and efficient. Scanning your network for open ports has never been this easy."
               icon={<IconGauge size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Preferences"
-              description="Want a different theme or would you like to disable automatic updates? Don’t want to export a certain field? It’s all possible, thanks to our intuitive and easy to use GUI."
+              description="Want a different theme or would you like to disable automatic updates? It’s all possible, thanks to our intuitive and easy to use GUI."
               icon={<IconMath size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Cross-platform"
-              description="Advanced PassGen is available for Android, Linux, macOS and Windows, offering a similar look and feel on all platforms. Additionally, Advanced PassGen can be compiled on other platforms manually."
+              description="Advanced PortChecker is available for Android, Linux, macOS and Windows, offering a similar look and feel on all platforms. Additionally, Advanced PortChecker can be compiled on other platforms manually."
               icon={<IconDeviceDesktop size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Open source"
-              description="Being open source means that Advanced PassGen is free to use and can be modified to suit your needs. The source code is available on GitHub."
+              description="Being open source means that Advanced PortChecker is free to use and can be modified to suit your needs. The source code is available on GitHub."
               icon={<IconBrandGithub size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Private"
-              description="Advanced PassGen does not collect any data from its users. The application is designed to be as transparent as possible. No ads, no trackers, no nonsense."
+              description="Advanced PortChecker does not collect any data from its users. The application is designed to be as transparent as possible. No ads, no trackers, no nonsense."
               icon={<IconLockHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Made with love"
-              description="Advanced PassGen is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
+              description="Advanced PortChecker is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
               icon={<IconHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
           </SimpleGrid>
 
           <Group mt={20}>
-            <Badge variant="filled" size="lg" leftSection={<IconDownload size={12} />} id="downloads">
+            <Badge
+              variant="filled"
+              size="lg"
+              leftSection={<IconDownload size={12} />}
+              id="downloads"
+            >
               Downloads
             </Badge>
           </Group>
@@ -179,7 +181,7 @@ const AdvancedPassGen = () => {
               </Center>
               <Button
                 component="a"
-                href="https://play.google.com/store/apps/details?id=com.codedead.advancedpassgen"
+                href="https://play.google.com/store/apps/details?id=com.codedead.advancedportchecker"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -190,7 +192,7 @@ const AdvancedPassGen = () => {
               </Button>
               <Button
                 component="a"
-                href="https://f-droid.org/en/packages/com.codedead.advancedpassgen/"
+                href="https://f-droid.org/en/packages/com.codedead.advancedportchecker/"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -207,7 +209,7 @@ const AdvancedPassGen = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_x64_en-US.msi"
+                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_x64_en-US.msi"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandWindows size={20} />}
@@ -223,7 +225,7 @@ const AdvancedPassGen = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_amd64.AppImage"
+                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_amd64.AppImage"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconTerminal2 size={20} />}
@@ -233,13 +235,13 @@ const AdvancedPassGen = () => {
                 AppImage
               </Button>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+            <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
               <Center>
                 <Title order={4}>macOS</Title>
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_aarch64.dmg"
+                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_aarch64.dmg"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandFinder size={20} />}
@@ -247,20 +249,6 @@ const AdvancedPassGen = () => {
                 size="md"
               >
                 dmg
-              </Button>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
-              <Center>
-                <Title order={4}>Web</Title>
-              </Center>
-              <Button
-                component="a"
-                href="https://advancedpassgen.codedead.com"
-                leftSection={<IconWorldWww size={20} />}
-                fullWidth
-                size="md"
-              >
-                Web version
               </Button>
             </Grid.Col>
           </Grid>
@@ -273,25 +261,22 @@ const AdvancedPassGen = () => {
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Text fw={500} size="lg">
-              Generates various passwords based on the specified parameters
+              Handy tool providing you with results in real time
             </Text>
             <Text size="md" mt={10}>
-              "This application allows you to generate multiple passwords with ease, by defining a
-              series of parameters. It is possible to toggle the inclusion of several elements
-              within your passkeys, such as uppercase or lowercase characters, symbols and numbers.
-              Additionally, you can define the minimum and maximum string lengths for your entries,
-              specify a custom character set or generate a random seed. It is also possible to
-              specify a fixed string length size and the amount of passwords that the application
-              can generate during a session."
+              "On an ending note, Advanced PortChecker is an easy-to-use program helping you
+              effortlessly find open ports you can connect to. It can spot both TCP and UDP ports,
+              letting you compile them in lists you can subsequently use, but its core advantage is
+              that it helps you see the potential of your network in real time."
             </Text>
             <Text size="md" mt={10}>
               -{' '}
               <a
-                href="https://www.softpedia.com/get/Security/Password-Managers-Generators/Advanced-PassGen.shtml"
+                href="https://www.softpedia.com/get/Network-Tools/IP-Tools/Advanced-PortChecker.shtml"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Vlad Constantinescu, Softpedia
+                Anca Roman, Softpedia
               </a>
             </Text>
           </Card>
@@ -305,22 +290,22 @@ const AdvancedPassGen = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="/software/advanced-passgen/requirements"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="/software/advanced-portchecker/requirements"
+                fullWidth
+                size="md"
               >
                 Requirements
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="/Software/Advanced PassGen/gpl.pdf"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="/Software/Advanced PortChecker/gpl.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                size="md"
               >
                 License
               </Button>
@@ -328,24 +313,24 @@ const AdvancedPassGen = () => {
 
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="https://github.com/CodeDead/Advanced-PassGen"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="https://github.com/CodeDead/Advanced-PortChecker"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                size="md"
               >
                 Source code (Desktop)
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="https://github.com/CodeDead/advanced-passgen-android"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="https://github.com/CodeDead/Advanced-PortChecker-android"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                size="md"
               >
                 Source code (Android)
               </Button>
@@ -358,4 +343,4 @@ const AdvancedPassGen = () => {
   );
 };
 
-export default AdvancedPassGen;
+export default AdvancedPortChecker;

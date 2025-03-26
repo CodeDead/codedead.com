@@ -18,7 +18,7 @@ import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
 import {useRouter} from "next/navigation";
 
-const AdvancedPassGenRequirements = () => {
+const AdvancedPortCheckerRequirements = () => {
   const [, d] = useContext(MainContext);
   const router = useRouter();
 
@@ -29,9 +29,9 @@ const AdvancedPassGenRequirements = () => {
   return (
     <>
       <Head>
-        <title>Advanced PassGen requirements | CodeDead</title>
+        <title>Advanced PortChecker requirements | CodeDead</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <meta name="description" content="Advanced PassGen system requirements" />
+        <meta name="description" content="Advanced PortChecker system requirements" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
@@ -55,11 +55,11 @@ const AdvancedPassGenRequirements = () => {
                 variant="gradient"
                 component="span"
                 gradient={{ from: 'pink', to: 'yellow' }}
-                alt="Advanced PassGen"
+                alt="DeadHash"
             >
               Advanced
             </Text>
-            {' Passgen requirements'}
+            {' PortChecker requirements'}
           </Title>
         </Center>
         <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="md">
@@ -89,7 +89,7 @@ const AdvancedPassGenRequirements = () => {
                     <b>Disk space</b>
                   </Table.Td>
                   <Table.Td>At least 5MB</Table.Td>
-                  <Table.Td>At least 120MB</Table.Td>
+                  <Table.Td>At least 85MB</Table.Td>
                   <Table.Td>At least 5MB</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
@@ -125,7 +125,7 @@ const AdvancedPassGenRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/e3801b72aaa5646c8d34b9fab03e955cc41d78665a8605c6ac4cc21ed4eaa4b2?nocache=1"
+                href="https://www.virustotal.com/gui/file/be652b842b0a6933067fcb471e79bd110e4ed64346e9ec8b5acb66810f372593?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -140,7 +140,7 @@ const AdvancedPassGenRequirements = () => {
               </Title>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/10f759a674b73bbca584dd1a3b60fe3751af7192ba29cca40e0850ad774c0566?nocache=1"
+                href="https://www.virustotal.com/gui/file/605c7b8bf290452c6999a1bd414d089f2c8eca3813b48f7e2d3300036a644c54?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -155,7 +155,7 @@ const AdvancedPassGenRequirements = () => {
               </Title>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/1c75932f470873174c210baacda6d99f8d246f74484faacc990f74ceff514972?nocache=1"
+                href="https://www.virustotal.com/gui/file/727b9c8c83717f448ac03d9d7e9920ac18226fc1edec7f3cafb1ecf383e23840?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -171,4 +171,4 @@ const AdvancedPassGenRequirements = () => {
   );
 };
 
-export default AdvancedPassGenRequirements;
+export default AdvancedPortCheckerRequirements;
