@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
-import {IconArrowLeft, IconInfoCircle, IconShieldCheckFilled} from '@tabler/icons-react';
+import { useRouter } from 'next/navigation';
+import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
 import {
   Badge,
   Button,
@@ -16,9 +17,8 @@ import {
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-import {useRouter} from "next/navigation";
 
-const AdvancedPortCheckerRequirements = () => {
+const MemPlusRequirements = () => {
   const [, d] = useContext(MainContext);
   const router = useRouter();
 
@@ -29,37 +29,37 @@ const AdvancedPortCheckerRequirements = () => {
   return (
     <>
       <Head>
-        <title>Advanced PortChecker requirements | CodeDead</title>
+        <title>MemPlus requirements | CodeDead</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <meta name="description" content="Advanced PortChecker system requirements" />
+        <meta name="description" content="MemPlus system requirements" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
         <Center>
           <Button
-              variant="subtle"
-              mr={5}
-              component="a"
-              aria-label="Go back"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                router.back();
-              }}
+            variant="subtle"
+            mr={5}
+            component="a"
+            aria-label="Go back"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              router.back();
+            }}
           >
             <IconArrowLeft size={14} />
           </Button>
           <Title className={classes.title} ta="center">
             <Text
-                inherit
-                variant="gradient"
-                component="span"
-                gradient={{ from: 'pink', to: 'yellow' }}
-                alt="Advanced PortChecker"
+              inherit
+              variant="gradient"
+              component="span"
+              gradient={{ from: 'pink', to: 'yellow' }}
+              alt="MemPlus"
             >
-              Advanced
+              MemPlus
             </Text>
-            {' PortChecker requirements'}
+            {' requirements'}
           </Title>
         </Center>
         <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="md">
@@ -75,38 +75,48 @@ const AdvancedPortCheckerRequirements = () => {
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Table>
-              <Table.Thead>
-                <Table.Tr>
-                  <Table.Th>#</Table.Th>
-                  <Table.Th>Windows 10 and later (x64)</Table.Th>
-                  <Table.Th>GNU/Linux (x64)</Table.Th>
-                  <Table.Th>macOS (aarch64)</Table.Th>
-                </Table.Tr>
-              </Table.Thead>
               <Table.Tbody>
+                <Table.Tr>
+                  <Table.Td>
+                    <b>Operating system</b>
+                  </Table.Td>
+                  <Table.Td>
+                    Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64), Windows 10 (x86 and
+                    x64), Windows Server 2008 R2 SP1 (x64), Windows Server 2012 (x64), Windows
+                    Server 2012 R2 (x64), Windows Server 2016 (x64)
+                  </Table.Td>
+                </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Disk space</b>
                   </Table.Td>
-                  <Table.Td>At least 5MB</Table.Td>
-                  <Table.Td>At least 85MB</Table.Td>
-                  <Table.Td>At least 5MB</Table.Td>
+                  <Table.Td>At least 40MB free disk space</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Memory</b>
                   </Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
+                  <Table.Td>At least 80MB</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Internet connection</b>
                   </Table.Td>
                   <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                </Table.Tr>
+                <Table.Tr>
+                  <Table.Td>
+                    <b>Other</b>
+                  </Table.Td>
+                  <Table.Td>
+                    <a
+                      href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      .NET Framework 4.8
+                    </a>
+                  </Table.Td>
                 </Table.Tr>
               </Table.Tbody>
             </Table>
@@ -119,13 +129,10 @@ const AdvancedPortCheckerRequirements = () => {
           </Group>
 
           <Grid mt={20}>
-            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Center>
-                <Title order={3}>Windows</Title>
-              </Center>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/be652b842b0a6933067fcb471e79bd110e4ed64346e9ec8b5acb66810f372593?nocache=1"
+                href="https://www.virustotal.com/gui/file/362dd5565951231aa4b785a91b364bc819549e0ed8c9ce20d06976848d370ac3/detection"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -134,34 +141,16 @@ const AdvancedPortCheckerRequirements = () => {
                 Installer
               </Button>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={3}>
-                <Center>macOS</Center>
-              </Title>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/605c7b8bf290452c6999a1bd414d089f2c8eca3813b48f7e2d3300036a644c54?nocache=1"
+                href="https://www.virustotal.com/gui/file/854aaa86935cab36f25ee64576ee0883d685662feeae1fd4cb9e9d48fc4f8d71/detection"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
                 size="md"
               >
-                dmg
-              </Button>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={3}>
-                <Center>Linux</Center>
-              </Title>
-              <Button
-                component="a"
-                href="https://www.virustotal.com/gui/file/727b9c8c83717f448ac03d9d7e9920ac18226fc1edec7f3cafb1ecf383e23840?nocache=1"
-                target="_blank"
-                rel="noreferrer noopener"
-                fullWidth
-                size="md"
-              >
-                AppImage
+                Portable
               </Button>
             </Grid.Col>
           </Grid>
@@ -171,4 +160,4 @@ const AdvancedPortCheckerRequirements = () => {
   );
 };
 
-export default AdvancedPortCheckerRequirements;
+export default MemPlusRequirements;

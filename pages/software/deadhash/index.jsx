@@ -37,6 +37,7 @@ import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
 import FloatingDownloadButton from "../../../components/FloatingDownloadButton";
+import Link from "next/link";
 
 const DeadHash = () => {
   const theme = useMantineTheme();
@@ -279,7 +280,7 @@ const DeadHash = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
-                  component="a"
+                  component={Link}
                   href="/software/deadhash/requirements"
                   fullWidth
                   size="md"
