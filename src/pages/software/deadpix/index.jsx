@@ -168,7 +168,7 @@ const DeadPixPage = () => {
               variant="contained"
               fullWidth
               onClick={() => {
-                openLink('https://codedead.com/Software/DeadPix/DP_setup.exe\')');
+                openLink('https://github.com/CodeDead/DeadPix/releases/download/1.2/DP_setup.exe');
                 setDonateOpen(true);
               }}
             >
