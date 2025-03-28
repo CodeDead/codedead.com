@@ -23,7 +23,7 @@ const MemPlusRequirements = () => {
   const router = useRouter();
 
   useEffect(() => {
-    d(setPageIndex(1));
+    d(setPageIndex(5));
   }, []);
 
   return (

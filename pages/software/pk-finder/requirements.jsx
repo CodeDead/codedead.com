@@ -23,7 +23,7 @@ const PKFinderRequirements = () => {
   const router = useRouter();
 
   useEffect(() => {
-    d(setPageIndex(1));
+    d(setPageIndex(6));
   }, []);
 
   return (

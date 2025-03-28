@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
-import { IconShield, IconTools, IconAdjustmentsCog } from '@tabler/icons-react';
+import { IconAdjustmentsCog, IconShield, IconTools } from '@tabler/icons-react';
 import { Badge, Card, Container, Grid, Group, Image, Text, Title } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';

@@ -1,42 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
-import {
-  IconBrandAndroid,
-  IconBrandFinder,
-  IconBrandGithub,
-  IconBrandGooglePlay,
-  IconBrandWindows,
-  IconDeviceDesktop,
-  IconDownload,
-  IconGauge,
-  IconHeart,
-  IconInfoCircle,
-  IconLockHeart,
-  IconMath,
-  IconQuote,
-  IconTerminal2,
-} from '@tabler/icons-react';
+import Link from "next/link";
+import { IconBrandAndroid, IconBrandFinder, IconBrandGithub, IconBrandGooglePlay, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconTerminal2 } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Image,
-  SimpleGrid,
-  Text,
-  Title,
-  useMantineTheme,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-import Link from "next/link";
+
 
 const AdvancedPortChecker = () => {
   const theme = useMantineTheme();
@@ -50,7 +23,7 @@ const AdvancedPortChecker = () => {
   };
 
   useEffect(() => {
-    d(setPageIndex(1));
+    d(setPageIndex(4));
   }, []);
 
   return (

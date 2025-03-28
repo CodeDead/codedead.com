@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
-import {IconArrowLeft, IconInfoCircle, IconShieldCheckFilled} from '@tabler/icons-react';
+import { useRouter } from 'next/navigation';
+import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
 import {
   Badge,
   Button,
@@ -16,14 +17,13 @@ import {
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-import {useRouter} from "next/navigation";
 
 const AdvancedPassGenRequirements = () => {
   const [, d] = useContext(MainContext);
   const router = useRouter();
 
   useEffect(() => {
-    d(setPageIndex(1));
+    d(setPageIndex(3));
   }, []);
 
   return (
@@ -37,25 +37,25 @@ const AdvancedPassGenRequirements = () => {
       <Container size="xl">
         <Center>
           <Button
-              variant="subtle"
-              mr={5}
-              component="a"
-              aria-label="Go back"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                router.back();
-              }}
+            variant="subtle"
+            mr={5}
+            component="a"
+            aria-label="Go back"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              router.back();
+            }}
           >
             <IconArrowLeft size={14} />
           </Button>
           <Title className={classes.title} ta="center">
             <Text
-                inherit
-                variant="gradient"
-                component="span"
-                gradient={{ from: 'pink', to: 'yellow' }}
-                alt="Advanced PassGen"
+              inherit
+              variant="gradient"
+              component="span"
+              gradient={{ from: 'pink', to: 'yellow' }}
+              alt="Advanced PassGen"
             >
               Advanced
             </Text>

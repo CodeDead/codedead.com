@@ -20,7 +20,7 @@ const About = () => {
   const [, d1] = useContext(MainContext);
 
   useEffect(() => {
-    d1(setPageIndex(4));
+    d1(setPageIndex(13));
   }, []);
   return (
     <>

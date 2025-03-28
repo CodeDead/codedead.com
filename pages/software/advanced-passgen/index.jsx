@@ -51,7 +51,7 @@ const AdvancedPassGen = () => {
   };
 
   useEffect(() => {
-    d(setPageIndex(1));
+    d(setPageIndex(3));
   }, []);
 
   return (

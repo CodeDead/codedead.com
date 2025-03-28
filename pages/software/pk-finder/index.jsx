@@ -46,7 +46,7 @@ const PkFinder = () => {
   };
 
   useEffect(() => {
-    d(setPageIndex(1));
+    d(setPageIndex(6));
   }, []);
 
   return (
@@ -200,7 +200,9 @@ const PkFinder = () => {
               A reliable tool for retrieving Windows keys
             </Text>
             <Text size="md" mt={10}>
-              "In case you want to reinstall your operating system but cannot find or extract the serial key through the traditional methods, then perhaps PK Finder could come in handy."
+              "In case you want to reinstall your operating system but cannot find or extract the
+              serial key through the traditional methods, then perhaps PK Finder could come in
+              handy."
             </Text>
             <Text size="md" mt={10}>
               -{' '}

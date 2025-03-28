@@ -53,3 +53,7 @@
     width: 25px;
     height: 25px;
 }
+
+.chevron {
+    transition: transform 200ms ease;
+}
