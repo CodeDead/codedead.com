@@ -7,6 +7,7 @@ import {
   Card,
   Center,
   Container,
+  Grid,
   Group,
   SimpleGrid,
   Text,
@@ -74,56 +75,61 @@ const About = () => {
               Team
             </Badge>
           </Group>
-          <SimpleGrid cols={2}>
-            <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-              <Card.Section
-                h={140}
-                alt="Alessandro Mercier"
-                style={{
-                  backgroundImage:
-                    'url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80)',
-                }}
-              />
-              <Avatar
-                src="/favicon.svg"
-                alt="Alessandro Mercier"
-                size={80}
-                radius={80}
-                mx="auto"
-                mt={-30}
-                className={classes.avatar}
-              />
-              <Text size="lg" mt={10}>
-                Alessandro Mercier
-              </Text>
-              <Text size="md">
-                I was born in Gent, Belgium. I always enjoyed making programs, apps and websites and
-                I decided to create this website so that other people can easily find and download
-                our software.
-              </Text>
-            </Card>
-            <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-              <Card.Section
-                h={140}
-                alt="You"
-                style={{
-                  backgroundImage:
-                    'url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=4096&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
-                }}
-              />
-              <Avatar size={80} radius={80} mx="auto" mt={-30} className={classes.avatar}>
-                <IconUsers size={60} />
-              </Avatar>
-              <Text size="lg" mt={10}>
-                You
-              </Text>
-              <Text size="md">
-                Throughout the years, there have been various people working on CodeDead projects.
-                Translations, code contributions, donations, issue reporting and more. A big thank
-                you to all the people who've made this a possibility!
-              </Text>
-            </Card>
-          </SimpleGrid>
+
+          <Grid>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+              <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
+                <Card.Section
+                  h={140}
+                  alt="Alessandro Mercier"
+                  style={{
+                    backgroundImage:
+                      'url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80)',
+                  }}
+                />
+                <Avatar
+                  src="/favicon.svg"
+                  alt="Alessandro Mercier"
+                  size={80}
+                  radius={80}
+                  mx="auto"
+                  mt={-30}
+                  className={classes.avatar}
+                />
+                <Text size="lg" mt={10}>
+                  Alessandro Mercier
+                </Text>
+                <Text size="md">
+                  I was born in Gent, Belgium. I always enjoyed making programs, apps and websites
+                  and I decided to create this website so that other people can easily find and
+                  download our software.
+                </Text>
+              </Card>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+              <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
+                <Card.Section
+                  h={140}
+                  alt="You"
+                  style={{
+                    backgroundImage:
+                      'url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=4096&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+                  }}
+                />
+                <Avatar size={80} radius={80} mx="auto" mt={-30} className={classes.avatar}>
+                  <IconUsers size={60} />
+                </Avatar>
+                <Text size="lg" mt={10}>
+                  You
+                </Text>
+                <Text size="md">
+                  Throughout the years, there have been various people working on CodeDead projects.
+                  Translations, code contributions, donations, issue reporting and more. A big thank
+                  you to all the people who've made this a possibility!
+                </Text>
+              </Card>
+            </Grid.Col>
+          </Grid>
 
           <Group mt={20}>
             <Badge variant="filled" size="lg" leftSection={<IconTerminal2 size={12} />}>

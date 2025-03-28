@@ -59,7 +59,7 @@ const Contact = () => {
         </Text>
         <Container mt={50}>
           <Grid>
-            <Grid.Col span={6}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Card shadow="sm" padding="lg" radius="md" withBorder style={{ height: '100%' }}>
                 <Group justify="space-between" mb="xs">
                   <Text fw={500}>Report an issue</Text>
@@ -80,7 +80,7 @@ const Contact = () => {
                 </SimpleGrid>
               </Card>
             </Grid.Col>
-            <Grid.Col span={6}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Card shadow="sm" padding="lg" radius="md" withBorder style={{ height: '100%' }}>
                 <Group justify="space-between" mb="xs">
                   <Text fw={500}>Other</Text>
