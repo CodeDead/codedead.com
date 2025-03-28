@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import {
   IconBrandAndroid,
   IconBrandFinder,
@@ -33,11 +34,10 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
+import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-import FloatingDownloadButton from "../../../components/FloatingDownloadButton";
-import Link from "next/link";
 
 const AdvancedPassGen = () => {
   const theme = useMantineTheme();
@@ -86,16 +86,27 @@ const AdvancedPassGen = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/advanced-passgen/ap.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/advanced-passgen/ap.webp"
+                  alt="Advanced PassGen"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/advanced-passgen/ap_theme_settings.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/advanced-passgen/ap_theme_settings.webp"
+                  alt="Advanced PassGen theme settings"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
                 <Image
                   radius="md"
                   fit="contain"
                   src="/advanced-passgen/ap_advanced_settings.webp"
+                  alt="Advanced PassGen advanced settings"
                 />
               </Carousel.Slide>
             </Carousel>
@@ -168,7 +179,12 @@ const AdvancedPassGen = () => {
           </SimpleGrid>
 
           <Group mt={20}>
-            <Badge variant="filled" size="lg" leftSection={<IconDownload size={12} />} id="downloads">
+            <Badge
+              variant="filled"
+              size="lg"
+              leftSection={<IconDownload size={12} />}
+              id="downloads"
+            >
               Downloads
             </Badge>
           </Group>
@@ -306,22 +322,22 @@ const AdvancedPassGen = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component={Link}
-                  href="/software/advanced-passgen/requirements"
-                  fullWidth
-                  size="md"
+                component={Link}
+                href="/software/advanced-passgen/requirements"
+                fullWidth
+                size="md"
               >
                 Requirements
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="/Software/Advanced PassGen/gpl.pdf"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="/Software/Advanced PassGen/gpl.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                size="md"
               >
                 License
               </Button>
@@ -329,24 +345,24 @@ const AdvancedPassGen = () => {
 
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="https://github.com/CodeDead/Advanced-PassGen"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="https://github.com/CodeDead/Advanced-PassGen"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                size="md"
               >
                 Source code (Desktop)
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
-                  component="a"
-                  href="https://github.com/CodeDead/advanced-passgen-android"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  fullWidth
-                  size="md"
+                component="a"
+                href="https://github.com/CodeDead/advanced-passgen-android"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                size="md"
               >
                 Source code (Android)
               </Button>

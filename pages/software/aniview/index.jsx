@@ -81,13 +81,23 @@ const AniView = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/aniview/aniview.webp" />
+                <Image radius="md" fit="contain" src="/aniview/aniview.webp" alt="AniView" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/aniview/settings.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/aniview/settings.webp"
+                  alt="AniView settings"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/aniview/av_settings_image.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/aniview/av_settings_image.webp"
+                  alt="AniView image settings"
+                />
               </Carousel.Slide>
             </Carousel>
           </Card>

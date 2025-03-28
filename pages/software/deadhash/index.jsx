@@ -85,13 +85,23 @@ const DeadHash = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/DeadHash.webp" />
+                <Image radius="md" fit="contain" src="/DeadHash.webp" alt="DeadHash" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadhash/deadhash_result.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/deadhash/deadhash_result.webp"
+                  alt="DeadHash results"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadhash/deadhash_text.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/deadhash/deadhash_text.webp"
+                  alt="DeadHash text"
+                />
               </Carousel.Slide>
             </Carousel>
           </Card>

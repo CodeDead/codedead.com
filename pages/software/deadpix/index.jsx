@@ -82,10 +82,15 @@ const DeadPix = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadpix/deadpix.webp" />
+                <Image radius="md" fit="contain" src="/deadpix/deadpix.webp" alt="DeadPix" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadpix/settings.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/deadpix/settings.webp"
+                  alt="DeadPix settings"
+                />
               </Carousel.Slide>
             </Carousel>
           </Card>

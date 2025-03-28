@@ -80,13 +80,23 @@ const MemPlus = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/memplus/memplus.webp" />
+                <Image radius="md" fit="contain" src="/memplus/memplus.webp" alt="MemPlus" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/memplus/memplus_analyzer.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/memplus/memplus_analyzer.webp"
+                  alt="MemPlus memory analyzer"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/memplus/memplus_settings_monitor.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/memplus/memplus_settings_monitor.webp"
+                  alt="MemPlus settings monitor"
+                />
               </Carousel.Slide>
             </Carousel>
           </Card>

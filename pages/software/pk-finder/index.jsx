@@ -81,13 +81,23 @@ const PkFinder = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/pk-finder/pkfinder.webp" />
+                <Image radius="md" fit="contain" src="/pk-finder/pkfinder.webp" alt="PK Finder" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/pk-finder/pkgeneral.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/pk-finder/pkgeneral.webp"
+                  alt="PK Finder general settings"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/pk-finder/pktheme.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/pk-finder/pktheme.webp"
+                  alt="PK Finder theme settings"
+                />
               </Carousel.Slide>
             </Carousel>
           </Card>

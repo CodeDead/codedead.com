@@ -80,13 +80,18 @@ const DeadLock = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadlock/deadlock.webp" />
+                <Image radius="md" fit="contain" src="/deadlock/deadlock.webp" alt="DeadLock" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadlock/settings.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/deadlock/settings.webp"
+                  alt="DeadLock settings"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/deadlock/about.webp" />
+                <Image radius="md" fit="contain" src="/deadlock/about.webp" alt="DeadLock about" />
               </Carousel.Slide>
             </Carousel>
           </Card>

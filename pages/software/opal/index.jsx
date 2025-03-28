@@ -84,13 +84,18 @@ const Opal = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/opal/Opal.webp" />
+                <Image radius="md" fit="contain" src="/opal/Opal.webp" alt="Opal" />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/opal/opal_settings.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/opal/opal_settings.webp"
+                  alt="Opal settings"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/opal/opal_timer.webp" />
+                <Image radius="md" fit="contain" src="/opal/opal_timer.webp" alt="Opal timer" />
               </Carousel.Slide>
             </Carousel>
           </Card>

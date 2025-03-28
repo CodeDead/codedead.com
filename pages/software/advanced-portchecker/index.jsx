@@ -1,9 +1,37 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
-import Link from "next/link";
-import { IconBrandAndroid, IconBrandFinder, IconBrandGithub, IconBrandGooglePlay, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconTerminal2 } from '@tabler/icons-react';
+import Link from 'next/link';
+import {
+  IconBrandAndroid,
+  IconBrandFinder,
+  IconBrandGithub,
+  IconBrandGooglePlay,
+  IconBrandWindows,
+  IconDeviceDesktop,
+  IconDownload,
+  IconGauge,
+  IconHeart,
+  IconInfoCircle,
+  IconLockHeart,
+  IconMath,
+  IconQuote,
+  IconTerminal2,
+} from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import { Badge, Button, Card, Center, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Center,
+  Container,
+  Grid,
+  Group,
+  Image,
+  SimpleGrid,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
@@ -57,17 +85,28 @@ const AdvancedPortChecker = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/advanced-portchecker/ap.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/advanced-portchecker/ap.webp"
+                  alt="Advanced PortChecker"
+                />
               </Carousel.Slide>
               <Carousel.Slide>
                 <Image
                   radius="md"
                   fit="contain"
                   src="/advanced-portchecker/ap_general_settings.webp"
+                  alt="Advanced PortChecker General Settings"
                 />
               </Carousel.Slide>
               <Carousel.Slide>
-                <Image radius="md" fit="contain" src="/advanced-portchecker/ap_about.webp" />
+                <Image
+                  radius="md"
+                  fit="contain"
+                  src="/advanced-portchecker/ap_about.webp"
+                  alt="Advanced PortChecker About"
+                />
               </Carousel.Slide>
             </Carousel>
           </Card>
