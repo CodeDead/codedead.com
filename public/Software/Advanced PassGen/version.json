@@ -1,0 +1,35 @@
+{
+  "platforms": {
+    "windows_nt": {
+      "version": {
+        "majorVersion": 2,
+        "minorVersion": 5,
+        "buildVersion": 2,
+        "revisionVersion": 0
+      },
+      "updateUrl": "https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_x64_en-US.msi",
+      "infoUrl": "https://codedead.com/blog/2024/09/30/advanced-passgen-2.5.2"
+    },
+    "linux": {
+      "version": {
+        "majorVersion": 2,
+        "minorVersion": 5,
+        "buildVersion": 2,
+        "revisionVersion": 0
+      },
+      "updateUrl": "https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_amd64.AppImage",
+      "infoUrl": "https://codedead.com/blog/2024/09/30/advanced-passgen-2.5.2"
+    },
+    "darwin": {
+      "version": {
+        "majorVersion": 2,
+        "minorVersion": 5,
+        "buildVersion": 2,
+        "revisionVersion": 0
+      },
+      "updateUrl": "https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_aarch64.dmg",
+      "infoUrl": "https://codedead.com/blog/2024/09/30/advanced-passgen-2.5.2"
+    }
+  },
+  "appUrl": "https://codedead.com/software/advanced-passgen"
+}

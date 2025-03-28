@@ -1,0 +1,28 @@
+{
+  "PlatformUpdateList": [
+    {
+      "PlatformName": "win32",
+      "Update": {
+        "MajorVersion": 2,
+        "MinorVersion": 0,
+        "BuildVersion": 0,
+        "RevisionVersion": 0,
+        "UpdateUrl": "https://codedead.com/Software/PK%20Finder/PK_setup.exe",
+        "InfoUrl": "https://codedead.com",
+        "UpdateInfo": "A new version is now available.\nPlease click the download button to download version 2.0.0.0"
+      }
+    },
+    {
+      "PlatformName": "linux",
+      "Update": {
+        "MajorVersion": 2,
+        "MinorVersion": 0,
+        "BuildVersion": 0,
+        "RevisionVersion": 0,
+        "UpdateUrl": "https://codedead.com/Software/PK%20Finder/PK_setup.exe",
+        "InfoUrl": "https://codedead.com",
+        "UpdateInfo": "A new version is now available.\nPlease click the download button to download version 2.0.0.0"
+      }
+    }
+  ]
+}

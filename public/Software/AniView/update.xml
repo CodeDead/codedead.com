@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Update xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MajorVersion>1</MajorVersion>
+  <MinorVersion>6</MinorVersion>
+  <BuildVersion>0</BuildVersion>
+  <RevisionVersion>0</RevisionVersion>
+  <UpdateUrl>https://codedead.com/Software/AniView/AV_setup.exe</UpdateUrl>
+  <InfoUrl>https://codedead.com/?p=2473</InfoUrl>
+  <UpdateInfo>Version 1.6.0 is now available!
+
+Please click the download button to download this version.
+  </UpdateInfo>
+</Update>

@@ -181,7 +181,7 @@ const DeadPix = () => {
               </Center>
               <Button
                 component="a"
-                href="https://codedead.com/Software/DeadPix/DP_setup.exe"
+                href="https://github.com/CodeDead/DeadPix/releases/download/1.2/DP_setup.exe"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth

@@ -1,0 +1,47 @@
+[
+  {
+    "platformName": "linux",
+    "portable": true,
+    "majorVersion": 1,
+    "minorVersion": 4,
+    "buildVersion": 0,
+    "revisionVersion": 0,
+    "downloadUrl": "https://codedead.com/Software/Opal/Opal-x86_64-1.4.0.AppImage"
+  },
+  {
+    "platformName": "linux",
+    "portable": false,
+    "majorVersion": 1,
+    "minorVersion": 4,
+    "buildVersion": 0,
+    "revisionVersion": 0,
+    "downloadUrl": "https://codedead.com/Software/Opal/Opal-x86_64-1.4.0.AppImage"
+  },
+  {
+    "platformName": "windows",
+    "portable": false,
+    "majorVersion": 1,
+    "minorVersion": 4,
+    "buildVersion": 0,
+    "revisionVersion": 0,
+    "downloadUrl": "https://codedead.com/Software/Opal/Opal-1.4.0.msi"
+  },
+  {
+    "platformName": "windows",
+    "portable": true,
+    "majorVersion": 1,
+    "minorVersion": 4,
+    "buildVersion": 0,
+    "revisionVersion": 0,
+    "downloadUrl": "https://codedead.com/Software/Opal/Opal-win-portable-1.4.0.zip"
+  },
+  {
+    "platformName": "macos",
+    "portable": false,
+    "majorVersion": 1,
+    "minorVersion": 4,
+    "buildVersion": 0,
+    "revisionVersion": 0,
+    "downloadUrl": "https://codedead.com/Software/Opal/Opal-1.4.0.dmg"
+  }
+]

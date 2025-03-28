@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Update xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MajorVersion>1</MajorVersion>
+  <MinorVersion>4</MinorVersion>
+  <BuildVersion>0</BuildVersion>
+  <RevisionVersion>0</RevisionVersion>
+  <UpdateUrl>http://codedead.com/Software/DeadLock/dl_setup.exe</UpdateUrl>
+</Update>
