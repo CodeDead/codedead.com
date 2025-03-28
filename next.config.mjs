@@ -10,4 +10,5 @@ export default withBundleAnalyzer({
     ignoreDuringBuilds: true,
   },
   output: "export",
+  trailingSlash: true,
 });
