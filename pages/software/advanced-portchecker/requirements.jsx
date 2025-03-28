@@ -121,7 +121,7 @@ const AdvancedPortCheckerRequirements = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Title order={3}>Windows</Title>
+                <Title order={4}>Windows</Title>
               </Center>
               <Button
                 component="a"
@@ -135,7 +135,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={3}>
+              <Title order={4}>
                 <Center>macOS</Center>
               </Title>
               <Button
@@ -150,7 +150,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={3}>
+              <Title order={4}>
                 <Center>Linux</Center>
               </Title>
               <Button

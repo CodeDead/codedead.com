@@ -320,32 +320,6 @@ const Software = () => {
                 withBorder
                 style={{ height: '100%' }}
                 component="a"
-                href="/software/egld-price-calculator"
-                onClick={(e) => {
-                  e.preventDefault();
-                  router.push('/software/egld-price-calculator');
-                }}
-              >
-                <Card.Section>
-                  <Image src="/egld.webp" height={150} alt="EGLD Price Calculator" />
-                </Card.Section>
-                <Text size="md" mt={10}>
-                  EGLD Price Calculator
-                </Text>
-                <Text size="sm" c="dimmed">
-                  A simple and easy to use price calculator for MultiversX (EGLD).
-                </Text>
-              </Card>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 4 }}>
-              <Card
-                mt={20}
-                shadow="sm"
-                padding="lg"
-                radius="md"
-                withBorder
-                style={{ height: '100%' }}
-                component="a"
                 href="https://compressr.codedead.com/"
                 target="_blank"
               >
@@ -362,7 +336,6 @@ const Software = () => {
               </Card>
             </Grid.Col>
           </Grid>
-
           <Group mt={50} />
         </Container>
       </Container>

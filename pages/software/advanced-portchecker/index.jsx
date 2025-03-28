@@ -10,7 +10,6 @@ import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
 
-
 const AdvancedPortChecker = () => {
   const theme = useMantineTheme();
   const [, d] = useContext(MainContext);

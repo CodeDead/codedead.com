@@ -18,20 +18,20 @@ import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
 
-const DeadHashRequirements = () => {
+const OpalRequirements = () => {
   const [, d] = useContext(MainContext);
   const router = useRouter();
 
   useEffect(() => {
-    d(setPageIndex(2));
+    d(setPageIndex(8));
   }, []);
 
   return (
     <>
       <Head>
-        <title>DeadHash requirements | CodeDead</title>
+        <title>Opal requirements | CodeDead</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <meta name="description" content="DeadHash system requirements" />
+        <meta name="description" content="Opal system requirements" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
@@ -55,9 +55,9 @@ const DeadHashRequirements = () => {
               variant="gradient"
               component="span"
               gradient={{ from: 'pink', to: 'yellow' }}
-              alt="DeadHash"
+              alt="Opal"
             >
-              DeadHash
+              Opal
             </Text>
             {' requirements'}
           </Title>
@@ -80,19 +80,21 @@ const DeadHashRequirements = () => {
                   <Table.Td>
                     <b>Operating system</b>
                   </Table.Td>
-                  <Table.Td>Windows 7 and later (x64), GNU/Linux (x64)</Table.Td>
+                  <Table.Td>
+                    Windows 7 and later (x64), GNU/Linux (x64), macOS (x64)(arm64)
+                  </Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Disk space</b>
                   </Table.Td>
-                  <Table.Td>At least 260MB</Table.Td>
+                  <Table.Td>At least 150MB</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Memory</b>
                   </Table.Td>
-                  <Table.Td>At least 60MB</Table.Td>
+                  <Table.Td>At least 100MB</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
@@ -111,21 +113,13 @@ const DeadHashRequirements = () => {
           </Group>
 
           <Grid mt={20}>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
-              <Center>
-                <Title order={4}>Windows</Title>
-              </Center>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Title order={4}>
-                <Center>Linux</Center>
+                <Center>Windows</Center>
               </Title>
-            </Grid.Col>
-
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/f827527afe4c398518404ac782b3038aa7721642272d298a9e4f8b23f586d5d0?nocache=1"
+                href="https://www.virustotal.com/gui/file/2c800f5aae5024b7ea44901f3291d7cac1c3c893fd44c4f408a42c731ef34e79"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -133,11 +127,25 @@ const DeadHashRequirements = () => {
               >
                 Installer
               </Button>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/d4080228e08a727d2145d443aec8b339b7f2088e35844f15690f3bc7714eea4e?nocache=1"
+                href="https://www.virustotal.com/gui/file/c5fa8d2bea8b347fa38f14f1ae2234e66244551984d3570fa51adae38af87c48"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                mt={10}
+                size="md"
+              >
+                Portable
+              </Button>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+              <Title order={4}>
+                <Center>Linux</Center>
+              </Title>
+              <Button
+                component="a"
+                href="https://www.virustotal.com/gui/file/48f0100b91cf56b243756a0b3c930396c0a65d1ba15fc8aec397530ed21fe12b"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -146,16 +154,19 @@ const DeadHashRequirements = () => {
                 AppImage
               </Button>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+              <Title order={4}>
+                <Center>macOS</Center>
+              </Title>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/7699b53825075198bd440eeb771a71aede2cb837874a08f97788831e84389369?nocache=1"
+                href="https://www.virustotal.com/gui/file/a6584ef3cf1af561f9359baa32cc43edda840e23bb06d168d8c67960a9426097"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
                 size="md"
               >
-                Portable
+                DMG
               </Button>
             </Grid.Col>
           </Grid>
@@ -165,4 +176,4 @@ const DeadHashRequirements = () => {
   );
 };
 
-export default DeadHashRequirements;
+export default OpalRequirements;

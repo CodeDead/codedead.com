@@ -1,15 +1,38 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { IconBrandGithub, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconZip } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconBrandWindows,
+  IconDeviceDesktop,
+  IconDownload,
+  IconGauge,
+  IconHeart,
+  IconInfoCircle,
+  IconLockHeart,
+  IconMath,
+  IconQuote,
+  IconZip,
+} from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import { Badge, Button, Card, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Container,
+  Grid,
+  Group,
+  Image,
+  SimpleGrid,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-
 
 const MemPlus = () => {
   const theme = useMantineTheme();
@@ -120,7 +143,7 @@ const MemPlus = () => {
             />
             <FeatureCard
               title="Made with love"
-              description="MwmPlus is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
+              description="MemPlus is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
               icon={<IconHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
           </SimpleGrid>

@@ -18,20 +18,20 @@ import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
 
-const DeadHashRequirements = () => {
+const DeadLockRequirements = () => {
   const [, d] = useContext(MainContext);
   const router = useRouter();
 
   useEffect(() => {
-    d(setPageIndex(2));
+    d(setPageIndex(7));
   }, []);
 
   return (
     <>
       <Head>
-        <title>DeadHash requirements | CodeDead</title>
+        <title>DeadLock requirements | CodeDead</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <meta name="description" content="DeadHash system requirements" />
+        <meta name="description" content="DeadLock system requirements" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
@@ -55,9 +55,9 @@ const DeadHashRequirements = () => {
               variant="gradient"
               component="span"
               gradient={{ from: 'pink', to: 'yellow' }}
-              alt="DeadHash"
+              alt="DeadLock"
             >
-              DeadHash
+              DeadLock
             </Text>
             {' requirements'}
           </Title>
@@ -80,25 +80,42 @@ const DeadHashRequirements = () => {
                   <Table.Td>
                     <b>Operating system</b>
                   </Table.Td>
-                  <Table.Td>Windows 7 and later (x64), GNU/Linux (x64)</Table.Td>
+                  <Table.Td>
+                    Windows 10, Windows 7 Service Pack 1, Windows 8, Windows 8.1, Windows Server
+                    2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016
+                  </Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Disk space</b>
                   </Table.Td>
-                  <Table.Td>At least 260MB</Table.Td>
+                  <Table.Td>At least 20MB free disk space</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Memory</b>
                   </Table.Td>
-                  <Table.Td>At least 60MB</Table.Td>
+                  <Table.Td>At least 30MB</Table.Td>
                 </Table.Tr>
                 <Table.Tr>
                   <Table.Td>
                     <b>Internet connection</b>
                   </Table.Td>
                   <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                </Table.Tr>
+                <Table.Tr>
+                  <Table.Td>
+                    <b>Other</b>
+                  </Table.Td>
+                  <Table.Td>
+                    <a
+                      href="https://www.microsoft.com/en-us/download/details.aspx?id=49982"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      .NET Framework 4.6.1 or later
+                    </a>
+                  </Table.Td>
                 </Table.Tr>
               </Table.Tbody>
             </Table>
@@ -111,51 +128,16 @@ const DeadHashRequirements = () => {
           </Group>
 
           <Grid mt={20}>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
-              <Center>
-                <Title order={4}>Windows</Title>
-              </Center>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
-              <Title order={4}>
-                <Center>Linux</Center>
-              </Title>
-            </Grid.Col>
-
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+            <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/f827527afe4c398518404ac782b3038aa7721642272d298a9e4f8b23f586d5d0?nocache=1"
+                href="https://www.virustotal.com/gui/file/edfe8daab3ff2ac264a7cf44699b8d1e96de1cba9ec03eaba0ccb0c8e988bd00/detection"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
                 size="md"
               >
                 Installer
-              </Button>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
-              <Button
-                component="a"
-                href="https://www.virustotal.com/gui/file/d4080228e08a727d2145d443aec8b339b7f2088e35844f15690f3bc7714eea4e?nocache=1"
-                target="_blank"
-                rel="noreferrer noopener"
-                fullWidth
-                size="md"
-              >
-                AppImage
-              </Button>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
-              <Button
-                component="a"
-                href="https://www.virustotal.com/gui/file/7699b53825075198bd440eeb771a71aede2cb837874a08f97788831e84389369?nocache=1"
-                target="_blank"
-                rel="noreferrer noopener"
-                fullWidth
-                size="md"
-              >
-                Portable
               </Button>
             </Grid.Col>
           </Grid>
@@ -165,4 +147,4 @@ const DeadHashRequirements = () => {
   );
 };
 
-export default DeadHashRequirements;
+export default DeadLockRequirements;
