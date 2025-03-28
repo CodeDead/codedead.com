@@ -121,7 +121,7 @@ const AdvancedPassGenRequirements = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Title order={4}>Windows</Title>
+                <Text size="lg">Windows</Text>
               </Center>
               <Button
                 component="a"
@@ -135,9 +135,9 @@ const AdvancedPassGenRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>macOS</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/10f759a674b73bbca584dd1a3b60fe3751af7192ba29cca40e0850ad774c0566?nocache=1"
@@ -150,9 +150,9 @@ const AdvancedPassGenRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>Linux</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/1c75932f470873174c210baacda6d99f8d246f74484faacc990f74ceff514972?nocache=1"

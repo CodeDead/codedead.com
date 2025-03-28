@@ -166,7 +166,7 @@ const DeadPix = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Center>
-                <Title order={4}>Android</Title>
+                <Text size="lg">Android</Text>
               </Center>
               <Button
                 component="a"
@@ -182,7 +182,7 @@ const DeadPix = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Center>
-                <Title order={4}>Windows</Title>
+                <Text size="lg">Windows</Text>
               </Center>
               <Button
                 component="a"

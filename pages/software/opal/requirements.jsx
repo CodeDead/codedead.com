@@ -114,9 +114,9 @@ const OpalRequirements = () => {
 
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>Windows</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/2c800f5aae5024b7ea44901f3291d7cac1c3c893fd44c4f408a42c731ef34e79"
@@ -140,9 +140,9 @@ const OpalRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>Linux</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/48f0100b91cf56b243756a0b3c930396c0a65d1ba15fc8aec397530ed21fe12b"
@@ -155,9 +155,9 @@ const OpalRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>macOS</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/a6584ef3cf1af561f9359baa32cc43edda840e23bb06d168d8c67960a9426097"

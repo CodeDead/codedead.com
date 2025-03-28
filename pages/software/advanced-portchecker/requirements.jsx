@@ -121,7 +121,7 @@ const AdvancedPortCheckerRequirements = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Title order={4}>Windows</Title>
+                <Text size="lg">Windows</Text>
               </Center>
               <Button
                 component="a"
@@ -135,9 +135,9 @@ const AdvancedPortCheckerRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>macOS</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/605c7b8bf290452c6999a1bd414d089f2c8eca3813b48f7e2d3300036a644c54?nocache=1"
@@ -150,9 +150,9 @@ const AdvancedPortCheckerRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Title order={4}>
+              <Text size="lg">
                 <Center>Linux</Center>
-              </Title>
+              </Text>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/727b9c8c83717f448ac03d9d7e9920ac18226fc1edec7f3cafb1ecf383e23840?nocache=1"

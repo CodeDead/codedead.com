@@ -189,7 +189,7 @@ const AdvancedPortChecker = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Title order={4}>Android</Title>
+                <Text size="lg">Android</Text>
               </Center>
               <Button
                 component="a"
@@ -217,7 +217,7 @@ const AdvancedPortChecker = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Title order={4}>Windows</Title>
+                <Text size="lg">Windows</Text>
               </Center>
               <Button
                 component="a"
@@ -233,7 +233,7 @@ const AdvancedPortChecker = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Title order={4}>Linux</Title>
+                <Text size="lg">Linux</Text>
               </Center>
               <Button
                 component="a"
@@ -249,7 +249,7 @@ const AdvancedPortChecker = () => {
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
               <Center>
-                <Title order={4}>macOS</Title>
+                <Text size="lg">macOS</Text>
               </Center>
               <Button
                 component="a"

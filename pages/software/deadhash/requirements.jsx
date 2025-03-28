@@ -113,13 +113,13 @@ const DeadHashRequirements = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
               <Center>
-                <Title order={4}>Windows</Title>
+                <Text size="lg">Windows</Text>
               </Center>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
-              <Title order={4}>
+              <Text size="lg">
                 <Center>Linux</Center>
-              </Title>
+              </Text>
             </Grid.Col>
 
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
