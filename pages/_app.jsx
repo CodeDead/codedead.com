@@ -13,7 +13,7 @@ const App = ({ Component, pageProps }) => {
   const [opened, { toggle }] = useDisclosure(false);
 
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} defaultColorScheme="auto">
       <MainContextProvider>
         <AppShell
           header={{ height: 60 }}

@@ -5,7 +5,7 @@ const Document = () => {
   return (
     <Html lang="en" {...mantineHtmlProps}>
       <Head>
-        <ColorSchemeScript />
+        <ColorSchemeScript defaultColorScheme="auto" />
       </Head>
       <body>
         <Main />

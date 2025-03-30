@@ -19,14 +19,13 @@ import Link from 'next/link';
 
 const TopBar = ({ opened, toggle }) => {
   const router = useRouter();
-  const { colorScheme, setColorScheme } = useMantineColorScheme();
+  const { toggleColorScheme } = useMantineColorScheme();
 
   /**
    * Change the color scheme
    */
   const changeTheme = () => {
-    const newTheme = colorScheme === 'dark' ? 'light' : 'dark';
-    setColorScheme(newTheme);
+    toggleColorScheme();
   };
 
   /**
@@ -58,13 +57,15 @@ const TopBar = ({ opened, toggle }) => {
         </Group>
 
         <Group gap={5} mr={10}>
-          <Tooltip label={colorScheme === 'dark' ? 'Light theme' : 'Dark theme'}>
-            <ActionIcon aria-label="Theme" variant="subtle" onClick={changeTheme}>
-              {colorScheme === 'dark' ? (
-                <IconSunOff style={{ width: '70%', height: '70%' }} stroke={1.5} />
-              ) : (
-                <IconSun style={{ width: '70%', height: '70%' }} stroke={1.5} />
-              )}
+          <Tooltip label="Light theme">
+            <ActionIcon aria-label="Theme" variant="subtle" onClick={changeTheme} lightHidden>
+              <IconSun style={{ width: '70%', height: '70%' }} stroke={1.5} />
+            </ActionIcon>
+          </Tooltip>
+
+          <Tooltip label="Dark theme">
+            <ActionIcon aria-label="Theme" variant="subtle" onClick={changeTheme} darkHidden>
+              <IconSunOff style={{ width: '70%', height: '70%' }} stroke={1.5} />
             </ActionIcon>
           </Tooltip>
         </Group>
