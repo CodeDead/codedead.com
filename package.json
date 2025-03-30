@@ -2,9 +2,10 @@
   "name": "codedead.com",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/generate-sitemap.js",
     "analyze": "ANALYZE=true next build",
     "start": "next start",
     "export": "next build && next export",
@@ -26,11 +27,13 @@
     "@next/bundle-analyzer": "^15.2.4",
     "@tabler/icons-react": "^3.31.0",
     "embla-carousel-react": "^8.5.2",
+    "globby": "^14.1.0",
     "gray-matter": "^4.0.3",
     "next": "^15.2.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-markdown": "^10.1.0"
+    "react-markdown": "^10.1.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
@@ -47,6 +50,7 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.14",
     "@types/react": "19.0.12",
+    "@types/xml2js": "^0",
     "babel-loader": "^10.0.0",
     "eslint": "^9.23.0",
     "eslint-config-mantine": "^4.0.3",

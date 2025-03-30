@@ -6,6 +6,7 @@ const Document = () => {
     <Html lang="en" {...mantineHtmlProps}>
       <Head>
         <ColorSchemeScript defaultColorScheme="auto" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
       </Head>
       <body>
         <Main />
