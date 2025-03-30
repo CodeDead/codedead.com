@@ -1,4 +1,5 @@
 import {
+  DISABLE_V2_NOTICE,
   SET_BLOG_LIMIT,
   SET_HAS_ACCEPTED_COOKIE_NOTICE,
   SET_PAGE_INDEX,
@@ -28,6 +29,11 @@ const MainReducer = (state, action) => {
       return {
         ...state,
         hasAcceptedCookieNotice: action.payload,
+      };
+    case DISABLE_V2_NOTICE:
+      return {
+        ...state,
+        hasTriedVersion2: action.payload,
       };
     default:
       return state;

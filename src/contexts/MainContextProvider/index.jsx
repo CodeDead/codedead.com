@@ -16,6 +16,7 @@ const initState = {
   },
   blogLimit: 0,
   hasAcceptedCookieNotice,
+  hasTriedVersion2: false,
 };
 
 export const MainContext = createContext(initState);

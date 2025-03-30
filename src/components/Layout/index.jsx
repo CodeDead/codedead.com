@@ -1,20 +1,27 @@
 import React, { useContext } from 'react';
-import { graphql, useStaticQuery, navigate } from 'gatsby';
+import { graphql, navigate, useStaticQuery } from 'gatsby';
 import { CssBaseline } from '@mui/material';
 import Alert from '@mui/material/Alert';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 import DefaultAppBar from '../DefaultAppBar';
 import Footer from '../Footer';
 import { MainContext } from '../../contexts/MainContextProvider';
 import ThemeSelector from '../../utils/ThemeSelector';
 import './index.css';
-import { setHasAcceptedCookieNotice } from '../../reducers/MainReducer/Actions';
+import { disableV2Notice, setHasAcceptedCookieNotice } from '../../reducers/MainReducer/Actions';
 
 const Layout = ({ children }) => {
   const [state, dispatch] = useContext(MainContext);
-  const { themeIndex, themeColorIndex, hasAcceptedCookieNotice } = state;
+  const {
+    themeIndex, themeColorIndex, hasAcceptedCookieNotice, hasTriedVersion2,
+  } = state;
   const data = useStaticQuery(graphql`query {
       site {
         siteMetadata {
@@ -41,15 +48,29 @@ const Layout = ({ children }) => {
   });
 
   /**
-   * Accept cookies
+   * Accept the cookie notice
    */
   const acceptCookies = () => {
     dispatch(setHasAcceptedCookieNotice(true));
   };
 
   /**
-   * Go to the GDPR site
+   * Disable the new version of the site
    */
+  const disableV2 = () => {
+    dispatch(disableV2Notice());
+  };
+
+  /**
+   * Go to the new version of the site
+   */
+  const tryV2 = () => {
+    window.location.href = window.location.href.replace('codedead.com', 'v2.codedead.com');
+  };
+
+  /**
+     * Go to the GDPR site
+     */
   const gotoGdpr = () => {
     navigate('https://commission.europa.eu/resources-partners/europa-web-guide_en');
   };
@@ -59,6 +80,35 @@ const Layout = ({ children }) => {
       <CssBaseline />
       <DefaultAppBar title={data.site.siteMetadata.title} />
       {children}
+      {!hasTriedVersion2 ? (
+        <Dialog
+          open={!hasTriedVersion2}
+          onClose={disableV2}
+          aria-labelledby="v2-alert-dialog-title"
+          aria-describedby="v2-alert-dialog-description"
+        >
+          <DialogTitle id="alert-dialog-title">
+            New website design!
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="v2-alert-dialog-description">
+              We&apos;re redesigning our website to make it more user-friendly
+              and visually appealing.
+
+              Keep in mind that this is still a work in progress and some
+              features may not be available yet.
+
+              Would you like to try the new design?
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={disableV2}>No</Button>
+            <Button onClick={tryV2} autoFocus>
+              Yes please!
+            </Button>
+          </DialogActions>
+        </Dialog>
+      ) : null}
       {hasAcceptedCookieNotice ? null : (
         <Alert
           severity="warning"

@@ -1,4 +1,5 @@
 import {
+  DISABLE_V2_NOTICE,
   SET_BLOG_LIMIT,
   SET_HAS_ACCEPTED_COOKIE_NOTICE,
   SET_PAGE_INDEX,
@@ -23,4 +24,9 @@ export const setBlogLimit = (limit) => ({
 export const setHasAcceptedCookieNotice = (hasAccepted) => ({
   type: SET_HAS_ACCEPTED_COOKIE_NOTICE,
   payload: hasAccepted,
+});
+
+export const disableV2Notice = () => ({
+  type: DISABLE_V2_NOTICE,
+  payload: true,
 });
