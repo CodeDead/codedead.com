@@ -2,21 +2,11 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Table,
-  Text,
-  Title,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Table, Text, Title } from '@mantine/core';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const DeadHashRequirements = () => {
   const [, d] = useContext(MainContext);
@@ -74,34 +64,36 @@ const DeadHashRequirements = () => {
           </Group>
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Operating system</b>
-                  </Table.Td>
-                  <Table.Td>Windows 7 and later (x64), GNU/Linux (x64)</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Disk space</b>
-                  </Table.Td>
-                  <Table.Td>At least 260MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Memory</b>
-                  </Table.Td>
-                  <Table.Td>At least 60MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Internet connection</b>
-                  </Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Operating system</b>
+                    </Table.Td>
+                    <Table.Td>Windows 7 and later (x64), GNU/Linux (x64)</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Disk space</b>
+                    </Table.Td>
+                    <Table.Td>At least 260MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Memory</b>
+                    </Table.Td>
+                    <Table.Td>At least 60MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Internet connection</b>
+                    </Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
 
           <Group mt={20}>
@@ -117,9 +109,11 @@ const DeadHashRequirements = () => {
               </Center>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }} visibleFrom="md">
-              <Text size="lg">
-                <Center>Linux</Center>
-              </Text>
+              <Center>
+                <Text size="lg">
+                  Linux
+                </Text>
+              </Center>
             </Grid.Col>
 
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>

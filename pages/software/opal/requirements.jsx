@@ -74,36 +74,38 @@ const OpalRequirements = () => {
           </Group>
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Operating system</b>
-                  </Table.Td>
-                  <Table.Td>
-                    Windows 7 and later (x64), GNU/Linux (x64), macOS (x64)(arm64)
-                  </Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Disk space</b>
-                  </Table.Td>
-                  <Table.Td>At least 150MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Memory</b>
-                  </Table.Td>
-                  <Table.Td>At least 100MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Internet connection</b>
-                  </Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Operating system</b>
+                    </Table.Td>
+                    <Table.Td>
+                      Windows 7 and later (x64), GNU/Linux (x64), macOS (x64)(arm64)
+                    </Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Disk space</b>
+                    </Table.Td>
+                    <Table.Td>At least 150MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Memory</b>
+                    </Table.Td>
+                    <Table.Td>At least 100MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Internet connection</b>
+                    </Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
 
           <Group mt={20}>
@@ -114,9 +116,9 @@ const OpalRequirements = () => {
 
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>Windows</Center>
-              </Text>
+              <Center>
+                <Text size="lg">Windows</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/2c800f5aae5024b7ea44901f3291d7cac1c3c893fd44c4f408a42c731ef34e79"
@@ -140,9 +142,9 @@ const OpalRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>Linux</Center>
-              </Text>
+              <Center>
+                <Text size="lg">Linux</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/48f0100b91cf56b243756a0b3c930396c0a65d1ba15fc8aec397530ed21fe12b"
@@ -155,9 +157,9 @@ const OpalRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>macOS</Center>
-              </Text>
+              <Center>
+                <Text size="lg">macOS</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/a6584ef3cf1af561f9359baa32cc43edda840e23bb06d168d8c67960a9426097"

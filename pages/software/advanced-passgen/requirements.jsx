@@ -74,42 +74,44 @@ const AdvancedPassGenRequirements = () => {
           </Group>
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Thead>
-                <Table.Tr>
-                  <Table.Th>#</Table.Th>
-                  <Table.Th>Windows 10 and later (x64)</Table.Th>
-                  <Table.Th>GNU/Linux (x64)</Table.Th>
-                  <Table.Th>macOS (aarch64)</Table.Th>
-                </Table.Tr>
-              </Table.Thead>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Disk space</b>
-                  </Table.Td>
-                  <Table.Td>At least 5MB</Table.Td>
-                  <Table.Td>At least 120MB</Table.Td>
-                  <Table.Td>At least 5MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Memory</b>
-                  </Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Internet connection</b>
-                  </Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table>
+                <Table.Thead>
+                  <Table.Tr>
+                    <Table.Th>#</Table.Th>
+                    <Table.Th>Windows 10 and later (x64)</Table.Th>
+                    <Table.Th>GNU/Linux (x64)</Table.Th>
+                    <Table.Th>macOS (aarch64)</Table.Th>
+                  </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Disk space</b>
+                    </Table.Td>
+                    <Table.Td>At least 5MB</Table.Td>
+                    <Table.Td>At least 120MB</Table.Td>
+                    <Table.Td>At least 5MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Memory</b>
+                    </Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Internet connection</b>
+                    </Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
 
           <Group mt={20}>
@@ -135,9 +137,9 @@ const AdvancedPassGenRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>macOS</Center>
-              </Text>
+              <Center>
+                <Text size="lg">macOS</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/10f759a674b73bbca584dd1a3b60fe3751af7192ba29cca40e0850ad774c0566?nocache=1"
@@ -150,9 +152,9 @@ const AdvancedPassGenRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>Linux</Center>
-              </Text>
+              <Center>
+                <Text size="lg">Linux</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/1c75932f470873174c210baacda6d99f8d246f74484faacc990f74ceff514972?nocache=1"

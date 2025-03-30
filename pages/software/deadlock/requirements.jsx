@@ -74,51 +74,53 @@ const DeadLockRequirements = () => {
           </Group>
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Operating system</b>
-                  </Table.Td>
-                  <Table.Td>
-                    Windows 10, Windows 7 Service Pack 1, Windows 8, Windows 8.1, Windows Server
-                    2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016
-                  </Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Disk space</b>
-                  </Table.Td>
-                  <Table.Td>At least 20MB free disk space</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Memory</b>
-                  </Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Internet connection</b>
-                  </Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Other</b>
-                  </Table.Td>
-                  <Table.Td>
-                    <a
-                      href="https://www.microsoft.com/en-us/download/details.aspx?id=49982"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      .NET Framework 4.6.1 or later
-                    </a>
-                  </Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Operating system</b>
+                    </Table.Td>
+                    <Table.Td>
+                      Windows 10, Windows 7 Service Pack 1, Windows 8, Windows 8.1, Windows Server
+                      2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016
+                    </Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Disk space</b>
+                    </Table.Td>
+                    <Table.Td>At least 20MB free disk space</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Memory</b>
+                    </Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Internet connection</b>
+                    </Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Other</b>
+                    </Table.Td>
+                    <Table.Td>
+                      <a
+                        href="https://www.microsoft.com/en-us/download/details.aspx?id=49982"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        .NET Framework 4.6.1 or later
+                      </a>
+                    </Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
 
           <Group mt={20}>

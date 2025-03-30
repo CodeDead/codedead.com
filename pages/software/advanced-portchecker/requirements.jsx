@@ -74,42 +74,44 @@ const AdvancedPortCheckerRequirements = () => {
           </Group>
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Thead>
-                <Table.Tr>
-                  <Table.Th>#</Table.Th>
-                  <Table.Th>Windows 10 and later (x64)</Table.Th>
-                  <Table.Th>GNU/Linux (x64)</Table.Th>
-                  <Table.Th>macOS (aarch64)</Table.Th>
-                </Table.Tr>
-              </Table.Thead>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Disk space</b>
-                  </Table.Td>
-                  <Table.Td>At least 5MB</Table.Td>
-                  <Table.Td>At least 85MB</Table.Td>
-                  <Table.Td>At least 5MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Memory</b>
-                  </Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                  <Table.Td>At least 30MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Internet connection</b>
-                  </Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table>
+                <Table.Thead>
+                  <Table.Tr>
+                    <Table.Th>#</Table.Th>
+                    <Table.Th>Windows 10 and later (x64)</Table.Th>
+                    <Table.Th>GNU/Linux (x64)</Table.Th>
+                    <Table.Th>macOS (aarch64)</Table.Th>
+                  </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Disk space</b>
+                    </Table.Td>
+                    <Table.Td>At least 5MB</Table.Td>
+                    <Table.Td>At least 85MB</Table.Td>
+                    <Table.Td>At least 5MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Memory</b>
+                    </Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                    <Table.Td>At least 30MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Internet connection</b>
+                    </Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
 
           <Group mt={20}>
@@ -135,9 +137,9 @@ const AdvancedPortCheckerRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>macOS</Center>
-              </Text>
+              <Center>
+                <Text size="lg">macOS</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/605c7b8bf290452c6999a1bd414d089f2c8eca3813b48f7e2d3300036a644c54?nocache=1"
@@ -150,9 +152,9 @@ const AdvancedPortCheckerRequirements = () => {
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Text size="lg">
-                <Center>Linux</Center>
-              </Text>
+              <Center>
+                <Text size="lg">Linux</Text>
+              </Center>
               <Button
                 component="a"
                 href="https://www.virustotal.com/gui/file/727b9c8c83717f448ac03d9d7e9920ac18226fc1edec7f3cafb1ecf383e23840?nocache=1"

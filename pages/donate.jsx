@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
+import { IconBalloon, IconInfoCircle, IconLink } from '@tabler/icons-react';
 import {
   Badge,
   Button,
@@ -15,7 +16,6 @@ import {
 import { MainContext } from '../contexts/MainContextProvider';
 import { setPageIndex } from '../reducers/MainReducer/Actions';
 import classes from '../public/title.module.css';
-import {IconLink, IconBalloon, IconInfoCircle} from '@tabler/icons-react';
 
 const Donate = () => {
   const [, d1] = useContext(MainContext);
@@ -28,14 +28,8 @@ const Donate = () => {
     <>
       <Head>
         <title>Donate | CodeDead</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-        <meta
-            name="description"
-            content="Donate to CodeDead to help us keep the lights on."
-        />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <meta name="description" content="Donate to CodeDead to help us keep the lights on." />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
@@ -62,17 +56,17 @@ const Donate = () => {
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Text size="md">
               CodeDead is a passion project. We do not make any money from our software. We run most
-              of the infrastructure on our own dime (and machines!) and we do not have any ads on our website or in
-              our software. We do not have any sponsors or investors and we do not have any
-              partnerships.
+              of the infrastructure on our own dime (and machines!) and we do not have any ads on
+              our website or in our software. We do not have any corporate sponsors or investors and
+              we do not have any partnerships.
             </Text>
 
             <Text size="md" mt={10}>
-              This means that we rely on donations to keep the lights on. All of the
-              money that is donated to us will go towards the development of new and old projects,
-              the maintenance of our servers, domain name fees and the occasional cup of coffee.
-              Simply click the PayPal or EGLD button to start the donation process. PayPal allows
-              you to donate using practically any payment method you like.
+              This means that we rely on donations to keep the lights on. All of the money that is
+              donated to us will go towards the development of new and old projects, the maintenance
+              of our servers, domain name fees and the occasional cup of coffee. Simply click the
+              PayPal or EGLD button to start the donation process. PayPal allows you to donate using
+              practically any payment method you like.
             </Text>
 
             <Text size="md" mt={10}>
@@ -94,7 +88,8 @@ const Donate = () => {
             </Text>
             <Text size="md" mt={10}>
               Don’t worry if you don’t immediately appear in the hall of fame. We’ll update the hall
-              of fame within 3 days after your donation (but if we failed to do so, send us a mail to let us know!!).
+              of fame within 3 days after your donation (but if we failed to do so, send us a mail
+              to let us know!!).
             </Text>
             <Text size="md" mt={10}>
               In case of a EGLD donation, please email us if you’d like to appear in the hall of
@@ -113,7 +108,7 @@ const Donate = () => {
           </Card>
 
           <Group mt={20}>
-            <Badge variant="filled" size="lg" leftSection={<IconLink size={12} /> }>
+            <Badge variant="filled" size="lg" leftSection={<IconLink size={12} />}>
               Links
             </Badge>
           </Group>
@@ -161,93 +156,95 @@ const Donate = () => {
             </Badge>
           </Group>
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Thead>
-                <Table.Tr>
-                  <Table.Th>Date (DD/MM/YYYY)</Table.Th>
-                  <Table.Th>Name</Table.Th>
-                  <Table.Th>Amount</Table.Th>
-                </Table.Tr>
-              </Table.Thead>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>13/12/2015</Table.Td>
-                  <Table.Td>Jaschar Domann</Table.Td>
-                  <Table.Td>€5.00</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>16/05/2017</Table.Td>
-                  <Table.Td>
-                    <a href="https://leomoon.com/" target="_blank" rel="noreferrer">
-                      LeoMoon Studios
-                    </a>
-                  </Table.Td>
-                  <Table.Td>€10.00</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>17/01/2019</Table.Td>
-                  <Table.Td>John B.</Table.Td>
-                  <Table.Td>€20.00</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>12/08/2019</Table.Td>
-                  <Table.Td>Anonymous</Table.Td>
-                  <Table.Td>€1.00</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>08/03/2021</Table.Td>
-                  <Table.Td>Ron Rooker</Table.Td>
-                  <Table.Td>€5.00</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>03/05/2022</Table.Td>
-                  <Table.Td>Anonymous</Table.Td>
-                  <Table.Td>0.04345 EGLD</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>03/03/2023</Table.Td>
-                  <Table.Td>Anonymous</Table.Td>
-                  <Table.Td>€1.73</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>08/10/2023</Table.Td>
-                  <Table.Td>Anonymous</Table.Td>
-                  <Table.Td>€2.00</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>09/12/2023</Table.Td>
-                  <Table.Td>Anonymous</Table.Td>
-                  <Table.Td>€3.27</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>18/06/2024 (Monthly)</Table.Td>
-                  <Table.Td>
-                    <a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">
-                      PandaRainbow
-                    </a>
-                  </Table.Td>
-                  <Table.Td>$10.00 USD</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>21/10/2024 (Monthly)</Table.Td>
-                  <Table.Td>
-                    <a href="https://freesoft-100.com/" target="_blank" rel="noreferrer">
-                      freesoft100
-                    </a>
-                  </Table.Td>
-                  <Table.Td>$5.00 USD</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>14/02/2025 (Monthly)</Table.Td>
-                  <Table.Td>
-                    <a href="https://sanesecurityguy.com/" target="_blank" rel="noreferrer">
-                      sanesecurityguy
-                    </a>
-                  </Table.Td>
-                  <Table.Td>$5.00 USD</Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table style={{ overflow: 'auto' }} striped highlightOnHover>
+                <Table.Thead>
+                  <Table.Tr>
+                    <Table.Th>Date (DD/MM/YYYY)</Table.Th>
+                    <Table.Th>Name</Table.Th>
+                    <Table.Th>Amount</Table.Th>
+                  </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>13/12/2015</Table.Td>
+                    <Table.Td>Jaschar Domann</Table.Td>
+                    <Table.Td>€5.00</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>16/05/2017</Table.Td>
+                    <Table.Td>
+                      <a href="https://leomoon.com/" target="_blank" rel="noreferrer">
+                        LeoMoon Studios
+                      </a>
+                    </Table.Td>
+                    <Table.Td>€10.00</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>17/01/2019</Table.Td>
+                    <Table.Td>John B.</Table.Td>
+                    <Table.Td>€20.00</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>12/08/2019</Table.Td>
+                    <Table.Td>Anonymous</Table.Td>
+                    <Table.Td>€1.00</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>08/03/2021</Table.Td>
+                    <Table.Td>Ron Rooker</Table.Td>
+                    <Table.Td>€5.00</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>03/05/2022</Table.Td>
+                    <Table.Td>Anonymous</Table.Td>
+                    <Table.Td>0.04345 EGLD</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>03/03/2023</Table.Td>
+                    <Table.Td>Anonymous</Table.Td>
+                    <Table.Td>€1.73</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>08/10/2023</Table.Td>
+                    <Table.Td>Anonymous</Table.Td>
+                    <Table.Td>€2.00</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>09/12/2023</Table.Td>
+                    <Table.Td>Anonymous</Table.Td>
+                    <Table.Td>€3.27</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>18/06/2024 (Monthly)</Table.Td>
+                    <Table.Td>
+                      <a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">
+                        PandaRainbow
+                      </a>
+                    </Table.Td>
+                    <Table.Td>$10.00 USD</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>21/10/2024 (Monthly)</Table.Td>
+                    <Table.Td>
+                      <a href="https://freesoft-100.com/" target="_blank" rel="noreferrer">
+                        freesoft100
+                      </a>
+                    </Table.Td>
+                    <Table.Td>$5.00 USD</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>14/02/2025 (Monthly)</Table.Td>
+                    <Table.Td>
+                      <a href="https://sanesecurityguy.com/" target="_blank" rel="noreferrer">
+                        sanesecurityguy
+                      </a>
+                    </Table.Td>
+                    <Table.Td>$5.00 USD</Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
         </Container>
       </Container>

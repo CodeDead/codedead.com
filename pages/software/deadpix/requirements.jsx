@@ -74,53 +74,55 @@ const DeadPixRequirements = () => {
           </Group>
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Table>
-              <Table.Tbody>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Operating system</b>
-                  </Table.Td>
-                  <Table.Td>
-                    Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64), Windows 10 (x86 and
-                    x64), Windows Server 2008 R2 SP1 (x64), Windows Server 2012 (x64), Windows
-                    Server 2012 R2 (x64), Windows Server 2016 (x64), Windows Server 2012 R2 (x64),
-                    Windows Server 2019 (x64), Android
-                  </Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Disk space</b>
-                  </Table.Td>
-                  <Table.Td>At least 35MB free disk space</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Memory</b>
-                  </Table.Td>
-                  <Table.Td>At least 40MB</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Internet connection</b>
-                  </Table.Td>
-                  <Table.Td>Not required, except for the auto-update functionality</Table.Td>
-                </Table.Tr>
-                <Table.Tr>
-                  <Table.Td>
-                    <b>Other</b>
-                  </Table.Td>
-                  <Table.Td>
-                    <a
-                      href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      .NET Framework 4.8
-                    </a>
-                  </Table.Td>
-                </Table.Tr>
-              </Table.Tbody>
-            </Table>
+            <Table.ScrollContainer type="native">
+              <Table>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Operating system</b>
+                    </Table.Td>
+                    <Table.Td>
+                      Windows 7 SP1 (x86 and x64), Windows 8.1 (x86 and x64), Windows 10 (x86 and
+                      x64), Windows Server 2008 R2 SP1 (x64), Windows Server 2012 (x64), Windows
+                      Server 2012 R2 (x64), Windows Server 2016 (x64), Windows Server 2012 R2 (x64),
+                      Windows Server 2019 (x64), Android
+                    </Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Disk space</b>
+                    </Table.Td>
+                    <Table.Td>At least 35MB free disk space</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Memory</b>
+                    </Table.Td>
+                    <Table.Td>At least 40MB</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Internet connection</b>
+                    </Table.Td>
+                    <Table.Td>Not required, except for the auto-update functionality</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>
+                      <b>Other</b>
+                    </Table.Td>
+                    <Table.Td>
+                      <a
+                        href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        .NET Framework 4.8
+                      </a>
+                    </Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+            </Table.ScrollContainer>
           </Card>
 
           <Group mt={20}>
