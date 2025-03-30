@@ -9,7 +9,6 @@ import {
   Container,
   Grid,
   Group,
-  SimpleGrid,
   Text,
   Title,
 } from '@mantine/core';
