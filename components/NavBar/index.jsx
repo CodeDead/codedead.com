@@ -62,7 +62,7 @@ const NavBar = () => {
           </Group>
           <Collapse in={softwareOpened}>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 2 ? true : undefined}
               href="/software/deadhash"
               ml={10}
@@ -74,7 +74,7 @@ const NavBar = () => {
               <span>DeadHash</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 3 ? true : undefined}
               href="/software/advanced-passgen"
               ml={10}
@@ -86,7 +86,7 @@ const NavBar = () => {
               <span>Advanced PassGen</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 4 ? true : undefined}
               href="/software/advanced-portchecker"
               ml={10}
@@ -98,7 +98,7 @@ const NavBar = () => {
               <span>Advanced PortChecker</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 5 ? true : undefined}
               href="/software/memplus"
               ml={10}
@@ -110,7 +110,7 @@ const NavBar = () => {
               <span>MemPlus</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 6 ? true : undefined}
               href="/software/pk-finder"
               ml={10}
@@ -122,7 +122,7 @@ const NavBar = () => {
               <span>PK Finder</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 7 ? true : undefined}
               href="/software/deadlock"
               ml={10}
@@ -134,7 +134,7 @@ const NavBar = () => {
               <span>DeadLock</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 8 ? true : undefined}
               href="/software/opal"
               ml={10}
@@ -146,7 +146,7 @@ const NavBar = () => {
               <span>Opal</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 9 ? true : undefined}
               href="/software/aniview"
               ml={10}
@@ -158,7 +158,7 @@ const NavBar = () => {
               <span>AniView</span>
             </Link>
             <Link
-              className={classes.link}
+              className={classes.link2}
               data-active={pageIndex === 10 ? true : undefined}
               href="/software/deadpix"
               ml={10}
@@ -169,7 +169,7 @@ const NavBar = () => {
             >
               <span>DeadPix</span>
             </Link>
-            <Link className={classes.link} href="https://compressr.codedead.com" ml={10}>
+            <Link className={classes.link2} href="https://compressr.codedead.com" ml={10}>
               <span>Compressr</span>
             </Link>
           </Collapse>
