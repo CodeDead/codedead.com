@@ -1,0 +1,17 @@
+node_modules
+build
+.yarn/*
+.yarnrc.yml
+.eslintignore
+.eslintcache
+.eslintrc.json
+.prettierignore
+eslint.config.mjs
+.idea
+.vscode
+dist
+.github/*
+.stylelintcache
+out
+.next
+.cache/*

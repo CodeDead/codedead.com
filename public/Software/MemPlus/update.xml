@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Update xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MajorVersion>1</MajorVersion>
+  <MinorVersion>3</MinorVersion>
+  <BuildVersion>2</BuildVersion>
+  <RevisionVersion>0</RevisionVersion>
+  <UpdateUrl>https://codedead.com/Software/MemPlus/MP_setup.exe</UpdateUrl>
+  <InfoUrl>https://codedead.com/?p=1970</InfoUrl>
+  <UpdateInfo>Version 1.3.2 is now available.
+
+Please click the download button to begin downloading this update.
+  </UpdateInfo>
+</Update>

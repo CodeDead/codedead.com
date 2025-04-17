@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Host: https://v2.codedead.com
+Sitemap: https://v2.codedead.com/sitemap.xml

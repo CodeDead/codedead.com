@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Update xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MajorVersion>2</MajorVersion>
+  <MinorVersion>1</MinorVersion>
+  <BuildVersion>0</BuildVersion>
+  <RevisionVersion>0</RevisionVersion>
+  <UpdateUrl>https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_x64_en-US.msi</UpdateUrl>
+  <InfoUrl>https://codedead.com/blog/2024/10/20/advanced-portchecker-2.1.0</InfoUrl>
+  <UpdateInfo>Version 2.1.0 is now available.
+
+Please click the download button to begin downloading this update.
+  </UpdateInfo>
+</Update>

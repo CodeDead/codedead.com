@@ -1,0 +1,25 @@
+{
+  "platforms": {
+    "win32": {
+      "version": {
+        "majorVersion": 2,
+        "minorVersion": 2,
+        "buildVersion": 3,
+        "revisionVersion": 0
+      },
+      "updateUrl": "https://codedead.com/Software/DeadHash/DeadHash%20Setup%202.2.3.exe",
+      "infoUrl": "https://codedead.com/blog/2022/07/23/deadhash-2.2.3"
+    },
+    "linux": {
+      "version": {
+        "majorVersion": 2,
+        "minorVersion": 2,
+        "buildVersion": 3,
+        "revisionVersion": 0
+      },
+      "updateUrl": "https://codedead.com/Software/DeadHash/DeadHash-2.2.3.AppImage",
+      "infoUrl": "https://codedead.com/blog/2022/07/23/deadhash-2.2.3"
+    }
+  },
+  "appUrl": "https://codedead.com/software/deadhash"
+}

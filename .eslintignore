@@ -1,6 +1,0 @@
-.yarn
-.cache
-public
-gatsby-browser.js
-gatsby-ssr.js
-yarn.lock
