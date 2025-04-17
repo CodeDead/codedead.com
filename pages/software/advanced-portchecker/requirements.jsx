@@ -127,7 +127,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/be652b842b0a6933067fcb471e79bd110e4ed64346e9ec8b5acb66810f372593?nocache=1"
+                href="https://www.virustotal.com/gui/file/ab01b927f9b2273bdc661827690ca8f61c62ea7492f1aaa05710032629210fa2?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -142,7 +142,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/605c7b8bf290452c6999a1bd414d089f2c8eca3813b48f7e2d3300036a644c54?nocache=1"
+                href="https://www.virustotal.com/gui/file/cc2f43c02e6b30dcb09841466ae2e06eba8499f2bf51634ad55acdaac8364bd3?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -157,7 +157,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/727b9c8c83717f448ac03d9d7e9920ac18226fc1edec7f3cafb1ecf383e23840?nocache=1"
+                href=""
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth

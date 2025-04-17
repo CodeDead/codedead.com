@@ -221,7 +221,7 @@ const AdvancedPortChecker = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_x64_en-US.msi"
+                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.2.0/advanced-portchecker_2.2.0_x64_en-US.msi"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandWindows size={20} />}
@@ -237,7 +237,7 @@ const AdvancedPortChecker = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_amd64.AppImage"
+                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.2.0/advanced-portchecker_2.2.0_amd64.AppImage"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconTerminal2 size={20} />}
@@ -253,7 +253,7 @@ const AdvancedPortChecker = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.1.0/advanced-portchecker_2.1.0_aarch64.dmg"
+                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.2.0/advanced-portchecker_2.2.0_aarch64.dmg"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandFinder size={20} />}

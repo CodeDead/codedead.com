@@ -3,32 +3,32 @@
     "windows_nt": {
       "version": {
         "majorVersion": 2,
-        "minorVersion": 1,
+        "minorVersion": 2,
         "buildVersion": 0,
         "revisionVersion": 0
       },
-      "updateUrl": "https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_x64_en-US.msi",
-      "infoUrl": "https://codedead.com/blog/2024/10/20/advanced-portchecker-2.1.0"
+      "updateUrl": "https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.2.0_x64_en-US.msi",
+      "infoUrl": "https://codedead.com/blog/2025/04/17/advanced-portchecker-2.2.0"
     },
     "linux": {
       "version": {
         "majorVersion": 2,
-        "minorVersion": 1,
+        "minorVersion": 2,
         "buildVersion": 0,
         "revisionVersion": 0
       },
-      "updateUrl": "https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_amd64.AppImage",
-      "infoUrl": "https://codedead.com/blog/2024/10/20/advanced-portchecker-2.1.0"
+      "updateUrl": "https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.2.0_amd64.AppImage",
+      "infoUrl": "https://codedead.com/blog/2025/04/17/advanced-portchecker-2.2.0"
     },
     "darwin": {
       "version": {
         "majorVersion": 2,
-        "minorVersion": 1,
+        "minorVersion": 2,
         "buildVersion": 0,
         "revisionVersion": 0
       },
-      "updateUrl": "https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.1.0_aarch64.dmg",
-      "infoUrl": "https://codedead.com/blog/2024/10/20/advanced-portchecker-2.1.0"
+      "updateUrl": "https://codedead.com/Software/Advanced%20PortChecker/advanced-portchecker_2.2.0_aarch64.dmg",
+      "infoUrl": "https://codedead.com/blog/2025/04/17/advanced-portchecker-2.2.0"
     }
   },
   "appUrl": "https://codedead.com/software/advanced-portchecker"
