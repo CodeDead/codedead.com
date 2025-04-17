@@ -3,14 +3,14 @@ path: "/blog/2025/04/17/advanced-portchecker-2.2.0"
 title: "Advanced PortChecker 2.2.0 - Release"
 author: "CodeDead"
 date: "2025-04-17"
-abstract: "Advanced PortChecker v2.1.0 has just been released. This release is mostly focused on dependency upgrades and some minor bug fixes. We are..."
+abstract: "Advanced PortChecker v2.2.0 has just been released. This release is mostly focused on dependency upgrades and some minor bug fixes. We are..."
 categories: "Tauri, React, News"
 ---
 ## Information
 
 ![Advanced PortChecker](https://i.imgur.com/vdt1sXZ.png)
 
-Advanced PortChecker v2.1.0 has just been released. This release is mostly focused on dependency upgrades and some minor bug fixes. We are working hard to make the next release even better.
+Advanced PortChecker v2.2.0 has just been released. This release is mostly focused on dependency upgrades and some minor bug fixes. We are working hard to make the next release even better.
 
 ## What's Changed
 * feat: dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/37
