@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }) => {
       <MainContextProvider>
         <AppShell
           header={{ height: 60 }}
-          navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
+          navbar={{ width: 330, breakpoint: 'sm', collapsed: { mobile: !opened } }}
           footer={{ height: 100 }}
           padding="md"
         >

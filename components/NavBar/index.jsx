@@ -11,7 +11,7 @@ import {
   IconMail,
   IconTool,
 } from '@tabler/icons-react';
-import { Box, Collapse, Divider, Group, ScrollArea } from '@mantine/core';
+import { Badge, Box, Collapse, Divider, Group, ScrollArea } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import classes from './navbar.module.css';
 
@@ -96,6 +96,9 @@ const NavBar = () => {
               }}
             >
               <span>Advanced PortChecker</span>
+              <Badge color="orange" style={{ float: 'right' }}>
+                Updated
+              </Badge>
             </Link>
             <Link
               className={classes.link2}
