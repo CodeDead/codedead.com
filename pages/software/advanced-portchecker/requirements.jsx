@@ -157,7 +157,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href=""
+                href="https://www.virustotal.com/gui/file/e3454f57cc055e1cd514f711838e9a7c4f74a986fe9b9848f103c1b671bbd461?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
