@@ -33,7 +33,7 @@ import xml2js from 'xml2js';
             .replace('.html', '');
 
           return `<url>
-    <loc>https://v2.codedead.com/${path}</loc>
+    <loc>https://codedead.com/${path}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
