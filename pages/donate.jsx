@@ -216,15 +216,6 @@ const Donate = () => {
                     <Table.Td>€3.27</Table.Td>
                   </Table.Tr>
                   <Table.Tr>
-                    <Table.Td>18/06/2024 (Monthly)</Table.Td>
-                    <Table.Td>
-                      <a href="https://github.com/PandaRainbow" target="_blank" rel="noreferrer">
-                        PandaRainbow
-                      </a>
-                    </Table.Td>
-                    <Table.Td>$10.00 USD</Table.Td>
-                  </Table.Tr>
-                  <Table.Tr>
                     <Table.Td>21/10/2024 (Monthly)</Table.Td>
                     <Table.Td>
                       <a href="https://freesoft-100.com/" target="_blank" rel="noreferrer">
