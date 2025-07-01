@@ -1,22 +1,23 @@
 ---
-path: "/blog/2018/01/27/aniview-1.4"
-title: "AniView 1.4 - Release"
-author: "CodeDead"
-date: "2018-01-27"
-abstract: "Information AniView 1.4 has just been released. We’ve upgraded the .NET Framework to the latest version (4.7.1). Please make sure to install the latest .NET Framework version before installing this update. For a full list of changes, please take a look at the..."
-categories: "C#, News"
+path: '/blog/2018/01/27/aniview-1.4'
+title: 'AniView 1.4 - Release'
+author: 'CodeDead'
+date: '2018-01-27'
+abstract: 'Information AniView 1.4 has just been released. We’ve upgraded the .NET Framework to the latest version (4.7.1). Please make sure to install the latest .NET Framework version before installing this update. For a full list of changes, please take a look at the...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 AniView 1.4 has just been released. We’ve upgraded the .NET Framework to the latest version (4.7.1). Please make sure to install the latest .NET Framework version before installing this update. For a full list of changes, please take a look at the change log below.
 
 ## Changelog
 
-* Fixed resetting settings not resetting animation behaviour
-* Design changes to Settings window
-* Upgraded .NET Framework to v4.7.1
-* Included latest theme version by Syncfusion
-* Updated system requirements and help documentation
+- Fixed resetting settings not resetting animation behaviour
+- Design changes to Settings window
+- Upgraded .NET Framework to v4.7.1
+- Included latest theme version by Syncfusion
+- Updated system requirements and help documentation
 
 ## Download
 

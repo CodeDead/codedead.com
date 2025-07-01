@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { IconSun, IconSunOff } from '@tabler/icons-react';
 import {
@@ -15,7 +16,6 @@ import {
   useMantineColorScheme,
 } from '@mantine/core';
 import classes from './index.module.css';
-import Link from 'next/link';
 
 const TopBar = ({ opened, toggle }) => {
   const router = useRouter();
@@ -99,9 +99,9 @@ const TopBar = ({ opened, toggle }) => {
               Software
             </Link>
             <Link
-                href="/blog"
-                className={classes.link}
-                onClick={(e) => clickScrollLink(e, '/blog')}
+              href="/blog"
+              className={classes.link}
+              onClick={(e) => clickScrollLink(e, '/blog')}
             >
               Blog
             </Link>
@@ -114,9 +114,9 @@ const TopBar = ({ opened, toggle }) => {
               Donate
             </Link>
             <Link
-                href="/about"
-                className={classes.link}
-                onClick={(e) => clickScrollLink(e, '/about')}
+              href="/about"
+              className={classes.link}
+              onClick={(e) => clickScrollLink(e, '/about')}
             >
               About
             </Link>

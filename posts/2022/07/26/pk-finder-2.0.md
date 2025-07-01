@@ -1,11 +1,12 @@
 ---
-path: "/blog/2022/07/26/pk-finder-2.0"
-title: "PK Finder 2.0 - Release"
-author: "CodeDead"
-date: "2022-07-26"
+path: '/blog/2022/07/26/pk-finder-2.0'
+title: 'PK Finder 2.0 - Release'
+author: 'CodeDead'
+date: '2022-07-26'
 abstract: "PK Finder 2.0 has just been released. We've put a bit of love in our product key finder, by upgrading it to .NET 6..."
-categories: "C#, News"
+categories: 'C#, News'
 ---
+
 ## Information
 
 PK Finder 2.0 has just been released. We've put a bit of love in our product key finder, by upgrading it to .NET 6.
@@ -15,13 +16,13 @@ For a full list of changes, please take a look at the changelog below.
 
 ## Changelog
 
-* Upgraded to .NET 6
-* Removed deprecated features and dependencies
-* Refactoring
-* Simplified Settings window
-* Simplified JSON exporting
-* Upgraded dependencies
-* Added many new Syncfusion themes
+- Upgraded to .NET 6
+- Removed deprecated features and dependencies
+- Refactoring
+- Simplified Settings window
+- Simplified JSON exporting
+- Upgraded dependencies
+- Added many new Syncfusion themes
 
 ## Download
 

@@ -1,11 +1,12 @@
 ---
-path: "/blog/2017/04/18/advanced-portchecker-1.1"
-title: "Advanced PortChecker 1.1 - Release"
-author: "CodeDead"
-date: "2017-04-18"
-abstract: "Information Advanced PortChecker 1.1 has just been released. As we’ve mentioned in a previous blog post, we want to release more portable software. We’re glad to announce that a portable version of Advanced PortChecker is now available! As an added bonus,..."
-categories: "C#, News"
+path: '/blog/2017/04/18/advanced-portchecker-1.1'
+title: 'Advanced PortChecker 1.1 - Release'
+author: 'CodeDead'
+date: '2017-04-18'
+abstract: 'Information Advanced PortChecker 1.1 has just been released. As we’ve mentioned in a previous blog post, we want to release more portable software. We’re glad to announce that a portable version of Advanced PortChecker is now available! As an added bonus,...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 Advanced PortChecker 1.1 has just been released. As we’ve mentioned in a previous blog post, we want to release more portable software. We’re glad to announce that a portable version of Advanced PortChecker is now available!
@@ -14,11 +15,11 @@ As an added bonus, we’ve upgraded the Syncfusion theme version to the latest v
 
 ## Change log
 
-* Updated to the latest Syncfusion theme version
-* Changed target .NET Framework to version 4.7
-* Changed About Window design
-* Fixed documentation portability issue
-* Fixed blurry images
+- Updated to the latest Syncfusion theme version
+- Changed target .NET Framework to version 4.7
+- Changed About Window design
+- Fixed documentation portability issue
+- Fixed blurry images
 
 ## Download
 

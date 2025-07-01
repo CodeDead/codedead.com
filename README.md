@@ -6,6 +6,7 @@ The project was realized with the help of Next, React, Mantine and various other
 ## Usage
 
 In order to run a development build of the website, run:
+
 ```Bash
 yarn dev
 ```
@@ -15,6 +16,7 @@ A development server will be executed and you can then view the website in your 
 `http://localhost:3000`
 
 In order to build a production-ready version of the website, run:
+
 ```Bash
 yarn build
 ```

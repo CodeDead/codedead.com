@@ -1,9 +1,9 @@
 {
-	"MajorVersion": 2,
-	"MinorVersion": 5,
-	"BuildVersion": 2,
-	"RevisionVersion": 0,
-	"UpdateUrl": "https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_x64_en-US.msi",
-	"InfoUrl": "https://codedead.com/blog/2024/09/30/advanced-passgen-2.5.2",
-	"UpdateInfo": "A new version is now available.\nPlease click the download button to download version 2.5.2"
+  "MajorVersion": 2,
+  "MinorVersion": 5,
+  "BuildVersion": 2,
+  "RevisionVersion": 0,
+  "UpdateUrl": "https://codedead.com/Software/Advanced%20PassGen/advanced-passgen_2.5.2_x64_en-US.msi",
+  "InfoUrl": "https://codedead.com/blog/2024/09/30/advanced-passgen-2.5.2",
+  "UpdateInfo": "A new version is now available.\nPlease click the download button to download version 2.5.2"
 }

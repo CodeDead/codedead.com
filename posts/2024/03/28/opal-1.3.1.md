@@ -1,11 +1,12 @@
 ---
-path: "/blog/2024/03/28/opal-1.3.1"
-title: "Opal 1.3.1 - Release"
-author: "CodeDead"
-date: "2024-03-28"
-abstract: "Opal v1.3.1 has just been released. We've mainly focused on bringing you dependency upgrades and security upgrades for the included Java runtime. Some minor UI..." 
-categories: "Java, News, Opal"
+path: '/blog/2024/03/28/opal-1.3.1'
+title: 'Opal 1.3.1 - Release'
+author: 'CodeDead'
+date: '2024-03-28'
+abstract: "Opal v1.3.1 has just been released. We've mainly focused on bringing you dependency upgrades and security upgrades for the included Java runtime. Some minor UI..."
+categories: 'Java, News, Opal'
 ---
+
 ## Information
 
 ![Opal](https://i.imgur.com/UAxfclq.png)
@@ -15,11 +16,11 @@ In addition, this release should now also work on more modern Linux distribution
 
 ## What's Changed
 
-* feat: Gradle upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/opal/pull/116
-* Feature/upgrades by @CodeDead in https://github.com/CodeDead/opal/pull/117
-* feat: refactoring by @CodeDead in https://github.com/CodeDead/opal/pull/118
-* feat: updated help docs, Gradle upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/opal/pull/119
-* Release/v1.3.1 by @CodeDead in https://github.com/CodeDead/opal/pull/120
+- feat: Gradle upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/opal/pull/116
+- Feature/upgrades by @CodeDead in https://github.com/CodeDead/opal/pull/117
+- feat: refactoring by @CodeDead in https://github.com/CodeDead/opal/pull/118
+- feat: updated help docs, Gradle upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/opal/pull/119
+- Release/v1.3.1 by @CodeDead in https://github.com/CodeDead/opal/pull/120
 
 **Full Changelog**: https://github.com/CodeDead/opal/compare/v1.3.0...v1.3.1
 

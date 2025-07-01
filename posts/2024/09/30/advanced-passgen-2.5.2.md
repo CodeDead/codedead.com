@@ -1,11 +1,12 @@
 ---
-path: "/blog/2024/09/30/advanced-passgen-2.5.2"
-title: "Advanced PassGen 2.5.2 - Release"
-author: "CodeDead"
-date: "2024-09-30"
-abstract: "Advanced PassGen v2.5.2 has just been released. This release includes mostly bug fixes and minor improvements to the bundle size..."
-categories: "Tauri, React, News"
+path: '/blog/2024/09/30/advanced-passgen-2.5.2'
+title: 'Advanced PassGen 2.5.2 - Release'
+author: 'CodeDead'
+date: '2024-09-30'
+abstract: 'Advanced PassGen v2.5.2 has just been released. This release includes mostly bug fixes and minor improvements to the bundle size...'
+categories: 'Tauri, React, News'
 ---
+
 ## Information
 
 ![Advanced PassGen](https://i.imgur.com/WcaJL2t.png)
@@ -16,9 +17,9 @@ For a full list of changes, please see the changelog below.
 
 ## What's Changed
 
-* feat: Yarn upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/117
-* feat: Yarn upgrade, dependency upgrades, replaced deprecated MUI Grid… by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/119
-* feat: version bump, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/121
+- feat: Yarn upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/117
+- feat: Yarn upgrade, dependency upgrades, replaced deprecated MUI Grid… by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/119
+- feat: version bump, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/121
 
 **Full Changelog**: https://github.com/CodeDead/Advanced-PassGen/compare/v2.5.1...v2.5.2
 

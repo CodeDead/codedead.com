@@ -1,11 +1,12 @@
 ---
-path: "/blog/2017/02/11/pk-finder"
-title: "PK Finder 1.0 - Release"
-author: "CodeDead"
-date: "2017-02-11"
-abstract: "Information PK Finder is the latest addition to our product line. PK Finder will help you recover your Windows Product Key in case you forgot it, are unable to access it or simply for testing purposes. Keep in mind that this application will only work on legitimately..."
-categories: "C#, News"
+path: '/blog/2017/02/11/pk-finder'
+title: 'PK Finder 1.0 - Release'
+author: 'CodeDead'
+date: '2017-02-11'
+abstract: 'Information PK Finder is the latest addition to our product line. PK Finder will help you recover your Windows Product Key in case you forgot it, are unable to access it or simply for testing purposes. Keep in mind that this application will only work on legitimately...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 PK Finder is the latest addition to our product line. PK Finder will help you recover your Windows Product Key in case you forgot it, are unable to access it or simply for testing purposes. Keep in mind that this application will only work on legitimately activated Windows devices.

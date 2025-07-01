@@ -1,11 +1,12 @@
 ---
-path: "/blog/2023/07/20/advanced-passgen-2.4.2"
-title: "Advanced PassGen 2.4.2 - Release"
-author: "CodeDead"
-date: "2023-07-20"
-abstract: "Advanced PassGen v2.4.2 has been released. This release contains a few bug fixes. Most notably, dependency upgrades for security reasons..."
-categories: "Tauri, React, News"
+path: '/blog/2023/07/20/advanced-passgen-2.4.2'
+title: 'Advanced PassGen 2.4.2 - Release'
+author: 'CodeDead'
+date: '2023-07-20'
+abstract: 'Advanced PassGen v2.4.2 has been released. This release contains a few bug fixes. Most notably, dependency upgrades for security reasons...'
+categories: 'Tauri, React, News'
 ---
+
 ## Information
 
 ![Advanced PassGen](https://i.imgur.com/WcaJL2t.png)
@@ -18,10 +19,9 @@ For a full list of changes, please see the changelog below.
 
 ## What's Changed
 
-* Yarn upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/74
-* Feature/upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/75
-* Version bump, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/76
-
+- Yarn upgrade, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/74
+- Feature/upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/75
+- Version bump, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PassGen/pull/76
 
 **Full Changelog**: https://github.com/CodeDead/Advanced-PassGen/compare/v2.4.1...v2.4.2
 

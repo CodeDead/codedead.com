@@ -1,15 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
-import {
-  Button,
-  Card,
-  Container,
-  Grid,
-  Group,
-  SimpleGrid,
-  Text,
-  Title,
-} from '@mantine/core';
+import { Button, Card, Container, Grid, Group, SimpleGrid, Text, Title } from '@mantine/core';
 import { MainContext } from '../contexts/MainContextProvider';
 import { setPageIndex } from '../reducers/MainReducer/Actions';
 import classes from '../public/title.module.css';
@@ -32,14 +23,8 @@ const Contact = () => {
     <>
       <Head>
         <title>Contact | CodeDead</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-        <meta
-            name="description"
-            content="Contact CodeDead for support or to report an issue."
-        />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <meta name="description" content="Contact CodeDead for support or to report an issue." />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <Container size="xl">
@@ -71,7 +56,15 @@ const Contact = () => {
                 </Text>
 
                 <SimpleGrid cols={2}>
-                  <Button color="blue" mt="md" radius="md" fullWidth component="a" href="https://github.com/codedead" target="_blank">
+                  <Button
+                    color="blue"
+                    mt="md"
+                    radius="md"
+                    fullWidth
+                    component="a"
+                    href="https://github.com/codedead"
+                    target="_blank"
+                  >
                     GitHub
                   </Button>
                   <Button color="blue" mt="md" radius="md" fullWidth onClick={openContact}>
@@ -88,7 +81,8 @@ const Contact = () => {
 
                 <Text size="sm" c="dimmed" style={{ flexGrow: 1 }}>
                   If you have any questions, feel free to send us an email. All advertisement offers
-                  will be discarded instantly without notification or we might just waste your time too.
+                  will be discarded instantly without notification or we might just waste your time
+                  too.
                 </Text>
 
                 <Button color="blue" fullWidth mt="md" radius="md" onClick={openContact}>

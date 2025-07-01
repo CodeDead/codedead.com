@@ -1,11 +1,12 @@
 ---
-path: "/blog/2019/05/09/pk-finder-1.6"
-title: "PK Finder 1.6 - Release"
-author: "CodeDead"
-date: "2019-05-09"
-abstract: "Information PK Finder 1.6 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, PK Finder 1.6 should work better with multiple monitors and different DPI settings! If you get prompted to install this..."
-categories: "C#, News"
+path: '/blog/2019/05/09/pk-finder-1.6'
+title: 'PK Finder 1.6 - Release'
+author: 'CodeDead'
+date: '2019-05-09'
+abstract: 'Information PK Finder 1.6 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, PK Finder 1.6 should work better with multiple monitors and different DPI settings! If you get prompted to install this...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 PK Finder 1.6 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, PK Finder 1.6 should work better with multiple monitors and different DPI settings!
@@ -16,12 +17,12 @@ We’ve also used a new installer setup which comes with a lot more options. We 
 
 ## Changelog
 
-* Upgraded to .NET Framework 4.8
-* Added theme previews
-* Minor design changes
-* Included the latest UpdateManager library
-* Included the latest theme version
-* Updated help documentation and requirements
+- Upgraded to .NET Framework 4.8
+- Added theme previews
+- Minor design changes
+- Included the latest UpdateManager library
+- Included the latest theme version
+- Updated help documentation and requirements
 
 ## Download
 

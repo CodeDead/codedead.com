@@ -1,11 +1,12 @@
 ---
-path: "/blog/2015/03/06/deadpix-1.0"
-title: "DeadPix 1.0 - Release"
-author: "CodeDead"
-date: "2015-03-06"
-abstract: "Stuck pixels, we hate them ! That’s why we made a new tool called DeadPix to help solve pixels that are stuck on your screen. It works, simply by rapidly cycling the color value of the stuck pixel. We recommend leaving it on for at least 10 minutes. Please note..."
-categories: "C#, News"
+path: '/blog/2015/03/06/deadpix-1.0'
+title: 'DeadPix 1.0 - Release'
+author: 'CodeDead'
+date: '2015-03-06'
+abstract: 'Stuck pixels, we hate them ! That’s why we made a new tool called DeadPix to help solve pixels that are stuck on your screen. It works, simply by rapidly cycling the color value of the stuck pixel. We recommend leaving it on for at least 10 minutes. Please note...'
+categories: 'C#, News'
 ---
+
 ## Stuck pixels, we hate them !
 
 That’s why we made a new tool called DeadPix to help solve pixels that are stuck on your screen. It works, simply by rapidly cycling the color value of the stuck pixel. We recommend leaving it on for at least 10 minutes. Please note that this tool does not provide a 100% success rate.

@@ -1,11 +1,12 @@
 ---
-path: "/blog/2021/10/03/opal-1.0"
-title: "Opal 1.0 - Release"
-author: "CodeDead"
-date: "2021-10-03"
+path: '/blog/2021/10/03/opal-1.0'
+title: 'Opal 1.0 - Release'
+author: 'CodeDead'
+date: '2021-10-03'
 abstract: "It's been a while since we released something new, but after lots of testing and development cycles, please welcome Opal into our software catalog..."
-categories: "Java, News"
+categories: 'Java, News'
 ---
+
 ## Information
 
 ![Opal](https://i.imgur.com/tNBWTPS.png)

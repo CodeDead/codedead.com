@@ -1,11 +1,12 @@
 ---
-path: "/blog/2024/10/20/advanced-portchecker-2.1.0"
-title: "Advanced PortChecker 2.1.0 - Release"
-author: "CodeDead"
-date: "2024-10-20"
+path: '/blog/2024/10/20/advanced-portchecker-2.1.0'
+title: 'Advanced PortChecker 2.1.0 - Release'
+author: 'CodeDead'
+date: '2024-10-20'
 abstract: "Advanced PortChecker v2.1.0 has just been released. We've put a lot of effort into this release to try and make it the best version yet..."
-categories: "Tauri, React, News"
+categories: 'Tauri, React, News'
 ---
+
 ## Information
 
 ![Advanced PortChecker](https://i.imgur.com/vdt1sXZ.png)
@@ -21,24 +22,24 @@ For a full list of changes, please see the changelog below.
 
 ## What's Changed
 
-* feat: added translation notes by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/19
-* Update Italian language by @bovirus in https://github.com/CodeDead/Advanced-PortChecker/pull/20
-* Feature/italian by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/23
-* feat: Rust version bump, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/25
-* feat: upgraded to tauri v2, dependency upgrades, rust version bump by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/26
-* feat: added subnet scanning, dependency upgrades, refactoring by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/27
-* feat: added an option to only export open ports by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/28
-* feat: migrated to RouterProvider, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/29
-* feat: improved code quality, improved thread IO by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/30
-* feat: added an option to hide unknown ports in the ui and in exports by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/31
-* feat: dependency upgrades, added ability to scan multiple entries, ru… by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/32
-* feat: Yarn upgrade, dependency upgrades, improved error handling, imp… by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/33
-* Feature/refactoring by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/35
-* Release/v2.1.0 by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/36
+- feat: added translation notes by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/19
+- Update Italian language by @bovirus in https://github.com/CodeDead/Advanced-PortChecker/pull/20
+- Feature/italian by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/23
+- feat: Rust version bump, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/25
+- feat: upgraded to tauri v2, dependency upgrades, rust version bump by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/26
+- feat: added subnet scanning, dependency upgrades, refactoring by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/27
+- feat: added an option to only export open ports by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/28
+- feat: migrated to RouterProvider, dependency upgrades by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/29
+- feat: improved code quality, improved thread IO by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/30
+- feat: added an option to hide unknown ports in the ui and in exports by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/31
+- feat: dependency upgrades, added ability to scan multiple entries, ru… by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/32
+- feat: Yarn upgrade, dependency upgrades, improved error handling, imp… by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/33
+- Feature/refactoring by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/35
+- Release/v2.1.0 by @CodeDead in https://github.com/CodeDead/Advanced-PortChecker/pull/36
 
 ## New Contributors
 
-* @bovirus made their first contribution in https://github.com/CodeDead/Advanced-PortChecker/pull/20
+- @bovirus made their first contribution in https://github.com/CodeDead/Advanced-PortChecker/pull/20
 
 **Full Changelog**: https://github.com/CodeDead/Advanced-PortChecker/compare/v2.0.1...v2.1.0
 

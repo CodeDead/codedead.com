@@ -1,11 +1,12 @@
 ---
-path: "/blog/2021/02/02/new-layout"
-title: "New website layout"
-author: "CodeDead"
-date: "2021-02-02"
+path: '/blog/2021/02/02/new-layout'
+title: 'New website layout'
+author: 'CodeDead'
+date: '2021-02-02'
 abstract: "If you're a frequent visitor of our website, you might have noticed that we've switched over to an all-new design. Our previous website used WordPress to both manage and display the content on our website, but performance wise, WordPress is quite heavy and slow..."
-categories: "JavaScript, HTML, News"
+categories: 'JavaScript, HTML, News'
 ---
+
 ## Information
 
 ![Gatsby + React](https://buttercms.com/static/images/tech_banners/webp/GatsbyJS.07de237c5d92.webp)

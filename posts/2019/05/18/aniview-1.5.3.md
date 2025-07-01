@@ -1,11 +1,12 @@
 ---
-path: "/blog/2019/05/18/aniview-1.5.3"
-title: "AniView 1.5.3 - Release"
-author: "CodeDead"
-date: "2019-05-18"
-abstract: "Information AniView 1.5.3 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, AniView should work better with multiple monitors and different DPI settings! If you get prompted to install this version..."
-categories: "C#, News"
+path: '/blog/2019/05/18/aniview-1.5.3'
+title: 'AniView 1.5.3 - Release'
+author: 'CodeDead'
+date: '2019-05-18'
+abstract: 'Information AniView 1.5.3 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, AniView should work better with multiple monitors and different DPI settings! If you get prompted to install this version...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 AniView 1.5.3 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, AniView should work better with multiple monitors and different DPI settings!
@@ -16,12 +17,12 @@ We’ve also used a new installer setup which comes with a lot more options. We 
 
 ## Changelog
 
-* Upgraded to .NET Framework 4.8
-* Fixed an issue with exporting multiple times
-* Improved multimonitor DPI support
-* Updated documentation
-* Included latest theme version
-* Included latest UpdateManager version
+- Upgraded to .NET Framework 4.8
+- Fixed an issue with exporting multiple times
+- Improved multimonitor DPI support
+- Updated documentation
+- Included latest theme version
+- Included latest UpdateManager version
 
 ## Download
 

@@ -1,29 +1,34 @@
 ---
-path: "/blog/2018/05/02/memplus-translations-wanted"
-title: "MemPlus - Translations wanted"
-author: "CodeDead"
-date: "2018-05-02"
-abstract: "Information MemPlus has gained a lot of popularity lately. Because of this, the need to make the application available in multiple languages has increased dramatically. Rest assured though, we’re working on a new update for MemPlus which will involve making the..."
-categories: "C#, News"
+path: '/blog/2018/05/02/memplus-translations-wanted'
+title: 'MemPlus - Translations wanted'
+author: 'CodeDead'
+date: '2018-05-02'
+abstract: 'Information MemPlus has gained a lot of popularity lately. Because of this, the need to make the application available in multiple languages has increased dramatically. Rest assured though, we’re working on a new update for MemPlus which will involve making the...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 MemPlus has gained a lot of popularity lately. Because of this, the need to make the application available in multiple languages has increased dramatically. Rest assured though, we’re working on a new update for MemPlus which will involve making the program multilingual. As it stands, the application has all the building blocks to add languages. However, our knowledge is limited to Dutch and English which is why we’re requesting your help. If you’d like to help us translate MemPlus, please take a look at our GitHub page.
 
 ### How does it work?
+
 The file that needs to be translated is a simple XAML file. It looks almost identical to XML, so it should be readable for people who are used to working in XML files. The data that needs to be translated is located between two tags.
 
 To make an example:
 
 This is the tag for the word “Exit” (in English):
+
 ```
 <system:String x:Key="Exit">Exit</system:String>
 ```
 
 After translating this to Dutch, it would become:
+
 ```
 <system:String x:Key="Exit">Sluiten</system:String>
 ```
+
 For a full comparison between the available languages, click here.
 
 Please be careful not to remove any percentage marks or underscores.
@@ -34,17 +39,19 @@ Please be careful not to remove any percentage marks or underscores.
 
 It would be preferable if the name of the translation file followed the ISO 639-1 standard. Examples include:
 
-* en_US
-* nl_BE
-* fr_BE
-* etc.
+- en_US
+- nl_BE
+- fr_BE
+- etc.
 
 For more information, please take a look here.
 
 #### Git
+
 If you’re familiar with Git and the way it works, simply create a pull request with your language included.
 
 ### E-mail
+
 You can also email us your translations for MemPlus to: admin@codedead.com
 
 ### How to test translations?
@@ -57,6 +64,6 @@ If your translation has been accepted, you will automatically be credited in the
 
 #### List of contributors:
 
-* shinmai_rookie (es_ES / gl_ES)
-* James van der Moezel (de_DE)
-* Ithuriel (ar_SA)
+- shinmai_rookie (es_ES / gl_ES)
+- James van der Moezel (de_DE)
+- Ithuriel (ar_SA)

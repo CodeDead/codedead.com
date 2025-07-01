@@ -2,11 +2,21 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
-import { Badge, Button, Card, Center, Container, Grid, Group, Table, Text, Title } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Center,
+  Container,
+  Grid,
+  Group,
+  Table,
+  Text,
+  Title,
+} from '@mantine/core';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-
 
 const MemPlusRequirements = () => {
   const [, d] = useContext(MainContext);

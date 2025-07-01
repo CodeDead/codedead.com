@@ -1,11 +1,12 @@
 ---
-path: "/blog/2021/10/01/deadhash-2.2.0"
-title: "DeadHash 2.2.0 - Release"
-author: "CodeDead"
-date: "2021-10-01"
-abstract: "DeadHash 2.2.0 has just been released. This release comes with a new and improved design, using the latest mui v5 theme base..."
-categories: "JavaScript, News"
+path: '/blog/2021/10/01/deadhash-2.2.0'
+title: 'DeadHash 2.2.0 - Release'
+author: 'CodeDead'
+date: '2021-10-01'
+abstract: 'DeadHash 2.2.0 has just been released. This release comes with a new and improved design, using the latest mui v5 theme base...'
+categories: 'JavaScript, News'
 ---
+
 ## Information
 
 DeadHash 2.2.0 has just been released. This release comes with a new and improved design, using the latest mui v5 theme base.
@@ -15,13 +16,13 @@ For a full list of changes, please take a look at the changelog below.
 
 ## Changelog
 
-* Yarn upgrade
-* Dependency upgrades
-* Upgraded to mui v5
-* Refactoring of components and reducing screen space requirements for improved user experience
-* Many tiny design changes to improve UX
-* Removed unneeded files
-* Performance improvements
+- Yarn upgrade
+- Dependency upgrades
+- Upgraded to mui v5
+- Refactoring of components and reducing screen space requirements for improved user experience
+- Many tiny design changes to improve UX
+- Removed unneeded files
+- Performance improvements
 
 ## Download
 

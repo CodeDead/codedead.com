@@ -1,9 +1,9 @@
 {
-	"MajorVersion": 1,
-	"MinorVersion": 5,
-	"BuildVersion": 0,
-	"RevisionVersion": 0,
-	"UpdateUrl": "https://codedead.com/Software/MemPlus/MP_setup.exe",
-	"InfoUrl": "https://codedead.com",
-	"UpdateInfo": "A new version is now available.\nPlease click the download button to download version 1.4.0.0"
+  "MajorVersion": 1,
+  "MinorVersion": 5,
+  "BuildVersion": 0,
+  "RevisionVersion": 0,
+  "UpdateUrl": "https://codedead.com/Software/MemPlus/MP_setup.exe",
+  "InfoUrl": "https://codedead.com",
+  "UpdateInfo": "A new version is now available.\nPlease click the download button to download version 1.4.0.0"
 }

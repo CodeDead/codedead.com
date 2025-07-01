@@ -1,9 +1,9 @@
 {
-	"MajorVersion": 2,
-	"MinorVersion": 0,
-	"BuildVersion": 0,
-	"RevisionVersion": 0,
-	"UpdateUrl": "https://codedead.com/Software/PK%20Finder/PK-Finder-Setup-2.0.exe",
-	"InfoUrl": "https://codedead.com/blog/2022/07/26/pk-finder-2.0",
-	"UpdateInfo": "A new version is now available.\nPlease click the download button to download version 2.0"
+  "MajorVersion": 2,
+  "MinorVersion": 0,
+  "BuildVersion": 0,
+  "RevisionVersion": 0,
+  "UpdateUrl": "https://codedead.com/Software/PK%20Finder/PK-Finder-Setup-2.0.exe",
+  "InfoUrl": "https://codedead.com/blog/2022/07/26/pk-finder-2.0",
+  "UpdateInfo": "A new version is now available.\nPlease click the download button to download version 2.0"
 }

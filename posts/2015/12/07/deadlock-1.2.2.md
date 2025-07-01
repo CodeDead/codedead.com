@@ -1,11 +1,12 @@
 ---
-path: "/blog/2015/12/07/deadlock-1.2.2"
-title: "DeadLock 1.2.2 - Release"
-author: "CodeDead"
-date: "2015-12-07"
-abstract: "Information First of all, we would like to thank everyone who has submitted translation files for DeadLock. It’s amazing. A big thank you to all of you ! DeadLock version 1.2.2 has just been released. We have mostly added new languages and a couple of bug..."
-categories: "C#, News"
+path: '/blog/2015/12/07/deadlock-1.2.2'
+title: 'DeadLock 1.2.2 - Release'
+author: 'CodeDead'
+date: '2015-12-07'
+abstract: 'Information First of all, we would like to thank everyone who has submitted translation files for DeadLock. It’s amazing. A big thank you to all of you ! DeadLock version 1.2.2 has just been released. We have mostly added new languages and a couple of bug...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 First of all, we would like to thank everyone who has submitted translation files for DeadLock. It’s amazing. A big thank you to all of you!
@@ -14,18 +15,18 @@ DeadLock version 1.2.2 has just been released. We have mostly added new language
 
 ## Change log
 
-* Added Polish language
-* Added Italian language
-* Added German language
-* Added Thai language
-* Added Russian language
-* Languages are now sorted alphabetically in Settings form
-* Fixed possible ‘Move’ bug
-* Minor GUI changes
-* Updated Dutch translations
-* Updated RegManager with an icon
-* Updated help documentation
-* Included latest theme version
+- Added Polish language
+- Added Italian language
+- Added German language
+- Added Thai language
+- Added Russian language
+- Languages are now sorted alphabetically in Settings form
+- Fixed possible ‘Move’ bug
+- Minor GUI changes
+- Updated Dutch translations
+- Updated RegManager with an icon
+- Updated help documentation
+- Included latest theme version
 
 ## Download
 

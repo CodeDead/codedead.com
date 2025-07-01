@@ -9,6 +9,6 @@ export default withBundleAnalyzer({
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: "export",
+  output: 'export',
   trailingSlash: true,
 });

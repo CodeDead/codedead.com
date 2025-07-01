@@ -1,11 +1,12 @@
 ---
-path: "/blog/2019/05/07/advanced-portchecker-1.5"
-title: "Advanced PortChecker 1.5 - Release"
-author: "CodeDead"
-date: "2019-05-07"
-abstract: "Information Advanced PortChecker 1.5 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, Advanced PortChecker 1.5 should work better with multiple monitors and different DPI settings! If you get..."
-categories: "C#, News"
+path: '/blog/2019/05/07/advanced-portchecker-1.5'
+title: 'Advanced PortChecker 1.5 - Release'
+author: 'CodeDead'
+date: '2019-05-07'
+abstract: 'Information Advanced PortChecker 1.5 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, Advanced PortChecker 1.5 should work better with multiple monitors and different DPI settings! If you get...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 Advanced PortChecker 1.5 has just been released! This release uses the latest and greatest version of the .NET Framework (4.8). Because of this, Advanced PortChecker 1.5 should work better with multiple monitors and different DPI settings!
@@ -16,12 +17,12 @@ We’ve also used a new installer setup which comes with a lot more options. We 
 
 ## Changelog
 
-* Code improvements
-* Design changes
-* Increased default scan thread count to 5
-* Updated help documentation
-* Upgraded Syncfusion to latest version
-* Upgraded to .NET Framework 4.8
+- Code improvements
+- Design changes
+- Increased default scan thread count to 5
+- Updated help documentation
+- Upgraded Syncfusion to latest version
+- Upgraded to .NET Framework 4.8
 
 ## Download
 

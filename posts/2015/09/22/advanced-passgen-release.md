@@ -1,11 +1,12 @@
 ---
-path: "/blog/2015/09/22/advanced-passgen-release"
-title: "Advanced PassGen - Release"
-author: "CodeDead"
-date: "2015-09-22"
-abstract: "Information The new and improved version of PassGen; Advanced PassGen has just been released. Advanced PassGen Completely rewritten, and 100% free, Advanced PassGen is able to generate passwords for you like never before ! You can select a custom character set, change..."
-categories: "C#, News"
+path: '/blog/2015/09/22/advanced-passgen-release'
+title: 'Advanced PassGen - Release'
+author: 'CodeDead'
+date: '2015-09-22'
+abstract: 'Information The new and improved version of PassGen; Advanced PassGen has just been released. Advanced PassGen Completely rewritten, and 100% free, Advanced PassGen is able to generate passwords for you like never before ! You can select a custom character set, change...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 The new and improved version of PassGen; Advanced PassGen has just been released.

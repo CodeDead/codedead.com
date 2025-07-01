@@ -1,11 +1,12 @@
 ---
-path: "/blog/2017/01/27/aniview"
-title: "AniView 1.0 - Release"
-author: "CodeDead"
-date: "2017-01-27"
-abstract: "Information: We’ve just released AniView 1.0. A free, open source image viewer for animated GIF images. This software is the successor to Giv. As such, Giv will no longer recieve any updates and users should upgrade to the free and updated alternative AniView...."
-categories: "C#, News"
+path: '/blog/2017/01/27/aniview'
+title: 'AniView 1.0 - Release'
+author: 'CodeDead'
+date: '2017-01-27'
+abstract: 'Information: We’ve just released AniView 1.0. A free, open source image viewer for animated GIF images. This software is the successor to Giv. As such, Giv will no longer recieve any updates and users should upgrade to the free and updated alternative AniView....'
+categories: 'C#, News'
 ---
+
 ## Information
 
 We’ve just released AniView 1.0. A free, open source image viewer for animated GIF images. This software is the successor to Giv. As such, Giv will no longer recieve any updates and users should upgrade to the free and updated alternative AniView.

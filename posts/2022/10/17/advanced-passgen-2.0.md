@@ -1,11 +1,12 @@
 ---
-path: "/blog/2022/10/17/advanced-passgen-2.0"
-title: "Advanced PassGen 2.0 - Release"
-author: "CodeDead"
-date: "2022-10-17"
+path: '/blog/2022/10/17/advanced-passgen-2.0'
+title: 'Advanced PassGen 2.0 - Release'
+author: 'CodeDead'
+date: '2022-10-17'
 abstract: "As time goes on, so do our applications. We've just released Advanced PassGen 2.0, which is a complete rewrite of the application..."
-categories: "Tauri, React, News"
+categories: 'Tauri, React, News'
 ---
+
 ## Information
 
 ![Advanced PassGen](https://i.imgur.com/bVTaGO7.png)
@@ -23,12 +24,12 @@ In addition, because we are using Tauri, Advanced PassGen will run on macOS, Win
 
 ## Changelog
 
-* Complete rewrite in Tauri + React
-* Added Dutch translation
-* Added French translation
-* Simplified Settings window
-* Fixed https://github.com/CodeDead/Advanced-PassGen/issues/4
-* Fixed https://github.com/CodeDead/Advanced-PassGen/issues/3
+- Complete rewrite in Tauri + React
+- Added Dutch translation
+- Added French translation
+- Simplified Settings window
+- Fixed https://github.com/CodeDead/Advanced-PassGen/issues/4
+- Fixed https://github.com/CodeDead/Advanced-PassGen/issues/3
 
 **Full Changelog**: https://github.com/CodeDead/Advanced-PassGen/compare/1.7.1...v2.0.0
 

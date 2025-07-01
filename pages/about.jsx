@@ -1,17 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { IconInfoCircle, IconTerminal2, IconUsers } from '@tabler/icons-react';
-import {
-  Avatar,
-  Badge,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Text,
-  Title,
-} from '@mantine/core';
+import { Avatar, Badge, Card, Center, Container, Grid, Group, Text, Title } from '@mantine/core';
 import { MainContext } from '../contexts/MainContextProvider';
 import { setPageIndex } from '../reducers/MainReducer/Actions';
 import classes from '../public/title.module.css';

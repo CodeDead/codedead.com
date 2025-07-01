@@ -1,17 +1,17 @@
 ---
-path: "/blog/2015/08/24/5-software-project-ideas"
-title: "5 software project ideas"
-author: "CodeDead"
-date: "2015-08-24"
-abstract: "We’ve come up with a list of five software project ideas for you programmers out there that sometimes visit CodeDead and, like us, might sometimes be struggling with creativity. Let’s get right to it, shall we! 1. An intelligent chatbot Wouldn’t it..."
-categories: "Inspiration"
+path: '/blog/2015/08/24/5-software-project-ideas'
+title: '5 software project ideas'
+author: 'CodeDead'
+date: '2015-08-24'
+abstract: 'We’ve come up with a list of five software project ideas for you programmers out there that sometimes visit CodeDead and, like us, might sometimes be struggling with creativity. Let’s get right to it, shall we! 1. An intelligent chatbot Wouldn’t it...'
+categories: 'Inspiration'
 ---
+
 We’ve come up with a list of five software project ideas for you programmers out there that sometimes visit CodeDead and, like us, might sometimes be struggling with creativity. Let’s get right to it, shall we!
 
 ## 1. An intelligent chatbot
 
 ![Robot](https://images.unsplash.com/photo-1692607431225-5f4564c8f132?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
 
 Wouldn’t it be cool to actually talk to a computer and being able to have full conversations with them? Sure, sure, chatbots already exist, but it’s a great way to improve your programming skills, and it’s really cool to show a friend.
 
@@ -20,7 +20,6 @@ It’s not actually that complicated to write a basic chatbot. Basic questions l
 ## 2. Location-based alarm system
 
 ![GPS](https://cf.ltkcdn.net/cellphones/images/std/146340-425x425-cell_phone_tracking_GPS.jpg)
-
 
 If you’re like me, you’ll probably forget a thing or two when you’re shopping for groceries. Trivial things like milk or sugar. Or perhaps you forgot the name of that ice cream brand your partner asked you to bring with you.
 

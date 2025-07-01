@@ -1,22 +1,23 @@
 ---
-path: "/blog/2017/05/05/deadhash-android"
-title: "DeadHash for Android"
-author: "CodeDead"
-date: "2017-05-05"
-abstract: "Information DeadHash has just been released for Android devices. DeadHash for android can generate hashes for files and text in the following formats: MD5 SHA-1 SHA-224 SHA-256 SHA-384 SHA-512 CRC32 Besides generating hashes, you can also use DeadHash to compare..."
-categories: "Java, News"
+path: '/blog/2017/05/05/deadhash-android'
+title: 'DeadHash for Android'
+author: 'CodeDead'
+date: '2017-05-05'
+abstract: 'Information DeadHash has just been released for Android devices. DeadHash for android can generate hashes for files and text in the following formats: MD5 SHA-1 SHA-224 SHA-256 SHA-384 SHA-512 CRC32 Besides generating hashes, you can also use DeadHash to compare...'
+categories: 'Java, News'
 ---
+
 ## Information
 
 DeadHash has just been released for Android devices. DeadHash for android can generate hashes for files and text in the following formats:
 
-* MD5
-* SHA-1
-* SHA-224
-* SHA-256
-* SHA-384
-* SHA-512
-* CRC32
+- MD5
+- SHA-1
+- SHA-224
+- SHA-256
+- SHA-384
+- SHA-512
+- CRC32
 
 Besides generating hashes, you can also use DeadHash to compare hashes. This is very useful when you’ve downloaded a file and would like to verify its integrity.
 

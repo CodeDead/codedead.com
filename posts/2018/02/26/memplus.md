@@ -1,11 +1,12 @@
 ---
-path: "/blog/2018/02/26/memplus"
-title: "MemPlus 1.0 - Release"
-author: "CodeDead"
-date: "2018-02-26"
-abstract: "Information A new year, a new application! CodeDead is proud to introduce MemPlus! But, what exactly is MemPlus and more importantly, what does it do? Let’s find out! MemPlus is a free application that can be used to monitor the RAM usage on your device. You can..."
-categories: "C#, News"
+path: '/blog/2018/02/26/memplus'
+title: 'MemPlus 1.0 - Release'
+author: 'CodeDead'
+date: '2018-02-26'
+abstract: 'Information A new year, a new application! CodeDead is proud to introduce MemPlus! But, what exactly is MemPlus and more importantly, what does it do? Let’s find out! MemPlus is a free application that can be used to monitor the RAM usage on your device. You can...'
+categories: 'C#, News'
 ---
+
 ## Information
 
 A new year, a new application! CodeDead is proud to introduce MemPlus! But, what exactly is MemPlus and more importantly, what does it do? Let’s find out!
@@ -17,10 +18,10 @@ Since some processes are essential to your system, such as driver software, it i
 
 MemPlus also comes with a built-in RAM Analyzer which can tell you more information about the RAM that is installed in your system such as:
 
-* Manufacturer data
-* RAM capacity
-* Configured clock speeds
-* And more!
+- Manufacturer data
+- RAM capacity
+- Configured clock speeds
+- And more!
 
 MemPlus has extensive logging capabilities and will log almost every action that is being done by the program. You can export or look at these logs to help you figure out any issues that MemPlus might be having. These logs can also be used to help us improve MemPlus if there are any issues for which support needs to be contacted.
 
