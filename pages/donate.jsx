@@ -233,6 +233,11 @@ const Donate = () => {
                     </Table.Td>
                     <Table.Td>$5.00 USD</Table.Td>
                   </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td>23/08/2025</Table.Td>
+                    <Table.Td>Anonymous</Table.Td>
+                    <Table.Td>€5.00</Table.Td>
+                  </Table.Tr>
                 </Table.Tbody>
               </Table>
             </Table.ScrollContainer>
