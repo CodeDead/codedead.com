@@ -30,7 +30,7 @@ const App = ({ Component, pageProps }) => {
           <AppShell.Main>
             <Component {...pageProps} />
           </AppShell.Main>
-          <AppShell.Footer>
+          <AppShell.Footer visibleFrom="xs">
             <Footer />
           </AppShell.Footer>
         </AppShell>
