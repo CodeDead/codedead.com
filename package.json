@@ -21,9 +21,9 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
-    "@mantine/carousel": "^8.3.6",
-    "@mantine/core": "^8.3.6",
-    "@mantine/hooks": "^8.3.6",
+    "@mantine/carousel": "^8.3.7",
+    "@mantine/core": "^8.3.7",
+    "@mantine/hooks": "^8.3.7",
     "@next/bundle-analyzer": "^16.0.1",
     "@tabler/icons-react": "^3.35.0",
     "embla-carousel-react": "^8.6.0",
@@ -68,7 +68,7 @@
     "stylelint-config-standard-scss": "^16.0.0",
     "ts-jest": "^29.4.5",
     "typescript": "5.9.3",
-    "typescript-eslint": "^8.46.3"
+    "typescript-eslint": "^8.46.4"
   },
   "packageManager": "yarn@4.11.0"
 }
