@@ -127,7 +127,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/ab01b927f9b2273bdc661827690ca8f61c62ea7492f1aaa05710032629210fa2?nocache=1"
+                href="https://www.virustotal.com/gui/file/2c78e81faf92f02f9c933f4198477350bfa895ecb00703a2b17f9393ebd61616?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -142,7 +142,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/cc2f43c02e6b30dcb09841466ae2e06eba8499f2bf51634ad55acdaac8364bd3?nocache=1"
+                href="https://www.virustotal.com/gui/file/93f65c7bf561b367e539777f1883b0d2c35ebac33d1d3888efe1570cbe51b5ca?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -157,7 +157,7 @@ const AdvancedPortCheckerRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/e3454f57cc055e1cd514f711838e9a7c4f74a986fe9b9848f103c1b671bbd461?nocache=1"
+                href="https://www.virustotal.com/gui/file/f1c828b3575d696944ccad4aad565e4b11b27377a62afd8800e45497dde2b9ea?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
