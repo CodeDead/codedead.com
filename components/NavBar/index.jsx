@@ -147,6 +147,9 @@ const NavBar = () => {
               }}
             >
               <span>Opal</span>
+              <Badge color="orange" style={{ float: 'right' }}>
+                Updated
+              </Badge>
             </Link>
             <Link
               className={classes.link2}

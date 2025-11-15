@@ -121,7 +121,7 @@ const OpalRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/2c800f5aae5024b7ea44901f3291d7cac1c3c893fd44c4f408a42c731ef34e79"
+                href="https://www.virustotal.com/gui/file/bc21a3d2c84b380f71820672d4d5240f7c0a35576ba13d9e5635fa72d25ea64f?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -131,7 +131,7 @@ const OpalRequirements = () => {
               </Button>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/c5fa8d2bea8b347fa38f14f1ae2234e66244551984d3570fa51adae38af87c48"
+                href="https://www.virustotal.com/gui/file/16af02f06164e8b558061db938ba0357f3237b2469dcc53b82c84c5cc48f36a5?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -147,7 +147,7 @@ const OpalRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/48f0100b91cf56b243756a0b3c930396c0a65d1ba15fc8aec397530ed21fe12b"
+                href="https://www.virustotal.com/gui/file/0122b84069b120d101fae005fd345521680537b6185f84b1384a3527ec8f6e54?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -162,7 +162,7 @@ const OpalRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/a6584ef3cf1af561f9359baa32cc43edda840e23bb06d168d8c67960a9426097"
+                href="https://www.virustotal.com/gui/file/6eed5ca6295efad1d660baabbbfdba6aee0ca3df5ac6111a8eb06fd675ca289d?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth

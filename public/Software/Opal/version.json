@@ -4,44 +4,44 @@
     "portable": true,
     "majorVersion": 1,
     "minorVersion": 5,
-    "buildVersion": 0,
+    "buildVersion": 1,
     "revisionVersion": 0,
-    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.0/Opal-x86_64-1.5.0.AppImage"
+    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-x86_64-1.5.1.AppImage"
   },
   {
     "platformName": "linux",
     "portable": false,
     "majorVersion": 1,
     "minorVersion": 5,
-    "buildVersion": 0,
+    "buildVersion": 1,
     "revisionVersion": 0,
-    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.0/Opal-x86_64-1.5.0.AppImage"
+    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-x86_64-1.5.1.AppImage"
   },
   {
     "platformName": "windows",
     "portable": false,
     "majorVersion": 1,
     "minorVersion": 5,
-    "buildVersion": 0,
+    "buildVersion": 1,
     "revisionVersion": 0,
-    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.0/Opal-1.5.0.msi"
+    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-1.5.1.msi"
   },
   {
     "platformName": "windows",
     "portable": true,
     "majorVersion": 1,
     "minorVersion": 5,
-    "buildVersion": 0,
+    "buildVersion": 1,
     "revisionVersion": 0,
-    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.0/Opal-win-portable.zip"
+    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-win-portable.zip"
   },
   {
     "platformName": "macos",
     "portable": false,
     "majorVersion": 1,
     "minorVersion": 5,
-    "buildVersion": 0,
+    "buildVersion": 1,
     "revisionVersion": 0,
-    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.0/Opal-1.5.0.dmg"
+    "downloadUrl": "https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-1.5.1.dmg"
   }
 ]
