@@ -40,8 +40,8 @@
     "@eslint/js": "^9.39.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@next/eslint-plugin-next": "^16.0.3",
-    "@storybook/nextjs": "^10.0.7",
-    "@storybook/react": "^10.0.7",
+    "@storybook/nextjs": "^10.0.8",
+    "@storybook/react": "^10.0.8",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
@@ -49,7 +49,7 @@
     "@types/eslint-plugin-jsx-a11y": "^6.10.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
-    "@types/react": "19.2.5",
+    "@types/react": "19.2.6",
     "@types/xml2js": "^0.4.14",
     "babel-loader": "^10.0.0",
     "eslint": "^9.39.1",
@@ -62,13 +62,13 @@
     "postcss-preset-mantine": "1.18.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.6.2",
-    "storybook": "^10.0.7",
+    "storybook": "^10.0.8",
     "storybook-dark-mode": "^4.0.2",
     "stylelint": "^16.25.0",
     "stylelint-config-standard-scss": "^16.0.0",
     "ts-jest": "^29.4.5",
     "typescript": "5.9.3",
-    "typescript-eslint": "^8.46.4"
+    "typescript-eslint": "^8.47.0"
   },
   "packageManager": "yarn@4.11.0"
 }
