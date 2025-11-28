@@ -18,20 +18,22 @@ Due to some bugs in the libwebkit2gtk library, Linux users will experience somew
 We are actively working on resolving these issues and will provide updates as soon as possible. The previous version did not work at all on some recent Linux distributions, so this update is still an improvement.
 
 ## What's Changed
-* Create ja_jp.json by @coolvitto in [https://github.com/CodeDead/Advanced-PortChecker/pull/52](https://github.com/CodeDead/Advanced-PortChecker/pull/52)
-* Feature/ja jp by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/53](https://github.com/CodeDead/Advanced-PortChecker/pull/53)
-* feat: dependency upgrades by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/54](https://github.com/CodeDead/Advanced-PortChecker/pull/54)
-* feat: dependency upgrades by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/55](https://github.com/CodeDead/Advanced-PortChecker/pull/55)
-* feat: include linux arm preview builds and tests by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/56](https://github.com/CodeDead/Advanced-PortChecker/pull/56)
-* feat: Yarn upgrade, dependency upgrades, rust version bump by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/57](https://github.com/CodeDead/Advanced-PortChecker/pull/57)
-* feat: Yarn upgrade, rust version bump, dependency upgrades by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/58](https://github.com/CodeDead/Advanced-PortChecker/pull/58)
-* feat: Yarn upgrade, dependency upgrades, rust version bump by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/60](https://github.com/CodeDead/Advanced-PortChecker/pull/60)
-* feat: Yarn upgrade, rust version bump, dependency upgrades, refactoring by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/63](https://github.com/CodeDead/Advanced-PortChecker/pull/63)
-* feat: dependency upgrades, minor design upgrades, changed runner actions by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/65](https://github.com/CodeDead/Advanced-PortChecker/pull/65)
-* feat: version bump by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/66](https://github.com/CodeDead/Advanced-PortChecker/pull/66)
+
+- Create ja_jp.json by @coolvitto in [https://github.com/CodeDead/Advanced-PortChecker/pull/52](https://github.com/CodeDead/Advanced-PortChecker/pull/52)
+- Feature/ja jp by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/53](https://github.com/CodeDead/Advanced-PortChecker/pull/53)
+- feat: dependency upgrades by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/54](https://github.com/CodeDead/Advanced-PortChecker/pull/54)
+- feat: dependency upgrades by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/55](https://github.com/CodeDead/Advanced-PortChecker/pull/55)
+- feat: include linux arm preview builds and tests by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/56](https://github.com/CodeDead/Advanced-PortChecker/pull/56)
+- feat: Yarn upgrade, dependency upgrades, rust version bump by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/57](https://github.com/CodeDead/Advanced-PortChecker/pull/57)
+- feat: Yarn upgrade, rust version bump, dependency upgrades by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/58](https://github.com/CodeDead/Advanced-PortChecker/pull/58)
+- feat: Yarn upgrade, dependency upgrades, rust version bump by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/60](https://github.com/CodeDead/Advanced-PortChecker/pull/60)
+- feat: Yarn upgrade, rust version bump, dependency upgrades, refactoring by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/63](https://github.com/CodeDead/Advanced-PortChecker/pull/63)
+- feat: dependency upgrades, minor design upgrades, changed runner actions by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/65](https://github.com/CodeDead/Advanced-PortChecker/pull/65)
+- feat: version bump by @CodeDead in [https://github.com/CodeDead/Advanced-PortChecker/pull/66](https://github.com/CodeDead/Advanced-PortChecker/pull/66)
 
 ## New Contributors
-* @coolvitto made their first contribution in [https://github.com/CodeDead/Advanced-PortChecker/pull/52](https://github.com/CodeDead/Advanced-PortChecker/pull/52)
+
+- @coolvitto made their first contribution in [https://github.com/CodeDead/Advanced-PortChecker/pull/52](https://github.com/CodeDead/Advanced-PortChecker/pull/52)
 
 **Full Changelog**: [https://github.com/CodeDead/Advanced-PortChecker/compare/v2.2.0...v2.3.0](https://github.com/CodeDead/Advanced-PortChecker/compare/v2.2.0...v2.3.0)
 
