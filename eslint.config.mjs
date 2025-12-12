@@ -1,14 +1,15 @@
-import pluginNext from '@next/eslint-plugin-next';
 import mantine from 'eslint-config-mantine';
-import tseslint, { parser } from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
-export default [
+export default defineConfig(
   ...mantine,
-  { ignores: ['**/*.{mjs,cjs,js,d.ts,d.mts}'] },
+  { ignores: ['**/*.{mjs,cjs,js,d.ts,d.mts}', '.next'] },
   {
-    name: 'ESLint Config - nextjs',
+    files: ['**/*.story.tsx'],
+    rules: { 'no-console': 'off' },
+  },
+  {
     languageOptions: {
-      parser, // optional
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -17,13 +18,36 @@ export default [
         },
       },
     },
-    plugins: {
-      '@next/next': pluginNext,
-    },
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    rules: {
-      ...pluginNext.configs.recommended.rules,
-      ...pluginNext.configs['core-web-vitals'].rules,
-    },
   },
-];
+  {
+    files: ['**/*.{js,jsx}'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: { jsx: true },
+        sourceType: 'module',
+      },
+    },
+    settings: {
+      react: { version: '19.0' },
+    },
+    rules: {
+      'no-multi-spaces': ['error', { ignoreEOLComments: false }],
+      'no-trailing-spaces': ['error', { skipBlankLines: false }],
+      'no-use-before-define': ['error', { functions: true }],
+      'react/function-component-definition': [
+        2,
+        {
+          namedComponents: 'arrow-function',
+          unnamedComponents: 'arrow-function',
+        },
+      ],
+      'react/prop-types': 0,
+      'react/jsx-uses-vars': 'error',
+      'react/jsx-uses-react': 'error',
+      semi: [2, 'always'],
+      quotes: [2, 'single'],
+    },
+  }
+);
