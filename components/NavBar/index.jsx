@@ -56,7 +56,7 @@ const NavBar = () => {
               className={classes.chevron}
               stroke={1.5}
               size={16}
-              style={{ transform: softwareOpened ? 'rotate(-90deg)' : 'none', cursor: 'pointer' }}
+              style={{ transform: softwareOpened ? 'rotate(-90deg)' : 'none', cursor: 'pointer', flexGrow: 1 }}
               onClick={() => setSoftwareOpened((prev) => !prev)}
             />
           </Group>
