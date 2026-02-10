@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        Copyright &copy; 2025 CodeDead
+        Copyright &copy; 2026 CodeDead
         <Group gap={0} justify="flex-end" wrap="nowrap">
           <ActionIcon
             size="lg"
