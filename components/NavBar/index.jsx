@@ -1,19 +1,11 @@
 import React, { useContext, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import {
-  IconArticle,
-  IconChevronRight,
-  IconCoin,
-  IconHome,
-  IconInfoCircle,
-  IconLockSquare,
-  IconMail,
-  IconTool,
-} from '@tabler/icons-react';
+import { IconArticle, IconChevronRight, IconCoin, IconHome, IconInfoCircle, IconLockSquare, IconMail, IconTool } from '@tabler/icons-react';
 import { Badge, Box, Collapse, Divider, Group, ScrollArea } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import classes from './navbar.module.css';
+
 
 const NavBar = () => {
   const router = useRouter();
@@ -56,7 +48,11 @@ const NavBar = () => {
               className={classes.chevron}
               stroke={1.5}
               size={16}
-              style={{ transform: softwareOpened ? 'rotate(-90deg)' : 'none', cursor: 'pointer', flexGrow: 1 }}
+              style={{
+                transform: softwareOpened ? 'rotate(-90deg)' : 'none',
+                cursor: 'pointer',
+                flexGrow: 1,
+              }}
               onClick={() => setSoftwareOpened((prev) => !prev)}
             />
           </Group>
@@ -96,9 +92,6 @@ const NavBar = () => {
               }}
             >
               <span>Advanced PortChecker</span>
-              <Badge color="orange" style={{ float: 'right' }}>
-                Updated
-              </Badge>
             </Link>
             <Link
               className={classes.link2}
@@ -135,6 +128,9 @@ const NavBar = () => {
               }}
             >
               <span>DeadLock</span>
+              <Badge color="orange" style={{ float: 'right' }}>
+                Updated
+              </Badge>
             </Link>
             <Link
               className={classes.link2}
@@ -147,9 +143,6 @@ const NavBar = () => {
               }}
             >
               <span>Opal</span>
-              <Badge color="orange" style={{ float: 'right' }}>
-                Updated
-              </Badge>
             </Link>
             <Link
               className={classes.link2}

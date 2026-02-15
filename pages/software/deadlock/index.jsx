@@ -1,32 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import {
-  IconBrandGithub,
-  IconBrandWindows,
-  IconDeviceDesktop,
-  IconDownload,
-  IconHeart,
-  IconInfoCircle,
-  IconLockHeart,
-  IconLockOpen2,
-  IconMath,
-  IconQuote,
-} from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandWindows, IconZip, IconDeviceDesktop, IconDownload, IconHeart, IconInfoCircle, IconLockHeart, IconLockOpen2, IconMath, IconQuote } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import {
-  Badge,
-  Button,
-  Card,
-  Container,
-  Grid,
-  Group,
-  Image,
-  SimpleGrid,
-  Text,
-  Title,
-  useMantineTheme,
-} from '@mantine/core';
+import { Badge, Button, Card, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
@@ -166,10 +143,10 @@ const DeadLock = () => {
           </Group>
 
           <Grid mt={20}>
-            <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/DeadLock/releases/download/1.4/dl_setup.exe"
+                href="https://github.com/CodeDead/DeadLock/releases/download/v1.5.1/DeadLock.Setup.exe"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -177,6 +154,19 @@ const DeadLock = () => {
                 size="md"
               >
                 Installer
+              </Button>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+              <Button
+                component="a"
+                href="https://github.com/CodeDead/DeadLock/releases/download/v1.5.1/DeadLock.zip"
+                target="_blank"
+                rel="noreferrer noopener"
+                fullWidth
+                leftSection={<IconZip size={20} />}
+                size="md"
+              >
+                Portable
               </Button>
             </Grid.Col>
           </Grid>

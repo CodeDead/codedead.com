@@ -1,1 +1,1 @@
-1.4.0.0|http://codedead.com/Software/DeadLock/dl_setup.exe
+1.5.1.0|https://github.com/CodeDead/DeadLock/releases/download/v1.5.1/DeadLock.Setup.exe
