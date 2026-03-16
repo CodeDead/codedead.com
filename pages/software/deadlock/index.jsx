@@ -1,9 +1,33 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { IconBrandGithub, IconBrandWindows, IconZip, IconDeviceDesktop, IconDownload, IconHeart, IconInfoCircle, IconLockHeart, IconLockOpen2, IconMath, IconQuote } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconBrandWindows,
+  IconDeviceDesktop,
+  IconDownload,
+  IconHeart,
+  IconInfoCircle,
+  IconLockHeart,
+  IconLockOpen2,
+  IconMath,
+  IconQuote,
+  IconZip,
+} from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import { Badge, Button, Card, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Container,
+  Grid,
+  Group,
+  Image,
+  SimpleGrid,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';

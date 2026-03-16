@@ -12,6 +12,7 @@ categories: 'C#, News'
 ![DeadLock](https://codedead.com/deadlock/deadlock.webp)
 
 DeadLock 1.5.1 is a minor update that includes various bug fixes and performance improvements. The following languages have been added or improved in this release:
+
 - Chinese (Simplified)
 - Russian
 - Bulgarian (Thanks to jekovcar)
@@ -21,20 +22,20 @@ A portable version of the application has also been added, which allows users to
 
 ## What's Changed
 
-* Create Chinese simp. locale by @KrasnayaPloshchad in https://github.com/CodeDead/DeadLock/pull/5
-* Create a language file for Traditional Chinese by @fricyo in https://github.com/CodeDead/DeadLock/pull/6
-* Fix Chinese Traditional locale by @KrasnayaPloshchad in https://github.com/CodeDead/DeadLock/pull/7
-* Updated russian translate by @tavvi1337 in https://github.com/CodeDead/DeadLock/pull/10
-* Added OS + updated link to HTTPS by @Gitoffthelawn in https://github.com/CodeDead/DeadLock/pull/21
-* Create bg.xml by @jekovcar in https://github.com/CodeDead/DeadLock/pull/23
+- Create Chinese simp. locale by @KrasnayaPloshchad in https://github.com/CodeDead/DeadLock/pull/5
+- Create a language file for Traditional Chinese by @fricyo in https://github.com/CodeDead/DeadLock/pull/6
+- Fix Chinese Traditional locale by @KrasnayaPloshchad in https://github.com/CodeDead/DeadLock/pull/7
+- Updated russian translate by @tavvi1337 in https://github.com/CodeDead/DeadLock/pull/10
+- Added OS + updated link to HTTPS by @Gitoffthelawn in https://github.com/CodeDead/DeadLock/pull/21
+- Create bg.xml by @jekovcar in https://github.com/CodeDead/DeadLock/pull/23
 
 ## New Contributors
 
-* @KrasnayaPloshchad made their first contribution in https://github.com/CodeDead/DeadLock/pull/5
-* @fricyo made their first contribution in https://github.com/CodeDead/DeadLock/pull/6
-* @tavvi1337 made their first contribution in https://github.com/CodeDead/DeadLock/pull/10
-* @Gitoffthelawn made their first contribution in https://github.com/CodeDead/DeadLock/pull/21
-* @jekovcar made their first contribution in https://github.com/CodeDead/DeadLock/pull/23
+- @KrasnayaPloshchad made their first contribution in https://github.com/CodeDead/DeadLock/pull/5
+- @fricyo made their first contribution in https://github.com/CodeDead/DeadLock/pull/6
+- @tavvi1337 made their first contribution in https://github.com/CodeDead/DeadLock/pull/10
+- @Gitoffthelawn made their first contribution in https://github.com/CodeDead/DeadLock/pull/21
+- @jekovcar made their first contribution in https://github.com/CodeDead/DeadLock/pull/23
 
 **Full Changelog**: https://github.com/CodeDead/DeadLock/compare/1.4...v1.5.1
 

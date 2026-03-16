@@ -2,11 +2,21 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
-import { Badge, Button, Card, Center, Container, Grid, Group, Table, Text, Title } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Center,
+  Container,
+  Grid,
+  Group,
+  Table,
+  Text,
+  Title,
+} from '@mantine/core';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-
 
 const DeadLockRequirements = () => {
   const [, d] = useContext(MainContext);
@@ -72,9 +82,10 @@ const DeadLockRequirements = () => {
                       <b>Operating system</b>
                     </Table.Td>
                     <Table.Td>
-                      Windows 11, Windows 10, Windows 7 Service Pack 1, Windows 8, Windows 8.1, Windows Server
-                      2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, Windows Server 2022,
-                      Windows Server 2025
+                      Windows 11, Windows 10, Windows 7 Service Pack 1, Windows 8, Windows 8.1,
+                      Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2,
+                      Windows Server 2016, Windows Server 2019, Windows Server 2022, Windows Server
+                      2025
                     </Table.Td>
                   </Table.Tr>
                   <Table.Tr>
