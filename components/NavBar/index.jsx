@@ -1,19 +1,11 @@
 import React, { useContext, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import {
-  IconArticle,
-  IconChevronRight,
-  IconCoin,
-  IconHome,
-  IconInfoCircle,
-  IconLockSquare,
-  IconMail,
-  IconTool,
-} from '@tabler/icons-react';
+import { IconArticle, IconChevronRight, IconCoin, IconHome, IconInfoCircle, IconLockSquare, IconMail, IconTool } from '@tabler/icons-react';
 import { Badge, Box, Collapse, Divider, Group, ScrollArea } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import classes from './navbar.module.css';
+
 
 const NavBar = () => {
   const router = useRouter();
@@ -64,7 +56,7 @@ const NavBar = () => {
               onClick={() => setSoftwareOpened((prev) => !prev)}
             />
           </Group>
-          <Collapse in={softwareOpened}>
+          <Collapse expanded={softwareOpened}>
             <Link
               className={classes.link2}
               data-active={pageIndex === 2 ? true : undefined}
