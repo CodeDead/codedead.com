@@ -2,21 +2,11 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Table,
-  Text,
-  Title,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Table, Text, Title } from '@mantine/core';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const AdvancedPassGenRequirements = () => {
   const [, d] = useContext(MainContext);
@@ -127,7 +117,7 @@ const AdvancedPassGenRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/e3801b72aaa5646c8d34b9fab03e955cc41d78665a8605c6ac4cc21ed4eaa4b2?nocache=1"
+                href="https://www.virustotal.com/gui/file/cddec55363382791943ffbfa2767fd5d937762dd68688f9e5b606be809e4c629?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -142,7 +132,7 @@ const AdvancedPassGenRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/10f759a674b73bbca584dd1a3b60fe3751af7192ba29cca40e0850ad774c0566?nocache=1"
+                href="https://www.virustotal.com/gui/file/10bd7f59a99ac65719f65a43262c1603d4b607d641df2ae244e100c67c9d5549?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -157,7 +147,7 @@ const AdvancedPassGenRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/1c75932f470873174c210baacda6d99f8d246f74484faacc990f74ceff514972?nocache=1"
+                href="https://www.virustotal.com/gui/file/edd732a1441646df6d8b36f5ff2eb6c27ebd69e316e811d44f92c6a7accfab93?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth

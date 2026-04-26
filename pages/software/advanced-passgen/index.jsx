@@ -1,43 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import {
-  IconBrandAndroid,
-  IconBrandFinder,
-  IconBrandGithub,
-  IconBrandGooglePlay,
-  IconBrandWindows,
-  IconDeviceDesktop,
-  IconDownload,
-  IconGauge,
-  IconHeart,
-  IconInfoCircle,
-  IconLockHeart,
-  IconMath,
-  IconQuote,
-  IconTerminal2,
-  IconWorldWww,
-} from '@tabler/icons-react';
+import { IconBrandAndroid, IconBrandFinder, IconBrandGithub, IconBrandGooglePlay, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconTerminal2, IconWorldWww } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Image,
-  SimpleGrid,
-  Text,
-  Title,
-  useMantineTheme,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const AdvancedPassGen = () => {
   const theme = useMantineTheme();
@@ -224,7 +196,7 @@ const AdvancedPassGen = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_x64_en-US.msi"
+                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.6.0/advanced-passgen_2.6.0_x64_en-US.msi"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandWindows size={20} />}
@@ -240,7 +212,7 @@ const AdvancedPassGen = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_amd64.AppImage"
+                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.6.0/advanced-passgen_2.6.0_amd64.AppImage"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconTerminal2 size={20} />}
@@ -256,7 +228,7 @@ const AdvancedPassGen = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.5.2/advanced-passgen_2.5.2_aarch64.dmg"
+                href="https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.6.0/advanced-passgen_2.6.0_aarch64.dmg"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandFinder size={20} />}
