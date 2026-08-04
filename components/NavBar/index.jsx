@@ -1,7 +1,16 @@
 import React, { useContext, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { IconArticle, IconChevronRight, IconCoin, IconHome, IconInfoCircle, IconLockSquare, IconMail, IconTool } from '@tabler/icons-react';
+import {
+  IconArticle,
+  IconChevronDown,
+  IconCoin,
+  IconHome,
+  IconInfoCircle,
+  IconLockSquare,
+  IconMail,
+  IconTool,
+} from '@tabler/icons-react';
 import { Badge, Box, Collapse, Divider, Group, ScrollArea } from '@mantine/core';
 import { MainContext } from '../../contexts/MainContextProvider';
 import classes from './navbar.module.css';
@@ -44,12 +53,12 @@ const NavBar = () => {
               <IconTool variant="light" stroke={1.5} />
               <Box ml="md">Software</Box>
             </Box>
-            <IconChevronRight
+            <IconChevronDown
               className={classes.chevron}
               stroke={1.5}
               size={16}
               style={{
-                transform: softwareOpened ? 'rotate(-90deg)' : 'none',
+                transform: softwareOpened ? 'rotate(-180deg)' : 'none',
                 cursor: 'pointer',
                 flexGrow: 1,
               }}
