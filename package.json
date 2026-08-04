@@ -20,11 +20,11 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
-    "@mantine/carousel": "^9.5.0",
-    "@mantine/core": "^9.5.0",
-    "@mantine/hooks": "^9.5.0",
+    "@mantine/carousel": "^9.5.1",
+    "@mantine/core": "^9.5.1",
+    "@mantine/hooks": "^9.5.1",
     "@next/bundle-analyzer": "^16.2.12",
-    "@tabler/icons-react": "^3.45.0",
+    "@tabler/icons-react": "^3.46.0",
     "embla-carousel-react": "^8.6.0",
     "globby": "^16.2.2",
     "gray-matter": "^4.0.3",
@@ -47,8 +47,8 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/eslint-plugin-jsx-a11y": "^6.10.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.1.1",
-    "@types/react": "19.2.17",
+    "@types/node": "^26.1.2",
+    "@types/react": "19.2.18",
     "@types/xml2js": "^0.4.14",
     "babel-loader": "^10.1.1",
     "eslint": "^10.8.0",
@@ -56,7 +56,7 @@
     "eslint-config-next": "^16.2.12",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "30.4.1",
-    "postcss": "^8.5.23",
+    "postcss": "^8.5.25",
     "postcss-preset-mantine": "1.18.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.9.6",
@@ -68,5 +68,5 @@
     "typescript": "6.0.3",
     "typescript-eslint": "^8.65.0"
   },
-  "packageManager": "yarn@4.17.1"
+  "packageManager": "yarn@4.18.0"
 }
