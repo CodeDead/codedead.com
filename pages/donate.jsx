@@ -21,7 +21,7 @@ const Donate = () => {
   const [, d1] = useContext(MainContext);
 
   useEffect(() => {
-    d1(setPageIndex(12));
+    d1(setPageIndex(13));
   }, []);
 
   return (

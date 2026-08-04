@@ -16,7 +16,7 @@ const Privacy = () => {
   const [, d1] = useContext(MainContext);
 
   useEffect(() => {
-    d1(setPageIndex(14));
+    d1(setPageIndex(15));
   }, []);
 
   return (

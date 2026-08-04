@@ -168,14 +168,23 @@ const NavBar = () => {
             >
               <span>DeadPix</span>
             </Link>
-            <Link className={classes.link2} href="https://compressr.codedead.com" ml={10}>
+            <Link
+              className={classes.link2}
+              data-active={pageIndex === 11 ? true : undefined}
+              href="/software/compressr"
+              ml={11}
+              onClick={(event) => {
+                event.preventDefault();
+                router.push('/software/compressr');
+              }}
+            >
               <span>Compressr</span>
             </Link>
           </Collapse>
           <Link
             className={classes.link}
             href="/blog"
-            data-active={pageIndex === 11 ? true : undefined}
+            data-active={pageIndex === 12 ? true : undefined}
             onClick={(event) => {
               event.preventDefault();
               router.push('/blog');
@@ -190,7 +199,7 @@ const NavBar = () => {
           <Link
             className={classes.link}
             href="/donate"
-            data-active={pageIndex === 12 ? true : undefined}
+            data-active={pageIndex === 13 ? true : undefined}
             onClick={(event) => {
               event.preventDefault();
               router.push('/donate');
@@ -202,7 +211,7 @@ const NavBar = () => {
           <Link
             className={classes.link}
             href="/about"
-            data-active={pageIndex === 13 ? true : undefined}
+            data-active={pageIndex === 14 ? true : undefined}
             onClick={(event) => {
               event.preventDefault();
               router.push('/about');
@@ -217,7 +226,7 @@ const NavBar = () => {
           <Link
             className={classes.link}
             href="/privacy"
-            data-active={pageIndex === 14 ? true : undefined}
+            data-active={pageIndex === 15 ? true : undefined}
             onClick={(event) => {
               event.preventDefault();
               router.push('/privacy');
@@ -229,7 +238,7 @@ const NavBar = () => {
           <Link
             className={classes.link}
             href="/contact"
-            data-active={pageIndex === 15 ? true : undefined}
+            data-active={pageIndex === 16 ? true : undefined}
             onClick={(event) => {
               event.preventDefault();
               router.push('/contact');

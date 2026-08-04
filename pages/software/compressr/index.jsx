@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { IconBrandAndroid, IconBrandFinder, IconBrandGithub, IconBrandGooglePlay, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconTerminal2 } from '@tabler/icons-react';
+import { IconBrandFinder, IconBrandGithub, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconTerminal2, IconWorldWww } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import { Badge, Button, Card, Center, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import { Anchor, Badge, Button, Card, Center, Container, Grid, Group, Image, List, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
@@ -11,7 +11,7 @@ import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
 
 
-const AdvancedPortChecker = () => {
+const Compressr = () => {
   const theme = useMantineTheme();
   const [, d] = useContext(MainContext);
 
@@ -23,17 +23,17 @@ const AdvancedPortChecker = () => {
   };
 
   useEffect(() => {
-    d(setPageIndex(4));
+    d(setPageIndex(11));
   }, []);
 
   return (
     <>
       <Head>
-        <title>Advanced PortChecker | CodeDead</title>
+        <title>Compressr | CodeDead</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <meta
           name="description"
-          content="Advanced PortChecker is a free and open source port checker that allows you to scan your network for open ports."
+          content="Compressr is a free and open source bulk image compressor / compression tool that you can use in the browser or on your computer."
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
@@ -44,41 +44,36 @@ const AdvancedPortChecker = () => {
             variant="gradient"
             component="span"
             gradient={{ from: 'pink', to: 'yellow' }}
-            alt="Advanced PortChecker"
+            alt="Compressr"
           >
-            Advanced
+            Compressr
           </Text>
-          {' PortChecker'}
         </Title>
         <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="md">
-          A free and open source port checker
+          A free and open source bulk image compressor / compression tool that you can use in the
+          browser or on your computer.
         </Text>
 
         <Container mt={50} size="xl">
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Carousel withIndicators slideSize={{ base: '100%' }} slideGap={{ base: 0 }} loop>
               <Carousel.Slide>
+                <Image radius="md" fit="contain" src="/compressr/compressr.webp" alt="Compressr" />
+              </Carousel.Slide>
+              <Carousel.Slide>
                 <Image
                   radius="md"
                   fit="contain"
-                  src="/advanced-portchecker/ap.webp"
-                  alt="Advanced PortChecker"
+                  src="/compressr/compressr_settings.webp"
+                  alt="Compressr General Settings"
                 />
               </Carousel.Slide>
               <Carousel.Slide>
                 <Image
                   radius="md"
                   fit="contain"
-                  src="/advanced-portchecker/ap_general_settings.webp"
-                  alt="Advanced PortChecker General Settings"
-                />
-              </Carousel.Slide>
-              <Carousel.Slide>
-                <Image
-                  radius="md"
-                  fit="contain"
-                  src="/advanced-portchecker/ap_about.webp"
-                  alt="Advanced PortChecker About"
+                  src="/compressr/compressr_about.webp"
+                  alt="Compressr About"
                 />
               </Carousel.Slide>
             </Carousel>
@@ -92,21 +87,37 @@ const AdvancedPortChecker = () => {
 
           <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
             <Text size="md">
-              Advanced PortChecker is a free and open source port checker that allows you to scan
-              your network for open ports. The app is available for Android, Linux, macOS and
-              Windows, offering a similar look and feel on all platforms. Additionally, Advanced
-              PortChecker can be compiled on other platforms manually.
+              Compressr is an application for compressing and optimizing images. It supports various
+              image formats and provides a user-friendly interface for batch processing. It is
+              available on the web and as a desktop application. It is recommended to use the
+              desktop application if you need advanced features such as customizable compression
+              settings and the ability to preserve metadata and/or improved performance.
             </Text>
 
             <Text size="md" mt={10}>
-              Scanning TCP/IP ports has never been this easy. Watch how Advanced PortChecker scans
-              for open ports in seconds!
+              With Compressr, you can easily reduce the file size of your images without
+              compromising on quality, making it ideal for web use, sharing, and storage. The app
+              also offers advanced features such as customizable compression settings and the
+              ability to preserve metadata.
             </Text>
 
             <Text size="md" mt={10}>
-              Advanced PortChecker can export any and all data that it finds for you in a couple of
-              different formats including: HTML, JSON, CSV and of course plain text.
+              Whether you're a professional photographer or just looking to save space on your
+              device, Compressr is the perfect tool for all your image optimization needs.
             </Text>
+
+            <Text size="md" mt={10}>
+              The following image formats are supported by Compressr:
+            </Text>
+
+            <List>
+              <List.Item>JPEG</List.Item>
+              <List.Item>PNG</List.Item>
+              <List.Item>GIF</List.Item>
+              <List.Item>WebP</List.Item>
+              <List.Item>BMP</List.Item>
+              <List.Item>TIFF</List.Item>
+            </List>
           </Card>
 
           <Group mt={20}>
@@ -118,7 +129,7 @@ const AdvancedPortChecker = () => {
           <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={20}>
             <FeatureCard
               title="Performance"
-              description="Made with performance in mind, Advanced PortChecker is fast and efficient. Scanning your network for open ports has never been this easy."
+              description="Made with performance in mind, Compressr is fast and efficient. It was written in Rust and it offers lightning-fast image compression and optimization, ensuring that your images load quickly and efficiently."
               icon={<IconGauge size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
@@ -128,22 +139,22 @@ const AdvancedPortChecker = () => {
             />
             <FeatureCard
               title="Cross-platform"
-              description="Advanced PortChecker is available for Android, Linux, macOS and Windows, offering a similar look and feel on all platforms. Additionally, Advanced PortChecker can be compiled on other platforms manually."
+              description="Compressr is available for Linux, macOS, Windows and every OS that has a browser, offering a similar look and feel on all platforms. Additionally, Compressr can be compiled on other platforms due to its open-source nature."
               icon={<IconDeviceDesktop size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Open source"
-              description="Being open source means that Advanced PortChecker is free to use and can be modified to suit your needs. The source code is available on GitHub."
+              description="Being open source means that Compressr is free to use and can be modified to suit your needs. The source code is available on GitHub. For more information, please see the links below."
               icon={<IconBrandGithub size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Private"
-              description="Advanced PortChecker does not collect any data from its users. The application is designed to be as transparent as possible. No ads, no trackers, no nonsense."
+              description="Compressr does not collect any data from its users. The application is designed to be as transparent as possible. No ads, no trackers, no nonsense."
               icon={<IconLockHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
             <FeatureCard
               title="Made with love"
-              description="Advanced PortChecker is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
+              description="Compressr is a project made with love by the CodeDead team and open-source contributors. We hope you enjoy using it as much as we enjoyed making it."
               icon={<IconHeart size={50} stroke={2} color={theme.colors.blue[6]} />}
             />
           </SimpleGrid>
@@ -162,46 +173,18 @@ const AdvancedPortChecker = () => {
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
-                <Text size="lg">Android</Text>
-              </Center>
-              <Button
-                component="a"
-                href="https://play.google.com/store/apps/details?id=com.codedead.advancedportchecker"
-                target="_blank"
-                rel="noreferrer noopener"
-                fullWidth
-                leftSection={<IconBrandGooglePlay size={20} />}
-                size="md"
-              >
-                Google Play
-              </Button>
-              <Button
-                component="a"
-                href="https://f-droid.org/en/packages/com.codedead.advancedportchecker/"
-                target="_blank"
-                rel="noreferrer noopener"
-                fullWidth
-                leftSection={<IconBrandAndroid size={20} />}
-                size="md"
-                mt={10}
-              >
-                F-Droid
-              </Button>
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Center>
                 <Text size="lg">Windows</Text>
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.3.0/advanced-portchecker_2.3.0_x64_en-US.msi"
+                href="https://github.com/CodeDead/compressr-app/releases/download/v1.0.0/compressr-app-windows-x64.exe"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandWindows size={20} />}
                 fullWidth
                 size="md"
               >
-                Installer
+                EXE (x64)
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
@@ -210,61 +193,57 @@ const AdvancedPortChecker = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.3.0/advanced-portchecker_2.3.0_amd64.AppImage"
+                href="https://github.com/CodeDead/compressr-app/releases/download/v1.0.0/compressr-x86_64-v1.0.0.AppImage"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconTerminal2 size={20} />}
                 fullWidth
                 size="md"
               >
-                AppImage
+                AppImage (x64)
               </Button>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
+            <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Center>
                 <Text size="lg">macOS</Text>
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/Advanced-PortChecker/releases/download/v2.3.0/advanced-portchecker_2.3.0_aarch64.dmg"
+                href="https://github.com/CodeDead/compressr-app/releases/download/v1.0.0/compressr-app-macos-aarch64"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandFinder size={20} />}
                 fullWidth
                 size="md"
               >
-                dmg
+                dmg (aarch64)
+              </Button>
+            </Grid.Col>
+
+            <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
+              <Center>
+                <Text size="lg">Web</Text>
+              </Center>
+              <Button
+                component="a"
+                href="https://compressr.codedead.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                leftSection={<IconWorldWww size={20} />}
+                fullWidth
+                size="md"
+              >
+                Website
               </Button>
             </Grid.Col>
           </Grid>
 
-          <Group mt={20}>
-            <Badge variant="filled" size="lg" leftSection={<IconQuote size={12} />}>
-              What others say
-            </Badge>
-          </Group>
-
-          <Card shadow="sm" padding="lg" radius="md" mt={20} withBorder>
-            <Text fw={500} size="lg">
-              Handy tool providing you with results in real time
-            </Text>
-            <Text size="md" mt={10}>
-              "On an ending note, Advanced PortChecker is an easy-to-use program helping you
-              effortlessly find open ports you can connect to. It can spot both TCP and UDP ports,
-              letting you compile them in lists you can subsequently use, but its core advantage is
-              that it helps you see the potential of your network in real time."
-            </Text>
-            <Text size="md" mt={10}>
-              -{' '}
-              <a
-                href="https://www.softpedia.com/get/Network-Tools/IP-Tools/Advanced-PortChecker.shtml"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Anca Roman, Softpedia
-              </a>
-            </Text>
-          </Card>
+          <Text size="md" mt={10}>
+            <Anchor href="https://github.com/CodeDead/compressr-app/releases" target="_blank">
+              Check out the releases page on GitHub to see if Compressr is available for your
+              platform.
+            </Anchor>
+          </Text>
 
           <Group mt={20}>
             <Badge variant="filled" size="lg" leftSection={<IconQuote size={12} />}>
@@ -277,7 +256,7 @@ const AdvancedPortChecker = () => {
               <Button
                 component={Link}
                 variant="default"
-                href="/software/advanced-portchecker/requirements"
+                href="/software/compressr/requirements"
                 fullWidth
                 size="md"
               >
@@ -288,7 +267,7 @@ const AdvancedPortChecker = () => {
               <Button
                 component="a"
                 variant="default"
-                href="/Software/Advanced PortChecker/gpl.pdf"
+                href="/Software/compressr/gpl.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -302,7 +281,7 @@ const AdvancedPortChecker = () => {
               <Button
                 component="a"
                 variant="default"
-                href="https://github.com/CodeDead/Advanced-PortChecker"
+                href="https://github.com/CodeDead/compressr-app"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -315,13 +294,13 @@ const AdvancedPortChecker = () => {
               <Button
                 component="a"
                 variant="default"
-                href="https://github.com/CodeDead/Advanced-PortChecker-android"
+                href="https://github.com/CodeDead/compressr"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
                 size="md"
               >
-                Source code (Android)
+                Source code (website)
               </Button>
             </Grid.Col>
           </Grid>
@@ -332,4 +311,4 @@ const AdvancedPortChecker = () => {
   );
 };
 
-export default AdvancedPortChecker;
+export default Compressr;

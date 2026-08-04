@@ -1,38 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import {
-  IconBrandGithub,
-  IconBrandWindows,
-  IconDeviceFloppy,
-  IconDownload,
-  IconGauge,
-  IconHeart,
-  IconInfoCircle,
-  IconLockHeart,
-  IconMath,
-  IconQuote,
-  IconZip,
-} from '@tabler/icons-react';
+import { IconBrandGithub, IconBrandWindows, IconDeviceFloppy, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconZip } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import {
-  Badge,
-  Button,
-  Card,
-  Container,
-  Grid,
-  Group,
-  Image,
-  SimpleGrid,
-  Text,
-  Title,
-  useMantineTheme,
-} from '@mantine/core';
+import { Badge, Button, Card, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const PkFinder = () => {
   const theme = useMantineTheme();
@@ -234,13 +211,20 @@ const PkFinder = () => {
 
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Button component={Link} href="/software/pk-finder/requirements" fullWidth size="md">
+              <Button
+                component={Link}
+                href="/software/pk-finder/requirements"
+                fullWidth
+                size="md"
+                variant="default"
+              >
                 Requirements
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/PK%20Finder/help.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -253,6 +237,7 @@ const PkFinder = () => {
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/PK%20Finder/gpl.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -266,6 +251,7 @@ const PkFinder = () => {
             <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
               <Button
                 component="a"
+                variant="default"
                 href="https://github.com/CodeDead/PK-Finder"
                 target="_blank"
                 rel="noreferrer noopener"

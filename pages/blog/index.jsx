@@ -55,7 +55,7 @@ const Blog = ({ posts, numberOfPages }) => {
   };
 
   useEffect(() => {
-    d1(setPageIndex(11));
+    d1(setPageIndex(12));
   }, []);
 
   return (

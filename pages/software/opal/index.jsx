@@ -1,42 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import {
-  IconBrandFinder,
-  IconBrandGithub,
-  IconBrandWindows,
-  IconDeviceDesktop,
-  IconDownload,
-  IconHeart,
-  IconHourglassEmpty,
-  IconInfoCircle,
-  IconLockHeart,
-  IconMusic,
-  IconQuote,
-  IconTerminal2,
-  IconZip,
-} from '@tabler/icons-react';
+import { IconBrandFinder, IconBrandGithub, IconBrandWindows, IconDeviceDesktop, IconDownload, IconHeart, IconHourglassEmpty, IconInfoCircle, IconLockHeart, IconMusic, IconQuote, IconTerminal2, IconZip } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Image,
-  List,
-  SimpleGrid,
-  Text,
-  Title,
-  useMantineTheme,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Image, List, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const Opal = () => {
   const theme = useMantineTheme();
@@ -275,13 +248,20 @@ const Opal = () => {
 
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Button component={Link} href="/software/opal/requirements" fullWidth size="md">
+              <Button
+                component={Link}
+                href="/software/opal/requirements"
+                fullWidth
+                size="md"
+                variant="default"
+              >
                 Requirements
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/Opal/help.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -294,6 +274,7 @@ const Opal = () => {
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/Opal/gpl.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -307,6 +288,7 @@ const Opal = () => {
             <Grid.Col span={{ base: 12, md: 12, lg: 12 }}>
               <Button
                 component="a"
+                variant="default"
                 href="https://github.com/CodeDead/Opal"
                 target="_blank"
                 rel="noreferrer noopener"

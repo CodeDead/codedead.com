@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    d1(setPageIndex(15));
+    d1(setPageIndex(16));
   }, []);
 
   return (

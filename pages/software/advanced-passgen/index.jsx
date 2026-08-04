@@ -295,6 +295,7 @@ const AdvancedPassGen = () => {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component={Link}
+                variant="default"
                 href="/software/advanced-passgen/requirements"
                 fullWidth
                 size="md"
@@ -305,6 +306,7 @@ const AdvancedPassGen = () => {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/Advanced PassGen/gpl.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -318,6 +320,7 @@ const AdvancedPassGen = () => {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
+                variant="default"
                 href="https://github.com/CodeDead/Advanced-PassGen"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -330,6 +333,7 @@ const AdvancedPassGen = () => {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
+                variant="default"
                 href="https://github.com/CodeDead/advanced-passgen-android"
                 target="_blank"
                 rel="noreferrer noopener"

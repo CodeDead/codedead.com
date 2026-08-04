@@ -7,6 +7,7 @@ import { MainContext } from '../../contexts/MainContextProvider';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';
 import classes from '../../public/title.module.css';
 
+
 const Software = () => {
   const [, d1] = useContext(MainContext);
   const router = useRouter();
@@ -320,8 +321,11 @@ const Software = () => {
                 withBorder
                 style={{ height: '100%' }}
                 component="a"
-                href="https://compressr.codedead.com/"
-                target="_blank"
+                href="/software/compressr"
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push('/software/compressr');
+                }}
               >
                 <Card.Section>
                   <Image src="/compressr.webp" height={150} alt="Compressr" />
@@ -331,7 +335,7 @@ const Software = () => {
                 </Text>
                 <Text size="sm" c="dimmed">
                   Compressr is a free and open source bulk image compressor / compression tool that
-                  you can use in the browser.
+                  you can use in the browser or on your computer.
                 </Text>
               </Card>
             </Grid.Col>

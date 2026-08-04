@@ -1,43 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import {
-  IconBrandAndroid,
-  IconBrandGithub,
-  IconBrandGooglePlay,
-  IconBrandWindows,
-  IconDeviceDesktop,
-  IconDownload,
-  IconGauge,
-  IconHeart,
-  IconInfoCircle,
-  IconLockHeart,
-  IconMath,
-  IconQuote,
-  IconTerminal2,
-  IconZip,
-} from '@tabler/icons-react';
+import { IconBrandAndroid, IconBrandGithub, IconBrandGooglePlay, IconBrandWindows, IconDeviceDesktop, IconDownload, IconGauge, IconHeart, IconInfoCircle, IconLockHeart, IconMath, IconQuote, IconTerminal2, IconZip } from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Image,
-  List,
-  SimpleGrid,
-  Text,
-  Title,
-  useMantineTheme,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Image, List, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const DeadHash = () => {
   const theme = useMantineTheme();
@@ -296,13 +268,20 @@ const DeadHash = () => {
 
           <Grid mt={20}>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
-              <Button component={Link} href="/software/deadhash/requirements" fullWidth size="md">
+              <Button
+                component={Link}
+                href="/software/deadhash/requirements"
+                fullWidth
+                size="md"
+                variant="default"
+              >
                 Requirements
               </Button>
             </Grid.Col>
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/DeadHash/help.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -315,6 +294,7 @@ const DeadHash = () => {
             <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
               <Button
                 component="a"
+                variant="default"
                 href="/Software/DeadHash/gpl.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -328,6 +308,7 @@ const DeadHash = () => {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
+                variant="default"
                 href="https://github.com/CodeDead/DeadHash-js"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -340,6 +321,7 @@ const DeadHash = () => {
             <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
               <Button
                 component="a"
+                variant="default"
                 href="https://github.com/CodeDead/DeadHash-android"
                 target="_blank"
                 rel="noreferrer noopener"
