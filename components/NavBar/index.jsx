@@ -79,9 +79,6 @@ const NavBar = () => {
                 router.push('/software/advanced-passgen');
               }}
             >
-              <Badge color="orange" style={{ float: 'right' }}>
-                Updated
-              </Badge>
               <span>Advanced PassGen</span>
             </Link>
             <Link
@@ -178,6 +175,9 @@ const NavBar = () => {
                 router.push('/software/compressr');
               }}
             >
+              <Badge color="orange" style={{ float: 'right' }}>
+                New
+              </Badge>
               <span>Compressr</span>
             </Link>
           </Collapse>

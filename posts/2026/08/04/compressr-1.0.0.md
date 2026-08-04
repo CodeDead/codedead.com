@@ -25,7 +25,7 @@ Compressr is built entirely in **Rust** using the **Iced** GUI framework (v0.14)
 - **Progress tracking** — Real-time progress bar during batch compression
 - **Compression results** — Detailed before/after file sizes and percentage saved, displayed per file and as totals.
 - **Delete originals** — Optional automatic deletion of source files after successful compression.
-- **Multi-language UI** — Interface (currently) available in 9 languages: English, Dutch, French, Spanish, Portuguese, Russian, Ukrainian, Chinese (Simplified), and Japanese.
+- **Multi-language UI** — Interface (currently) available in 10 languages: English, Dutch, French, Hindi, Spanish, Portuguese, Russian, Ukrainian, Chinese (Simplified), and Japanese.
 - **Theme support** — All Iced built-in themes are available, with Oxocarbon as the default.
 - **Auto-update** — Optional automatic update checking against the CodeDead API at startup, with one-click download.
 - **Multi-window design** — Separate windows for compression, settings, about info, results, and error display — keeping the UI clean and focused.
