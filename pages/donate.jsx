@@ -133,7 +133,7 @@ const Donate = () => {
             </Button>
             <Popover position="bottom" withArrow shadow="md">
               <Popover.Target>
-                <Button variant="light">EGDL</Button>
+                <Button variant="light">EGLD</Button>
               </Popover.Target>
               <Popover.Dropdown>
                 <Text size="md">
