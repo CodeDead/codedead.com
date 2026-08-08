@@ -1,15 +1,42 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { IconBrandFinder, IconBrandGithub, IconBrandWindows, IconDeviceDesktop, IconDownload, IconHeart, IconHourglassEmpty, IconInfoCircle, IconLockHeart, IconMusic, IconQuote, IconTerminal2, IconZip } from '@tabler/icons-react';
+import {
+  IconBrandFinder,
+  IconBrandGithub,
+  IconBrandWindows,
+  IconDeviceDesktop,
+  IconDownload,
+  IconHeart,
+  IconHourglassEmpty,
+  IconInfoCircle,
+  IconLockHeart,
+  IconMusic,
+  IconQuote,
+  IconTerminal2,
+  IconZip,
+} from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import { Badge, Button, Card, Center, Container, Grid, Group, Image, List, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Center,
+  Container,
+  Grid,
+  Group,
+  Image,
+  List,
+  SimpleGrid,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-
 
 const Opal = () => {
   const theme = useMantineTheme();

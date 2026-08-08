@@ -15,7 +15,6 @@ import { Badge, Box, Collapse, Divider, Group, ScrollArea } from '@mantine/core'
 import { MainContext } from '../../contexts/MainContextProvider';
 import classes from './navbar.module.css';
 
-
 const NavBar = () => {
   const router = useRouter();
   const [state] = useContext(MainContext);
@@ -188,6 +187,17 @@ const NavBar = () => {
                 New
               </Badge>
               <span>Compressr</span>
+            </Link>
+            <Link
+              className={classes.link2}
+              href="https://txt-diff.codedead.com"
+              rel="noopener noreferrer"
+              ml={11}
+            >
+              <Badge color="orange" style={{ float: 'right' }}>
+                New
+              </Badge>
+              <span>txt-diff</span>
             </Link>
           </Collapse>
           <Link

@@ -7,7 +7,6 @@ import { MainContext } from '../../contexts/MainContextProvider';
 import { setPageIndex } from '../../reducers/MainReducer/Actions';
 import classes from '../../public/title.module.css';
 
-
 const Software = () => {
   const [, d1] = useContext(MainContext);
   const router = useRouter();
@@ -336,6 +335,30 @@ const Software = () => {
                 <Text size="sm" c="dimmed">
                   Compressr is a free and open source bulk image compressor / compression tool that
                   you can use in the browser or on your computer.
+                </Text>
+              </Card>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 6, lg: 4 }}>
+              <Card
+                mt={20}
+                shadow="sm"
+                padding="lg"
+                radius="md"
+                withBorder
+                style={{ height: '100%' }}
+                component="a"
+                rel="noopener noreferrer"
+                href="https://txt-diff.codedead.com/"
+              >
+                <Card.Section>
+                  <Image src="/txt-diff.webp" height={150} alt="txt-diff" />
+                </Card.Section>
+                <Text size="md" mt={10}>
+                  txt-diff
+                </Text>
+                <Text size="sm" c="dimmed">
+                  txt-diff is a free and open source text diff tool that you can use in the browser
+                  to visualize differences between two texts.
                 </Text>
               </Card>
             </Grid.Col>

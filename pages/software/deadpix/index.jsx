@@ -1,15 +1,40 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { IconBrandGithub, IconBrandGooglePlay, IconBrandWindows, IconDeviceDesktop, IconDownload, IconHeart, IconInfoCircle, IconLockHeart, IconQuote, IconUserScreen, IconWand, IconZip } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconBrandGooglePlay,
+  IconBrandWindows,
+  IconDeviceDesktop,
+  IconDownload,
+  IconHeart,
+  IconInfoCircle,
+  IconLockHeart,
+  IconQuote,
+  IconUserScreen,
+  IconWand,
+  IconZip,
+} from '@tabler/icons-react';
 import { Carousel } from '@mantine/carousel';
-import { Badge, Button, Card, Center, Container, Grid, Group, Image, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import {
+  Badge,
+  Button,
+  Card,
+  Center,
+  Container,
+  Grid,
+  Group,
+  Image,
+  SimpleGrid,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core';
 import FeatureCard from '../../../components/FeatureCard';
 import FloatingDownloadButton from '../../../components/FloatingDownloadButton';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
-
 
 const DeadPix = () => {
   const theme = useMantineTheme();
