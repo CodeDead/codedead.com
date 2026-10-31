@@ -2,21 +2,11 @@ import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import { IconArrowLeft, IconInfoCircle, IconShieldCheckFilled } from '@tabler/icons-react';
-import {
-  Badge,
-  Button,
-  Card,
-  Center,
-  Container,
-  Grid,
-  Group,
-  Table,
-  Text,
-  Title,
-} from '@mantine/core';
+import { Badge, Button, Card, Center, Container, Grid, Group, Table, Text, Title } from '@mantine/core';
 import { MainContext } from '../../../contexts/MainContextProvider';
 import { setPageIndex } from '../../../reducers/MainReducer/Actions';
 import classes from '../../../public/title.module.css';
+
 
 const OpalRequirements = () => {
   const [, d] = useContext(MainContext);
@@ -121,7 +111,7 @@ const OpalRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/bc21a3d2c84b380f71820672d4d5240f7c0a35576ba13d9e5635fa72d25ea64f?nocache=1"
+                href="https://www.virustotal.com/gui/file/8e85e3d516df78d1023e10d661f79d885481970006eaf030b6115733d3db66ae?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -131,7 +121,7 @@ const OpalRequirements = () => {
               </Button>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/16af02f06164e8b558061db938ba0357f3237b2469dcc53b82c84c5cc48f36a5?nocache=1"
+                href="https://www.virustotal.com/gui/file/01030a5b01af842249aeb920ebd68c8e70483acb5d833917f14f0336d7dae94d?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -147,7 +137,7 @@ const OpalRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/0122b84069b120d101fae005fd345521680537b6185f84b1384a3527ec8f6e54?nocache=1"
+                href="https://www.virustotal.com/gui/file/786e78bf685eb6e48d7c4037a3482de7fe5154a82a57e9eed08ba0686e733501?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth
@@ -162,7 +152,7 @@ const OpalRequirements = () => {
               </Center>
               <Button
                 component="a"
-                href="https://www.virustotal.com/gui/file/6eed5ca6295efad1d660baabbbfdba6aee0ca3df5ac6111a8eb06fd675ca289d?nocache=1"
+                href="https://www.virustotal.com/gui/file/a8babcdcd768528aeb79cbaf34d803f378ba905075452363fd970eadf28873aa?nocache=1"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth

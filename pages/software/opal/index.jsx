@@ -181,7 +181,7 @@ const Opal = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-1.5.1.msi"
+                href="https://github.com/CodeDead/opal/releases/download/v1.5.2/Opal-1.5.2.msi"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandWindows size={20} />}
@@ -192,7 +192,7 @@ const Opal = () => {
               </Button>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-win-portable.zip"
+                href="https://github.com/CodeDead/opal/releases/download/v1.5.2/Opal-win-portable.zip"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconZip size={20} />}
@@ -209,7 +209,7 @@ const Opal = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-x86_64-1.5.1.AppImage"
+                href="https://github.com/CodeDead/opal/releases/download/v1.5.2/Opal-x86_64-1.5.2.AppImage"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconTerminal2 size={20} />}
@@ -225,7 +225,7 @@ const Opal = () => {
               </Center>
               <Button
                 component="a"
-                href="https://github.com/CodeDead/opal/releases/download/v1.5.1/Opal-1.5.1.dmg"
+                href="https://github.com/CodeDead/opal/releases/download/v1.5.2/Opal-1.5.2.dmg"
                 target="_blank"
                 rel="noreferrer noopener"
                 leftSection={<IconBrandFinder size={20} />}

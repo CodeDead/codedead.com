@@ -147,6 +147,9 @@ const NavBar = () => {
                 router.push('/software/opal');
               }}
             >
+              <Badge color="orange" style={{ float: 'right' }}>
+                Updated
+              </Badge>
               <span>Opal</span>
             </Link>
             <Link
@@ -183,9 +186,6 @@ const NavBar = () => {
                 router.push('/software/compressr');
               }}
             >
-              <Badge color="orange" style={{ float: 'right' }}>
-                New
-              </Badge>
               <span>Compressr</span>
             </Link>
             <Link
@@ -194,9 +194,6 @@ const NavBar = () => {
               rel="noopener noreferrer"
               ml={11}
             >
-              <Badge color="orange" style={{ float: 'right' }}>
-                New
-              </Badge>
               <span>txt-diff</span>
             </Link>
           </Collapse>
